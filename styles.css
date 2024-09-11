@@ -1,0 +1,1021 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/*-----------------------------------*\
+  #CSS GLOBAL
+\*-----------------------------------*/
+:root {
+  --primary-color: #3E1801;
+  --primary-color-dark: #120700;
+  --container-color : #f5f5f5;
+  --text-dark: #030712;
+  --text-light: #6b7280;
+  --extra-light: #d1d5db;
+  --white: #ffffff;
+  --max-width: 1200px;
+  --border-radius : 10px;
+}
+
+
+/*-----------------------------------*\
+  #RESET STYLE
+\*-----------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+/*-----------------------------------*\
+  #STYLE YANG DIGUNAKAN ULANG
+\*-----------------------------------*/
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 2rem 1rem 5rem;
+  
+}
+
+.section__subheader {
+  max-width: fit-content;
+  padding: 8px;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 100%;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3.25rem;
+  color: var(--text-dark);
+}
+
+.section__header span {
+  color: var(--primary-color);
+}
+
+.section__description {
+  color: var(--text-light);
+  line-height: 1.5rem;
+}
+
+.btn {
+  padding: calc(0.75rem + 2px) 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--primary-color-dark) !important;
+}
+
+a.btn {
+  padding: calc(0.75rem + 2px) 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+a.btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+img {
+  display: flex;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+}
+
+
+
+/*-----------------------------------*\
+  #NAVBAR
+\*-----------------------------------*/
+
+nav {
+  position: fixed;
+  isolation: isolate;
+  width: 100%;
+  z-index: 9;
+}
+
+.nav__header {
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+}
+
+.nav__logo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.nav__logo a span {
+  padding: 2px 10px;
+  color: var(--primary-color);
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+}
+
+.nav__menu__btn {
+  font-size: 1.5rem;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.nav__links {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: var(--primary-color);
+  transition: transform 0.5s;
+  z-index: -1;
+}
+
+.nav__links.open {
+  transform: translateY(100%);
+}
+
+.nav__links a {
+  font-weight: 500;
+  color: var(--white);
+}
+
+.nav__btn {
+  display: none;
+  gap: 5px;
+}
+
+
+/*-----------------------------------*\
+  #HERO / HEADER
+\*-----------------------------------*/
+.hero {
+  background-color: var(--container-color);
+}
+
+.header__container {
+  display: grid;
+  gap: 4rem 2rem;
+  overflow: hidden;
+  
+}
+
+.header__image {
+  position: relative;
+  isolation: isolate;
+}
+
+.header__image img {
+  max-width: 400px;
+  margin-inline: auto;
+}
+
+.header__image::before,
+.header__image::after {
+  position: absolute;
+  content: "";
+  height: 80%;
+  width: 100%;
+  max-width: 400px;
+}
+
+.header__image::before {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--primary-color);
+  z-index: -2;
+}
+
+.header__image::after {
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(calc(-50% - 3rem));
+  border: 5px solid var(--text-dark);
+  opacity: 0.75;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.header__content .section__subheader {
+  margin-inline: auto;
+}
+
+.header__content h1 {
+  margin-bottom: 2rem;
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4.25rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.header__content h1 span {
+  color: var(--primary-color);
+}
+
+.header__content .section__description {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.header__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header__btns a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.header__btns a span {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.header__btns a:hover {
+  color: var(--primary-color);
+}
+
+
+
+/*-----------------------------------*\
+  #STATS
+\*-----------------------------------*/
+
+.stats__container {
+  margin-top: 10vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.stats__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.stats__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.stats__card p {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+}
+
+
+/*-----------------------------------*\
+  #KATEGORI
+\*-----------------------------------*/
+
+.kategori__container {
+  padding-top: 0rem;
+  padding-bottom: 0;
+}
+
+.kategori__container .section__header {
+  max-width: 450px;
+  
+}
+
+.swiper {
+  padding: 2rem 0rem 2rem;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  cursor: pointer;
+}
+
+.swiper-slide {
+  max-width: 250px;
+}
+
+.kategori__card {
+  padding: .75rem;
+  max-width: 250px;
+  
+  
+}
+
+.gambar_kategori img {
+  max-height: 200px;
+  max-width: 250px;
+  border-radius: var(--border-radius) ;
+}
+
+.nama_kategori {
+  text-align: center;
+}
+
+
+.nama_kategori h4 {
+  padding-top: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 30px !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: var(--white);
+  background-color: transparent;
+  
+}
+
+/*-----------------------------------*\
+  #PRODUK TERLARIS
+\*-----------------------------------*/
+
+
+.laris {
+  background-color: var(--container-color);
+  margin-top: 15vh ;
+}
+
+.laris__container :is(.section__header, .section__subheader, .view__all) {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.laris__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.laris__card {
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: .2s ease;
+}
+
+.laris__card:hover {
+  border: 2px solid var(--primary-color);
+}
+
+.laris__card .gambar_terlaris {
+  max-height: 230px;
+  object-fit: cover;
+}
+
+.laris__details {
+  padding: 1rem;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.laris__details p {
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+.laris__details h6 {
+  color: var(--text-dark);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.bagian__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price span {
+  font-weight: 400;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.sukai, .keranjangi {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.action-produk-card .sukai:hover {
+  content: "\e600";
+  font-family: "remixicon";
+}
+
+.action-produk-card .keranjangi:hover {
+  content: "\e651";
+  font-family: "remixicon";
+}
+
+
+.lihat__now {
+  padding: 0.5rem 1.5rem;
+  color: var(--primary-color);
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lihat__now:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+}
+
+
+
+/*-----------------------------------*\
+  #SKILL
+\*-----------------------------------*/
+
+.service__container {
+  display: grid;
+  margin-top: 5vh ;
+  gap: 2rem;
+}
+
+.service__content .section__header {
+  margin-bottom: 1rem;
+}
+
+.service__content .section__description {
+  margin-bottom: 2rem;
+}
+
+.service__grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.service__card {
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service__card span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.service__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.service__card p {
+  color: var(--text-light);
+  line-height: 1.5rem;
+}
+
+
+/*-----------------------------------*\
+  #BLOG
+\*-----------------------------------*/
+
+
+.blog {
+  margin-top: 1vh ;
+}
+
+.blog__container :is(.section__header, .section__subheader, .view__all) {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.blog__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+.blog__card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: .2s ease;
+}
+
+.blog__card .gambar_blog {
+  max-height: 230px;
+  object-fit: cover;
+}
+
+.blog__details {
+  padding: 1rem 1rem 1rem 0rem;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.blog__details p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+.blog__details h5 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.blog__details h6 {
+  font-weight: 400;
+  color: var(--text-light);
+  font-size: .9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog__details a {
+  font-size: 14px ;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+
+.blog_now {
+  padding: 0.5rem 1.5rem;
+  color: var(--primary-color);
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.blog_now:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+}
+
+
+/*-----------------------------------*\
+  #NEWSLETTER
+\*-----------------------------------*/
+
+.newsletter {
+  background-color: var(--container-color);
+  padding: 2rem 1rem 1rem;
+  margin-top: 1vh;
+}
+
+.newsletter__container :is(.section__header, .section__subheader, .view__all) {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.newsletter h6 {
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  margin-inline: auto; 
+  margin-top: 1rem;
+}
+
+.newsletter__grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin: 2rem 0 1rem;
+  flex-wrap: wrap;
+}
+
+.newsletter__grid input[type="email"] {
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px; 
+  outline: none;
+}
+
+.newsletter__grid input[type="email"], 
+  .newsletter__grid button {
+    width: auto;
+  }
+
+.newsletter__grid button {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1rem;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.newsletter__grid button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footer__container {
+  display: grid;
+  gap: 4rem 2rem;
+}
+
+.footer__logo {
+  margin-bottom: 2rem;
+}
+
+.footer__logo img {
+  max-width: 40px;
+}
+
+.footer__logo span {
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.footer__col .section__description {
+  max-width: 350px;
+}
+
+.footer__socials {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer__socials a {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.footer__socials a:hover {
+  color: var(--primary-color-dark);
+}
+
+.footer__col h4 {
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.footer__links {
+  display: grid;
+  gap: 1rem;
+}
+
+.footer__links a {
+  color: var(--text-light);
+}
+
+.footer__links a:hover {
+  color: var(--primary-color);
+}
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+  background-color: var(--container-color);
+  text-align: center;
+}
+
+
+@media (max-width:400px) {
+  .newsletter__grid button {
+    padding: 1rem 2rem;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    font-size: 1rem;
+    border: none;
+    border-radius: 0 0px 0px 0; 
+    cursor: pointer;
+    white-space: nowrap;
+  }
+}
+
+/*---------------------------------------------------------------------------------------------------*\
+  #RESPONSIVE LEBAR DI ATAS 540 PX
+\*---------------------------------------------------------------------------------------------------*/
+
+@media (min-width:540px) {
+  .stats__container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .stats__card {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .stats__divider {
+    height: 75px;
+    width: 2px;
+    background-color: var(--primary-color);
+  }
+
+  .laris__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+
+  .service__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .service__card:nth-child(1) {
+    grid-area: 1/1/3/2;
+  }
+
+  .service__card:nth-child(2) {
+    grid-area: 2/2/4/3;
+  }
+
+  .service__card:nth-child(3) {
+    grid-area: 3/1/5/2;
+  }
+
+  .blog__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+/*---------------------------------------------------------------------------------------------------*\
+  #RESPONSIVE LEBAR DI ATAS 758 PX
+\*---------------------------------------------------------------------------------------------------*/
+
+@media (min-width:768px) {
+  nav {
+    position: static;
+    padding: 2rem 1rem 1rem;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .nav__header {
+    flex: 1;
+    padding: 0;
+    background: transparent;
+  }
+
+  .nav__logo a {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+  }
+
+  .nav__logo a span {
+    padding: 4px 14px;
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+
+  .nav__menu__btn {
+    display: none;
+  }
+
+  .nav__links {
+    position: static;
+    padding: 0;
+    max-width: fit-content;
+    flex-direction: row;
+    background-color: transparent;
+    transform: none;
+  }
+
+  .nav__links a {
+    color: var(--text-dark);
+  }
+
+  .nav__links a:hover {
+    color: var(--primary-color);
+  }
+
+
+  .nav__btn {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav__btn a {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    white-space: nowrap;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+  }
+
+  .nav__btn a:hover {
+    color: var(--white);
+    background-color: var(--primary-color);
+  }
+
+  .header__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .header__content .section__subheader {
+    margin-inline-start: unset;
+  }
+
+  .header__content :is(h1, .section__description) {
+    text-align: left;
+  }
+
+  .header__btns {
+    justify-content: flex-start;
+  }
+
+  .header__image {
+    grid-area: 1/2/2/3;
+  }
+
+  .laris__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+
+  .service__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .blog__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+
+  .newsletter__grid input[type="email"], 
+  .newsletter__grid button {
+    width: auto; 
+  }
+
+  .footer__container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .footer__col:nth-child(1) {
+    grid-column: 1/3;
+  }
+}
+
+/*---------------------------------------------------------------------------------------------------*\
+  #RESPONSIVE LEBAR DI ATAS 900 PX -- Demi Navbar Super Responsive
+\*---------------------------------------------------------------------------------------------------*/
+
+@media (max-width:900px) {
+  .nav__links a {
+    font-size: 15px;
+}
+
+.nav__logo a {
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+
+.nav__btn a {
+  padding: 0.75rem 1.1rem;
+  font-size: .8rem;
+  font-weight: 500;
+  white-space: nowrap;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+}
+}
+
+/*---------------------------------------------------------------------------------------------------*\
+  #RESPONSIVE LEBAR DI ATAS 1000 PX - Demi Navbar Super Responsive
+\*---------------------------------------------------------------------------------------------------*/
+
+@media (max-width:1000px) {
+  .nav__links {
+    gap: 10px;
+}
+}
+
+/*---------------------------------------------------------------------------------------------------*\
+  #RESPONSIVE LEBAR DI ATAS 1400 PX
+\*---------------------------------------------------------------------------------------------------*/
+
+@media (min-width:1250px) {
+  .header__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
