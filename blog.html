@@ -10,9 +10,10 @@
     <!--============= SLIDER - SWIPER.JS ===========-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
 
+
     <!--============= CSS - CSS GLOBAL ===========-->
     <link rel="stylesheet" href="styles.css" />
-    <title>Blog</title>
+    <title>E-Commerce | oleholehNTT</title>
   </head>
   <body>
 
@@ -28,7 +29,7 @@
       </div>
       <ul class="nav__links" id="nav-links">
         <li><a href="produk.html">Produk</a></li>
-        <li><a href="#portfolio">Blog</a></li>
+        <li><a href="blog.html">Blog</a></li>
         <li><a href="#review">Tentang Kami</a></li>
         <li><a href="#review">Kontak</a></li>
       </ul>
@@ -40,17 +41,75 @@
     <!--======================================================= AKHIR NAVBAR =======================================================-->
 
 
+    <!--======================================================= BLOG POPULER - HOMEPAGE =======================================================-->
+
+    <section id="blog_populer" class="">
+
+      <div class="section__container blog_populer_container">
+
+        <div class="blog_card_populer">
+           <div class="blog_details_populer">
+              <p>Blog Terpopuler Mingguan</p>
+              <h5>Mengenal Makanan Khas NTT: Lezat dan Unik</h6>  
+              <h6>Nusa Tenggara Timur (NTT) tidak hanya dikenal dengan keindahan alamnya yang mempesona, tetapi juga 
+                dengan ragam kuliner khas yang menggugah selera. Setiap daerah di NTT memiliki keunikan tersendiri dalam cita 
+                rasa dan cara pengolahan makanan yang mencerminkan kekayaan budaya dan tradisi turun-temurun.Salah satu 
+                makanan yang sangat populer adalah Se’i Babi, yaitu daging babi yang diasapi dengan menggunakan kayu khusus, 
+                menghasilkan rasa yang kaya dan aroma yang khas. Se’i biasanya dimasak dengan bumbu-bumbu sederhana namun kuat, 
+                seperti bawang putih dan cabai, dan disajikan dengan sambal lu’at, sambal khas NTT yang memiliki cita rasa pedas 
+                dan asam. Bagi yang tidak mengonsumsi daging babi, ada juga Se’i daging sapi yang tak kalah lezat dan disukai banyak 
+                orang.</h6>  
+                <a class="btn_small">Baca Lanjut</a>
+           </div>
+           <div class="gambar_blog_populer">
+              <img class="" src="assets/contoh_berita.png" />
+           </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--======================================================= AKHIR BLOG POPULER - HOMEPAGE =======================================================-->
+
 
     <!--======================================================= BLOG - HOMEPAGE =======================================================-->
-    <section class="blog">
-      <div class="section__container blog__container">
-        <p class="section__subheader">
-          Terbaru
-        </p>
-        <h2 class="section__header">Berita/Tips Menarik</h2>
+    <section class="blog" id="blog_halaman">
+      <div class="section__container blog__container">    
+        
+        <div class="filter_kategori_blog">
+          <div class="filter_pill_container"> 
+            <div class="filter_pill active_pill">
+            <h6>Semua Blog</h6>
+            </div>
+            <div class="filter_pill">
+            <h6>Berita</h6>
+            </div>
+            <div class="filter_pill">
+            <h6>Tips/Trik</h6>
+            </div>
+            <div class="filter_pill">
+            <h6>Sejarah</h6>
+            </div>
+        </div>
+        <div class="filter_sort_container">
+          <i class="ri-filter-3-fill"></i>
+          <h6>Filter</h6>
+        </div>
+
+
+        </div> 
+        <div class="input_pencarian_blog">
+          <i class="ri-search-line"></i>
+          <input type="text" placeholder="Cari Blog dengan Kata Kunci" />
+        </div>
+        
+
+
+
         <div class="blog__grid">
 
-
+          <!-- Card Blog -->
           <div class="blog__card">
             <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
             <div class="blog__details">
@@ -62,8 +121,9 @@
                 <a>Selengkapnya</a>           
             </div>           
           </div>
+          <!-- Akhir Card Blog -->
 
-
+          <!-- Card Blog -->
           <div class="blog__card">
             <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
             <div class="blog__details">
@@ -74,8 +134,9 @@
               <a>Selengkapnya</a>          
             </div>
           </div>
+          <!-- Akhir Card Blog -->
 
-
+          <!-- Card Blog -->
           <div class="blog__card">
             <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
             <div class="blog__details">
@@ -88,10 +149,98 @@
                 <a>Selengkapnya</a>          
             </div>
           </div>
-        
-      </div>
-      <div class="view__all">
-        <button class="btn">View All</button>
+           <!-- Akhir Card Blog -->
+
+           <!-- Card Blog -->
+          <div class="blog__card">
+            <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
+            <div class="blog__details">
+              <p>Sejarah</p>
+              <h5>Sejarah Kain Tenun Ikat: Warisan Budaya NTT</h5>  
+              <h6>Kain tenun ikat merupakan salah satu warisan budaya yang paling berharga dari NTT. 
+                Teknik tenun ikat yang digunakan telah ada sejak zaman dahulu dan diwariskan turun-temurun 
+                oleh masyarakat lokal. Kain ini sering digunakan dalam upacara adat dan merupakan simbol 
+                status serta identitas budaya. </h6>  
+                <a>Selengkapnya</a>          
+            </div>
+          </div>
+           <!-- Akhir Card Blog -->
+
+           <!-- Card Blog -->
+          <div class="blog__card">
+            <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
+            <div class="blog__details">
+              <p>Sejarah</p>
+              <h5>Sejarah Kain Tenun Ikat: Warisan Budaya NTT</h5>  
+              <h6>Kain tenun ikat merupakan salah satu warisan budaya yang paling berharga dari NTT. 
+                Teknik tenun ikat yang digunakan telah ada sejak zaman dahulu dan diwariskan turun-temurun 
+                oleh masyarakat lokal. Kain ini sering digunakan dalam upacara adat dan merupakan simbol 
+                status serta identitas budaya. </h6>  
+                <a>Selengkapnya</a>          
+            </div>
+          </div>
+           <!-- Akhir Card Blog -->
+
+           <!-- Card Blog -->
+          <div class="blog__card">
+            <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
+            <div class="blog__details">
+              <p>Sejarah</p>
+              <h5>Sejarah Kain Tenun Ikat: Warisan Budaya NTT</h5>  
+              <h6>Kain tenun ikat merupakan salah satu warisan budaya yang paling berharga dari NTT. 
+                Teknik tenun ikat yang digunakan telah ada sejak zaman dahulu dan diwariskan turun-temurun 
+                oleh masyarakat lokal. Kain ini sering digunakan dalam upacara adat dan merupakan simbol 
+                status serta identitas budaya. </h6>  
+                <a>Selengkapnya</a>          
+            </div>
+          </div>
+           <!-- Akhir Card Blog -->
+
+           <!-- Card Blog -->
+          <div class="blog__card">
+            <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
+            <div class="blog__details">
+              <p>Sejarah</p>
+              <h5>Sejarah Kain Tenun Ikat: Warisan Budaya NTT</h5>  
+              <h6>Kain tenun ikat merupakan salah satu warisan budaya yang paling berharga dari NTT. 
+                Teknik tenun ikat yang digunakan telah ada sejak zaman dahulu dan diwariskan turun-temurun 
+                oleh masyarakat lokal. Kain ini sering digunakan dalam upacara adat dan merupakan simbol 
+                status serta identitas budaya. </h6>  
+                <a>Selengkapnya</a>          
+            </div>
+          </div>
+           <!-- Akhir Card Blog -->
+
+           <!-- Card Blog -->
+          <div class="blog__card">
+            <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
+            <div class="blog__details">
+              <p>Sejarah</p>
+              <h5>Sejarah Kain Tenun Ikat: Warisan Budaya NTT</h5>  
+              <h6>Kain tenun ikat merupakan salah satu warisan budaya yang paling berharga dari NTT. 
+                Teknik tenun ikat yang digunakan telah ada sejak zaman dahulu dan diwariskan turun-temurun 
+                oleh masyarakat lokal. Kain ini sering digunakan dalam upacara adat dan merupakan simbol 
+                status serta identitas budaya. </h6>  
+                <a>Selengkapnya</a>          
+            </div>
+          </div>
+           <!-- Akhir Card Blog -->
+
+           <!-- Card Blog -->
+          <div class="blog__card">
+            <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
+            <div class="blog__details">
+              <p>Sejarah</p>
+              <h5>Sejarah Kain Tenun Ikat: Warisan Budaya NTT</h5>  
+              <h6>Kain tenun ikat merupakan salah satu warisan budaya yang paling berharga dari NTT. 
+                Teknik tenun ikat yang digunakan telah ada sejak zaman dahulu dan diwariskan turun-temurun 
+                oleh masyarakat lokal. Kain ini sering digunakan dalam upacara adat dan merupakan simbol 
+                status serta identitas budaya. </h6>  
+                <a>Selengkapnya</a>          
+            </div>
+          </div>
+           <!-- Akhir Card Blog -->
+
       </div>
     </section>
     <!--======================================================= AKHIR BLOG - HOMEPAGE =======================================================-->
