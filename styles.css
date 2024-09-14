@@ -1022,17 +1022,17 @@ nav {
 .blog_details_populer p {
   font-size: 15px;
   font-weight: 400;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   color: var(--text-light);
   text-transform: uppercase;
 }
 
 .blog_details_populer h5 {
   color: var(--text-dark);
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   line-height: 2rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
@@ -1041,8 +1041,8 @@ nav {
   color: var(--text-light);
   font-size: 1rem;
   display: -webkit-box;
-  -webkit-line-clamp: 6;
-  line-clamp: 6;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -1050,13 +1050,9 @@ nav {
   margin-bottom: 25px;
 }
 
-.blog_details_populer a {
-  
-}
-
 .blog_card_populer .gambar_blog_populer {
   width: 50%;
-  max-height: 230px;
+  max-height: 300px;
   object-fit: cover;
 }
 
@@ -1083,7 +1079,7 @@ nav {
 }
 
 .filter_pill {
-  padding: 10px 15px;
+  padding: 13px 15px;
   border-radius: 10px;
   background-color: var(--container-color);
   cursor: pointer;
@@ -1101,17 +1097,20 @@ nav {
 }
 
 .filter_pill h6 {
-  font-size: .75rem;
+  font-size: .8rem;
+  text-transform: uppercase;
 }
 
 .filter_sort_container {
   display: flex;
   cursor: pointer;
   align-items: center;
+  gap: 5px;
 }
 
 .filter_sort_container h6 {
-  font-size: .8rem;
+  font-size: .85rem;
+  text-transform: uppercase;
 }
 
 
