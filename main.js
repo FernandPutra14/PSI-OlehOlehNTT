@@ -66,7 +66,7 @@ ScrollReveal().reveal(".service__card", {
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
-  spaceBetween: 20,
+  spaceBetween: 0,
 
   navigation: {
     nextEl: '.swiper-button-next',

@@ -80,6 +80,7 @@
 }
 
 a.btn {
+  color: var(--white) !important;
   padding: calc(0.75rem + 2px) 1.5rem;
   outline: none;
   border: none;
@@ -507,9 +508,7 @@ nav {
 
 .kategori__card {
   padding: .75rem;
-  max-width: 250px;
-  
-  
+  max-width: 250px; 
 }
 
 .gambar_kategori img {
@@ -537,7 +536,6 @@ nav {
 .swiper-button-prev, .swiper-button-next {
   color: var(--white);
   background-color: transparent;
-  
 }
 
 /*-----------------------------------*\
@@ -1026,6 +1024,7 @@ nav {
   font-weight: 400;
   margin-bottom: 10px;
   color: var(--text-light);
+  text-transform: uppercase;
 }
 
 .blog_details_populer h5 {
@@ -1034,12 +1033,13 @@ nav {
   line-height: 2rem;
   font-weight: 600;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .blog_details_populer h6 {
   font-weight: 400;
   color: var(--text-light);
-  font-size: .9rem;
+  font-size: 1rem;
   display: -webkit-box;
   -webkit-line-clamp: 6;
   line-clamp: 6;
@@ -1063,9 +1063,9 @@ nav {
 .blog_card_populer .gambar_blog_populer img {
   max-height: 300px;
   object-fit: cover;
+  width: 100%; /* Tambahkan agar gambar sesuai dengan kontainer */
   border-radius: 10px ;
 }
-
 
 /*-----------------------------------*\
   #FILTER KATEGORI BLOG
