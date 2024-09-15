@@ -118,6 +118,40 @@ a.btn_small:hover {
   background-color: var(--primary-color-dark);
 }
 
+button.btn {
+  color: var(--white) !important;
+  padding: calc(0.75rem + 2px) 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button.btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+button.btn_small {
+  color: var(--white);
+  padding: .7rem 1rem;
+  outline: none;
+  border: none;
+  font-size: .9rem;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  border-radius: var(--border-radius);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+button.btn_small:hover {
+  background-color: var(--primary-color-dark);
+}
+
 img {
   display: flex;
   width: 100%;
