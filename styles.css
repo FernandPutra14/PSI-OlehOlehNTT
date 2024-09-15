@@ -136,6 +136,103 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+/*-----------------------------------*\
+  #BOOTSTRAP
+\*-----------------------------------*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+[class*="col-"] {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Auto width columns */
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
+/* Fixed-width columns for a 12-column layout */
+.col-1 { flex: 0 0 8.33%; max-width: 8.33%; }
+.col-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+.col-3 { flex: 0 0 25%; max-width: 25%; }
+.col-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+.col-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+.col-6 { flex: 0 0 50%; max-width: 50%; }
+.col-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+.col-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+.col-9 { flex: 0 0 75%; max-width: 75%; }
+.col-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+.col-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+.col-12 { flex: 0 0 100%; max-width: 100%; }
+
+/* For small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .col-sm-1 { flex: 0 0 8.33%; max-width: 8.33%; }
+  .col-sm-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+  .col-sm-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-sm-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+  .col-sm-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+  .col-sm-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-sm-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+  .col-sm-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+  .col-sm-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-sm-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+  .col-sm-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+  .col-sm-12 { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* For medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .col-md-1 { flex: 0 0 8.33%; max-width: 8.33%; }
+  .col-md-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+  .col-md-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-md-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+  .col-md-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+  .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-md-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+  .col-md-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+  .col-md-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-md-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+  .col-md-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+  .col-md-12 { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* For large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .col-lg-1 { flex: 0 0 8.33%; max-width: 8.33%; }
+  .col-lg-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+  .col-lg-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-lg-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+  .col-lg-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+  .col-lg-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-lg-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+  .col-lg-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+  .col-lg-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-lg-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+  .col-lg-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+  .col-lg-12 { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* For extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .col-xl-1 { flex: 0 0 8.33%; max-width: 8.33%; }
+  .col-xl-2 { flex: 0 0 16.66%; max-width: 16.66%; }
+  .col-xl-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-xl-4 { flex: 0 0 33.33%; max-width: 33.33%; }
+  .col-xl-5 { flex: 0 0 41.66%; max-width: 41.66%; }
+  .col-xl-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-xl-7 { flex: 0 0 58.33%; max-width: 58.33%; }
+  .col-xl-8 { flex: 0 0 66.66%; max-width: 66.66%; }
+  .col-xl-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-xl-10 { flex: 0 0 83.33%; max-width: 83.33%; }
+  .col-xl-11 { flex: 0 0 91.66%; max-width: 91.66%; }
+  .col-xl-12 { flex: 0 0 100%; max-width: 100%; }
+}
 .authorize, .not-authorize {
   display: none;
 }
@@ -553,7 +650,7 @@ nav {
   margin-top: 15vh ;
 }
 
-.laris__container :is(.section__header, .section__subheader, .view__all) {
+.laris__container :is(.section__header, .section__subheader, .section__description, .view__all) {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -706,7 +803,7 @@ nav {
   margin-top: 1vh ;
 }
 
-.blog__container :is(.section__header, .section__subheader, .view__all) {
+.blog__container :is(.section__header, .section__subheader, .section__description, .view__all) {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
@@ -1013,7 +1110,7 @@ nav {
 }
 
 .blog_populer_container {
-  padding: 2rem 1rem 3rem;
+  padding: 2rem 1rem 2rem;
 }
 
 .blog_card_populer {
@@ -1104,6 +1201,7 @@ nav {
 
 .filter_pill h6 {
   font-size: .8rem;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -1116,6 +1214,7 @@ nav {
 
 .filter_sort_container h6 {
   font-size: .85rem;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -1136,7 +1235,7 @@ nav {
 
 .input_pencarian_blog input {
   width: 100%;
-  padding: 10px 10px 10px 40px;
+  padding: 13px 10px 13px 40px;
   font-size: 16px;
   border: 1px solid #ccc;
   border-radius: var(--border-radius);
@@ -1245,6 +1344,341 @@ nav {
 #blog_halaman .blog_now:hover {
   color: var(--extra-light);
   background-color: var(--primary-color);
+}
+
+
+/*=============================================================================================================================*\
+  #HALAMAN MASUK ATAU DAFTAR
+\*=============================================================================================================================*/
+
+.masuk_daftar_container {
+  max-width: 600px;
+  margin-top: 5vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.perintah_masuk_daftar {
+
+}
+
+.perintah_masuk_daftar h3 {
+  font-size: 1.7rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.perintah_masuk_daftar p {
+  font-size: 1rem;
+}
+
+.input_grup {
+  position: relative;
+  margin: 20px 0 10px 0;
+}
+
+.input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+.input_grup input:focus~label,
+.input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white);
+}
+
+.tambahan_bantuan {
+}
+
+.tambahan_bantuan p {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tombol_lanjutkan {
+  margin-top: 30px;
+  text-align: end;
+}
+
+/*=============================================================================================================================*\
+  #HALAMAN DAFTAR
+\*=============================================================================================================================*/
+
+.daftar_container {
+  max-width: 600px;
+  margin-top: 5vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.perintah_daftar h3 {
+  font-size: 1.7rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.perintah_daftar p {
+  font-size: 1rem;
+}
+
+.perintah_daftar h6 {
+  cursor: pointer;
+  color: blue;
+  font-weight: 400;
+  font-size: .95rem;
+  text-decoration: underline;
+}
+
+.bagi_bagi {
+  display: flex;
+  gap: .8rem;
+  margin: 0;
+}
+
+.bagi_bagi .input_grup {
+  position: relative;
+  flex: 1;
+  margin: 10px 0;
+}
+
+.bagi_bagi .input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.bagi_bagi .input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+.bagi_bagi .input_grup input:focus~label,
+.bagi_bagi .input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white);
+}
+
+/* Input check */
+
+.input-check {
+  display: flex;
+  justify-content: start;
+  align-items: center; 
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 100%;
+}
+
+.input-check input[type="checkbox"] {
+  transform: scale(1.5); 
+  margin-right: 10px; 
+}
+
+.input-check label {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
+
+
+.tombol_daftar {
+  margin-top: 30px;
+  justify-content: end;
+}
+
+
+/*=============================================================================================================================*\
+  #HALAMAN DETAIL PRODUK
+\*=============================================================================================================================*/
+
+.detail_produk_container {
+  display: flex;
+  gap: 5px;
+}
+
+.gambar_detail_produk_container {
+  
+}
+
+.gambar_detail_produk_container img {
+  position: sticky;
+  top: 20px;
+  max-height: 500px;
+  border-radius: 10px;
+}
+
+.isi_detail_produk_container {
+  padding-right: 70px ;
+}
+
+.detail_nama_produk {
+  margin-top: 20px;
+}
+
+.detail_nama_produk h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.detail_kategori_produk {
+  margin-top: 0px;
+}
+
+.detail_kategori_produk h5 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.detail_harga_produk {
+  margin-top: 12px;
+  display: flex;
+  gap: 20px;
+}
+
+.detail_harga_produk .harga_asli h3 {
+  font-weight: bold;
+  text-decoration: line-through;
+  font-size: 1rem;
+}
+
+.detail_harga_produk .harga_diskon h3 {
+  font-weight: bold;
+  color: red;
+  font-size: 1rem;
+}
+
+.detail_harga_produk .pengurangan_diskon h3 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.detail_sukai {
+  margin-top: 25px;
+}
+
+.detail_sukai .wish-btn {
+  padding: 10px 13px;
+  border: 1px solid var(--primary-color-dark);
+  font-size: 1rem;
+  color: var(--text-dark);
+  background-color: transparent;
+  border-radius: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.detail_sukai .wish-btn i {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.detail_stok {
+  margin-top: 15px;
+}
+
+.detail_stok h5 {
+  
+}
+
+.detail_belanja {
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.detail_belanja .tambah_kurang_produk {
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  border-radius: 18px;
+  gap: 30px;
+  background-color: var(--container-color);
+}
+
+.detail_belanja .tambah_kurang_produk .kurang h3,
+.detail_belanja .tambah_kurang_produk .tambah h3{
+  font-weight: 500;
+}
+
+.detail_belanja .tambah_kurang_produk .jumlah h3 {
+  font-weight: 500;
+}
+
+
+
+.detail_belanja .belanja-btn {
+  padding: 13px;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+.detail_deskripsi {
+  margin-top: 30px;
+}
+
+.detail_deskripsi h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.detail_spesifikasi {
+  margin-top: 10px;
+}
+
+.detail_spesifikasi h6 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.spesifikasi_list {
+  list-style-type: disc; 
+  padding-left: 20px; 
+  margin-top: 5px;
+}
+
+.spesifikasi_list li {
+  margin-bottom: 8px; /* Jarak item */
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 
