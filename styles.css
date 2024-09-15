@@ -266,7 +266,11 @@ nav {
   padding-right: 20px;
 }
 
-.nav__logo a {
+.nav__logo img {
+  width: 180px;
+}
+
+/* .nav__logo a {
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--primary-color);
@@ -278,7 +282,7 @@ nav {
   color: var(--white);
   background-color: var(--primary-color);
   margin-right: 5px;
-}
+} */
 
 .nav__search {
   position: relative;
@@ -718,6 +722,12 @@ nav {
   grid-template-columns: repeat(1, 1fr);
   gap: 2rem;
   margin: 4rem 0;
+}
+
+.laris__card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block; /* Membuat seluruh card sebagai area klik */
 }
 
 .laris__card {
@@ -1420,6 +1430,14 @@ nav {
   flex-direction: column;
 }
 
+.logo_masuk_daftar_container {
+
+}
+
+.logo_masuk_daftar_container img {
+  width: 180px;
+}
+
 .perintah_masuk_daftar {
 
 }
@@ -1489,6 +1507,14 @@ nav {
   display: flex;
   gap: 1rem;
   flex-direction: column;
+}
+
+.logo_daftar_container {
+
+}
+
+.logo_daftar_container img {
+  width: 180px;
 }
 
 .perintah_daftar h3 {
@@ -1721,6 +1747,8 @@ nav {
 
 .detail_deskripsi {
   margin-top: 30px;
+  padding-top: 20px ;
+  border-top: .5px solid #888;
 }
 
 .detail_deskripsi h6 {
@@ -1730,6 +1758,8 @@ nav {
 
 .detail_spesifikasi {
   margin-top: 10px;
+  padding-top: 20px ;
+  border-top: .5px solid #888;
 }
 
 .detail_spesifikasi h6 {
