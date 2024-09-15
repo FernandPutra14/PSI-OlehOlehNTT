@@ -42,12 +42,22 @@ function signout() {
 document.addEventListener('DOMContentLoaded', function () {
     const authorizeElements = document.querySelectorAll('.authorize');
     const notAuthorizeElements = document.querySelectorAll('.not-authorize');
+    const namePlaceholders = document.querySelectorAll('.name-placeholder');
+    const emailPlaceholders = document.querySelectorAll('.email-placeholder');
 
     const authState = getAuthState();
 
     if(authState.signin) {
         authorizeElements.forEach(function(element) {
             element.classList.add('show');
+        });
+
+        namePlaceholders.forEach(function(element) {
+            element.outerHTML = authState.identity.name;
+        });
+        
+        emailPlaceholders.forEach(function(element) {
+            element.outerHTML = authState.identity.email;
         });
     } else {
         notAuthorizeElements.forEach(function(element) {
