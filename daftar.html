@@ -27,7 +27,7 @@
             Masukkan email Anda untuk masuk atau mendaftar
         </h3>
         <p>
-          Kami telah mengirimkan kode ke Vernandputra14@gmail.com
+          Kami telah mengirimkan kode ke <span id="new-email-placeholder"></span>
         </p>
         <h6>
           Edit Email
@@ -36,25 +36,25 @@
       <div class="input_daftar_container">
         <div class="">
             <div class="input_grup">
-                <input type="email" required />
+                <input type="text" required />
                 <label for="">Kode*</label>
             </div>
         </div>
         <div class="">
             <div class="input_grup">
-                <input type="email" required />
+                <input type="text" id="nama" required />
                 <label for="">Nama*</label>
             </div>
         </div>
         <div class="">
           <div class="input_grup">
-              <input type="email" required />
+              <input type="password" required />
               <label for="">Password*</label>
           </div>
        </div>
         <div class="">
         <div class="input_grup">
-            <input type="email" required />
+            <input type="text" required />
             <label for="">Konfirmasi Password*</label>
           </div>
        </div>
@@ -85,28 +85,43 @@
           <input type="checkbox" id="privacy" required />
           <label for="privacy">Saya setuju dengan Kebijakan Privasi</label>     
         </div>
-    
-        
-        
-
-
-
-
 
         <div class="row tombol_daftar">
-            <a href="index.html" class="btn_small">
+            <button id="daftar" class="btn_small">
                 Daftar Akun
-            </a>
+            </button>
         </div>
         
       </div>
     </section>
     <!--======================================================= AKHIR DAFTAR - HOMEPAGE =======================================================-->
 
-    
-
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="auth.js"></script>
+    <script type="text/javascript">
+      const inputNama = document.getElementById('nama');
+      const btnDaftar = document.getElementById('daftar');
+      const newEmail = sessionStorage.getItem('new-email') ? sessionStorage.getItem('new-email') : "Vernandputra14@gmail.com";
+      const newEmailPlaceholder = document.querySelector('span#new-email-placeholder');
+      newEmailPlaceholder.outerHTML = newEmail;
+      
+      document.addEventListener("beforeunload", function(event) {
+        const entries = performance.getEntriesByType("navigation");
+        entries.forEach((entry) => {
+          if(entry.type !== "reload") {
+            sessionStorage.removeItem('new-email');
+          }
+        })
+      });
+      
+      btnDaftar.addEventListener('click', function(event) {
+        if(inputNama && inputNama.value) {
+          signin(inputNama.value, newEmail);
+          sessionStorage.removeItem('new-email');
+        }
+      });
+    </script>
   </body>
 </html>

@@ -25,9 +25,9 @@ function getAuthState() {
     }
 };
 
-function signin() {
-    window.sessionStorage.setItem(sessionKey.name, defaultAccount.name);
-    window.sessionStorage.setItem(sessionKey.email, defaultAccount.email);
+function signin(name, email) {
+    window.sessionStorage.setItem(sessionKey.name, name);
+    window.sessionStorage.setItem(sessionKey.email, email);
 
     window.location.replace('/index.html');
 }

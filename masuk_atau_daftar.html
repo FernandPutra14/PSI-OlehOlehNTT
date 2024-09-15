@@ -32,16 +32,16 @@
       </div>
       <div class="input_masuk_daftar_container">
         <div class="input_grup">
-            <input type="email" required />
+            <input id="email" type="email" required />
             <label for="">Email*</label>
         </div>
         <div class="tambahan_bantuan">
             <p>Butuh bantuan ?</p>
         </div>
         <div class="tombol_lanjutkan">
-            <a href="daftar.html" class="btn_small">
+            <button id="lanjut" class="btn_small">
                 Lanjutkan
-            </a>
+            </button>
         </div>
         
       </div>
@@ -53,5 +53,19 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
+    <script src="auth.js"></script>
+    <script type="text/javascript">
+      const inputEmail = document.querySelector('input#email');
+      const btnLanjut = document.querySelector('button#lanjut');
+
+      btnLanjut.addEventListener('click', function() {
+        if(inputEmail.value == defaultAccount.email) {
+          signin(defaultAccount.name, defaultAccount.email);
+        } else {
+          sessionStorage.setItem('new-email', inputEmail.value);
+          window.location.href = `daftar.html`;
+        }
+      });
+    </script>
   </body>
 </html>
