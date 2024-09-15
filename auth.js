@@ -38,3 +38,20 @@ function signout() {
 
     window.location.reload();
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+    const authorizeElements = document.querySelectorAll('.authorize');
+    const notAuthorizeElements = document.querySelectorAll('.not-authorize');
+
+    const authState = getAuthState();
+
+    if(authState.signin) {
+        authorizeElements.forEach(function(element) {
+            element.classList.add('show');
+        });
+    } else {
+        notAuthorizeElements.forEach(function(element) {
+            element.classList.add('show');
+        });
+    }
+});

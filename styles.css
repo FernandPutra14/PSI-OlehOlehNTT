@@ -136,7 +136,13 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+.authorize, .not-authorize {
+  display: none;
+}
 
+.show {
+  display: block;
+}
 
 /*-----------------------------------*\
   #NAVBAR
