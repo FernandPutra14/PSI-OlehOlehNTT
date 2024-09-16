@@ -33,7 +33,7 @@
           Edit Email
       </h6>
       </div>
-      <div class="input_daftar_container">
+      <form id="daftar" class="input_daftar_container">
         <div class="">
             <div class="input_grup">
                 <input type="text" required />
@@ -54,7 +54,7 @@
        </div>
         <div class="">
         <div class="input_grup">
-            <input type="text" required />
+            <input type="password" required />
             <label for="">Konfirmasi Password*</label>
           </div>
        </div>
@@ -66,7 +66,7 @@
         </div>
         <div class="bagi_bagi">
             <div class="input_grup">
-                <input type="email" required />
+                <input type="text" required />
                 <label for="">Email*</label>
             </div>
 
@@ -87,39 +87,32 @@
         </div>
 
         <div class="row tombol_daftar">
-            <button id="daftar" class="btn_small">
+            <button type="submit" class="btn_small">
                 Daftar Akun
             </button>
         </div>
         
-      </div>
+      </form>
     </section>
     <!--======================================================= AKHIR DAFTAR - HOMEPAGE =======================================================-->
 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="main.js"></script>
-    <script src="auth.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/auth.js"></script>
     <script type="text/javascript">
       const inputNama = document.getElementById('nama');
-      const btnDaftar = document.getElementById('daftar');
-      const newEmail = sessionStorage.getItem('new-email') ? sessionStorage.getItem('new-email') : "Vernandputra14@gmail.com";
+      const form = document.querySelector('form#daftar');
+      const queryParam = new URLSearchParams(window.location.search);      
+      const newEmail = queryParam.get('email') ? queryParam.get('email') : "Vernandputra14@gmail.com";
       const newEmailPlaceholder = document.querySelector('span#new-email-placeholder');
       newEmailPlaceholder.outerHTML = newEmail;
       
-      document.addEventListener("beforeunload", function(event) {
-        const entries = performance.getEntriesByType("navigation");
-        entries.forEach((entry) => {
-          if(entry.type !== "reload") {
-            sessionStorage.removeItem('new-email');
-          }
-        })
-      });
-      
-      btnDaftar.addEventListener('click', function(event) {
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
         if(inputNama && inputNama.value) {
           signin(new Account(inputNama.value, newEmail, defaultAccount.alamat));
-          sessionStorage.removeItem('new-email');
         }
       });
     </script>
