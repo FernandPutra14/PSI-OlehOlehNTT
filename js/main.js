@@ -61,7 +61,6 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-
 document.querySelectorAll('.sukai').forEach(function(icon) {
     icon.addEventListener('mouseover', function() {
       this.classList.replace('ri-heart-line', 'ri-heart-fill');
@@ -79,7 +78,6 @@ document.querySelectorAll('.sukai').forEach(function(icon) {
       this.classList.replace('ri-shopping-cart-fill', 'ri-shopping-cart-2-line');
     });
   });
-
 
   document.querySelectorAll('.btn-produk-none').forEach(button => {
     button.addEventListener('click', function(event) {
@@ -107,5 +105,3 @@ document.querySelectorAll('.sukai').forEach(function(icon) {
     //Tunjukan Content yang terpilih
     document.getElementById(contentId).style.display = 'block';
 }
-
-  

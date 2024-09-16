@@ -297,6 +297,10 @@ body {
   display: block;
 }
 
+span#redirectLogin {
+  display: none;
+}
+
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/
@@ -381,6 +385,7 @@ nav {
 
 .nav__auth button {
   background: none;
+  cursor: pointer;
   border: none;
   font-size: .8rem;
   font-weight: 500;

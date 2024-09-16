@@ -63,19 +63,22 @@ function signout() {
     window.location.reload();
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+function authorizeContent(authState) {
     const authorizeElements = document.querySelectorAll('.authorize');
     const notAuthorizeElements = document.querySelectorAll('.not-authorize');
+
+    if(authState.signin) {
+        authorizeElements.forEach((e) => e.classList.add('show'));
+    } else {
+        notAuthorizeElements.forEach((e) => e.classList.add('show'));
+    }
+}
+
+function accountPlaceholders(authState) {
     const namePlaceholders = document.querySelectorAll('.name-placeholder');
     const emailPlaceholders = document.querySelectorAll('.email-placeholder');
 
-    const authState = getAuthState();
-
     if(authState.signin) {
-        authorizeElements.forEach(function(element) {
-            element.classList.add('show');
-        });
-
         namePlaceholders.forEach(function(element) {
             element.outerHTML = authState.identity.name;
         });
@@ -83,9 +86,38 @@ document.addEventListener('DOMContentLoaded', function () {
         emailPlaceholders.forEach(function(element) {
             element.outerHTML = authState.identity.email;
         });
-    } else {
-        notAuthorizeElements.forEach(function(element) {
-            element.classList.add('show');
-        });
     }
+}
+
+function redirect(authState) {
+    const redirectElement = document.querySelector("span#redirectLogin");
+
+    if(redirectElement) {
+        const dataWhen = redirectElement.getAttribute("data-when");
+        const dataTo = redirectElement.getAttribute("data-to");
+
+        if(!dataTo || !dataWhen) return;
+
+        if(dataWhen == "signin") {
+            if(authState.signin) {
+                window.location.href = dataTo;
+                return;
+            }
+        } 
+
+        if(dataWhen == "signout") {
+            if(!authState.signin) {
+                window.location.href = dataTo;
+                return;
+            }
+        }
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const authState = getAuthState();
+
+    authorizeContent(authState);
+    accountPlaceholders(authState);
+    redirect(authState);
 });
