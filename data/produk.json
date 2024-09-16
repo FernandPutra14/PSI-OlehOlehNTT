@@ -1,0 +1,21 @@
+[
+    {
+        "nama" : "Se'i Babi Asap",
+        "kategori" : "makanan",
+        "harga" : "25000",
+        "keterangan" : "Se'i babi khas NTT",
+        "spesifikasi" : null
+    },
+    {
+        "nama" : "Tenun Ikat Sumba",
+        "kategori" : "Kain Tenun",
+        "harga" : "650000",
+        "keterangan" : "Tenun ikat khas Sumba yang dibuat dengan teknik tradisional dan motif etnik yang unik, cocok sebagai pakaian adat koleksi pribadi",
+        "spesifikasi" : {
+            "Bahan" : "Katun Alami",
+            "Warna" : "Kombinasi merah, hitam, kuning",
+            "Ukuran" : "200 x 60 cm",
+            "Cara Perawatan" : "Cuci dengan air dingin"
+        }
+    }
+]

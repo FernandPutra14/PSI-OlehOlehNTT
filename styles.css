@@ -357,6 +357,15 @@ nav {
   text-decoration: none;
 }
 
+.nav__auth button {
+  background: none;
+  border: none;
+  font-size: .8rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  text-decoration: none;
+}
+
 .nav__auth span {
   color: #ccc;
 }
