@@ -84,6 +84,23 @@
   background-color: var(--primary-color-dark) !important;
 }
 
+.btn_langsing {
+  padding: 12px 20px;
+  width: 30%;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn_langsing:hover {
+  background-color: var(--primary-color-dark) !important;
+}
+
 a.btn {
   color: var(--white) !important;
   padding: calc(0.75rem + 2px) 1.5rem;
@@ -1508,12 +1525,12 @@ nav {
   font-size: 1rem;
 }
 
-.input_grup {
+#masuk_atau_daftar .input_grup {
   position: relative;
-  margin: 20px 0 10px 0;
+  margin: 0;
 }
 
-.input_grup label {
+#masuk_atau_daftar .input_grup label {
   position: absolute;
   top: 50%;
   left: 10px;
@@ -1524,7 +1541,7 @@ nav {
   transition: .5s;
 }
 
-.input_grup input {
+#masuk_atau_daftar .input_grup input {
   width: 100%;
   padding: 15px;
   font-size: 16px;
@@ -1532,8 +1549,46 @@ nav {
   border-radius: var(--border-radius);
 }
 
-.input_grup input:focus~label,
-.input_grup input:valid~label {
+#masuk_atau_daftar .input_grup input:focus~label,
+#masuk_atau_daftar .input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white);
+}
+
+#masuk_atau_daftar .bagi_bagi {
+  display: flex;
+  gap: .8rem;
+  margin: 0;
+}
+
+#masuk_atau_daftar .bagi_bagi .input_grup {
+  position: relative;
+  flex: 1;
+  margin: 10px 0;
+}
+
+#masuk_atau_daftar .bagi_bagi .input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#masuk_atau_daftar .bagi_bagi .input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+#masuk_atau_daftar .bagi_bagi .input_grup input:focus~label,
+#masuk_atau_daftar .bagi_bagi .input_grup input:valid~label {
   top: 0;
   font-size: 12px;
   background: var(--white);
@@ -1591,19 +1646,12 @@ nav {
   text-decoration: underline;
 }
 
-.bagi_bagi {
-  display: flex;
-  gap: .8rem;
-  margin: 0;
-}
-
-.bagi_bagi .input_grup {
+#daftar .input_grup {
   position: relative;
-  flex: 1;
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
-.bagi_bagi .input_grup label {
+#daftar .input_grup label {
   position: absolute;
   top: 50%;
   left: 10px;
@@ -1614,7 +1662,7 @@ nav {
   transition: .5s;
 }
 
-.bagi_bagi .input_grup input {
+#daftar .input_grup input {
   width: 100%;
   padding: 15px;
   font-size: 16px;
@@ -1622,8 +1670,46 @@ nav {
   border-radius: var(--border-radius);
 }
 
-.bagi_bagi .input_grup input:focus~label,
-.bagi_bagi .input_grup input:valid~label {
+#daftar .input_grup input:focus~label,
+#daftar .input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white);
+}
+
+#daftar .bagi_bagi {
+  display: flex;
+  gap: .8rem;
+  margin: 0;
+}
+
+#daftar .bagi_bagi .input_grup {
+  position: relative;
+  flex: 1;
+  margin: 10px 0;
+}
+
+#daftar .bagi_bagi .input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#daftar .bagi_bagi .input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+#daftar .bagi_bagi .input_grup input:focus~label,
+#daftar .bagi_bagi .input_grup input:valid~label {
   top: 0;
   font-size: 12px;
   background: var(--white);
@@ -2066,12 +2152,12 @@ nav {
 
 
 .list_judul_container {
-  background-color: var(--container-color);
+  
 }
 
 
 .list_judul_container ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 } 
 
 .list_judul_container ul li a {
@@ -2080,7 +2166,6 @@ nav {
 } 
 
 .content_berdasarkan_list {
-  background-color: red;
 }
 
 #content1 {
@@ -2089,6 +2174,93 @@ nav {
 
 .content {
   display: none;
+}
+
+.judul_informasi_pribadi {
+  margin-bottom: 10px;
+}
+
+.judul_informasi_pribadi h3{
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.judul_informasi {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.judul_informasi h3{
+  font-size: .9rem;
+  text-transform: uppercase;
+}
+
+#profil .input_grup {
+  position: relative;
+  margin: 10px 0px 10px;
+}
+
+#profil .input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#profil .input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+#profil .input_grup input:focus~label,
+#profil .input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white);
+}
+
+#profil .bagi_bagi {
+  display: flex;
+  gap: .8rem;
+  margin: 0;
+}
+
+#profil .bagi_bagi .input_grup {
+  position: relative;
+  flex: 1;
+}
+
+#profil .bagi_bagi .input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#profil .bagi_bagi .input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+#profil .bagi_bagi .input_grup input:focus~label,
+#profil .bagi_bagi .input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white);
 }
 
 

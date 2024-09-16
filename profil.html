@@ -68,7 +68,7 @@
     
 
     <!--======================================================= PROFIL - HOMEPAGE =======================================================-->
-    <section class="section__container profil_container">
+    <section class="section__container profil_container" id="profil">
         <div class="col-3 list_judul_container">
             <ul>
                 <li><a href="#" onclick="showContent('content1')">Akun Saya</a></li>
@@ -89,60 +89,61 @@
                     <div class="">
                         <div class="input_grup">
                             <input type="text" required />
-                            <label for="">Kode*</label>
+                            <label for="">Nama*</label>
                         </div>
                     </div>
                     <div class="">
                         <div class="input_grup">
                             <input type="text" id="nama" required />
-                            <label for="">Nama*</label>
+                            <label for="">No Telp*</label>
                         </div>
                     </div>
                     <div class="">
-                      <div class="input_grup">
-                          <input type="password" required />
-                          <label for="">Password*</label>
+                      <div class="judul_informasi">
+                          <h3>Tanggal Lahir</h3>
                       </div>
-                   </div>
-                    <div class="">
-                    <div class="input_grup">
-                        <input type="text" required />
-                        <label for="">Konfirmasi Password*</label>
-                      </div>
-                   </div>
-                    <div class="">
                       <div class="input_grup">
-                      <input type="date" required />
-                      <label for=""></label>
+                        <input type="date" required />
+                        <label for=""></label>
                       </div>
                     </div>
-                    <div class="bagi_bagi">
+                    <div class="">
+                      <div class="judul_informasi">
+                        <h3>Email</h3>
+                      </div>
+                      <div class="input_grup">
+                      <input type="text" required />
+                      <label for="">email</label>
+                      </div>
+                      <div class="button_ganti_email">
+                        <button class="btn_langsing">Simpan Perubahan</button>
+                      </div>
+                    </div>
+
+
+                    <div class="">
+                      <div class="judul_informasi">
+                        <h3>Password</h3>
+                      </div>
+                      
+                      <div class="bagi_bagi">
                         <div class="input_grup">
                             <input type="email" required />
-                            <label for="">Email*</label>
+                            <label for="">Password lama*</label>
                         </div>
             
                         <div class="input_grup">
                             <input type="email" required />
-                            <label for="">Email*</label>
+                            <label for="">Password baru*</label>
                         </div>
                     </div>
-            
-                    <div class="input-check">        
-                      <input type="checkbox" id="agree" required />
-                      <label for="agree">Saya setuju dengan Syarat dan Ketentuan yang berlaku</label>     
+
+                      <div class="button_ganti_email">
+                        <button class="btn_langsing">Ganti Password</button>
+                      </div>
                     </div>
-                  
-                    <div class="input-check">        
-                      <input type="checkbox" id="privacy" required />
-                      <label for="privacy">Saya setuju dengan Kebijakan Privasi</label>     
-                    </div>
-            
-                    <div class="row tombol_daftar">
-                        <button id="daftar" class="btn_small">
-                            Daftar Akun
-                        </button>
-                    </div>
+                    
+                           
                     
                   </div>
             </div>
