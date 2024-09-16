@@ -95,4 +95,17 @@ document.querySelectorAll('.sukai').forEach(function(icon) {
     });
   });
   
+
+
+  function showContent(contentId) {
+    //Sembunyikan semua content
+    var contents = document.getElementsByClassName('content');
+    for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = 'none';
+    }
+    
+    //Tunjukan Content yang terpilih
+    document.getElementById(contentId).style.display = 'block';
+}
+
   
