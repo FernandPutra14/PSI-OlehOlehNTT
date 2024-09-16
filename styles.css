@@ -280,6 +280,10 @@ body {
   display: block;
 }
 
+span#redirectLogin {
+  display: none;
+}
+
 /*-----------------------------------*\
   #NAVBAR
 \*-----------------------------------*/

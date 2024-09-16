@@ -1,304 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--============= ICON - REMIXICON ===========-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--============= SLIDER - SWIPER.JS ===========-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+  <!--============= ICON - REMIXICON ===========-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!--============= CSS - CSS GLOBAL ===========-->
-    <link rel="stylesheet" href="styles.css" />
-    <title>E-Commerce | oleholehNTT</title>
-  </head>
-  <body>
+  <!--============= SLIDER - SWIPER.JS ===========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-     <!--======================================================= NAVBAR =======================================================-->
-<nav>
-  <!-- Navbar Atas -->
-  <div class="nav__top">
-    <div class="container_nav_satu">
-      
-      <!-- <div class="nav__search">
+  <!--============= CSS - CSS GLOBAL ===========-->
+  <link rel="stylesheet" href="styles.css" />
+  <title>E-Commerce | oleholehNTT</title>
+</head>
+
+<body>
+
+  <span id="redirectLogin" data-when="signout" data-to="/masuk_atau_daftar.html"></span>
+
+  <!--======================================================= NAVBAR =======================================================-->
+  <nav>
+    <!-- Navbar Atas -->
+    <div class="nav__top">
+      <div class="container_nav_satu">
+
+        <!-- <div class="nav__search">
         <input type="text" placeholder="Cari produk...">
       </div> -->
+        
       <div class="nav__auth">
         <a href="">Bantuan</a>
-        <span>|</span>
-        <a href="masuk_atau_daftar.html" class="">Register</a>
-        <span>|</span>
-        <a href="masuk_atau_daftar.html" class="">Masuk</a>
-        <button onclick="" class="authorize">Log Out</button>
+        <span class="not-authorize">|</span>
+        <a href="masuk_atau_daftar.html" class="not-authorize">Register</a>
+        <span class="not-authorize">|</span>
+        <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
+        <span class="authorize">|</span>
+        <p class="authorize">
+        Hai, <span class="name-placeholder"></span>
+        </p>
+        <span class="authorize">|</span>
+        <button onclick="signout()" class="authorize">Log Out</button>
+      </div>
+
       </div>
     </div>
-  </div>
 
-  <!-- Navbar Bawah -->
-  <div class="nav__bottom">
-    <div class="container_nav_dua">
-      <div class="nav__logo">
-        <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
-      </div>
-      <ul class="nav__links">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="produk.html">Produk</a></li>
-        <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
-        <li><a href="">Tentang Kami</a></li>
-        <li><a href="">Kontak</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-      <div class="nav__icons">
-        <div class="nav__search">
-          <i class="ri-search-line"></i>
-          <input type="text" placeholder="Cari produk...">
-      </div>      
-        <a href=""><i class="ri-heart-line"></i></a>
-        <a class="user" href=""><i class="ri-user-line"></i></a>
-        <a href="keranjang.html"><i class="ri-shopping-cart-line"></i></a>
-      </div>
-    </div>
-  </div>
-</nav>
-<!--======================================================= AKHIR NAVBAR =======================================================-->
-
-
-    
-
-    <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
-    <section class="section__container keranjang_container">
-        <div class="col-7 daftar_produk_keranjang">
-            <div class="judul_daftar_produk_keranjang">
-                <h3>Keranjang</h3>
-                <h6>1 Barang</h6>
-            </div>
-            <div class="daftar_produk">
-
-                <!-- Produk Keranjang -->
-                <div class="perproduk_keranjang">
-                    <div class="col-4 gambar_produk_keranjang">
-                        <img src="assets/sei_makanan.png" />
-                    </div>
-
-                    <div class="col-8 deskripsi_produk_keranjang">
-                        <div class="deskripsi_atas">
-                            <div class="nama_produk_keranjang">
-                                <h3>Kain Tenun Ende</h3>
-                            </div>
-                            <div class="kategori_produk_keranjang">
-                                <h5>Kain Tenun</h5>
-                            </div>
-                            <div class="stok_produk_keranjang">
-                                
-                                <p>Tersedia 10</p>
-                                
-                            </div>
-                            <div class="atur_stok_harga">                           
-                                <div class="tambah_kurang_produk_keranjang">
-                                    <div class="kurang">
-                                    <h3>-</h3>
-                                    </div>
-                                    <div class="jumlah">
-                                    <h3>5</h3>
-                                    </div>
-                                    <div class="tambah">
-                                    <h3>+</h3>
-                                    </div>
-                                </div>
-                                <div class="harga_produk_keranjang">
-                                    
-                                        <h5>Rp 40.000.000</h5>
-                                                                      
-                                </div>
-                            </div>
-                            <div class="harga_diskon_keranjang">
-                                <h5>Rp 40.000.000</h5>
-                            </div>
-                        </div>
-                        <div class="deskripsi_bawah">
-                            <div class="action_produk_keranjang">
-                                <div>
-                                    <i class="ri-heart-line"></i>
-                                </div>                               
-                                <div>
-                                    <i class="ri-delete-bin-line"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produk Keranjang -->
-
-                <!-- Produk Keranjang -->
-                <div class="perproduk_keranjang">
-                    <div class="col-4 gambar_produk_keranjang">
-                        <img src="assets/sei_makanan.png" />
-                    </div>
-
-                    <div class="col-8 deskripsi_produk_keranjang">
-                        <div class="deskripsi_atas">
-                            <div class="nama_produk_keranjang">
-                                <h3>Kain Tenun Ende</h3>
-                            </div>
-                            <div class="kategori_produk_keranjang">
-                                <h5>Kain Tenun</h5>
-                            </div>
-                            <div class="stok_produk_keranjang">
-                                
-                                <p>Tersedia 10</p>
-                                
-                            </div>
-                            <div class="atur_stok_harga">                           
-                                <div class="tambah_kurang_produk_keranjang">
-                                    <div class="kurang">
-                                    <h3>-</h3>
-                                    </div>
-                                    <div class="jumlah">
-                                    <h3>5</h3>
-                                    </div>
-                                    <div class="tambah">
-                                    <h3>+</h3>
-                                    </div>
-                                </div>
-                                <div class="harga_produk_keranjang">
-                                    
-                                        <h5>Rp 40.000.000</h5>
-                                                                      
-                                </div>
-                            </div>
-                            <div class="harga_diskon_keranjang">
-                                <h5>Rp 40.000.000</h5>
-                            </div>
-                        </div>
-                        <div class="deskripsi_bawah">
-                            <div class="action_produk_keranjang">
-                                <div>
-                                    <i class="ri-heart-line"></i>
-                                </div>                               
-                                <div>
-                                    <i class="ri-delete-bin-line"></i>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Produk Keranjang -->
-
-
-            </div>
+    <!-- Navbar Bawah -->
+    <div class="nav__bottom">
+      <div class="container_nav_dua">
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
         </div>
-        <div class="col-5 total_produk_keranjang">
-            <div class="sticky_total_keranjang">
-
-            
-            <div class="judul_total_keranjang">
-                <h3>Ringkasan Pesanan:</h3>
-            </div>
-            <div class="total_ringkasan_keranjang_container">
-                <div class="jumlah_produk">
-                    <h4>Jumlah Produk</h4>
-                    <h4>2</h4>
-                </div>
-                <div class="harga_total_produk">
-                    <h4>Harga Produk</h4>
-                    <h4>Rp 50.000.000,00</h4>
-                </div>
-                <div class="biaya_pengiriman">
-                    <h4>Biaya Pengiriman</h4>
-                    <h4>Gratis</h4>
-                </div>
-                <div class="total_semua">
-                    <h4>Total<br>Termasuk Pajak</h4>
-                    <h4>Rp 50.000.000,00</h4>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
-
-    
-
-    <!--======================================================= NEWSLETTER =======================================================-->
-<section class="newsletter">
-  <div class=" newsletter__container">
-    <p class="section__subheader">Newsletter Kami</p>
-    <h2 class="section__header">Subscribe Newsletter</h2>
-    <h6 class="">SUbscribe Newsletter Kami Untuk Mendapatkan Informasi Produk Terbaru Kami. <br> 
-                Dapatkan 20% Diskon Untuk Order Pertama Setelah Subscribe</h6>
-    <div class="newsletter__grid">
-      <input type="email" placeholder="Masukkan email Anda" />
-      <button type="button">Subscribe</button>
-    </div>
-  </div>
-</section>
-<!--======================================================= AKHIR NEWSLETTER =======================================================-->
-
-
-    <!--======================================================= FOOTER =======================================================-->
-    <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <div class="footer__logo">
-            <a href="#" class="logo">             
-              <span>OlehOlehNTT</span>
-            </a>
+        <ul class="nav__links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
+          <li><a href="">Tentang Kami</a></li>
+          <li><a href="">Kontak</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="nav__icons">
+          <div class="nav__search">
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Cari produk...">
           </div>
-          <p class="section__description">
-            Pekerjaan Kami adalah Menyediakan Pengalaman Belanja Yang Nyaman
-          </p>
-          <ul class="footer__socials">
-            <li>
-              <a href="#"><i class="ri-instagram-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-twitter-fill"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Tentang Kami</h4>
-          <ul class="footer__links">
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Fitur</a></li>
-            <li><a href="#">Berita</a></li>
-            <li><a href="#">Menu</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Toko</h4>
-          <ul class="footer__links">
-            <li><a href="#">Mengapa Kami?</a></li>
-            <li><a href="#">Partner Kami</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Bantuan</h4>
-          <ul class="footer__links">
-            <li><a href="#">Pusat bantuan</a></li>
-            <li><a href="#">Umpan Balik</a></li>
-            <li><a href="#">Kontak Kami</a></li>
-            <li><a href="#">Kebijakan Pengguna</a></li>
-          </ul>
+          <a href=""><i class="ri-heart-line"></i></a>
+          <a class="user" href=""><i class="ri-user-line"></i></a>
+          <a href="keranjang.html"><i class="ri-shopping-cart-line"></i></a>
         </div>
       </div>
-      <div class="footer__bar">
-        Copyright © 2024 Tim Site22. All rights reserved.
-      </div>
-    </footer>
-    <!--======================================================= AKHIR FOOTER =======================================================-->
+    </div>
+  </nav>
+  <!--======================================================= AKHIR NAVBAR =======================================================-->
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/auth.js"></script>
-    <script src="/js/keranjang.js"></script>
-  </body>
+
+
+
+  <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
+  <section class="section__container keranjang_container">
+    <div class="col-7 daftar_produk_keranjang">
+      <div class="judul_daftar_produk_keranjang">
+        <h3>Keranjang</h3>
+        <h6>1 Barang</h6>
+      </div>
+      <div class="daftar_produk">
+
+        <!-- Produk Keranjang -->
+        <div class="perproduk_keranjang">
+          <div class="col-4 gambar_produk_keranjang">
+            <img src="assets/sei_makanan.png" />
+          </div>
+
+          <div class="col-8 deskripsi_produk_keranjang">
+            <div class="deskripsi_atas">
+              <div class="nama_produk_keranjang">
+                <h3>Kain Tenun Ende</h3>
+              </div>
+              <div class="kategori_produk_keranjang">
+                <h5>Kain Tenun</h5>
+              </div>
+              <div class="stok_produk_keranjang">
+
+                <p>Tersedia 10</p>
+
+              </div>
+              <div class="atur_stok_harga">
+                <div class="tambah_kurang_produk_keranjang">
+                  <div class="kurang">
+                    <h3>-</h3>
+                  </div>
+                  <div class="jumlah">
+                    <h3>5</h3>
+                  </div>
+                  <div class="tambah">
+                    <h3>+</h3>
+                  </div>
+                </div>
+                <div class="harga_produk_keranjang">
+
+                  <h5>Rp 40.000.000</h5>
+
+                </div>
+              </div>
+              <div class="harga_diskon_keranjang">
+                <h5>Rp 40.000.000</h5>
+              </div>
+            </div>
+            <div class="deskripsi_bawah">
+              <div class="action_produk_keranjang">
+                <div>
+                  <i class="ri-heart-line"></i>
+                </div>
+                <div>
+                  <i class="ri-delete-bin-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Produk Keranjang -->
+
+        <!-- Produk Keranjang -->
+        <div class="perproduk_keranjang">
+          <div class="col-4 gambar_produk_keranjang">
+            <img src="assets/sei_makanan.png" />
+          </div>
+
+          <div class="col-8 deskripsi_produk_keranjang">
+            <div class="deskripsi_atas">
+              <div class="nama_produk_keranjang">
+                <h3>Kain Tenun Ende</h3>
+              </div>
+              <div class="kategori_produk_keranjang">
+                <h5>Kain Tenun</h5>
+              </div>
+              <div class="stok_produk_keranjang">
+
+                <p>Tersedia 10</p>
+
+              </div>
+              <div class="atur_stok_harga">
+                <div class="tambah_kurang_produk_keranjang">
+                  <div class="kurang">
+                    <h3>-</h3>
+                  </div>
+                  <div class="jumlah">
+                    <h3>5</h3>
+                  </div>
+                  <div class="tambah">
+                    <h3>+</h3>
+                  </div>
+                </div>
+                <div class="harga_produk_keranjang">
+
+                  <h5>Rp 40.000.000</h5>
+
+                </div>
+              </div>
+              <div class="harga_diskon_keranjang">
+                <h5>Rp 40.000.000</h5>
+              </div>
+            </div>
+            <div class="deskripsi_bawah">
+              <div class="action_produk_keranjang">
+                <div>
+                  <i class="ri-heart-line"></i>
+                </div>
+                <div>
+                  <i class="ri-delete-bin-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Produk Keranjang -->
+
+
+      </div>
+    </div>
+    <div class="col-5 total_produk_keranjang">
+      <div class="sticky_total_keranjang">
+
+
+        <div class="judul_total_keranjang">
+          <h3>Ringkasan Pesanan:</h3>
+        </div>
+        <div class="total_ringkasan_keranjang_container">
+          <div class="jumlah_produk">
+            <h4>Jumlah Produk</h4>
+            <h4>2</h4>
+          </div>
+          <div class="harga_total_produk">
+            <h4>Harga Produk</h4>
+            <h4>Rp 50.000.000,00</h4>
+          </div>
+          <div class="biaya_pengiriman">
+            <h4>Biaya Pengiriman</h4>
+            <h4>Gratis</h4>
+          </div>
+          <div class="total_semua">
+            <h4>Total<br>Termasuk Pajak</h4>
+            <h4>Rp 50.000.000,00</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
+
+
+
+  <!--======================================================= NEWSLETTER =======================================================-->
+  <section class="newsletter">
+    <div class=" newsletter__container">
+      <p class="section__subheader">Newsletter Kami</p>
+      <h2 class="section__header">Subscribe Newsletter</h2>
+      <h6 class="">SUbscribe Newsletter Kami Untuk Mendapatkan Informasi Produk Terbaru Kami. <br>
+        Dapatkan 20% Diskon Untuk Order Pertama Setelah Subscribe</h6>
+      <div class="newsletter__grid">
+        <input type="email" placeholder="Masukkan email Anda" />
+        <button type="button">Subscribe</button>
+      </div>
+    </div>
+  </section>
+  <!--======================================================= AKHIR NEWSLETTER =======================================================-->
+
+
+  <!--======================================================= FOOTER =======================================================-->
+  <footer>
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#" class="logo">
+            <span>OlehOlehNTT</span>
+          </a>
+        </div>
+        <p class="section__description">
+          Pekerjaan Kami adalah Menyediakan Pengalaman Belanja Yang Nyaman
+        </p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Tentang Kami</h4>
+        <ul class="footer__links">
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Fitur</a></li>
+          <li><a href="#">Berita</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Toko</h4>
+        <ul class="footer__links">
+          <li><a href="#">Mengapa Kami?</a></li>
+          <li><a href="#">Partner Kami</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Bantuan</h4>
+        <ul class="footer__links">
+          <li><a href="#">Pusat bantuan</a></li>
+          <li><a href="#">Umpan Balik</a></li>
+          <li><a href="#">Kontak Kami</a></li>
+          <li><a href="#">Kebijakan Pengguna</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Tim Site22. All rights reserved.
+    </div>
+  </footer>
+  <!--======================================================= AKHIR FOOTER =======================================================-->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/keranjang.js"></script>
+</body>
+
 </html>
