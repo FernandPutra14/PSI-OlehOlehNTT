@@ -1,40 +1,64 @@
-const sessionKey = {
-    name: 'auth_name',
-    email: 'auth_email',
-};
+const authSessionKey = "auth";
 
-const defaultAccount = {
-    name: 'Tim Ziro',
-    email: 'timziro@gmail.com',
+class Alamat {
+    constructor(rt, rw, jalan, kelurahanDesa, kecamatan, kotaKabupatan, provinsi) {
+        this.rt = rt;
+        this.rw = rw;
+        this.jalan = jalan;
+        this.kelurahanDesa = kelurahanDesa;
+        this.kecamatan = kecamatan;
+        this.kotaKabupatan = kotaKabupatan;
+        this.provinsi = provinsi;
+    }
 }
 
-function getAuthState() {
-    const name = window.sessionStorage.getItem(sessionKey.name);
-    const email = window.sessionStorage.getItem(sessionKey.email);
+class Account {
+    constructor(name, email, alamat) {
+        this.name = name;
+        this.email = email;
+        this.alamat = alamat;
+    }
+}
 
-    if(!name || !email) {
+const defaultAccount = new Account(
+    "Tim Ziro",
+    "timziro@gmail.com",
+    new Alamat(
+        1,
+        2,
+        "Jln. Jalan",
+        "Kelurahan 1",
+        "Kecamatan 1",
+        "Kota Kupang",
+        "Nusa Tenggara Timur"
+    )
+);
+
+function getAuthState() {
+    const account = window.sessionStorage.getItem(authSessionKey);
+
+    if(!account) {
         return { signin : false };
     }
 
     return {
         signin : true,
-        identity : {
-            name,
-            email
-        }
+        identity: JSON.parse(account)
     }
 };
 
-function signin(name, email) {
-    window.sessionStorage.setItem(sessionKey.name, name);
-    window.sessionStorage.setItem(sessionKey.email, email);
+function signin(account) {
+    if(!account) {
+        window.sessionStorage.setItem(authSessionKey, JSON.stringify(defaultAccount));
+    } else {
+        window.sessionStorage.setItem(authSessionKey, JSON.stringify(account));
+    }
 
     window.location.replace('/index.html');
 }
 
 function signout() {
-    window.sessionStorage.removeItem(sessionKey.name);
-    window.sessionStorage.removeItem(sessionKey.email);
+    window.sessionStorage.removeItem(authSessionKey);
 
     window.location.reload();
 }

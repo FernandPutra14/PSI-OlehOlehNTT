@@ -60,7 +60,7 @@
 
       btnLanjut.addEventListener('click', function() {
         if(inputEmail.value == defaultAccount.email) {
-          signin(defaultAccount.name, defaultAccount.email);
+          signin(null);
         } else {
           sessionStorage.setItem('new-email', inputEmail.value);
           window.location.href = `daftar.html`;

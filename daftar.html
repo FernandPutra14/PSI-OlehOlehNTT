@@ -118,7 +118,7 @@
       
       btnDaftar.addEventListener('click', function(event) {
         if(inputNama && inputNama.value) {
-          signin(inputNama.value, newEmail);
+          signin(new Account(inputNama.value, newEmail, defaultAccount.alamat));
           sessionStorage.removeItem('new-email');
         }
       });
