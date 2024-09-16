@@ -79,3 +79,20 @@ document.querySelectorAll('.sukai').forEach(function(icon) {
       this.classList.replace('ri-shopping-cart-fill', 'ri-shopping-cart-2-line');
     });
   });
+
+
+  document.querySelectorAll('.btn-produk-none').forEach(button => {
+    button.addEventListener('click', function(event) {
+      event.preventDefault();
+      event.stopPropagation(); //Agar Anchor Tidak Ter-trigger
+  
+      
+      if (this.classList.contains('btn-sukai')) {
+        alert('Ditambahkan ke Favorit!');
+      } else if (this.classList.contains('btn-keranjangi')) {
+        alert('Ditambahkan ke Keranjang!');
+      }
+    });
+  });
+  
+  

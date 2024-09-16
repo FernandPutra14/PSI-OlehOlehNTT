@@ -63,6 +63,11 @@
   line-height: 1.5rem;
 }
 
+.btn-produk-none {
+  background: none;
+  border: none;
+}
+
 .btn {
   padding: calc(0.75rem + 2px) 1.5rem;
   outline: none;
@@ -825,11 +830,13 @@ nav {
 
 .sukai, .keranjangi {
   font-size: 20px;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
 
 .action-produk-card .sukai:hover {
+  pointer-events: auto;
   content: "\e600";
   font-family: "remixicon";
 }
@@ -837,6 +844,11 @@ nav {
 .action-produk-card .keranjangi:hover {
   content: "\e651";
   font-family: "remixicon";
+}
+
+.btn_produk {
+  background: none;
+  border: none;
 }
 
 
@@ -1822,6 +1834,226 @@ nav {
   line-height: 1.4;
 }
 
+/*=============================================================================================================================*\
+  #HALAMAN KERANJANG
+\*=============================================================================================================================*/
+
+.keranjang_container {
+  display: flex;
+  gap: 5px;
+}
+
+.daftar_produk_keranjang {
+  
+}
+
+.daftar_produk_keranjang .judul_daftar_produk_keranjang {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #999;
+}
+
+.daftar_produk_keranjang .judul_daftar_produk_keranjang h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.daftar_produk_keranjang .judul_daftar_produk_keranjang h6 {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.daftar_produk {
+
+}
+
+.daftar_produk .perproduk_keranjang {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px dotted #999;
+}
+
+.perproduk_keranjang .gambar_produk_keranjang {
+  padding-left: 0;
+}
+
+.perproduk_keranjang .gambar_produk_keranjang img {
+  border-radius: 10px;
+}
+
+.deskripsi_produk_keranjang {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+.deskripsi_atas {
+
+}
+
+.deskripsi_atas .nama_produk_keranjang h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.kategori_produk_keranjang {
+  margin-bottom: 5px;
+}
+
+.kategori_produk_keranjang h5 {
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.stok_produk_keranjang {
+  margin-bottom: 10px;
+}
+
+.stok_produk_keranjang p {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+
+.atur_stok_harga {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deskripsi_atas .tambah_kurang_produk_keranjang {
+  display: inline-flex;
+  padding: 0 20px;
+  align-items: center;
+  border-radius: 18px;
+  gap: 30px;
+  background-color: var(--container-color);
+}
+
+.deskripsi_atas .tambah_kurang_produk_keranjang .kurang h3,
+.deskripsi_atas .tambah_kurang_produk_keranjang .tambah h3{
+  font-weight: 500;
+}
+
+.deskripsi_atas .tambah_kurang_produk_keranjang .kurang,
+.deskripsi_atas .tambah_kurang_produk_keranjang .tambah{
+  cursor: pointer;
+}
+
+.deskripsi_atas .tambah_kurang_produk_keranjang .jumlah h3 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.atur_stok_harga .harga_produk_keranjang h5 {
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+.harga_diskon_keranjang {
+  display: flex;
+  justify-content: end;
+}
+
+.harga_diskon_keranjang h5 {
+  font-size: 1rem;
+  color: red;
+}
+
+.deskripsi_bawah {
+
+}
+
+.deskripsi_bawah .action_produk_keranjang {
+  display: flex;
+  gap: 7px;
+}
+
+.action_produk_keranjang i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+.total_produk_keranjang {
+  position: sticky;
+  top: 10px;
+  padding: 20px;
+}
+
+.sticky_total_keranjang {
+  top: 10px;
+  position: sticky;
+}
+
+.judul_total_keranjang h3 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+
+.total_ringkasan_keranjang_container {
+}
+
+.total_ringkasan_keranjang_container .jumlah_produk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.total_ringkasan_keranjang_container .jumlah_produk h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.total_ringkasan_keranjang_container .harga_total_produk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.total_ringkasan_keranjang_container .harga_total_produk h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.total_ringkasan_keranjang_container .biaya_pengiriman {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.total_ringkasan_keranjang_container .biaya_pengiriman h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.total_ringkasan_keranjang_container .total_semua {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.total_ringkasan_keranjang_container .total_semua h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 
 /*=============================================================================================================================*\
