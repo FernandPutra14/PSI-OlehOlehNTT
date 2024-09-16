@@ -1,4 +1,5 @@
 const keranjangSessionKey = "keranjang-session-key";
+const eventListener = [];
 
 class KeranjangItem {
     constructor(produk, jumlah) {
@@ -61,11 +62,31 @@ function addItem(produk, jumlah) {
     window.location.reload();
 }
 
-function clearKeranjang() {
-    window.sessionStorage.removeItem(keranjangSessionKey);
+function removeItem(produk) {
+    const keranjang = getKeranjang();
+    const newKeranjang = keranjang.filter((e) => e.produk.nama !== produk.nama);
+
+    saveKeranjang(newKeranjang);
     window.location.reload();
 }
 
+function clearKeranjang() {
+    window.sessionStorage.removeItem(keranjangSessionKey);
+    onKeranjangChange();
+    window.location.reload();
+}
+
+function addEventListener(func) {
+    eventListener.push(func)
+}
+
+function onKeranjangChange() {
+    const keranjang = getKeranjang();
+
+    eventListener.forEach((e) => e(keranjang));
+}
+
 function saveKeranjang(keranjang) {
+    onKeranjangChange();
     window.sessionStorage.setItem(keranjangSessionKey, JSON.stringify(keranjang));
 }
