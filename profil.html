@@ -36,11 +36,13 @@
         <span class="not-authorize">|</span>
         <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
         <span class="authorize">|</span>
-        <p class="authorize">
+        <a href="profil.html" class="authorize">
         Hai, <span class="name-placeholder"></span>
-        </p>
+        </a>
         <span class="authorize">|</span>
-        <button onclick="signout()" class="authorize">Log Out</button>
+        <button class="authorize" onclick="signout()">
+          Log Out
+        </button>
       </div>
     </div>
   </div>
@@ -194,183 +196,55 @@
               <span>OlehOlehNTT</span>
             </a>
           </div>
-          <a href=""><i class="ri-heart-line"></i></a>
-          <a class="user" href=""><i class="ri-user-line"></i></a>
-          <a href="keranjang.html"><i class="ri-shopping-cart-line"></i></a>
+          <p class="section__description">
+            Pekerjaan Kami adalah Menyediakan Pengalaman Belanja Yang Nyaman
+          </p>
+          <ul class="footer__socials">
+            <li>
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-facebook-fill"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Tentang Kami</h4>
+          <ul class="footer__links">
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Fitur</a></li>
+            <li><a href="#">Berita</a></li>
+            <li><a href="#">Menu</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Toko</h4>
+          <ul class="footer__links">
+            <li><a href="#">Mengapa Kami?</a></li>
+            <li><a href="#">Partner Kami</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Bantuan</h4>
+          <ul class="footer__links">
+            <li><a href="#">Pusat bantuan</a></li>
+            <li><a href="#">Umpan Balik</a></li>
+            <li><a href="#">Kontak Kami</a></li>
+            <li><a href="#">Kebijakan Pengguna</a></li>
+          </ul>
         </div>
       </div>
-    </div>
-  </nav>
-  <!--======================================================= AKHIR NAVBAR =======================================================-->
-
-
-
-
-  <!--======================================================= PROFIL - HOMEPAGE =======================================================-->
-  <section class="section__container profil_container">
-    <div class="col-3 list_judul_container">
-      <ul>
-        <li><a href="#" onclick="showContent('content1')">Akun Saya</a></li>
-        <li><a href="#" onclick="showContent('content2')">Informasi Pribadi</a></li>
-        <li><a href="#" onclick="showContent('content3')">Daftar Alamat</a></li>
-        <li><a href="#" onclick="showContent('content4')">Riwayat Pesanan</a></li>
-      </ul>
-    </div>
-    <div class="col-9 content_berdasarkan_list">
-      <div id="content1" class="content">
-        <p>Ini adalah konten untuk Satu.</p>
+      <div class="footer__bar">
+        Copyright © 2024 Tim Site22. All rights reserved.
       </div>
-      <div id="content2" class="content" style="display: none;">
-        <div class="judul_informasi_pribadi">
-          <h3>Informasi Pribadi Pengguna</h3>
-        </div>
-        <div class="input_daftar_container">
-          <div class="">
-            <div class="input_grup">
-              <input type="text" required />
-              <label for="">Kode*</label>
-            </div>
-          </div>
-          <div class="">
-            <div class="input_grup">
-              <input type="text" id="nama" required />
-              <label for="">Nama*</label>
-            </div>
-          </div>
-          <div class="">
-            <div class="input_grup">
-              <input type="password" required />
-              <label for="">Password*</label>
-            </div>
-          </div>
-          <div class="">
-            <div class="input_grup">
-              <input type="text" required />
-              <label for="">Konfirmasi Password*</label>
-            </div>
-          </div>
-          <div class="">
-            <div class="input_grup">
-              <input type="date" required />
-              <label for=""></label>
-            </div>
-          </div>
-          <div class="bagi_bagi">
-            <div class="input_grup">
-              <input type="email" required />
-              <label for="">Email*</label>
-            </div>
+    </footer>
+    <!--======================================================= AKHIR FOOTER =======================================================-->
 
-            <div class="input_grup">
-              <input type="email" required />
-              <label for="">Email*</label>
-            </div>
-          </div>
-
-          <div class="input-check">
-            <input type="checkbox" id="agree" required />
-            <label for="agree">Saya setuju dengan Syarat dan Ketentuan yang berlaku</label>
-          </div>
-
-          <div class="input-check">
-            <input type="checkbox" id="privacy" required />
-            <label for="privacy">Saya setuju dengan Kebijakan Privasi</label>
-          </div>
-
-          <div class="row tombol_daftar">
-            <button id="daftar" class="btn_small">
-              Daftar Akun
-            </button>
-          </div>
-
-        </div>
-      </div>
-      <div id="content3" class="content" style="display: none;">
-        <p>Ini adalah konten untuk Tiga.</p>
-      </div>
-      <div id="content4" class="content" style="display: none;">
-        <p>Ini adalah konten untuk empat.</p>
-      </div>
-    </div>
-  </section>
-
-  <!--======================================================= PROFIL - HOMEPAGE =======================================================-->
-
-
-
-  <!--======================================================= NEWSLETTER =======================================================-->
-  <section class="newsletter">
-    <div class=" newsletter__container">
-      <p class="section__subheader">Newsletter Kami</p>
-      <h2 class="section__header">Subscribe Newsletter</h2>
-      <h6 class="">SUbscribe Newsletter Kami Untuk Mendapatkan Informasi Produk Terbaru Kami. <br>
-        Dapatkan 20% Diskon Untuk Order Pertama Setelah Subscribe</h6>
-      <div class="newsletter__grid">
-        <input type="email" placeholder="Masukkan email Anda" />
-        <button type="button">Subscribe</button>
-      </div>
-    </div>
-  </section>
-  <!--======================================================= AKHIR NEWSLETTER =======================================================-->
-
-
-  <!--======================================================= FOOTER =======================================================-->
-  <footer>
-    <div class="section__container footer__container">
-      <div class="footer__col">
-        <div class="footer__logo">
-          <a href="#" class="logo">
-            <span>OlehOlehNTT</span>
-          </a>
-        </div>
-        <p class="section__description">
-          Pekerjaan Kami adalah Menyediakan Pengalaman Belanja Yang Nyaman
-        </p>
-        <ul class="footer__socials">
-          <li>
-            <a href="#"><i class="ri-instagram-fill"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ri-facebook-fill"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="ri-twitter-fill"></i></a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Tentang Kami</h4>
-        <ul class="footer__links">
-          <li><a href="#">Tentang Kami</a></li>
-          <li><a href="#">Fitur</a></li>
-          <li><a href="#">Berita</a></li>
-          <li><a href="#">Menu</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Toko</h4>
-        <ul class="footer__links">
-          <li><a href="#">Mengapa Kami?</a></li>
-          <li><a href="#">Partner Kami</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Bantuan</h4>
-        <ul class="footer__links">
-          <li><a href="#">Pusat bantuan</a></li>
-          <li><a href="#">Umpan Balik</a></li>
-          <li><a href="#">Kontak Kami</a></li>
-          <li><a href="#">Kebijakan Pengguna</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__bar">
-      Copyright © 2024 Tim Site22. All rights reserved.
-    </div>
-  </footer>
-  <!--======================================================= AKHIR FOOTER =======================================================-->
 
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
