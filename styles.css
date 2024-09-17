@@ -2333,7 +2333,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   padding-left: 0;
-  padding-right: 0;
+  padding-right: 20px;
 }
 
 .deskripsi_produk_sukai .deskripsi_atas_sukai {
@@ -2345,6 +2345,11 @@ nav {
   text-transform: uppercase;
   font-weight: bold;
   font-style: italic;
+  color: var(--text-dark);
+  /* Overflow */
+  overflow: hidden;         
+  white-space: nowrap;      
+  text-overflow: ellipsis;  
 }
 
 .kategori_produk_sukai {
@@ -2372,7 +2377,7 @@ nav {
 }
 
 .atur_stok_harga_sukai .harga_produk_sukai h5 {
-  font-size: 1rem;
+  font-size: .95rem;
   text-decoration: line-through;
 }
 
@@ -2382,7 +2387,7 @@ nav {
 }
 
 .harga_diskon_sukai h5 {
-  font-size: 1rem;
+  font-size: .95rem;
   color: red;
 }
 
