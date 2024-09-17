@@ -11,6 +11,7 @@
   --text-light: #6b7280;
   --extra-light: #d1d5db;
   --white: #ffffff;
+  --badge: #FFA500;
   --max-width: 1200px;
   --border-radius : 10px;
 }
@@ -445,13 +446,39 @@ nav {
 }
 
 .nav__icons a {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--text-dark);
 }
 
 .nav__icons a:hover {
   color: var(--primary-color);
 }
+
+.icon-sukai, .icon-keranjang {
+  position: relative;
+  display: inline-block;
+}
+
+.badge {
+  position: absolute;
+  top: -7px;       
+  right: -7px;    
+  background-color: var(--badge);
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.icon-sukai .badge {
+  
+}
+
+.icon-keranjang .badge {
+  
+}
+
 
 /*-----------------------------------*\
   #NEWSLETTER
