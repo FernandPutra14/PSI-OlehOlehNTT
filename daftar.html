@@ -171,3 +171,180 @@
 </body>
 
 </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--============= ICON - REMIXICON ===========-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!--============= SLIDER - SWIPER.JS ===========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!--============= CSS - CSS GLOBAL ===========-->
+  <link rel="stylesheet" href="styles.css" />
+  <title>E-Commerce | oleholehNTT</title>
+</head>
+
+<body>
+
+  <span id="redirectLogin" data-when="signin" data-to="/"></span>
+
+  <!--======================================================= DAFTAR - HOMEPAGE =======================================================-->
+  <section class="section__container daftar_container">
+    <div class="logo_daftar_container">
+      <img src="assets/logo_oleh_oleh_ntt3_2.png" />
+    </div>
+    <div class="perintah_daftar">
+      <h3>
+        Masukkan email Anda untuk masuk atau mendaftar
+      </h3>
+      <p>
+        Kami telah mengirimkan kode ke <span id="new-email-placeholder"></span>
+      </p>
+      <h6>
+        Edit Email
+      </h6>
+    </div>
+    <form id="daftar" class="input_daftar_container">
+      <div class="">
+        <div class="input_grup">
+          <input type="text" required />
+          <label for="">Kode*</label>
+        </div>
+      </div>
+      <div class="">
+        <div class="input_grup">
+          <input type="text" id="nama" required />
+          <label for="">Nama*</label>
+        </div>
+      </div>
+      <div class="">
+        <div class="input_grup">
+          <input type="password" required />
+          <label for="">Password*</label>
+        </div>
+      </div>
+      <div class="">
+        <div class="input_grup">
+          <input type="password" required />
+          <label for="">Konfirmasi Password*</label>
+        </div>
+      </div>
+      <div class="">
+        <div class="input_grup">
+          <input type="date" required />
+          <label for=""></label>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="input_grup">
+          <input id="jalan" type="text" required />
+          <label for="">Jalan</label>
+        </div>
+      </div>
+
+      <div class="bagi_bagi">
+        <div class="input_grup">
+          <input type="number" id="rt" required />
+          <label for="">RT*</label>
+        </div>
+
+        <div class="input_grup">
+          <input type="number" id="rw" required />
+          <label for="">RW*</label>
+        </div>
+      </div>
+
+      <div class="bagi_bagi">
+        <div class="input_grup">
+          <input type="text" id="kelurahanDesa" required />
+          <label for="">Kelurahan/Desa*</label>
+        </div>
+
+        <div class="input_grup">
+          <input type="text" id="kecamatan" required />
+          <label for="">Kecamatan*</label>
+        </div>
+      </div>
+
+      <div class="bagi_bagi">
+        <div class="input_grup">
+          <input type="text" id="kotaKabupaten" required />
+          <label for="">Kota/Kabupaten*</label>
+        </div>
+
+        <div class="input_grup">
+          <input type="text" id="provinsi" required />
+          <label for="">Provinsi*</label>
+        </div>
+      </div>
+
+      <div class="input-check">
+        <input type="checkbox" id="agree" required />
+        <label for="agree">Saya setuju dengan Syarat dan Ketentuan yang berlaku</label>
+      </div>
+
+      <div class="input-check">
+        <input type="checkbox" id="privacy" required />
+        <label for="privacy">Saya setuju dengan Kebijakan Privasi</label>
+      </div>
+
+      <div class="row tombol_daftar">
+        <button type="submit" class="btn_small">
+          Daftar Akun
+        </button>
+      </div>
+
+    </form>
+  </section>
+  <!--======================================================= AKHIR DAFTAR - HOMEPAGE =======================================================-->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/auth.js"></script>
+  <script type="text/javascript">
+    const getAlamatFromInput = () => {
+      const inputJalan = document.getElementById('jalan');
+      const inputRT = document.getElementById('rt');
+      const inputRW = document.getElementById('rw');
+      const inputKelurahanDesa = document.getElementById('kelurahanDesa');
+      const inputKecamatan = document.getElementById('kecamatan');
+      const inputKotaKabupaten = document.getElementById('kotaKabupaten');
+      const inputProvinsi = document.getElementById('provinsi');
+
+      return new Alamat(
+        inputRT.value,
+        inputRW.value,
+        inputJalan.value,
+        inputKelurahanDesa.value,
+        inputKecamatan.value,
+        inputKotaKabupaten.value,
+        inputProvinsi.value
+      )
+    };
+
+    const inputNama = document.getElementById('nama');
+    const form = document.querySelector('form#daftar');
+    const queryParam = new URLSearchParams(window.location.search);
+    const newEmail = queryParam.get('email') ? queryParam.get('email') : "Vernandputra14@gmail.com";
+    const newEmailPlaceholder = document.querySelector('span#new-email-placeholder');
+    newEmailPlaceholder.outerHTML = newEmail;
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      const alamat = getAlamatFromInput();
+      if (inputNama && inputNama.value && alamat) {
+        signin(new Account(inputNama.value, newEmail, alamat));
+      }
+    });
+  </script>
+</body>
+
+</html>
