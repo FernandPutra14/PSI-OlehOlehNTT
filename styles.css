@@ -399,8 +399,8 @@ nav {
   font-size: .8rem;
   color: var(--text-dark);
   text-decoration: none;
+  cursor: pointer;
 }
-
 
 .nav__auth span {
   color: #ccc;
@@ -2277,6 +2277,209 @@ nav {
   font-size: 12px;
   background: var(--white);
 }
+
+
+/*=============================================================================================================================*\
+  #HALAMAN SUKAI
+\*=============================================================================================================================*/
+
+.sukai_container {
+  display: flex;
+  gap: 5px;
+}
+
+.daftar_produk_sukai {
+  
+}
+
+.daftar_produk_sukai .judul_daftar_produk_sukai {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #999;
+}
+
+.daftar_produk_sukai .judul_daftar_produk_sukai h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.daftar_produk_sukai .judul_daftar_produk_sukai h6 {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.daftar_produk_sukai .daftar_produk {
+
+}
+
+.daftar_produk_sukai .daftar_produk .perproduk_sukai {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px dotted #999;
+}
+
+.perproduk_sukai .gambar_produk_sukai {
+  padding-left: 0;
+}
+
+.perproduk_sukai .gambar_produk_sukai img {
+  border-radius: 10px;
+}
+
+.deskripsi_produk_sukai {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.deskripsi_produk_sukai .deskripsi_atas_sukai {
+
+}
+
+.deskripsi_produk_sukai .deskripsi_atas_sukai .nama_produk_sukai h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.kategori_produk_sukai {
+  margin-bottom: 5px;
+}
+
+.kategori_produk_sukai h5 {
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+.stok_produk_sukai {
+  margin-bottom: 5px;
+}
+
+.stok_produk_sukai p {
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+
+.atur_stok_harga_sukai {
+  display: flex;
+  justify-content: space-between;
+}
+
+.atur_stok_harga_sukai .harga_produk_sukai h5 {
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+.harga_diskon_sukai {
+  display: flex;
+  justify-content: start;
+}
+
+.harga_diskon_sukai h5 {
+  font-size: 1rem;
+  color: red;
+}
+
+.deskripsi_bawah_sukai {
+
+}
+
+.deskripsi_bawah_sukai .action_produk_sukai {
+  display: flex;
+  gap: 7px;
+}
+
+.action_produk_sukai i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.catatan_sukai_container {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+.form_catatan_sukai {
+  height: 140px;
+  margin-bottom: 10px;
+}
+
+.form_catatan_sukai textarea {
+  width: 100%;
+  height: 100%;
+  padding: 12px 10px;
+  font-size: .85rem;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+  font-family: 'poppins';
+}
+
+
+
+.simpan_catatan {
+}
+
+.simpan_catatan button {
+  padding: 8px 15px;
+  font-size: .9rem;
+}
+
+.tambahkeranjang_sukai_container {
+  text-align: center;
+  align-content: center;
+}
+
+.tambahkeranjang_sukai_container .tambah_kurang_produk_sukai {
+  display: inline-flex;
+  padding: 0 20px;
+  align-items: center;
+  border-radius: 18px;
+  gap: 30px;
+  background-color: var(--container-color);
+  margin-bottom: 10px;
+}
+
+.tambahkeranjang_sukai_container .tambah_kurang_produk_sukai .kurang h3,
+.tambahkeranjang_sukai_container .tambah_kurang_produk_sukai .tambah h3{
+  font-weight: 500;
+}
+
+.tambahkeranjang_sukai_container .tambah_kurang_produk_sukai .kurang,
+.tambahkeranjang_sukai_container .tambah_kurang_produk_sukai .tambah{
+  cursor: pointer;
+}
+
+.tambahkeranjang_sukai_container .tambah_kurang_produk_sukai .jumlah h3 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.tambahkeranjang {
+}
+
+.tambahkeranjang button {
+  padding: 12px 15px;
+  font-size: .9rem;
+}
+
+.tambahkeranjang button i {
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
 
 
 /*=============================================================================================================================*\
