@@ -2184,6 +2184,25 @@ nav {
 }
 
 
+
+.total_checkout {
+  margin-top: 10px;
+}
+
+.total_checkout button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: .9rem !important;
+}
+
+.total_checkout button i {
+  margin-left: 30px;
+  font-size: 16px;
+  
+}
+
+
 /*=============================================================================================================================*\
   #HALAMAN PROFIL
 \*=============================================================================================================================*/
@@ -2504,10 +2523,98 @@ nav {
   margin-left: 20px;
 }
 
+/*=============================================================================================================================*\
+  #HALAMAN DETAIL BLOG
+\*=============================================================================================================================*/
+
+.detail_blog_container {
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+}
+
+.content_detail_blog {
+
+}
+
+.detail_blog_container a {
+  color: var(--text-dark);
+}
+
+.kembali_detail_blog {
+  display: flex;
+  gap: 10px;
+  
+}
+
+.kembali_detail_blog .icon_kembali_detail_blog i {
+  font-size: 1rem;
+}
+
+.kembali_detail_blog .text_kembali_detail_blog p {
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: underline;
+}
+
+.kategori_tanggal_detail_blog {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+.kategori_detail_blog {
+  padding: 3px 10px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.kategori_detail_blog p {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.tanggal_detail_blog p {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.judul_detail_blog {
+  margin-top: 15px;
+}
+
+.judul_detail_blog h3 {
+  font-size: 2.1rem;
+}
+
+.gambar_detail_blog {
+  margin-top: 10px;
+}
+
+.gambar_detail_blog img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.isi_detail_blog {
+  margin-top: 20px;
+  padding-right: 30px;
+}
+
+.isi_detail_blog p {
+  text-align: justify;
+}
+
+.isi_detail_blog span {
+  font-weight: bold;
+}
 
 
-
-
+.lain_content_detail_blog {
+  background-color: rebeccapurple;
+  height: 400px;
+}
 
 
 
