@@ -1680,7 +1680,7 @@ nav {
   font-size: 1rem;
 }
 
-.perintah_daftar h6 {
+.perintah_daftar a {
   cursor: pointer;
   color: blue;
   font-weight: 400;
@@ -2189,17 +2189,11 @@ nav {
   margin-top: 10px;
 }
 
-.total_checkout button {
-  width: 100%;
+.total_checkout a {
   display: flex;
   justify-content: space-between;
-  font-size: .9rem !important;
-}
-
-.total_checkout button i {
-  margin-left: 30px;
-  font-size: 16px;
-  
+  align-content: center;
+  align-items: center;
 }
 
 
@@ -2423,7 +2417,7 @@ nav {
 }
 
 .atur_stok_harga_sukai .harga_produk_sukai h5 {
-  font-size: .95rem;
+  font-size: .9rem;
   text-decoration: line-through;
 }
 
@@ -2528,7 +2522,7 @@ nav {
 \*=============================================================================================================================*/
 
 .detail_blog_container {
-  max-width: 800px;
+  max-width: 700px;
   display: flex;
   justify-content: center;
 }
@@ -2614,6 +2608,186 @@ nav {
 .lain_content_detail_blog {
   background-color: rebeccapurple;
   height: 400px;
+}
+
+
+
+/*=============================================================================================================================*\
+  #HALAMAN PEMBAYARAN
+\*=============================================================================================================================*/
+
+.pembayaran_container {
+  display: flex;
+  gap: 5px;
+}
+
+.content_pembayaran_container {
+  
+}
+
+.tahap_pembayaran_container {
+  
+}
+
+.content_pembayaran_container .judul_pembayaran h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.content_pembayaran_container .judul_pembayaran p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.content_pembayaran_container .input_kontak_pembayaran_container {
+
+}
+
+
+.input_alamat_pembayaran_container {
+  margin-top: 20px;
+}
+
+.input_alamat_pembayaran_container .judul_alamat_pembayaran {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input_alamat_pembayaran_container .judul_alamat_pembayaran .judul_alamat h5 {
+  text-transform: uppercase;
+  font-size: 1.1rem;
+}
+
+.input_alamat_pembayaran_container .judul_alamat_pembayaran .judul_alamat h5 span {
+  margin-left: 10px;
+  text-transform: none !important;
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+.input_alamat_pembayaran_container .judul_alamat_pembayaran .ubah_alamat p {
+  font-size: .9rem;
+  text-decoration: underline;
+}
+
+
+#pembayaran .input_grup {
+  position: relative;
+  margin: 10px 0px 10px;
+}
+
+#pembayaran .input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#pembayaran .input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+#pembayaran .input_grup input:focus~label,
+#pembayaran .input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white);
+}
+
+#pembayaran .bagi_bagi {
+  display: flex;
+  gap: .8rem;
+  margin: 0;
+}
+
+#pembayaran .bagi_bagi .input_grup {
+  position: relative;
+  flex: 1;
+}
+
+#pembayaran .bagi_bagi .input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#pembayaran .bagi_bagi .input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+#pembayaran .bagi_bagi .input_grup input:focus~label,
+#pembayaran .bagi_bagi .input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white);
+}
+
+
+.progress-container {
+  position: sticky;
+  top: 30px;
+  margin: 20px;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress-step h4 {
+  margin-left: 20px;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #ddd;
+  z-index: 2;
+}
+
+.line {
+  width: 4px;
+  background-color: #ddd;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+}
+
+.line.active {
+  background-color: #3E1801;
+  height: 0px; /* Active line length up to "Metode Pembayaran" */
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+.progress-step.active .circle {
+  background-color: #3E1801;
 }
 
 
