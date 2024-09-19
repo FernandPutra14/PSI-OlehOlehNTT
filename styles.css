@@ -291,11 +291,7 @@ body {
   .col-xl-12 { flex: 0 0 100%; max-width: 100%; }
 }
 .authorize, .not-authorize {
-  display: none;
-}
-
-.show {
-  display: block;
+  display: none !important;
 }
 
 span#redirectLogin {
