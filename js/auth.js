@@ -13,9 +13,11 @@ class Alamat {
 }
 
 class Account {
-    constructor(name, email, alamat) {
+    constructor(name, email, noHP, tanggalLahir, alamat) {
         this.name = name;
         this.email = email;
+        this.noHP = noHP;
+        this.tanggalLahir = tanggalLahir;
         this.alamat = alamat;
     }
 }
@@ -23,6 +25,8 @@ class Account {
 const defaultAccount = new Account(
     "Tim Ziro",
     "timziro@gmail.com",
+    "081234567890",
+    new Date(2004, 2, 29),
     new Alamat(
         1,
         2,

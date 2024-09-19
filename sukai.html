@@ -21,11 +21,11 @@
   <span id="redirectLogin" data-when="signout" data-to="/masuk_atau_daftar.html"></span>
 
   <!--======================================================= NAVBAR =======================================================-->
-<nav>
+  <nav>
     <!-- Navbar Atas -->
     <div class="nav__top">
       <div class="container_nav_satu">
-        
+
         <!-- <div class="nav__search">
           <input type="text" placeholder="Cari produk...">
         </div> -->
@@ -37,7 +37,7 @@
           <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
           <span class="authorize">|</span>
           <a href="profil.html" class="authorize">
-          Hai, <span class="name-placeholder"></span>
+            Hai, <span class="name-placeholder"></span>
           </a>
           <span class="authorize">|</span>
           <button class="authorize" onclick="signout()">
@@ -46,7 +46,7 @@
         </div>
       </div>
     </div>
-  
+
     <!-- Navbar Bawah -->
     <div class="nav__bottom">
       <div class="container_nav_dua">
@@ -65,20 +65,15 @@
           <div class="nav__search">
             <i class="ri-search-line"></i>
             <input type="text" placeholder="Cari produk...">
-        </div>      
-        <a href="sukai.html" class="icon-sukai">
-          <i class="ri-heart-line"></i>
-          <span class="badge">3</span>
-        </a>
-        
-        <a class="user" href="">
-          <i class="ri-user-line"></i>
-        </a>
-        
-        <a href="keranjang.html" class="icon-keranjang">
-          <i class="ri-shopping-cart-line"></i>
-          <span class="badge">2</span>
-        </a>
+          </div>
+          <a href="sukai.html" class="icon-sukai authorize">
+            <i class="ri-heart-line"></i>
+            <span class="badge" id="wishlist-badge">3</span>
+          </a>
+          <a href="keranjang.html" class="icon-keranjang authorize">
+            <i class="ri-shopping-cart-line"></i>
+            <span class="badge" id="keranjang-badge">2</span>
+          </a>
         </div>
       </div>
     </div>
@@ -101,12 +96,12 @@
 
           <div class="col-3 deskripsi_produk_sukai">
             <div class="deskripsi_atas_sukai">
-                <a href="detail_produk.html">
-                    <div class="nama_produk_sukai">
-                        <h3>Kain Tenun Ende Sabu Waikabubak</h3>
-                      </div>
-                </a>
-              
+              <a href="detail_produk.html">
+                <div class="nama_produk_sukai">
+                  <h3>Kain Tenun Ende Sabu Waikabubak</h3>
+                </div>
+              </a>
+
               <div class="kategori_produk_sukai">
                 <h5>Kain Tenun</h5>
               </div>
@@ -115,7 +110,7 @@
                 <p>Tersedia 10</p>
 
               </div>
-              <div class="atur_stok_harga_sukai">             
+              <div class="atur_stok_harga_sukai">
                 <div class="harga_produk_sukai">
 
                   <h5>Rp 40.000.000</h5>
@@ -136,23 +131,23 @@
           </div>
           <div class="col-4 catatan_sukai_container">
             <div class="form_catatan_sukai">
-                <textarea spellcheck="false" placeholder="Tambahkan catatan Produk..."></textarea>
+              <textarea spellcheck="false" placeholder="Tambahkan catatan Produk..."></textarea>
             </div>
             <div class="simpan_catatan">
-                <button class="btn">Simpan Catatan</button>
+              <button class="btn">Simpan Catatan</button>
             </div>
           </div>
           <div class="col-3 tambahkeranjang_sukai_container">
             <div class="tambah_kurang_produk_sukai">
-                  <div class="kurang">
-                    <h3>-</h3>
-                  </div>
-                  <div class="jumlah">
-                    <h3>5</h3>
-                  </div>
-                  <div class="tambah">
-                    <h3>+</h3>
-                  </div>
+              <div class="kurang">
+                <h3>-</h3>
+              </div>
+              <div class="jumlah">
+                <h3>5</h3>
+              </div>
+              <div class="tambah">
+                <h3>+</h3>
+              </div>
             </div>
             <div class="tambahkeranjang">
                 <button class="btn">Tambahkan ke Keranjang<i class="ri-arrow-right-line"></i></button>
@@ -161,141 +156,141 @@
         </div>
         <!-- Produk Keranjang -->
 
-          <!-- Produk Keranjang -->
+        <!-- Produk Keranjang -->
         <div class="perproduk_sukai">
-            <div class="col-2 gambar_produk_sukai">
-              <img src="assets/sei_makanan.png" />
-            </div>
-  
-            <div class="col-3 deskripsi_produk_sukai">
-              <div class="deskripsi_atas_sukai">
-                  <a href="detail_produk.html">
-                      <div class="nama_produk_sukai">
-                          <h3>Kain Tenun Ende Sabu Waikabubak</h3>
-                        </div>
-                  </a>
-                
-                <div class="kategori_produk_sukai">
-                  <h5>Kain Tenun</h5>
-                </div>
-                <div class="stok_produk_sukai">
-  
-                  <p>Tersedia 10</p>
-  
-                </div>
-                <div class="atur_stok_harga_sukai">             
-                  <div class="harga_produk_sukai">
-  
-                    <h5>Rp 40.000.000</h5>
-  
-                  </div>
-                </div>
-                <div class="harga_diskon_sukai">
-                  <h5>Rp 40.000.000</h5>
-                </div>
-              </div>
-              <div class="deskripsi_bawah_sukai">
-                <div class="action_produk_sukai">
-                  <div>
-                    <i class="ri-delete-bin-line"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-4 catatan_sukai_container">
-              <div class="form_catatan_sukai">
-                  <textarea spellcheck="false" placeholder="Tambahkan catatan Produk..."></textarea>
-              </div>
-              <div class="simpan_catatan">
-                  <button class="btn">Simpan Catatan</button>
-              </div>
-            </div>
-            <div class="col-3 tambahkeranjang_sukai_container">
-              <div class="tambah_kurang_produk_sukai">
-                    <div class="kurang">
-                      <h3>-</h3>
-                    </div>
-                    <div class="jumlah">
-                      <h3>5</h3>
-                    </div>
-                    <div class="tambah">
-                      <h3>+</h3>
-                    </div>
-              </div>
-              <div class="tambahkeranjang">
-                <button class="btn">Tambahkan ke Keranjang<i class="ri-arrow-right-line"></i></button>
-              </div>
-            </div>
+          <div class="col-2 gambar_produk_sukai">
+            <img src="assets/sei_makanan.png" />
           </div>
-          <!-- Produk Keranjang -->
 
-            <!-- Produk Keranjang -->
-        <div class="perproduk_sukai">
-            <div class="col-2 gambar_produk_sukai">
-              <img src="assets/sei_makanan.png" />
-            </div>
-  
-            <div class="col-3 deskripsi_produk_sukai">
-              <div class="deskripsi_atas_sukai">
-                  <a href="detail_produk.html">
-                      <div class="nama_produk_sukai">
-                          <h3>Kain Tenun Ende Sabu Waikabubak</h3>
-                        </div>
-                  </a>
-                
-                <div class="kategori_produk_sukai">
-                  <h5>Kain Tenun</h5>
+          <div class="col-3 deskripsi_produk_sukai">
+            <div class="deskripsi_atas_sukai">
+              <a href="detail_produk.html">
+                <div class="nama_produk_sukai">
+                  <h3>Kain Tenun Ende Sabu Waikabubak</h3>
                 </div>
-                <div class="stok_produk_sukai">
-  
-                  <p>Tersedia 10</p>
-  
-                </div>
-                <div class="atur_stok_harga_sukai">             
-                  <div class="harga_produk_sukai">
-  
-                    <h5>Rp 40.000.000</h5>
-  
-                  </div>
-                </div>
-                <div class="harga_diskon_sukai">
+              </a>
+
+              <div class="kategori_produk_sukai">
+                <h5>Kain Tenun</h5>
+              </div>
+              <div class="stok_produk_sukai">
+
+                <p>Tersedia 10</p>
+
+              </div>
+              <div class="atur_stok_harga_sukai">
+                <div class="harga_produk_sukai">
+
                   <h5>Rp 40.000.000</h5>
+
                 </div>
               </div>
-              <div class="deskripsi_bawah_sukai">
-                <div class="action_produk_sukai">
-                  <div>
-                    <i class="ri-delete-bin-line"></i>
-                  </div>
+              <div class="harga_diskon_sukai">
+                <h5>Rp 40.000.000</h5>
+              </div>
+            </div>
+            <div class="deskripsi_bawah_sukai">
+              <div class="action_produk_sukai">
+                <div>
+                  <i class="ri-delete-bin-line"></i>
                 </div>
-              </div>
-            </div>
-            <div class="col-4 catatan_sukai_container">
-              <div class="form_catatan_sukai">
-                  <textarea spellcheck="false" placeholder="Tambahkan catatan Produk..."></textarea>
-              </div>
-              <div class="simpan_catatan">
-                  <button class="btn">Simpan Catatan</button>
-              </div>
-            </div>
-            <div class="col-3 tambahkeranjang_sukai_container">
-              <div class="tambah_kurang_produk_sukai">
-                    <div class="kurang">
-                      <h3>-</h3>
-                    </div>
-                    <div class="jumlah">
-                      <h3>5</h3>
-                    </div>
-                    <div class="tambah">
-                      <h3>+</h3>
-                    </div>
-              </div>
-              <div class="tambahkeranjang">
-                <button class="btn">Tambahkan ke Keranjang<i class="ri-arrow-right-line"></i></button>
               </div>
             </div>
           </div>
-          <!-- Produk Keranjang -->
+          <div class="col-4 catatan_sukai_container">
+            <div class="form_catatan_sukai">
+              <textarea spellcheck="false" placeholder="Tambahkan catatan Produk..."></textarea>
+            </div>
+            <div class="simpan_catatan">
+              <button class="btn">Simpan Catatan</button>
+            </div>
+          </div>
+          <div class="col-3 tambahkeranjang_sukai_container">
+            <div class="tambah_kurang_produk_sukai">
+              <div class="kurang">
+                <h3>-</h3>
+              </div>
+              <div class="jumlah">
+                <h3>5</h3>
+              </div>
+              <div class="tambah">
+                <h3>+</h3>
+              </div>
+            </div>
+            <div class="tambahkeranjang">
+                <button class="btn">Tambahkan ke Keranjang<i class="ri-arrow-right-line"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Produk Keranjang -->
+
+        <!-- Produk Keranjang -->
+        <div class="perproduk_sukai">
+          <div class="col-2 gambar_produk_sukai">
+            <img src="assets/sei_makanan.png" />
+          </div>
+
+          <div class="col-3 deskripsi_produk_sukai">
+            <div class="deskripsi_atas_sukai">
+              <a href="detail_produk.html">
+                <div class="nama_produk_sukai">
+                  <h3>Kain Tenun Ende Sabu Waikabubak</h3>
+                </div>
+              </a>
+
+              <div class="kategori_produk_sukai">
+                <h5>Kain Tenun</h5>
+              </div>
+              <div class="stok_produk_sukai">
+
+                <p>Tersedia 10</p>
+
+              </div>
+              <div class="atur_stok_harga_sukai">
+                <div class="harga_produk_sukai">
+
+                  <h5>Rp 40.000.000</h5>
+
+                </div>
+              </div>
+              <div class="harga_diskon_sukai">
+                <h5>Rp 40.000.000</h5>
+              </div>
+            </div>
+            <div class="deskripsi_bawah_sukai">
+              <div class="action_produk_sukai">
+                <div>
+                  <i class="ri-delete-bin-line"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4 catatan_sukai_container">
+            <div class="form_catatan_sukai">
+              <textarea spellcheck="false" placeholder="Tambahkan catatan Produk..."></textarea>
+            </div>
+            <div class="simpan_catatan">
+              <button class="btn">Simpan Catatan</button>
+            </div>
+          </div>
+          <div class="col-3 tambahkeranjang_sukai_container">
+            <div class="tambah_kurang_produk_sukai">
+              <div class="kurang">
+                <h3>-</h3>
+              </div>
+              <div class="jumlah">
+                <h3>5</h3>
+              </div>
+              <div class="tambah">
+                <h3>+</h3>
+              </div>
+            </div>
+            <div class="tambahkeranjang">
+              <button class="btn">Tambahkan ke Keranjang<i class="ri-arrow-right-up-line"></i></button>
+            </div>
+          </div>
+        </div>
+        <!-- Produk Keranjang -->
       </div>
     </div>
   </section>
@@ -378,10 +373,9 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="/js/main.js"></script>
   <script src="/js/auth.js"></script>
+  <script src="/js/produk.js"></script>
   <script src="/js/keranjang.js"></script>
-  <script type="text/javascript">
-    
-  </script>
+  <script src="/js/wishlist.js"></script>
 </body>
 
 </html>

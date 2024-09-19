@@ -1,233 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--============= ICON - REMIXICON ===========-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--============= SLIDER - SWIPER.JS ===========-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+  <!--============= ICON - REMIXICON ===========-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!--============= CSS - CSS GLOBAL ===========-->
-    <link rel="stylesheet" href="styles.css" />
-    <title>E-Commerce | oleholehNTT</title>
-  </head>
-  <body>
+  <!--============= SLIDER - SWIPER.JS ===========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-     <!--======================================================= NAVBAR =======================================================-->
-<nav>
-  <!-- Navbar Atas -->
-  <div class="nav__top">
-    <div class="container_nav_satu">
-      
-      <!-- <div class="nav__search">
+  <!--============= CSS - CSS GLOBAL ===========-->
+  <link rel="stylesheet" href="styles.css" />
+  <title>E-Commerce | oleholehNTT</title>
+</head>
+
+<body>
+
+  <!--======================================================= NAVBAR =======================================================-->
+  <nav>
+    <!-- Navbar Atas -->
+    <div class="nav__top">
+      <div class="container_nav_satu">
+
+        <!-- <div class="nav__search">
         <input type="text" placeholder="Cari produk...">
       </div> -->
-      <div class="nav__auth">
-        <a href="">Bantuan</a>
-        <span class="not-authorize">|</span>
-        <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
-        <span class="not-authorize">|</span>
-        <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
-        <span class="authorize">|</span>
-        <a href="profil.html" class="authorize">
-        Hai, <span class="name-placeholder"></span>
-        </a>
-        <span class="authorize">|</span>
-        <button class="authorize" onclick="signout()">
-          Keluar
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <!-- Navbar Bawah -->
-  <div class="nav__bottom">
-    <div class="container_nav_dua">
-      <div class="nav__logo">
-        <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
-      </div>
-      <ul class="nav__links">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="produk.html">Produk</a></li>
-        <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
-        <li><a href="">Tentang Kami</a></li>
-        <li><a href="">Kontak</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-      <div class="nav__icons">
-        <div class="nav__search">
-          <i class="ri-search-line"></i>
-          <input type="text" placeholder="Cari produk...">
-      </div>      
-      <a href="sukai.html" class="icon-sukai">
-        <i class="ri-heart-line"></i>
-        <span class="badge">3</span>
-      </a>
-      
-      <a class="user" href="">
-        <i class="ri-user-line"></i>
-      </a>
-      
-      <a href="keranjang.html" class="icon-keranjang">
-        <i class="ri-shopping-cart-line"></i>
-        <span class="badge">2</span>
-      </a>
-      </div>
-    </div>
-  </div>
-</nav>
-<!--======================================================= AKHIR NAVBAR =======================================================-->
-
-
-    
-
-    <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
-    <section class="section__container detail_produk_container">
-        <div class="col-6 gambar_detail_produk_container">
-            <img src="assets/sei_makanan.png"/>
+        <div class="nav__auth">
+          <a href="">Bantuan</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
+          <span class="authorize">|</span>
+          <a href="profil.html" class="authorize">
+            Hai, <span class="name-placeholder"></span>
+          </a>
+          <span class="authorize">|</span>
+          <button class="authorize" onclick="signout()">
+            Keluar
+          </button>
         </div>
-        <div class="col-6 isi_detail_produk_container">
-            <div class="detail_nama_produk">
-                <h1>Tenun Ikat Sumba</h1>
-            </div>
-            <div class="detail_kategori_produk">
-                <h5>Kain Tenun</h5>
-            </div>
-            <div class="detail_harga_produk">
-                <div class="harga_diskon">
-                    <h3>Rp. 650.000,00</h3>
-                </div>
-                <div class="harga_asli">
-                    <h3>Rp. 750.000,00</h3>
-                </div>   
-                <div class="pengurangan_diskon">
-                    <h3>30% off</h3>
-                </div>
-            </div>
-            <div class="detail_sukai">
-                <button class="wish-btn">Masukan Wishlist<i class="ri-heart-line"></i></button>
-            </div>
-            <div class="detail_stok">
-                <h5>Tersisa 15</h5>
-            </div>
-            <div class="detail_belanja">
-                <div class="tambah_kurang_produk">
-                    <div class="kurang">
-                        <h3>-</h3>
-                    </div>
-                    <div class="jumlah">
-                        <h3>5</h3>
-                    </div>
-                    <div class="tambah">
-                        <h3>+</h3>
-                    </div>
-                </div>
-                <button class="belanja-btn">Masukkan ke keranjang</button>
-            </div>
-            <div class="detail_deskripsi">
-                <h6>Tenun ikat khas Sumba adalah salah satu warisan budaya Indonesia yang dibuat dengan menggunakan 
-                  teknik tradisional yang diwariskan secara turun-temurun. Setiap helai kain tenun ini diciptakan melalui
-                   proses yang teliti dan memakan waktu, menjadikannya tidak hanya sebagai produk tekstil, tetapi juga sebagai 
-                   karya seni yang memancarkan nilai sejarah dan budaya lokal.</h6>
-            </div>
-            <div class="detail_spesifikasi">
-              <h6>Spesifikasi Tenun Ikat Sumba adalah sebagai berikut : </h6>
-              <ul class="spesifikasi_list">
-                <li>Bahan: Katun alami</li>
-                <li>Warna: Kombinasi merah, hitam, dan kuning</li>
-                <li>Ukuran: 200 x 60 cm</li>
-                <li>Cara perawatan: Cuci tangan dengan air dingin</li>  
-                <li>Teknik pembuatan: Tenun ikat tradisional</li>
-                <li>Motif: Etnik khas Sumba dengan simbol adat</li>
-              </ul>
-              
-              </div>
-        </div>
-    </section>
-    <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
-
-    
-
-    <!--======================================================= NEWSLETTER =======================================================-->
-<section class="newsletter">
-  <div class=" newsletter__container">
-    <p class="section__subheader">Newsletter Kami</p>
-    <h2 class="section__header">Subscribe Newsletter</h2>
-    <h6 class="">SUbscribe Newsletter Kami Untuk Mendapatkan Informasi Produk Terbaru Kami. <br> 
-                Dapatkan 20% Diskon Untuk Order Pertama Setelah Subscribe</h6>
-    <div class="newsletter__grid">
-      <input type="email" placeholder="Masukkan email Anda" />
-      <button type="button">Subscribe</button>
+      </div>
     </div>
-  </div>
-</section>
-<!--======================================================= AKHIR NEWSLETTER =======================================================-->
 
-
-    <!--======================================================= FOOTER =======================================================-->
-    <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <div class="footer__logo">
-            <a href="#" class="logo">             
-              <span>OlehOlehNTT</span>
-            </a>
+    <!-- Navbar Bawah -->
+    <div class="nav__bottom">
+      <div class="container_nav_dua">
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
+        </div>
+        <ul class="nav__links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
+          <li><a href="">Tentang Kami</a></li>
+          <li><a href="">Kontak</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="nav__icons">
+          <div class="nav__search">
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Cari produk...">
           </div>
-          <p class="section__description">
-            Pekerjaan Kami adalah Menyediakan Pengalaman Belanja Yang Nyaman
-          </p>
-          <ul class="footer__socials">
-            <li>
-              <a href="#"><i class="ri-instagram-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-twitter-fill"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Tentang Kami</h4>
-          <ul class="footer__links">
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Fitur</a></li>
-            <li><a href="#">Berita</a></li>
-            <li><a href="#">Menu</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Toko</h4>
-          <ul class="footer__links">
-            <li><a href="#">Mengapa Kami?</a></li>
-            <li><a href="#">Partner Kami</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Bantuan</h4>
-          <ul class="footer__links">
-            <li><a href="#">Pusat bantuan</a></li>
-            <li><a href="#">Umpan Balik</a></li>
-            <li><a href="#">Kontak Kami</a></li>
-            <li><a href="#">Kebijakan Pengguna</a></li>
-          </ul>
+          <a href="sukai.html" class="icon-sukai authorize">
+            <i class="ri-heart-line"></i>
+            <span class="badge" id="wishlist-badge">3</span>
+          </a>
+          <a class="user authorize" href="profil.html">
+            <i class="ri-user-line"></i>
+          </a>
+          <a href="keranjang.html" class="icon-keranjang authorize">
+            <i class="ri-shopping-cart-line"></i>
+            <span class="badge" id="keranjang-badge">2</span>
+          </a>
         </div>
       </div>
-      <div class="footer__bar">
-        Copyright © 2024 Tim Site22. All rights reserved.
-      </div>
-    </footer>
-    <!--======================================================= AKHIR FOOTER =======================================================-->
+    </div>
+  </nav>
+  <!--======================================================= AKHIR NAVBAR =======================================================-->
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/auth.js"></script>
-  </body>
+
+
+
+  <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
+  <section class="section__container detail_produk_container">
+    <div class="col-6 gambar_detail_produk_container">
+      <img src="assets/sei_makanan.png" />
+    </div>
+    <div class="col-6 isi_detail_produk_container">
+      <div class="detail_nama_produk">
+        <h1>Tenun Ikat Sumba</h1>
+      </div>
+      <div class="detail_kategori_produk">
+        <h5>Kain Tenun</h5>
+      </div>
+      <div class="detail_harga_produk">
+        <div class="harga_diskon">
+          <h3>Rp. 650.000,00</h3>
+        </div>
+        <div class="harga_asli">
+          <h3>Rp. 750.000,00</h3>
+        </div>
+        <div class="pengurangan_diskon">
+          <h3>30% off</h3>
+        </div>
+      </div>
+      <div class="detail_sukai">
+        <button class="wish-btn">Masukan Wishlist<i class="ri-heart-line"></i></button>
+      </div>
+      <div class="detail_stok">
+        <h5>Tersisa 15</h5>
+      </div>
+      <div class="detail_belanja">
+        <div class="tambah_kurang_produk">
+          <div class="kurang">
+            <h3>-</h3>
+          </div>
+          <div class="jumlah">
+            <h3>5</h3>
+          </div>
+          <div class="tambah">
+            <h3>+</h3>
+          </div>
+        </div>
+        <button class="belanja-btn">Masukkan ke keranjang</button>
+      </div>
+      <div class="detail_deskripsi">
+        <h6>Tenun ikat khas Sumba adalah salah satu warisan budaya Indonesia yang dibuat dengan menggunakan
+          teknik tradisional yang diwariskan secara turun-temurun. Setiap helai kain tenun ini diciptakan melalui
+          proses yang teliti dan memakan waktu, menjadikannya tidak hanya sebagai produk tekstil, tetapi juga sebagai
+          karya seni yang memancarkan nilai sejarah dan budaya lokal.</h6>
+      </div>
+      <div class="detail_spesifikasi">
+        <h6>Spesifikasi Tenun Ikat Sumba adalah sebagai berikut : </h6>
+        <ul class="spesifikasi_list">
+          <li>Bahan: Katun alami</li>
+          <li>Warna: Kombinasi merah, hitam, dan kuning</li>
+          <li>Ukuran: 200 x 60 cm</li>
+          <li>Cara perawatan: Cuci tangan dengan air dingin</li>
+          <li>Teknik pembuatan: Tenun ikat tradisional</li>
+          <li>Motif: Etnik khas Sumba dengan simbol adat</li>
+        </ul>
+
+      </div>
+    </div>
+  </section>
+  <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
+
+
+
+  <!--======================================================= NEWSLETTER =======================================================-->
+  <section class="newsletter">
+    <div class=" newsletter__container">
+      <p class="section__subheader">Newsletter Kami</p>
+      <h2 class="section__header">Subscribe Newsletter</h2>
+      <h6 class="">SUbscribe Newsletter Kami Untuk Mendapatkan Informasi Produk Terbaru Kami. <br>
+        Dapatkan 20% Diskon Untuk Order Pertama Setelah Subscribe</h6>
+      <div class="newsletter__grid">
+        <input type="email" placeholder="Masukkan email Anda" />
+        <button type="button">Subscribe</button>
+      </div>
+    </div>
+  </section>
+  <!--======================================================= AKHIR NEWSLETTER =======================================================-->
+
+
+  <!--======================================================= FOOTER =======================================================-->
+  <footer>
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#" class="logo">
+            <span>OlehOlehNTT</span>
+          </a>
+        </div>
+        <p class="section__description">
+          Pekerjaan Kami adalah Menyediakan Pengalaman Belanja Yang Nyaman
+        </p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Tentang Kami</h4>
+        <ul class="footer__links">
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Fitur</a></li>
+          <li><a href="#">Berita</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Toko</h4>
+        <ul class="footer__links">
+          <li><a href="#">Mengapa Kami?</a></li>
+          <li><a href="#">Partner Kami</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Bantuan</h4>
+        <ul class="footer__links">
+          <li><a href="#">Pusat bantuan</a></li>
+          <li><a href="#">Umpan Balik</a></li>
+          <li><a href="#">Kontak Kami</a></li>
+          <li><a href="#">Kebijakan Pengguna</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Tim Site22. All rights reserved.
+    </div>
+  </footer>
+  <!--======================================================= AKHIR FOOTER =======================================================-->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/produk.js"></script>
+  <script src="/js/keranjang.js"></script>
+  <script src="/js/wishlist.js"></script>
+</body>
+
 </html>

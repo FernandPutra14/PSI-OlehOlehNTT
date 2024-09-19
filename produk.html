@@ -1,170 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--============= ICON - REMIXICON ===========-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--============= SLIDER - SWIPER.JS ===========-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+  <!--============= ICON - REMIXICON ===========-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!--============= CSS - CSS GLOBAL ===========-->
-    <link rel="stylesheet" href="styles.css" />
-    <title>Produk</title>
-  </head>
-  <body>
+  <!--============= SLIDER - SWIPER.JS ===========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-     <!--======================================================= NAVBAR =======================================================-->
-<nav>
-  <!-- Navbar Atas -->
-  <div class="nav__top">
-    <div class="container_nav_satu">
-      
-      <!-- <div class="nav__search">
+  <!--============= CSS - CSS GLOBAL ===========-->
+  <link rel="stylesheet" href="styles.css" />
+  <title>Produk</title>
+</head>
+
+<body>
+
+  <!--======================================================= NAVBAR =======================================================-->
+  <nav>
+    <!-- Navbar Atas -->
+    <div class="nav__top">
+      <div class="container_nav_satu">
+
+        <!-- <div class="nav__search">
         <input type="text" placeholder="Cari produk...">
       </div> -->
-      <div class="nav__auth">
-        <a href="">Bantuan</a>
-        <span class="not-authorize">|</span>
-        <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
-        <span class="not-authorize">|</span>
-        <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
-        <span class="authorize">|</span>
-        <a href="profil.html" class="authorize">
-        Hai, <span class="name-placeholder"></span>
-        </a>
-        <span class="authorize">|</span>
-        <button class="authorize" onclick="signout()">
-          Keluar
-        </button>
+        <div class="nav__auth">
+          <a href="">Bantuan</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
+          <span class="authorize">|</span>
+          <a href="profil.html" class="authorize">
+            Hai, <span class="name-placeholder"></span>
+          </a>
+          <span class="authorize">|</span>
+          <button class="authorize" onclick="signout()">
+            Keluar
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Navbar Bawah -->
-  <div class="nav__bottom">
-    <div class="container_nav_dua">
-      <div class="nav__logo">
-        <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
-      </div>
-      <ul class="nav__links">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="produk.html">Produk</a></li>
-        <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
-        <li><a href="">Tentang Kami</a></li>
-        <li><a href="">Kontak</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-      <div class="nav__icons">
-        <div class="nav__search">
-          <i class="ri-search-line"></i>
-          <input type="text" placeholder="Cari produk...">
-      </div>      
-      <a href="sukai.html" class="icon-sukai">
-        <i class="ri-heart-line"></i>
-        <span class="badge">3</span>
-      </a>
-      
-      <a class="user" href="">
-        <i class="ri-user-line"></i>
-      </a>
-      
-      <a href="keranjang.html" class="icon-keranjang">
-        <i class="ri-shopping-cart-line"></i>
-        <span class="badge">2</span>
-      </a>
+    <!-- Navbar Bawah -->
+    <div class="nav__bottom">
+      <div class="container_nav_dua">
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
+        </div>
+        <ul class="nav__links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
+          <li><a href="">Tentang Kami</a></li>
+          <li><a href="">Kontak</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="nav__icons">
+          <div class="nav__search">
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Cari produk...">
+          </div>
+          <a href="sukai.html" class="icon-sukai authorize">
+            <i class="ri-heart-line"></i>
+            <span class="badge" id="wishlist-badge">3</span>
+          </a>
+          <a class="user authorize" href="profil.html">
+            <i class="ri-user-line"></i>
+          </a>
+          <a href="keranjang.html" class="icon-keranjang authorize">
+            <i class="ri-shopping-cart-line"></i>
+            <span class="badge" id="keranjang-badge">2</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-<!--======================================================= AKHIR NAVBAR =======================================================-->
+  </nav>
+  <!--======================================================= AKHIR NAVBAR =======================================================-->
 
 
 
-    <!--======================================================= JUDUL - PRODUK =======================================================-->
-    <section class="section__container judul-halaman-produk-container" id="judul-halaman-produk">
-      <div class="nama_kategori_judul">
-        <h3>
-          Semua
-        </h3>
-        <p>
-          (200)
-        </p>
+  <!--======================================================= JUDUL - PRODUK =======================================================-->
+  <section class="section__container judul-halaman-produk-container" id="judul-halaman-produk">
+    <div class="nama_kategori_judul">
+      <h3>
+        Semua
+      </h3>
+      <p>
+        (200)
+      </p>
     </div>
-      <div class="">
-        <h4>
-          Filter Berdasarkan Preferensi Anda
-        </h4>     
-      </div>
+    <div class="">
+      <h4>
+        Filter Berdasarkan Preferensi Anda
+      </h4>
+    </div>
   </section>
   <!--======================================================= AKHIR JUDUL - PRODUK =======================================================-->
 
 
   <!--======================================================= FILTER - PRODUK =======================================================-->
-<section id="filter" class="sticky">
-  <div class="section__container filter_produk_container">
+  <section id="filter" class="sticky">
+    <div class="section__container filter_produk_container">
       <div class="filter-border">
-          <!-- Kategori Filter (Sebelah Kiri) -->
-          <div class="filter-left">
+        <!-- Kategori Filter (Sebelah Kiri) -->
+        <div class="filter-left">
 
 
-            <!-- Buat Sini -->
-              <div class="filter_container">
-                  <div class="nama_filter">
-                    <h6>Kategori</h6>
-                  </div>
-                  <div class="arrow-filter">
-                    <i class="ri-arrow-drop-down-line"></i>
-                  </div>
-              </div>
-             <!-- AKhir Buat Sini -->
-              <!-- Buat Sini -->
-              <div class="filter_container">
-                <div class="nama_filter">
-                  <h6>Harga</h6>
-                </div>
-                <div class="arrow-filter">
-                  <i class="ri-arrow-drop-down-line"></i>
-                </div>
+          <!-- Buat Sini -->
+          <div class="filter_container">
+            <div class="nama_filter">
+              <h6>Kategori</h6>
             </div>
-           <!-- AKhir Buat Sini -->
-            <!-- Buat Sini -->
-            <div class="filter_container">
-              <div class="nama_filter">
-                <h6>Ukuran</h6>
-              </div>
-              <div class="arrow-filter">
-                <i class="ri-arrow-drop-down-line"></i>
-              </div>
+            <div class="arrow-filter">
+              <i class="ri-arrow-drop-down-line"></i>
+            </div>
           </div>
-         <!-- AKhir Buat Sini -->
-            <!-- Buat Sini -->
-            <div class="filter_container">
-              <div class="nama_filter">
-                <h6>Gender</h6>
-              </div>
-              <div class="arrow-filter">
-                <i class="ri-arrow-drop-down-line"></i>
-              </div>
-          </div>
-         <!-- AKhir Buat Sini -->
           <!-- AKhir Buat Sini -->
-            <!-- Buat Sini -->
-            <div class="filter_container">
-              <div class="nama_filter">
-                <h6>Diskon</h6>
-              </div>
-              <div class="arrow-filter">
-                <i class="ri-arrow-drop-down-line"></i>
-              </div>
+          <!-- Buat Sini -->
+          <div class="filter_container">
+            <div class="nama_filter">
+              <h6>Harga</h6>
+            </div>
+            <div class="arrow-filter">
+              <i class="ri-arrow-drop-down-line"></i>
+            </div>
           </div>
-         <!-- AKhir Buat Sini -->
+          <!-- AKhir Buat Sini -->
+          <!-- Buat Sini -->
+          <div class="filter_container">
+            <div class="nama_filter">
+              <h6>Ukuran</h6>
+            </div>
+            <div class="arrow-filter">
+              <i class="ri-arrow-drop-down-line"></i>
+            </div>
+          </div>
+          <!-- AKhir Buat Sini -->
+          <!-- Buat Sini -->
+          <div class="filter_container">
+            <div class="nama_filter">
+              <h6>Gender</h6>
+            </div>
+            <div class="arrow-filter">
+              <i class="ri-arrow-drop-down-line"></i>
+            </div>
+          </div>
+          <!-- AKhir Buat Sini -->
+          <!-- AKhir Buat Sini -->
+          <!-- Buat Sini -->
+          <div class="filter_container">
+            <div class="nama_filter">
+              <h6>Diskon</h6>
+            </div>
+            <div class="arrow-filter">
+              <i class="ri-arrow-drop-down-line"></i>
+            </div>
+          </div>
+          <!-- AKhir Buat Sini -->
 
 
 
-              <!-- <select id="kategori">
+          <!-- <select id="kategori">
                   <option value="makanan">Makanan</option>
                   <option value="minuman">Minuman</option>
                   <option value="pakaian">Pakaian</option>
@@ -175,370 +175,374 @@
                   <option value="rendah">Rendah</option>
               </select> -->
 
+        </div>
+
+        <!-- Filter Waktu (Sebelah Kanan) -->
+        <div class="filter-right">
+
+          <!-- Buat Sini -->
+          <div class="filter_container">
+            <div class="nama_filter">
+              <h6>Urut Berdasarkan</h6>
+            </div>
+            <div class="arrow-filter">
+              <i class="ri-arrow-drop-down-line"></i>
+            </div>
           </div>
-
-          <!-- Filter Waktu (Sebelah Kanan) -->
-          <div class="filter-right">
-
-            <!-- Buat Sini -->
-            <div class="filter_container">
-              <div class="nama_filter">
-                <h6>Urut Berdasarkan</h6>
-              </div>
-              <div class="arrow-filter">
-                <i class="ri-arrow-drop-down-line"></i>
-              </div>
-          </div>
-         <!-- AKhir Buat Sini -->
+          <!-- AKhir Buat Sini -->
 
 
-              <!-- <select id="filter">
+          <!-- <select id="filter">
                   <option value="terbaru">Terbaru</option>
                   <option value="terlama">Terlama</option>
                   <option value="populer">Populer</option>
               </select> -->
-          </div>
+        </div>
       </div>
-  </div>
+    </div>
   </section>
   <!--======================================================= AKHIR FILTER - PRODUK =======================================================-->
 
-    <!--======================================================= DAFTAR PRODUK - PRODUK =======================================================-->
-    <section class="" id="daftar-produk">
-      <div class="section__container laris__container">
-        <div class="laris__grid">
+  <!--======================================================= DAFTAR PRODUK - PRODUK =======================================================-->
+  <section class="" id="daftar-produk">
+    <div class="section__container laris__container">
+      <div class="laris__grid">
 
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
-                    <button class="btn-produk-none btn-sukai">
-                      <i class="ri-heart-line sukai"></i>
-                    </button>
-                    <button class="btn-produk-none btn-keranjangi">
-                      <i class="ri-shopping-cart-2-line keranjangi"></i>
-                    </button>
-                  </div>               
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Akhir Card -->
-
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
-                    <button class="btn-produk-none btn-sukai">
-                      <i class="ri-heart-line sukai"></i>
-                    </button>
-                    <button class="btn-produk-none btn-keranjangi">
-                      <i class="ri-shopping-cart-2-line keranjangi"></i>
-                    </button>
-                  </div>               
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Akhir Card -->
-
-
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
-                    <button class="btn-produk-none btn-sukai">
-                      <i class="ri-heart-line sukai"></i>
-                    </button>
-                    <button class="btn-produk-none btn-keranjangi">
-                      <i class="ri-shopping-cart-2-line keranjangi"></i>
-                    </button>
-                  </div>               
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Akhir Card -->
-
-
-
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
-                    <button class="btn-produk-none btn-sukai">
-                      <i class="ri-heart-line sukai"></i>
-                    </button>
-                    <button class="btn-produk-none btn-keranjangi">
-                      <i class="ri-shopping-cart-2-line keranjangi"></i>
-                    </button>
-                  </div>               
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Akhir Card -->
-
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <button class="btn-produk-none btn-sukai">
                     <i class="ri-heart-line sukai"></i>
+                  </button>
+                  <button class="btn-produk-none btn-keranjangi">
                     <i class="ri-shopping-cart-2-line keranjangi"></i>
-                  </div>               
+                  </button>
                 </div>
               </div>
             </div>
-          </a>
-          <!-- Akhir Card -->
-
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
-                    <i class="ri-heart-line sukai"></i>
-                    <i class="ri-shopping-cart-2-line keranjangi"></i>
-                  </div>               
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Akhir Card -->
-
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
-                    <i class="ri-heart-line sukai"></i>
-                    <i class="ri-shopping-cart-2-line keranjangi"></i>
-                  </div>               
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Akhir Card -->
-
-
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
-                    <i class="ri-heart-line sukai"></i>
-                    <i class="ri-shopping-cart-2-line keranjangi"></i>
-                  </div>               
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Akhir Card -->
-
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
-                    <i class="ri-heart-line sukai"></i>
-                    <i class="ri-shopping-cart-2-line keranjangi"></i>
-                  </div>               
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Akhir Card -->
-
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
-                    <i class="ri-heart-line sukai"></i>
-                    <i class="ri-shopping-cart-2-line keranjangi"></i>
-                  </div>               
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Akhir Card -->
-
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
-                    <i class="ri-heart-line sukai"></i>
-                    <i class="ri-shopping-cart-2-line keranjangi"></i>
-                  </div>               
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Akhir Card -->
-
-
-          <!-- Card -->
-          <a href="detail_produk.html" class="laris__card-link">
-            <div class="laris__card">
-              <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-              <div class="laris__details">
-                <p>Makanan</p>
-                <h6>Se'i Babi Asap</h6>
-                <div class="bagian__price">
-                  <div class="price"><span>Rp 25.000</span></div>
-                  <div class="action-produk-card">
-                    <i class="ri-heart-line sukai"></i>
-                    <i class="ri-shopping-cart-2-line keranjangi"></i>
-                  </div>               
-                </div>
-              </div>
-            </div>
-          </a>
-          <!-- Akhir Card -->
-       
-      </div>
-    </section>
-    <!--======================================================= AKHIR DAFTAR PRODUK - PRODUK =======================================================-->
-
-    <!--======================================================= NEWSLETTER =======================================================-->
-<section class="newsletter">
-  <div class=" newsletter__container">
-    <p class="section__subheader">Newsletter Kami</p>
-    <h2 class="section__header">Subscribe Newsletter</h2>
-    <h6 class="">SUbscribe Newsletter Kami Untuk Mendapatkan Informasi Produk Terbaru Kami. <br> 
-                Dapatkan 20% Diskon Untuk Order Pertama Setelah Subscribe</h6>
-    <div class="newsletter__grid">
-      <input type="email" placeholder="Masukkan email Anda" />
-      <button type="button">Subscribe</button>
-    </div>
-  </div>
-</section>
-<!--======================================================= AKHIR NEWSLETTER =======================================================-->
-
-
-    <!--======================================================= FOOTER =======================================================-->
-    <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <div class="footer__logo">
-            <a href="#" class="logo">             
-              <span>OlehOlehNTT</span>
-            </a>
           </div>
-          <p class="section__description">
-            Pekerjaan Kami adalah Menyediakan Pengalaman Belanja Yang Nyaman
-          </p>
-          <ul class="footer__socials">
-            <li>
-              <a href="#"><i class="ri-instagram-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-twitter-fill"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Tentang Kami</h4>
-          <ul class="footer__links">
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Fitur</a></li>
-            <li><a href="#">Berita</a></li>
-            <li><a href="#">Menu</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Toko</h4>
-          <ul class="footer__links">
-            <li><a href="#">Mengapa Kami?</a></li>
-            <li><a href="#">Partner Kami</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Bantuan</h4>
-          <ul class="footer__links">
-            <li><a href="#">Pusat bantuan</a></li>
-            <li><a href="#">Umpan Balik</a></li>
-            <li><a href="#">Kontak Kami</a></li>
-            <li><a href="#">Kebijakan Pengguna</a></li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__bar">
-        Copyright © 2024 Tim Site22. All rights reserved.
-      </div>
-    </footer>
-    <!--======================================================= AKHIR FOOTER =======================================================-->
+        </a>
+        <!-- Akhir Card -->
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/auth.js"></script>
-  </body>
-  </body>
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <button class="btn-produk-none btn-sukai">
+                    <i class="ri-heart-line sukai"></i>
+                  </button>
+                  <button class="btn-produk-none btn-keranjangi">
+                    <i class="ri-shopping-cart-2-line keranjangi"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Akhir Card -->
+
+
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <button class="btn-produk-none btn-sukai">
+                    <i class="ri-heart-line sukai"></i>
+                  </button>
+                  <button class="btn-produk-none btn-keranjangi">
+                    <i class="ri-shopping-cart-2-line keranjangi"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Akhir Card -->
+
+
+
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <button class="btn-produk-none btn-sukai">
+                    <i class="ri-heart-line sukai"></i>
+                  </button>
+                  <button class="btn-produk-none btn-keranjangi">
+                    <i class="ri-shopping-cart-2-line keranjangi"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Akhir Card -->
+
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <i class="ri-heart-line sukai"></i>
+                  <i class="ri-shopping-cart-2-line keranjangi"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Akhir Card -->
+
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <i class="ri-heart-line sukai"></i>
+                  <i class="ri-shopping-cart-2-line keranjangi"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Akhir Card -->
+
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <i class="ri-heart-line sukai"></i>
+                  <i class="ri-shopping-cart-2-line keranjangi"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Akhir Card -->
+
+
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <i class="ri-heart-line sukai"></i>
+                  <i class="ri-shopping-cart-2-line keranjangi"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Akhir Card -->
+
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <i class="ri-heart-line sukai"></i>
+                  <i class="ri-shopping-cart-2-line keranjangi"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Akhir Card -->
+
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <i class="ri-heart-line sukai"></i>
+                  <i class="ri-shopping-cart-2-line keranjangi"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Akhir Card -->
+
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <i class="ri-heart-line sukai"></i>
+                  <i class="ri-shopping-cart-2-line keranjangi"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Akhir Card -->
+
+
+        <!-- Card -->
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <i class="ri-heart-line sukai"></i>
+                  <i class="ri-shopping-cart-2-line keranjangi"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Akhir Card -->
+
+      </div>
+  </section>
+  <!--======================================================= AKHIR DAFTAR PRODUK - PRODUK =======================================================-->
+
+  <!--======================================================= NEWSLETTER =======================================================-->
+  <section class="newsletter">
+    <div class=" newsletter__container">
+      <p class="section__subheader">Newsletter Kami</p>
+      <h2 class="section__header">Subscribe Newsletter</h2>
+      <h6 class="">SUbscribe Newsletter Kami Untuk Mendapatkan Informasi Produk Terbaru Kami. <br>
+        Dapatkan 20% Diskon Untuk Order Pertama Setelah Subscribe</h6>
+      <div class="newsletter__grid">
+        <input type="email" placeholder="Masukkan email Anda" />
+        <button type="button">Subscribe</button>
+      </div>
+    </div>
+  </section>
+  <!--======================================================= AKHIR NEWSLETTER =======================================================-->
+
+
+  <!--======================================================= FOOTER =======================================================-->
+  <footer>
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#" class="logo">
+            <span>OlehOlehNTT</span>
+          </a>
+        </div>
+        <p class="section__description">
+          Pekerjaan Kami adalah Menyediakan Pengalaman Belanja Yang Nyaman
+        </p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Tentang Kami</h4>
+        <ul class="footer__links">
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Fitur</a></li>
+          <li><a href="#">Berita</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Toko</h4>
+        <ul class="footer__links">
+          <li><a href="#">Mengapa Kami?</a></li>
+          <li><a href="#">Partner Kami</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Bantuan</h4>
+        <ul class="footer__links">
+          <li><a href="#">Pusat bantuan</a></li>
+          <li><a href="#">Umpan Balik</a></li>
+          <li><a href="#">Kontak Kami</a></li>
+          <li><a href="#">Kebijakan Pengguna</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Tim Site22. All rights reserved.
+    </div>
+  </footer>
+  <!--======================================================= AKHIR FOOTER =======================================================-->
+
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/produk.js"></script>
+  <script src="/js/keranjang.js"></script>
+  <script src="/js/wishlist.js"></script>
+</body>
+
 </html>
