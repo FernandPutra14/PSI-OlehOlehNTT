@@ -60,7 +60,6 @@ function addItem(produk, jumlah) {
     }
 
     saveKeranjang(keranjang);
-    window.location.reload();
 }
 
 function removeItem(id) {
