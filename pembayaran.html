@@ -21,140 +21,140 @@
   <span id="redirectLogin" data-when="signout" data-to="/masuk_atau_daftar.html"></span>
 
   <!--======================================================= NAVBAR =======================================================-->
-<nav>
-  <!-- Navbar Atas -->
-  <div class="nav__top">
-    <div class="container_nav_satu">
-      
-      <!-- <div class="nav__search">
+  <nav>
+    <!-- Navbar Atas -->
+    <div class="nav__top">
+      <div class="container_nav_satu">
+
+        <!-- <div class="nav__search">
         <input type="text" placeholder="Cari produk...">
       </div> -->
-      <div class="nav__auth">
-        <a href="">Bantuan</a>
-        <span class="not-authorize">|</span>
-        <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
-        <span class="not-authorize">|</span>
-        <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
-        <span class="authorize">|</span>
-        <a href="profil.html" class="authorize">
-        Hai, <span class="name-placeholder"></span>
-        </a>
-        <span class="authorize">|</span>
-        <button class="authorize" onclick="signout()">
-          Keluar
-        </button>
+        <div class="nav__auth">
+          <a href="">Bantuan</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
+          <span class="authorize">|</span>
+          <a href="profil.html" class="authorize">
+            Hai, <span class="name-placeholder"></span>
+          </a>
+          <span class="authorize">|</span>
+          <button class="authorize" onclick="signout()">
+            Keluar
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Navbar Bawah -->
-  <div class="nav__bottom">
-    <div class="container_nav_dua">
-      <div class="nav__logo">
-        <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
-      </div>
-      <ul class="nav__links">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="produk.html">Produk</a></li>
-        <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
-        <li><a href="">Tentang Kami</a></li>
-        <li><a href="">Kontak</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-      <div class="nav__icons">
-        <div class="nav__search">
-          <i class="ri-search-line"></i>
-          <input type="text" placeholder="Cari produk...">
-      </div>      
-      
-      <a href="sukai.html" class="icon-sukai">
-        <i class="ri-heart-line"></i>
-        <span class="badge">3</span>
-      </a>
-      
-      <a href="keranjang.html" class="icon-keranjang">
-        <i class="ri-shopping-cart-line"></i>
-        <span class="badge">2</span>
-      </a>
+    <!-- Navbar Bawah -->
+    <div class="nav__bottom">
+      <div class="container_nav_dua">
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
+        </div>
+        <ul class="nav__links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
+          <li><a href="">Tentang Kami</a></li>
+          <li><a href="">Kontak</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="nav__icons">
+          <div class="nav__search">
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Cari produk...">
+          </div>
+
+          <a href="sukai.html" class="icon-sukai authorize">
+            <i class="ri-heart-line"></i>
+            <span class="badge" id="wishlist-badge">3</span>
+          </a>
+          <a href="keranjang.html" class="icon-keranjang authorize">
+            <i class="ri-shopping-cart-line"></i>
+            <span class="badge" id="keranjang-badge">2</span>
+          </a>
+
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-<!--======================================================= AKHIR NAVBAR =======================================================-->
+  </nav>
+  <!--======================================================= AKHIR NAVBAR =======================================================-->
 
   <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
   <section class="section__container pembayaran_container">
     <div class="col-7 content_pembayaran_container" id="pembayaran">
       <div class="judul_pembayaran">
         <h3>
-            Data Pribadi dan Alamat
+          Data Pribadi dan Alamat
         </h3>
         <p>
-            Pastikan data sudah benar dan tepat!!
+          Pastikan data sudah benar dan tepat!!
         </p>
       </div>
       <div class="input_kontak_pembayaran_container">
         <div class="">
-            <div class="input_grup">
-                <input type="email" required />
-                <label for="">Nama*</label>
-            </div>
+          <div class="input_grup">
+            <input type="email" required />
+            <label for="">Nama*</label>
+          </div>
         </div>
-            <div class="">
-                <div class="input_grup">
-                    <input type="text" required />
-                    <label for="">No.Telp*</label>
-                </div>
-            </div>
+        <div class="">
+          <div class="input_grup">
+            <input type="text" required />
+            <label for="">No.Telp*</label>
+          </div>
+        </div>
       </div>
       <div class="input_alamat_pembayaran_container">
         <div class="judul_alamat_pembayaran">
-            <div class="judul_alamat">
-                <h5>Alamat Pengiriman<span>(alamat default)</span></h5>
-            </div>
-            <div class="ubah_alamat">
-                <p>Ubah alamat</p>
-            </div>
-            
+          <div class="judul_alamat">
+            <h5>Alamat Pengiriman<span>(alamat default)</span></h5>
+          </div>
+          <div class="ubah_alamat">
+            <p>Ubah alamat</p>
+          </div>
+
         </div>
         <div class="bagi_bagi">
-            <div class="input_grup">
-                <input type="email" required />
-                <label for="">Provinsi*</label>
-            </div>
+          <div class="input_grup">
+            <input type="email" required />
+            <label for="">Provinsi*</label>
+          </div>
 
-            <div class="input_grup">
-                <input type="email" required />
-                <label for="">Kota/Kabupaten*</label>
-            </div>
+          <div class="input_grup">
+            <input type="email" required />
+            <label for="">Kota/Kabupaten*</label>
+          </div>
         </div>
         <div class="bagi_bagi">
-            <div class="input_grup">
-                <input type="email" required />
-                <label for="">Kecamatan*</label>
-            </div>
+          <div class="input_grup">
+            <input type="email" required />
+            <label for="">Kecamatan*</label>
+          </div>
 
-            <div class="input_grup">
-                <input type="email" required />
-                <label for="">Kelurahan/Desa*</label>
-            </div>
+          <div class="input_grup">
+            <input type="email" required />
+            <label for="">Kelurahan/Desa*</label>
+          </div>
         </div>
         <div class="bagi_bagi">
-            <div class="input_grup">
-                <input type="email" required />
-                <label for="">RW*</label>
-            </div>
+          <div class="input_grup">
+            <input type="email" required />
+            <label for="">RW*</label>
+          </div>
 
-            <div class="input_grup">
-                <input type="email" required />
-                <label for="">RT*</label>
-            </div>
+          <div class="input_grup">
+            <input type="email" required />
+            <label for="">RT*</label>
+          </div>
         </div>
         <div class="">
-            <div class="input_grup">
-                <input type="email" required />
-                <label for="">Jalan*</label>
-            </div>
+          <div class="input_grup">
+            <input type="email" required />
+            <label for="">Jalan*</label>
+          </div>
         </div>
       </div>
     </div>
@@ -167,22 +167,22 @@
       <div class="progress-container">
         <div class="line"></div>
         <div class="line active"></div>
-        
+
         <div class="progress-step active">
           <div class="circle">1</div>
           <h4>Mengisi Kontak dan Alamat</h4>
         </div>
-        
+
         <div class="progress-step">
           <div class="circle">2</div>
           <h4>Metode Pembayaran</h4>
         </div>
-        
+
         <div class="progress-step">
           <div class="circle">3</div>
           <h4>Review Produk dan Pembayaran</h4>
         </div>
-        
+
       </div>
     </div>
     </div>
@@ -267,8 +267,9 @@
   <script src="/js/main.js"></script>
   <script src="/js/auth.js"></script>
   <script src="/js/keranjang.js"></script>
+  <script src="/js/wishlist.js"></script>
   <script type="text/javascript">
-    
+
   </script>
 </body>
 

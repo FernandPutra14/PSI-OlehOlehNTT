@@ -72,9 +72,9 @@ function authorizeContent(authState) {
     const notAuthorizeElements = document.querySelectorAll('.not-authorize');
 
     if(authState.signin) {
-        authorizeElements.forEach((e) => e.classList.add('show'));
+        authorizeElements.forEach((e) => e.classList.remove('authorize'));
     } else {
-        notAuthorizeElements.forEach((e) => e.classList.add('show'));
+        notAuthorizeElements.forEach((e) => e.classList.remove('not-authorize'));
     }
 }
 
