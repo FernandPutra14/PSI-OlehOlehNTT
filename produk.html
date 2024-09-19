@@ -324,7 +324,7 @@
         </a>
         `)
       });
-
+      authorizeContent(getAuthState());
       document.querySelectorAll('.sukai').forEach(function (icon) {
         icon.addEventListener('mouseover', function () {
           this.classList.replace('ri-heart-line', 'ri-heart-fill');
