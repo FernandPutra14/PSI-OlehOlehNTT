@@ -1,88 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--============= ICON - REMIXICON ===========-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!--============= SLIDER - SWIPER.JS ===========-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" >
+  <!--============= ICON - REMIXICON ===========-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
-    <!--============= CSS - CSS GLOBAL ===========-->
-    <link rel="stylesheet" href="styles.css" />
-    <title>E-Commerce | oleholehNTT</title>
-  </head>
-  <body>
+  <!--============= SLIDER - SWIPER.JS ===========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-    <!--======================================================= NAVBAR =======================================================-->
-<nav>
-  <!-- Navbar Atas -->
-  <div class="nav__top">
-    <div class="container_nav_satu">
-      
-      <!-- <div class="nav__search">
+  <!--============= CSS - CSS GLOBAL ===========-->
+  <link rel="stylesheet" href="styles.css" />
+  <title>E-Commerce | oleholehNTT</title>
+</head>
+
+<body>
+
+  <!--======================================================= NAVBAR =======================================================-->
+  <nav>
+    <!-- Navbar Atas -->
+    <div class="nav__top">
+      <div class="container_nav_satu">
+
+        <!-- <div class="nav__search">
         <input type="text" placeholder="Cari produk...">
       </div> -->
-      <div class="nav__auth">
-        <a href="">Bantuan</a>
-        <span class="not-authorize">|</span>
-        <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
-        <span class="not-authorize">|</span>
-        <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
-        <span class="authorize">|</span>
-        <a href="profil.html" class="authorize">
-        Hai, <span class="name-placeholder"></span>
-        </a>
-        <span class="authorize">|</span>
-        <button class="authorize" onclick="signout()">
-          Keluar
-        </button>
+        <div class="nav__auth">
+          <a href="">Bantuan</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
+          <span class="authorize">|</span>
+          <a href="profil.html" class="authorize">
+            Hai, <span class="name-placeholder"></span>
+          </a>
+          <span class="authorize">|</span>
+          <button class="authorize" onclick="signout()">
+            Keluar
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Navbar Bawah -->
-  <div class="nav__bottom">
-    <div class="container_nav_dua">
-      <div class="nav__logo">
-        <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
-      </div>
-      <ul class="nav__links">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="produk.html">Produk</a></li>
-        <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
-        <li><a href="">Tentang Kami</a></li>
-        <li><a href="">Kontak</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-      <div class="nav__icons">
-        <div class="nav__search">
-          <i class="ri-search-line"></i>
-          <input type="text" placeholder="Cari produk...">
-      </div>      
-      <a href="sukai.html" class="icon-sukai">
-        <i class="ri-heart-line"></i>
-        <span class="badge">3</span>
-      </a>
-      
-      <a class="user" href="">
-        <i class="ri-user-line"></i>
-      </a>
-      
-      <a href="keranjang.html" class="icon-keranjang">
-        <i class="ri-shopping-cart-line"></i>
-        <span class="badge">2</span>
-      </a>
+    <!-- Navbar Bawah -->
+    <div class="nav__bottom">
+      <div class="container_nav_dua">
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
+        </div>
+        <ul class="nav__links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
+          <li><a href="">Tentang Kami</a></li>
+          <li><a href="">Kontak</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="nav__icons">
+          <div class="nav__search">
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Cari produk...">
+          </div>
+          <a href="sukai.html" class="icon-sukai authorize">
+            <i class="ri-heart-line"></i>
+            <span class="badge" id="wishlist-badge">3</span>
+          </a>
+          <a class="user authorize" href="profil.html">
+            <i class="ri-user-line"></i>
+          </a>
+          <a href="keranjang.html" class="icon-keranjang authorize">
+            <i class="ri-shopping-cart-line"></i>
+            <span class="badge" id="keranjang-badge">2</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-<!--======================================================= AKHIR NAVBAR =======================================================-->
+  </nav>
+  <!--======================================================= AKHIR NAVBAR =======================================================-->
 
-    <!--======================================================= HERO - HOMEPAGE =======================================================-->
-    <div class="hero">
+  <!--======================================================= HERO - HOMEPAGE =======================================================-->
+  <div class="hero">
     <header class="section__container header__container" id="about">
       <div class="header__image">
         <img src="assets/header_oleh2.png" alt="header" />
@@ -103,123 +103,123 @@
       </div>
     </header>
   </div>
-    <!--======================================================= AKHIR HERO - HOMEPAGE =======================================================-->
+  <!--======================================================= AKHIR HERO - HOMEPAGE =======================================================-->
 
-    <!--======================================================= STATS - HOMEPAGE =======================================================-->
-    <section class="section__container stats__container">
-      <div class="stats__card">
-        <h4>100+</h4>
-        <p>Ulasan Positif</p>
-      </div>
-      <div class="stats__divider"></div>
-      <div class="stats__card">
-        <h4>100+</h4>
-        <p>Produk Unik</p>
-      </div>
-      <div class="stats__divider"></div>
-      <div class="stats__card">
-        <h4>99+</h4>
-        <p>Pesanan Terpenuhi</p>
-      </div>
-    </section>
-    <!--======================================================= AKHIR STATS - HOMEPAGE =======================================================-->
+  <!--======================================================= STATS - HOMEPAGE =======================================================-->
+  <section class="section__container stats__container">
+    <div class="stats__card">
+      <h4>100+</h4>
+      <p>Ulasan Positif</p>
+    </div>
+    <div class="stats__divider"></div>
+    <div class="stats__card">
+      <h4>100+</h4>
+      <p>Produk Unik</p>
+    </div>
+    <div class="stats__divider"></div>
+    <div class="stats__card">
+      <h4>99+</h4>
+      <p>Pesanan Terpenuhi</p>
+    </div>
+  </section>
+  <!--======================================================= AKHIR STATS - HOMEPAGE =======================================================-->
 
-    <!--======================================================= KATEGORI PRODUK - HOMEPAGE =======================================================-->
-    <section class="section__container kategori__container" id="review">
-      <p class="section__subheader">Kategori</p>
-      <h2 class="section__header">
-        Kategori Produk<span></span>
-      </h2>
-      <p class="section__description">
-        Temukan kategori produk khas terbaik Nusa Tenggara Timur di sini!
+  <!--======================================================= KATEGORI PRODUK - HOMEPAGE =======================================================-->
+  <section class="section__container kategori__container" id="review">
+    <p class="section__subheader">Kategori</p>
+    <h2 class="section__header">
+      Kategori Produk<span></span>
+    </h2>
+    <p class="section__description">
+      Temukan kategori produk khas terbaik Nusa Tenggara Timur di sini!
 
-      </p>
-      <!-- Slider main container -->
-      <div class="swiper">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">
-            <div class="kategori__card">
-              <div class="gambar_kategori">
-                <img src="assets/kategori_kain.png">
-              </div>            
-              <div class="nama_kategori">
-                <h4>Kain Tenun</h4>
-              </div>
+    </p>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="kategori__card">
+            <div class="gambar_kategori">
+              <img src="assets/kategori_kain.png">
             </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="kategori__card">
-              <div class="gambar_kategori">
-                <img src="assets/kategori_kain.png">
-              </div>            
-              <div class="nama_kategori">
-                <h4>Makanan</h4>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="kategori__card">
-              <div class="gambar_kategori">
-                <img src="assets/kategori_kain.png">
-              </div>            
-              <div class="nama_kategori">
-                <h4>Minuman</h4>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="kategori__card">
-              <div class="gambar_kategori">
-                <img src="assets/kategori_kain.png">
-              </div>            
-              <div class="nama_kategori">
-                <h4>Aksesoris</h4>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="kategori__card">
-              <div class="gambar_kategori">
-                <img src="assets/kategori_kain.png">
-              </div>            
-              <div class="nama_kategori">
-                <h4>Pakaian</h4>
-              </div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="kategori__card">
-              <div class="gambar_kategori">
-                <img src="assets/kategori_kain.png">
-              </div>            
-              <div class="nama_kategori">
-                <h4>Lain-Lain</h4>
-              </div>
+            <div class="nama_kategori">
+              <h4>Kain Tenun</h4>
             </div>
           </div>
         </div>
-        <!-- Tombol Navigasi -->
+        <div class="swiper-slide">
+          <div class="kategori__card">
+            <div class="gambar_kategori">
+              <img src="assets/kategori_kain.png">
+            </div>
+            <div class="nama_kategori">
+              <h4>Makanan</h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="kategori__card">
+            <div class="gambar_kategori">
+              <img src="assets/kategori_kain.png">
+            </div>
+            <div class="nama_kategori">
+              <h4>Minuman</h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="kategori__card">
+            <div class="gambar_kategori">
+              <img src="assets/kategori_kain.png">
+            </div>
+            <div class="nama_kategori">
+              <h4>Aksesoris</h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="kategori__card">
+            <div class="gambar_kategori">
+              <img src="assets/kategori_kain.png">
+            </div>
+            <div class="nama_kategori">
+              <h4>Pakaian</h4>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="kategori__card">
+            <div class="gambar_kategori">
+              <img src="assets/kategori_kain.png">
+            </div>
+            <div class="nama_kategori">
+              <h4>Lain-Lain</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Tombol Navigasi -->
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
-        <!-- Scrollbar -->
+      <!-- Scrollbar -->
       <div class="swiper-scrollbar"></div>
-      </div>
-    </section>
-    <!--======================================================= AKHIR KATEGORI PRODUK - HOMEPAGE =======================================================-->
+    </div>
+  </section>
+  <!--======================================================= AKHIR KATEGORI PRODUK - HOMEPAGE =======================================================-->
 
-    <!--======================================================= PRODUK TERLARIS - HOMEPAGE =======================================================-->
-    <section class="laris">
-      <div class="section__container laris__container">
-        <p class="section__subheader">
-          Terlaris di Toko
-        </p>
-        <h2 class="section__header">Produk Terlaris</h2>
-        <p class="section__description">
-          Lihat produk yang paling diminati pelanggan kami.
-        </p>
-        <div class="laris__grid">
+  <!--======================================================= PRODUK TERLARIS - HOMEPAGE =======================================================-->
+  <section class="laris">
+    <div class="section__container laris__container">
+      <p class="section__subheader">
+        Terlaris di Toko
+      </p>
+      <h2 class="section__header">Produk Terlaris</h2>
+      <p class="section__description">
+        Lihat produk yang paling diminati pelanggan kami.
+      </p>
+      <div class="laris__grid">
 
         <a href="detail_produk.html" class="laris__card-link">
           <div class="laris__card">
@@ -232,7 +232,7 @@
                 <div class="action-produk-card">
                   <i class="ri-heart-line sukai"></i>
                   <i class="ri-shopping-cart-2-line keranjangi"></i>
-                </div>               
+                </div>
               </div>
             </div>
           </div>
@@ -249,25 +249,7 @@
                 <div class="action-produk-card">
                   <i class="ri-heart-line sukai"></i>
                   <i class="ri-shopping-cart-2-line keranjangi"></i>
-                </div>               
-              </div>
-            </div>
-          </div>
-        </a>
-
-
-        <a href="detail_produk.html" class="laris__card-link">
-          <div class="laris__card">
-            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
-            <div class="laris__details">
-              <p>Makanan</p>
-              <h6>Se'i Babi Asap</h6>
-              <div class="bagian__price">
-                <div class="price"><span>Rp 25.000</span></div>
-                <div class="action-produk-card">
-                  <i class="ri-heart-line sukai"></i>
-                  <i class="ri-shopping-cart-2-line keranjangi"></i>
-                </div>               
+                </div>
               </div>
             </div>
           </div>
@@ -285,199 +267,218 @@
                 <div class="action-produk-card">
                   <i class="ri-heart-line sukai"></i>
                   <i class="ri-shopping-cart-2-line keranjangi"></i>
-                </div>               
+                </div>
               </div>
             </div>
           </div>
         </a>
-       
+
+
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/sei_makanan.png" alt="trip" />
+            <div class="laris__details">
+              <p>Makanan</p>
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price"><span>Rp 25.000</span></div>
+                <div class="action-produk-card">
+                  <i class="ri-heart-line sukai"></i>
+                  <i class="ri-shopping-cart-2-line keranjangi"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+
 
       </div>
       <div class="view__all">
         <a href="produk.html" class="btn">Lihat Semua</a>
       </div>
-    </section>
-    <!--======================================================= AKHIR PRODUK TERLARIS - HOMEPAGE =======================================================-->
+  </section>
+  <!--======================================================= AKHIR PRODUK TERLARIS - HOMEPAGE =======================================================-->
 
-    <!--======================================================= SERVICE - HOMEPAGE =======================================================-->
-    <section class="section__container service__container" id="service">
-      <div class="service__content">
-        <p class="section__subheader">Layanan Kami</p>
-        <h2 class="section__header">
-          Mengapa Belanja di <span>Oleh-oleh NTT?</span>
-        </h2>
-        <p class="section__description">
-          Kami menyediakan berbagai kategori produk lokal terbaik dari NTT dengan layanan pengiriman ke seluruh Indonesia.
-        </p>
-        <div class="service__btn">
-          <a href="produk.html" class="btn">Belanja Sekarang</a>
-        </div>
+  <!--======================================================= SERVICE - HOMEPAGE =======================================================-->
+  <section class="section__container service__container" id="service">
+    <div class="service__content">
+      <p class="section__subheader">Layanan Kami</p>
+      <h2 class="section__header">
+        Mengapa Belanja di <span>Oleh-oleh NTT?</span>
+      </h2>
+      <p class="section__description">
+        Kami menyediakan berbagai kategori produk lokal terbaik dari NTT dengan layanan pengiriman ke seluruh Indonesia.
+      </p>
+      <div class="service__btn">
+        <a href="produk.html" class="btn">Belanja Sekarang</a>
       </div>
-      <div class="service__grid">
-        <div class="service__card">
-          <span><i class="ri-grid-line"></i></span>
-          <h4>Kategori Lengkap</h4>
-          <p>
-            Menyediakan berbagai produk oleh-oleh seperti makanan khas, kerajinan tangan, hingga kain tenun asli NTT.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-map-pin-line"></i></span>
-          <h4>Pengiriman Luas</h4>
-          <p>
-            Layanan pengiriman ke seluruh Indonesia dengan jaminan keamanan dan ketepatan waktu.
-          </p>
-        </div>
-        <div class="service__card">
-          <span><i class="ri-hand-heart-line"></i></span>
-          <h4>Dukungan UMKM Lokal</h4>
-          <p>
-            Kami mendukung pengrajin lokal dengan menjual produk-produk terbaik mereka, membantu perekonomian NTT.
-          </p>
-        </div>
+    </div>
+    <div class="service__grid">
+      <div class="service__card">
+        <span><i class="ri-grid-line"></i></span>
+        <h4>Kategori Lengkap</h4>
+        <p>
+          Menyediakan berbagai produk oleh-oleh seperti makanan khas, kerajinan tangan, hingga kain tenun asli NTT.
+        </p>
       </div>
-    </section>
-    <!--======================================================= AKHIR SERVICE - HOMEPAGE =======================================================-->
-
-
-    <!--======================================================= BLOG - HOMEPAGE =======================================================-->
-    <section class="blog">
-      <div class="section__container blog__container">
-        <p class="section__subheader">
-          Terbaru
+      <div class="service__card">
+        <span><i class="ri-map-pin-line"></i></span>
+        <h4>Pengiriman Luas</h4>
+        <p>
+          Layanan pengiriman ke seluruh Indonesia dengan jaminan keamanan dan ketepatan waktu.
         </p>
-        <h2 class="section__header">Blog/Cerita Menarik</h2>
-        <p class="section__description">
-          Cerita menarik tentang produk lokal NTT.
+      </div>
+      <div class="service__card">
+        <span><i class="ri-hand-heart-line"></i></span>
+        <h4>Dukungan UMKM Lokal</h4>
+        <p>
+          Kami mendukung pengrajin lokal dengan menjual produk-produk terbaik mereka, membantu perekonomian NTT.
         </p>
-        <div class="blog__grid">
+      </div>
+    </div>
+  </section>
+  <!--======================================================= AKHIR SERVICE - HOMEPAGE =======================================================-->
 
 
-          <div class="blog__card">
-            <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
-            <div class="blog__details">
-              <p>Berita</p>
-              <h5>Mengenal Makanan Khas NTT: Lezat dan Unik</h6>  
-              <h6>Nusa Tenggara Timur (NTT) dikenal dengan berbagai kuliner khas yang menggugah selera. 
-                Di antara makanan-makanan tersebut, beberapa yang patut dicoba adalah Se’i Babi, daging 
-                babi asap yang penuh rasa, dan Jagung Bose, olahan jagung yang dimasak dengan rempah-rempah tradisional.</h6>  
-                <a>Selengkapnya</a>           
-            </div>           
+  <!--======================================================= BLOG - HOMEPAGE =======================================================-->
+  <section class="blog">
+    <div class="section__container blog__container">
+      <p class="section__subheader">
+        Terbaru
+      </p>
+      <h2 class="section__header">Blog/Cerita Menarik</h2>
+      <p class="section__description">
+        Cerita menarik tentang produk lokal NTT.
+      </p>
+      <div class="blog__grid">
+
+
+        <div class="blog__card">
+          <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
+          <div class="blog__details">
+            <p>Berita</p>
+            <h5>Mengenal Makanan Khas NTT: Lezat dan Unik</h6>
+              <h6>Nusa Tenggara Timur (NTT) dikenal dengan berbagai kuliner khas yang menggugah selera.
+                Di antara makanan-makanan tersebut, beberapa yang patut dicoba adalah Se’i Babi, daging
+                babi asap yang penuh rasa, dan Jagung Bose, olahan jagung yang dimasak dengan rempah-rempah tradisional.</h6>
+              <a>Selengkapnya</a>
           </div>
+        </div>
 
 
-          <div class="blog__card">
-            <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
-            <div class="blog__details">
-              <p>Tips/Trik</p>
-              <h5>Tips Memilih Oleh-Oleh Terbaik dari NTT: Dijamin Gokil</h5> 
-              <h6>Ketika berkunjung ke NTT, memilih oleh-oleh yang tepat bisa menjadi tantangan tersendiri. 
-                Berikut beberapa tips untuk membantu Anda:</h6> 
-              <a>Selengkapnya</a>          
-            </div>
+        <div class="blog__card">
+          <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
+          <div class="blog__details">
+            <p>Tips/Trik</p>
+            <h5>Tips Memilih Oleh-Oleh Terbaik dari NTT: Dijamin Gokil</h5>
+            <h6>Ketika berkunjung ke NTT, memilih oleh-oleh yang tepat bisa menjadi tantangan tersendiri.
+              Berikut beberapa tips untuk membantu Anda:</h6>
+            <a>Selengkapnya</a>
           </div>
+        </div>
 
 
-          <div class="blog__card">
-            <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
-            <div class="blog__details">
-              <p>Sejarah</p>
-              <h5>Sejarah Kain Tenun Ikat: Warisan Budaya NTT</h5>  
-              <h6>Kain tenun ikat merupakan salah satu warisan budaya yang paling berharga dari NTT. 
-                Teknik tenun ikat yang digunakan telah ada sejak zaman dahulu dan diwariskan turun-temurun 
-                oleh masyarakat lokal. Kain ini sering digunakan dalam upacara adat dan merupakan simbol 
-                status serta identitas budaya. </h6>  
-                <a>Selengkapnya</a>          
-            </div>
+        <div class="blog__card">
+          <img class="gambar_blog" src="assets/contoh_berita.png" alt="blog" />
+          <div class="blog__details">
+            <p>Sejarah</p>
+            <h5>Sejarah Kain Tenun Ikat: Warisan Budaya NTT</h5>
+            <h6>Kain tenun ikat merupakan salah satu warisan budaya yang paling berharga dari NTT.
+              Teknik tenun ikat yang digunakan telah ada sejak zaman dahulu dan diwariskan turun-temurun
+              oleh masyarakat lokal. Kain ini sering digunakan dalam upacara adat dan merupakan simbol
+              status serta identitas budaya. </h6>
+            <a>Selengkapnya</a>
           </div>
-        
+        </div>
+
       </div>
       <div class="view__all">
         <a href="blog.html" class="btn">Lihat Semua</a>
       </div>
-    </section>
-    <!--======================================================= AKHIR BLOG - HOMEPAGE =======================================================-->
+  </section>
+  <!--======================================================= AKHIR BLOG - HOMEPAGE =======================================================-->
 
-    <!--======================================================= NEWSLETTER =======================================================-->
-<section class="newsletter">
-  <div class=" newsletter__container">
-    <p class="section__subheader">Newsletter Kami</p>
-    <h2 class="section__header">Subscribe Newsletter</h2>
-    <h6 class="">SUbscribe Newsletter Kami Untuk Mendapatkan Informasi Produk Terbaru Kami. <br> 
-                Dapatkan 20% Diskon Untuk Order Pertama Setelah Subscribe</h6>
-    <div class="newsletter__grid">
-      <input type="email" placeholder="Masukkan email Anda" />
-      <button type="button">Subscribe</button>
+  <!--======================================================= NEWSLETTER =======================================================-->
+  <section class="newsletter">
+    <div class=" newsletter__container">
+      <p class="section__subheader">Newsletter Kami</p>
+      <h2 class="section__header">Subscribe Newsletter</h2>
+      <h6 class="">SUbscribe Newsletter Kami Untuk Mendapatkan Informasi Produk Terbaru Kami. <br>
+        Dapatkan 20% Diskon Untuk Order Pertama Setelah Subscribe</h6>
+      <div class="newsletter__grid">
+        <input type="email" placeholder="Masukkan email Anda" />
+        <button type="button">Subscribe</button>
+      </div>
     </div>
-  </div>
-</section>
-<!--======================================================= AKHIR NEWSLETTER =======================================================-->
+  </section>
+  <!--======================================================= AKHIR NEWSLETTER =======================================================-->
 
 
-    <!--======================================================= FOOTER =======================================================-->
-    <footer>
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <div class="footer__logo">
-            <a href="#" class="logo">             
-              <span>OlehOlehNTT</span>
-            </a>
-          </div>
-          <p class="section__description">
-            Pekerjaan Kami adalah Menyediakan Pengalaman Belanja Yang Nyaman
-          </p>
-          <ul class="footer__socials">
-            <li>
-              <a href="#"><i class="ri-instagram-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-facebook-fill"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="ri-twitter-fill"></i></a>
-            </li>
-          </ul>
+  <!--======================================================= FOOTER =======================================================-->
+  <footer>
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#" class="logo">
+            <span>OlehOlehNTT</span>
+          </a>
         </div>
-        <div class="footer__col">
-          <h4>Tentang Kami</h4>
-          <ul class="footer__links">
-            <li><a href="#">Tentang Kami</a></li>
-            <li><a href="#">Fitur</a></li>
-            <li><a href="#">Berita</a></li>
-            <li><a href="#">Menu</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Toko</h4>
-          <ul class="footer__links">
-            <li><a href="#">Mengapa Kami?</a></li>
-            <li><a href="#">Partner Kami</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-        <div class="footer__col">
-          <h4>Bantuan</h4>
-          <ul class="footer__links">
-            <li><a href="#">Pusat bantuan</a></li>
-            <li><a href="#">Umpan Balik</a></li>
-            <li><a href="#">Kontak Kami</a></li>
-            <li><a href="#">Kebijakan Pengguna</a></li>
-          </ul>
-        </div>
+        <p class="section__description">
+          Pekerjaan Kami adalah Menyediakan Pengalaman Belanja Yang Nyaman
+        </p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+        </ul>
       </div>
-      <div class="footer__bar">
-        Copyright © 2024 Tim Site22. All rights reserved.
+      <div class="footer__col">
+        <h4>Tentang Kami</h4>
+        <ul class="footer__links">
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Fitur</a></li>
+          <li><a href="#">Berita</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
       </div>
-    </footer>
-    <!--======================================================= AKHIR FOOTER =======================================================-->
+      <div class="footer__col">
+        <h4>Toko</h4>
+        <ul class="footer__links">
+          <li><a href="#">Mengapa Kami?</a></li>
+          <li><a href="#">Partner Kami</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Bantuan</h4>
+        <ul class="footer__links">
+          <li><a href="#">Pusat bantuan</a></li>
+          <li><a href="#">Umpan Balik</a></li>
+          <li><a href="#">Kontak Kami</a></li>
+          <li><a href="#">Kebijakan Pengguna</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Tim Site22. All rights reserved.
+    </div>
+  </footer>
+  <!--======================================================= AKHIR FOOTER =======================================================-->
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/auth.js"></script>
-    <script src="/js/produk.js"></script>
-    <script src="/js/keranjang.js"></script>
-    <script src="/js/wishlist.js"></script>
-  </body>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/produk.js"></script>
+  <script src="/js/keranjang.js"></script>
+  <script src="/js/wishlist.js"></script>
+</body>
+
 </html>

@@ -19,69 +19,67 @@
 <body>
 
   <!--======================================================= NAVBAR =======================================================-->
-<nav>
-  <!-- Navbar Atas -->
-  <div class="nav__top">
-    <div class="container_nav_satu">
-      
-      <!-- <div class="nav__search">
+  <nav>
+    <!-- Navbar Atas -->
+    <div class="nav__top">
+      <div class="container_nav_satu">
+
+        <!-- <div class="nav__search">
         <input type="text" placeholder="Cari produk...">
       </div> -->
-      <div class="nav__auth">
-        <a href="">Bantuan</a>
-        <span class="not-authorize">|</span>
-        <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
-        <span class="not-authorize">|</span>
-        <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
-        <span class="authorize">|</span>
-        <a href="profil.html" class="authorize">
-        Hai, <span class="name-placeholder"></span>
-        </a>
-        <span class="authorize">|</span>
-        <button class="authorize" onclick="signout()">
-          Keluar
-        </button>
+        <div class="nav__auth">
+          <a href="">Bantuan</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
+          <span class="authorize">|</span>
+          <a href="profil.html" class="authorize">
+            Hai, <span class="name-placeholder"></span>
+          </a>
+          <span class="authorize">|</span>
+          <button class="authorize" onclick="signout()">
+            Keluar
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <!-- Navbar Bawah -->
-  <div class="nav__bottom">
-    <div class="container_nav_dua">
-      <div class="nav__logo">
-        <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
-      </div>
-      <ul class="nav__links">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="produk.html">Produk</a></li>
-        <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
-        <li><a href="">Tentang Kami</a></li>
-        <li><a href="">Kontak</a></li>
-        <li><a href="blog.html">Blog</a></li>
-      </ul>
-      <div class="nav__icons">
-        <div class="nav__search">
-          <i class="ri-search-line"></i>
-          <input type="text" placeholder="Cari produk...">
-      </div>      
-      <a href="sukai.html" class="icon-sukai">
-        <i class="ri-heart-line"></i>
-        <span class="badge">3</span>
-      </a>
-      
-      <a class="user" href="">
-        <i class="ri-user-line"></i>
-      </a>
-      
-      <a href="keranjang.html" class="icon-keranjang">
-        <i class="ri-shopping-cart-line"></i>
-        <span class="badge">2</span>
-      </a>
+    <!-- Navbar Bawah -->
+    <div class="nav__bottom">
+      <div class="container_nav_dua">
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
+        </div>
+        <ul class="nav__links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
+          <li><a href="">Tentang Kami</a></li>
+          <li><a href="">Kontak</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="nav__icons">
+          <div class="nav__search">
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Cari produk...">
+          </div>
+          <a href="sukai.html" class="icon-sukai authorize">
+            <i class="ri-heart-line"></i>
+            <span class="badge" id="wishlist-badge">3</span>
+          </a>
+          <a class="user authorize" href="profil.html">
+            <i class="ri-user-line"></i>
+          </a>
+          <a href="keranjang.html" class="icon-keranjang authorize">
+            <i class="ri-shopping-cart-line"></i>
+            <span class="badge" id="keranjang-badge">2</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-<!--======================================================= AKHIR NAVBAR =======================================================-->
+  </nav>
+  <!--======================================================= AKHIR NAVBAR =======================================================-->
 
   <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
   <section class="section__container detail_blog_container">
@@ -94,53 +92,53 @@
           <div class="text_kembali_detail_blog">
             <p>Kembali</p>
           </div>
-        </div>  
+        </div>
       </a>
-        <div class="kategori_tanggal_detail_blog">
-          <div class="kategori_detail_blog">
-            <p>Makanan</p>
-          </div>
-          <div class="tanggal_detail_blog">
-            <p>Rabu, 18 September 2024</p>
-          </div>
+      <div class="kategori_tanggal_detail_blog">
+        <div class="kategori_detail_blog">
+          <p>Makanan</p>
         </div>
-        <div class="judul_detail_blog">
-          <h3>Mengenal Makanan Khas NTT: Lezat dan Unik</h3>
+        <div class="tanggal_detail_blog">
+          <p>Rabu, 18 September 2024</p>
         </div>
-        <div class="gambar_detail_blog">
-          <img src="assets/contoh_berita.png" />
-        </div>
-        <div class="isi_detail_blog">
-          <p>
-            Nusa Tenggara Timur (NTT) menyimpan segudang kejutan, salah satunya adalah kekayaan kulinernya yang menggugah selera. Di balik keindahan alamnya yang eksotis, tersembunyi beragam hidangan khas yang kaya akan cita rasa dan penuh keunikan. Melalui artikel ini, kita akan bertualang kuliner ke NTT, mencicipi hidangan-hidangan tradisional yang telah diwariskan turun-temurun.
-            <br><br><span>Perpaduan Rasa yang Kaya</span><br>
-            Masakan khas NTT adalah cerminan dari keberagaman budaya dan alamnya. Pengaruh lingkungan yang kaya akan rempah-rempah, 
-            serta bahan-bahan lokal seperti jagung, ubi, dan daging, menghasilkan perpaduan rasa yang unik dan khas. Setiap suapan hidangan 
-            khas NTT akan membawa kita pada petualangan sensori yang tak terlupakan.
-            <br><br><span>Hidangan Andalan yang Wajib Dicoba</span><br>
-            Salah satu hidangan yang paling terkenal adalah sei, daging sapi asap yang diiris tipis dan memiliki rasa yang khas. 
-            Selain sei, ada juga kolo, nasi bakar yang dimasak dalam bambu, serta rumpu rampe, tumisan sayuran yang kaya akan nutrisi. 
-            Bagi pencinta makanan manis, catemak jagung adalah pilihan yang tepat. Hidangan ini terbuat dari jagung manis yang dimasak 
-            dengan santan dan bumbu khas.
-            <br><br><span>Lebih dari Sekadar Makanan</span><br>
-            Masakan khas NTT bukan hanya sekadar hidangan untuk mengisi perut, tetapi juga merupakan bagian penting dari budaya dan 
-            kehidupan masyarakat setempat. Setiap hidangan memiliki cerita dan makna tersendiri, yang mencerminkan sejarah dan tradisi 
-            masyarakat NTT. Dengan mencicipi makanan khas NTT, kita tidak hanya memuaskan selera, tetapi juga ikut melestarikan warisan 
-            budaya yang berharga.
-            <br><br><span>Jelajahi Kuliner NTT</span><br>
-            Bagi Anda yang ingin merasakan langsung kelezatan makanan khas NTT, banyak sekali pilihan tempat makan yang bisa Anda kunjungi. Mulai dari warung makan sederhana hingga restoran yang menyajikan hidangan dengan sentuhan modern, semuanya menawarkan pengalaman kuliner yang tak terlupakan.
-            <br><br><span>Kesimpulan</span><br>
-            Nusa Tenggara Timur adalah surga bagi para pecinta kuliner. Dengan kekayaan rasa dan cita rasa yang unik, makanan khas NTT akan memanjakan lidah dan membawa Anda pada petualangan kuliner yang tak terlupakan. Jadi, tunggu apalagi? Yuk, kita eksplorasi lebih jauh kekayaan kuliner NTT!
-          </p>
-        </div>
-      </div> 
+      </div>
+      <div class="judul_detail_blog">
+        <h3>Mengenal Makanan Khas NTT: Lezat dan Unik</h3>
+      </div>
+      <div class="gambar_detail_blog">
+        <img src="assets/contoh_berita.png" />
+      </div>
+      <div class="isi_detail_blog">
+        <p>
+          Nusa Tenggara Timur (NTT) menyimpan segudang kejutan, salah satunya adalah kekayaan kulinernya yang menggugah selera. Di balik keindahan alamnya yang eksotis, tersembunyi beragam hidangan khas yang kaya akan cita rasa dan penuh keunikan. Melalui artikel ini, kita akan bertualang kuliner ke NTT, mencicipi hidangan-hidangan tradisional yang telah diwariskan turun-temurun.
+          <br><br><span>Perpaduan Rasa yang Kaya</span><br>
+          Masakan khas NTT adalah cerminan dari keberagaman budaya dan alamnya. Pengaruh lingkungan yang kaya akan rempah-rempah,
+          serta bahan-bahan lokal seperti jagung, ubi, dan daging, menghasilkan perpaduan rasa yang unik dan khas. Setiap suapan hidangan
+          khas NTT akan membawa kita pada petualangan sensori yang tak terlupakan.
+          <br><br><span>Hidangan Andalan yang Wajib Dicoba</span><br>
+          Salah satu hidangan yang paling terkenal adalah sei, daging sapi asap yang diiris tipis dan memiliki rasa yang khas.
+          Selain sei, ada juga kolo, nasi bakar yang dimasak dalam bambu, serta rumpu rampe, tumisan sayuran yang kaya akan nutrisi.
+          Bagi pencinta makanan manis, catemak jagung adalah pilihan yang tepat. Hidangan ini terbuat dari jagung manis yang dimasak
+          dengan santan dan bumbu khas.
+          <br><br><span>Lebih dari Sekadar Makanan</span><br>
+          Masakan khas NTT bukan hanya sekadar hidangan untuk mengisi perut, tetapi juga merupakan bagian penting dari budaya dan
+          kehidupan masyarakat setempat. Setiap hidangan memiliki cerita dan makna tersendiri, yang mencerminkan sejarah dan tradisi
+          masyarakat NTT. Dengan mencicipi makanan khas NTT, kita tidak hanya memuaskan selera, tetapi juga ikut melestarikan warisan
+          budaya yang berharga.
+          <br><br><span>Jelajahi Kuliner NTT</span><br>
+          Bagi Anda yang ingin merasakan langsung kelezatan makanan khas NTT, banyak sekali pilihan tempat makan yang bisa Anda kunjungi. Mulai dari warung makan sederhana hingga restoran yang menyajikan hidangan dengan sentuhan modern, semuanya menawarkan pengalaman kuliner yang tak terlupakan.
+          <br><br><span>Kesimpulan</span><br>
+          Nusa Tenggara Timur adalah surga bagi para pecinta kuliner. Dengan kekayaan rasa dan cita rasa yang unik, makanan khas NTT akan memanjakan lidah dan membawa Anda pada petualangan kuliner yang tak terlupakan. Jadi, tunggu apalagi? Yuk, kita eksplorasi lebih jauh kekayaan kuliner NTT!
+        </p>
+      </div>
+    </div>
   </section>
   <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
 
 
 
   <section class="section__container lain_content_detail_blog">
-    
+
   </section>
 
 
@@ -226,13 +224,13 @@
   </footer>
   <!--======================================================= AKHIR FOOTER =======================================================-->
 
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/js/main.js"></script>
-    <script src="/js/auth.js"></script>
-    <script src="/js/produk.js"></script>
-    <script src="/js/keranjang.js"></script>
-    <script src="/js/wishlist.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="/js/main.js"></script>
+  <script src="/js/auth.js"></script>
+  <script src="/js/produk.js"></script>
+  <script src="/js/keranjang.js"></script>
+  <script src="/js/wishlist.js"></script>
 </body>
 
 </html>

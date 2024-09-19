@@ -441,10 +441,6 @@ nav {
   gap: .85rem;
 }
 
-.nav__icons .user {
-  display: none;
-}
-
 .nav__icons a {
   font-size: 1.6rem;
   color: var(--text-dark);
@@ -456,7 +452,6 @@ nav {
 
 .icon-sukai, .icon-keranjang {
   position: relative;
-  display: inline-block;
 }
 
 .badge {

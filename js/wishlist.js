@@ -37,6 +37,7 @@ function getWishList() {
 }
 
 function isInWishList(namaProduk) {
+    const wishlist = getWishList();
     const index = wishlist.findIndex((i) => i.produk.nama === namaProduk);
 
     if (index !== -1)
@@ -45,7 +46,7 @@ function isInWishList(namaProduk) {
     return true;
 }
 
-function addItem(produk, catatan) {
+function addItemToWishList(produk, catatan) {
     const wishlist = getWishList();
 
     if(wishlist.length === 0) {
@@ -60,7 +61,7 @@ function addItem(produk, catatan) {
     saveWishList(wishlist);
 }
 
-function removeItem(produk) {
+function removeItemToWishList(produk) {
     const wishList = getWishList();
     const newWishList = wishList.filter((e) => e.produk.nama !== produk.nama);
 
@@ -76,3 +77,12 @@ function saveWishList(wishList) {
     window.sessionStorage.setItem(wishListSessionKey, JSON.stringify(wishList));
     window.location.reload();
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const wishListBadge = document.getElementById("wishlist-badge");
+    const wishList = getWishList();
+
+    if(wishListBadge) {
+        wishListBadge.innerText = wishList.length;
+    }
+});
