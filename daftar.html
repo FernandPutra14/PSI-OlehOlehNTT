@@ -39,14 +39,14 @@
     <form id="daftar" class="input_daftar_container">
       <div class="">
         <div class="input_grup">
-          <input type="text" required />
-          <label for="">Kode*</label>
+          <input type="text" name="kode" required />
+          <label for="kode">Kode*</label>
         </div>
       </div>
       <div class="">
         <div class="input_grup">
-          <input type="text" id="nama" required />
-          <label for="">Nama*</label>
+          <input type="text" id="nama" name="nama" required />
+          <label for="nama">Nama*</label>
         </div>
       </div>
       <div class="">
@@ -63,51 +63,58 @@
       </div>
       <div class="">
         <div class="input_grup">
-          <input type="date" required />
-          <label for=""></label>
+          <input type="text" id="noHP" name="noHP" required />
+          <label for="noHP">No HP*</label>
+        </div>
+      </div>
+      <div class="">
+        <label>Tanggal Lahir</label>
+        <div class="input_grup">
+          <input type="date" id="tanggalLahir" name="tanggalLahir" required />
+          <label for="tanggalLahir"></label>
         </div>
       </div>
 
       <div class="">
         <div class="input_grup">
-          <input id="jalan" type="text" required />
-          <label for="">Jalan</label>
+          <input id="jalan" type="text" name="jalan" required />
+          <label for="jalan">Jalan</label>
         </div>
       </div>
 
       <div class="bagi_bagi">
         <div class="input_grup">
-          <input type="number" id="rt" required />
-          <label for="">RT*</label>
+          <input type="number" id="rt" name="rt" required />
+          <label for="rt">RT*</label>
         </div>
 
         <div class="input_grup">
-          <input type="number" id="rw" required />
-          <label for="">RW*</label>
-        </div>
-      </div>
-
-      <div class="bagi_bagi">
-        <div class="input_grup">
-          <input type="text" id="kelurahanDesa" required />
-          <label for="">Kelurahan/Desa*</label>
-        </div>
-
-        <div class="input_grup">
-          <input type="text" id="kecamatan" required />
-          <label for="">Kecamatan*</label>
+          <input type="number" id="rw" name="rw" required />
+          <label for="rw">RW*</label>
         </div>
       </div>
 
       <div class="bagi_bagi">
         <div class="input_grup">
-          <input type="text" id="kotaKabupaten" required />
-          <label for="">Kota/Kabupaten*</label>
+          <input type="text" id="kelurahanDesa" name="kelurahanDesa" required />
+          <label for="kelurahanDesa">Kelurahan/Desa*</label>
         </div>
 
         <div class="input_grup">
-          <input type="text" id="provinsi" required />
-          <label for="">Provinsi*</label>
+          <input type="text" id="kecamatan" name="kecamatan" required />
+          <label for="kecamatan">Kecamatan*</label>
+        </div>
+      </div>
+
+      <div class="bagi_bagi">
+        <div class="input_grup">
+          <input type="text" id="kotaKabupaten" name="kotaKabupaten" required />
+          <label for="kotaKabupaten">Kota/Kabupaten*</label>
+        </div>
+
+        <div class="input_grup">
+          <input type="text" id="provinsi" name="provinsi" required />
+          <label for="provinsi">Provinsi*</label>
         </div>
       </div>
 
@@ -157,6 +164,8 @@
     };
 
     const inputNama = document.getElementById('nama');
+    const inputTanggalLahir = document.getElementById('tanggalLahir');
+    const inputNoHP = document.getElementById('noHP');
     const form = document.querySelector('form#daftar');
     const queryParam = new URLSearchParams(window.location.search);
     const newEmail = queryParam.get('email') ? queryParam.get('email') : "Vernandputra14@gmail.com";
@@ -167,8 +176,14 @@
       event.preventDefault();
 
       const alamat = getAlamatFromInput();
-      if (inputNama && inputNama.value && alamat) {
-        signin(new Account(inputNama.value, newEmail, alamat));
+
+      if (inputNama.value && alamat && inputNoHP.value && inputTanggalLahir.value) {
+        signin(new Account(
+          inputNama.value,
+          newEmail,
+          inputNoHP.value,
+          new Date(inputTanggalLahir.value),
+          alamat));
       }
     });
   </script>
