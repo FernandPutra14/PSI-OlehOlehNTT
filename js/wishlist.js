@@ -87,12 +87,3 @@ function saveWishList(wishList) {
     window.sessionStorage.setItem(wishListSessionKey, JSON.stringify(wishList));
     window.location.reload();
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    const wishListBadge = document.getElementById("wishlist-badge");
-    const wishList = getWishList();
-
-    if(wishListBadge) {
-        wishListBadge.innerText = wishList.length;
-    }
-});

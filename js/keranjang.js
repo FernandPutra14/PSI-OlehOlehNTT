@@ -91,12 +91,3 @@ function saveKeranjang(keranjang) {
     window.sessionStorage.setItem(keranjangSessionKey, JSON.stringify(keranjang));
     onKeranjangChange();
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-    const keranjangBadge = document.getElementById("keranjang-badge");
-    const keranjang = getKeranjang();
-
-    if(keranjangBadge) {
-        keranjangBadge.innerText = keranjang.length;
-    }
-});
