@@ -18,6 +18,7 @@ function getWishList() {
 
             wishList = wishList.map((i) => new WishListItem(
                 new Produk(
+                    i.produk.id,
                     i.produk.nama,
                     i.produk.gambar,
                     i.produk.harga,
@@ -36,14 +37,11 @@ function getWishList() {
     return wishList;
 }
 
-function isInWishList(namaProduk) {
+function isInWishList(idProduk) {
     const wishlist = getWishList();
-    const index = wishlist.findIndex((i) => i.produk.nama === namaProduk);
+    const index = wishlist.findIndex((i) => i.produk.id === idProduk);
 
-    if (index !== -1)
-        return false;
-
-    return true;
+    return index !== -1;
 }
 
 function addItemToWishList(produk, catatan) {
@@ -52,7 +50,7 @@ function addItemToWishList(produk, catatan) {
     if(wishlist.length === 0) {
         wishlist.push(new WishListItem(produk, catatan));
     } else {
-        if(!isInWishList(produk.nama))
+        if(isInWishList(produk.id))
             return;
 
         wishlist.push(new KeranjangItem(produk, catatan));

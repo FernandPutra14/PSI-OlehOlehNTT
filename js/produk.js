@@ -41,3 +41,65 @@ const daftarProduk = [
         },
     ))
 ]
+
+function getProdukById(id) {
+    return daftarProduk.find((value) => value.id === id);
+}
+
+function templateDaftarProduk(containerGrid, products) {
+    const numberFormatter = new Intl.NumberFormat('id-ID', {
+        style: "currency",
+        currency: "IDR"
+    })
+
+    products.forEach((element, index) => {
+        containerGrid.insertAdjacentHTML('beforeend', `
+        <a href="detail_produk.html" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="${element.gambar}" alt="trip" />
+            <div class="laris__details">
+              <p>${element.kategori}</p>
+              <h6>${element.nama}</h6>
+              <div class="bagian__price">
+                <div class="price"><span>${numberFormatter.format(element.harga)}</span></div>
+                <div class="action-produk-card authorize">
+                  <button class="btn-produk-none btn-sukai" onclick="addItemToWishList(getProdukById(${element.id}), 'Catatan')">
+                    <i class="ri-heart-line sukai"></i>
+                  </button>
+                  <button class="btn-produk-none btn-keranjangi" onclick="addItem(getProdukById(${element.id}), 1);window.location.reload()">
+                    <i class="ri-shopping-cart-2-line keranjangi"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>`);
+    });
+
+    authorizeContent(getAuthState());
+
+    document.querySelectorAll('.sukai').forEach(function (icon) {
+        icon.addEventListener('mouseover', function () {
+            this.classList.replace('ri-heart-line', 'ri-heart-fill');
+        });
+        icon.addEventListener('mouseout', function () {
+            this.classList.replace('ri-heart-fill', 'ri-heart-line');
+        });
+    });
+
+    document.querySelectorAll('.keranjangi').forEach(function (icon) {
+        icon.addEventListener('mouseover', function () {
+            this.classList.replace('ri-shopping-cart-2-line', 'ri-shopping-cart-fill');
+        });
+        icon.addEventListener('mouseout', function () {
+            this.classList.replace('ri-shopping-cart-fill', 'ri-shopping-cart-2-line');
+        });
+    });
+
+    document.querySelectorAll('.btn-produk-none').forEach((item) => {
+        item.addEventListener('click', function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+        });
+    });
+}
