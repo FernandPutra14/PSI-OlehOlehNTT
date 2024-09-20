@@ -2356,19 +2356,32 @@ nav {
 
 .daftar_produk_sukai .judul_daftar_produk_sukai {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
   padding-bottom: 20px;
   border-bottom: 1px dotted #999;
 }
 
-.daftar_produk_sukai .judul_daftar_produk_sukai h3 {
+.daftar_produk_sukai .judul_daftar_produk_sukai .judul_daftar_produk_sukai_satu {
+  display: flex;
+  gap: 20px;
+}
+
+.daftar_produk_sukai .judul_daftar_produk_sukai .judul_daftar_produk_sukai_satu h3 {
   text-transform: uppercase;
   font-size: 1.6rem;
 }
 
-.daftar_produk_sukai .judul_daftar_produk_sukai h6 {
+.daftar_produk_sukai .judul_daftar_produk_sukai .judul_daftar_produk_sukai_satu h6 {
   font-size: .9rem;
+  font-weight: 500;
+  align-content: center;
+}
+
+.daftar_produk_sukai .judul_daftar_produk_sukai .judul_daftar_produk_sukai_dua p {
+  font-size: .9rem;
+  text-decoration: underline;
   font-weight: 500;
 }
 
