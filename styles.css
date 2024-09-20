@@ -203,6 +203,10 @@ body {
   flex-wrap: wrap;
 }
 
+.mb-1 {
+  margin-bottom: 10px !important;
+}
+
 [class*="col-"] {
   padding-right: 15px;
   padding-left: 15px;
@@ -1760,7 +1764,8 @@ nav {
   margin-top: 10px;
 }
 
-.tambahan_bantuan_password p {
+.tambahan_bantuan_password a {
+  color: var(--text-dark);
   text-decoration: underline;
   cursor: pointer;
 }
@@ -1768,6 +1773,135 @@ nav {
 .tombol_lanjutkan_password {
   margin-top: 30px;
   text-align: end;
+}
+
+/*=============================================================================================================================*\
+  #HALAMAN LUPA PASSWORD
+\*=============================================================================================================================*/
+
+.lupa_password_container {
+  max-width: 600px;
+  margin-top: 5vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.logo_lupa_password_container {
+
+}
+
+.logo_lupa_password_container img {
+  width: 180px;
+}
+
+.perintah_lupa_password {
+  
+}
+
+.perintah_lupa_password .email_password {
+  display: flex;
+  gap: 10px;
+}
+
+.perintah_lupa_password .email_password a {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: var(--text-light);
+}
+
+.perintah_lupa_password h3 {
+  font-size: 1.7rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.perintah_lupa_password p {
+  font-size: 1rem;
+}
+
+#lupa_password .input_grup {
+  position: relative;
+  margin: 0;
+}
+
+#lupa_password .input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#lupa_password .input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+#lupa_password .input_grup input:focus~label,
+#lupa_password .input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white-asli);
+}
+
+#lupa_password .bagi_bagi {
+  display: flex;
+  gap: .8rem;
+  margin: 0;
+}
+
+#lupa_password .bagi_bagi .input_grup {
+  position: relative;
+  flex: 1;
+  margin: 10px 0;
+}
+
+#lupa_password .bagi_bagi .input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#lupa_password .bagi_bagi .input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+#lupa_password .bagi_bagi .input_grup input:focus~label,
+#lupa_password .bagi_bagi .input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white-asli);
+}
+
+.tombol_lanjutkan_lupa_password {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: end;
+  align-items: center;
+}
+
+.tombol_lanjutkan_lupa_password a {
+  text-decoration: underline;
+  color: var(--text-dark);
+  cursor: pointer;
 }
 
 /*=============================================================================================================================*\
