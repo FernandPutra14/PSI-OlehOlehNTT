@@ -21,6 +21,7 @@ function getWishList() {
                     i.produk.id,
                     i.produk.nama,
                     i.produk.gambar,
+                    i.produk.kategori,
                     i.produk.harga,
                     i.produk.hargaDiskon,
                     i.produk.stok,
