@@ -10,7 +10,7 @@
   --text-dark: #030712;
   --text-light: #6b7280;
   --extra-light: #d1d5db;
-  --white: #ffffff;
+  --white: #f5f5f5;
   --badge: #FFA500;
   --max-width: 1200px;
   --border-radius : 10px;
@@ -2482,8 +2482,10 @@ nav {
   height: 100%;
   padding: 12px 10px;
   font-size: .85rem;
-  border: 1px solid #ccc;
-  border-radius: var(--border-radius);
+  border: none; /* Menghilangkan semua border */
+  border-bottom: 1px solid #ccc; /* Hanya border bawah */
+  border-radius: 0; /* Menghapus border-radius */
+  outline: none;
   font-family: 'poppins';
 }
 
