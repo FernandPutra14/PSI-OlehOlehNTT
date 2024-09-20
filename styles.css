@@ -3001,7 +3001,7 @@ nav {
 #pembayaran .input_grup input:valid~label {
   top: 0;
   font-size: 12px;
-  background: var(--white);
+  background: var(--white-asli);
 }
 
 #pembayaran .bagi_bagi {
@@ -3038,7 +3038,7 @@ nav {
 #pembayaran .bagi_bagi .input_grup input:valid~label {
   top: 0;
   font-size: 12px;
-  background: var(--white);
+  background: var(--white-asli);
 }
 
 .button_pembayaran {
@@ -3050,6 +3050,7 @@ nav {
 }
 
 .kembali_pembayaran {
+  color: var(--text-dark);
   text-decoration: underline;
   cursor: pointer;
 }
@@ -3105,6 +3106,212 @@ nav {
 }
 
 
+
+
+
+/*=============================================================================================================================*\
+  #HALAMAN METODE PEMBAYARAN
+\*=============================================================================================================================*/
+
+.pembayaran_dua_container {
+  display: flex;
+  gap: 5px;
+}
+
+.content_pembayaran_dua_container {
+  
+}
+
+.tahap_pembayaran_dua_container {
+  
+}
+
+.content_pembayaran_dua_container .judul_pembayaran_dua h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.content_pembayaran_dua_container .judul_pembayaran_dua p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.content_pembayaran_dua_container .input_metode_pembayaran_container {
+
+}
+
+.input_metode_pembayaran_container {
+  margin-top: 20px;
+}
+
+
+
+.button_pembayaran_dua {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.kembali_pembayaran_dua {
+  color: var(--text-dark);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.progress-container {
+  position: relative;
+  margin: 20px;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress-step h4 {
+  margin-left: 20px;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #ddd;
+  z-index: 2;
+}
+
+.line {
+  width: 4px;
+  background-color: #ddd;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+}
+
+.line.active2 {
+  background-color: #3E1801;
+  height: 70px; /* Active line length up to "Metode Pembayaran" */
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+.progress-step.active .circle {
+  background-color: #3E1801;
+}
+
+
+
+/*=============================================================================================================================*\
+  #HALAMAN PEMBAYARAN TIGA
+\*=============================================================================================================================*/
+
+.pembayaran_tiga_container {
+  display: flex;
+  gap: 5px;
+}
+
+.content_pembayaran_tiga_container {
+  
+}
+
+.tahap_pembayaran_tiga_container {
+  
+}
+
+.content_pembayaran_tiga_container .judul_pembayaran_tiga h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.content_pembayaran_tiga_container .judul_pembayaran_tiga p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.content_pembayaran_tiga_container .input_review_pembayaran_container {
+
+}
+
+.input_review_pembayaran_container {
+  margin-top: 20px;
+}
+
+
+
+.button_pembayaran_tiga {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.kembali_pembayaran_tiga {
+  color: var(--text-dark);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.progress-container {
+  position: relative;
+  margin: 20px;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.progress-step h4 {
+  margin-left: 20px;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #ddd;
+  z-index: 2;
+}
+
+.line {
+  width: 4px;
+  background-color: #ddd;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+}
+
+.line.active3 {
+  background-color: #3E1801;
+  height: 120px; /* Active line length up to "Metode Pembayaran" */
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+.progress-step.active .circle {
+  background-color: #3E1801;
+}
 
 
 
