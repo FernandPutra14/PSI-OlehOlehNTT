@@ -19,6 +19,7 @@ function getKeranjang() {
 
             keranjang = keranjang.map((i) => new KeranjangItem(
                 new Produk(
+                    i.produk.id,
                     i.produk.nama,
                     i.produk.gambar,
                     i.produk.harga,
@@ -49,7 +50,7 @@ function addItem(produk, jumlah) {
     if(keranjang.length === 0) {
         keranjang.push(new KeranjangItem(produk, jumlah));
     } else {
-        const index = keranjang.findIndex((i) => i.produk.nama === produk.nama);
+        const index = keranjang.findIndex((i) => i.produk.id === produk.id);
 
         if(index !== -1) {
             keranjang[index].jumlah += jumlah;
@@ -59,21 +60,18 @@ function addItem(produk, jumlah) {
     }
 
     saveKeranjang(keranjang);
-    window.location.reload();
 }
 
-function removeItem(produk) {
+function removeItem(id) {
     const keranjang = getKeranjang();
-    const newKeranjang = keranjang.filter((e) => e.produk.nama !== produk.nama);
+    const newKeranjang = keranjang.filter((e) => e.produk.id !== produk.id);
 
     saveKeranjang(newKeranjang);
-    window.location.reload();
 }
 
 function clearKeranjang() {
     window.sessionStorage.removeItem(keranjangSessionKey);
     onKeranjangChange();
-    window.location.reload();
 }
 
 function addEventListener(func) {
@@ -87,8 +85,8 @@ function onKeranjangChange() {
 }
 
 function saveKeranjang(keranjang) {
-    onKeranjangChange();
     window.sessionStorage.setItem(keranjangSessionKey, JSON.stringify(keranjang));
+    onKeranjangChange();
 }
 
 document.addEventListener("DOMContentLoaded", function () {

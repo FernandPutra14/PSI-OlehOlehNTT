@@ -1,5 +1,6 @@
 class Produk {
-    constructor(nama, gambar, kategori, harga, hargaDiskon, stok, keterangan, spesifikasi) {
+    constructor(id, nama, gambar, kategori, harga, hargaDiskon, stok, keterangan, spesifikasi) {
+        this.id = id;
         this.nama = nama;
         this.kategori = kategori;
         this.gambar = gambar;
@@ -13,16 +14,18 @@ class Produk {
 
 const daftarProduk = [
     new Produk(
+        1,
         "Se'i Babi Asap",
         "assets/sei_makanan.png",
-        "makanan",
+        "Makanan",
         25000,
         20000,
         20,
         "Se'i babi khas NTT",
         null,
     ),
-    new Produk(
+    ...Array.from({length : 99}, (value, index) => new Produk(
+        2 + index,
         "Tenun Ikat Sumba",
         "assets/sei_makanan.png",
         "Kain Tenun",
@@ -36,5 +39,5 @@ const daftarProduk = [
             ukuran : "200 x 60 cm",
             caraPerawatan : "Cuci dengan air dingin"
         },
-    ),
+    ))
 ]
