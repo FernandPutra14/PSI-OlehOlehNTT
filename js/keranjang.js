@@ -81,7 +81,10 @@ function addEventListener(func) {
 function onKeranjangChange() {
     const keranjang = getKeranjang();
 
-    eventListener.forEach((e) => e(keranjang));
+    eventListener.forEach((e) => {
+        if(typeof e === "function")
+            e(keranjang);
+    });
 }
 
 function saveKeranjang(keranjang) {
