@@ -7,10 +7,11 @@
   --primary-color: #3E1801;
   --primary-color-dark: #120700;
   --container-color : #f5f5f5;
-  --text-dark: #030712;
+  --text-dark: #0B1215;
   --text-light: #6b7280;
   --extra-light: #d1d5db;
   --white: #f5f5f5;
+  --white-asli: #ffffff;
   --badge: #FFA500;
   --max-width: 1200px;
   --border-radius : 10px;
@@ -1585,7 +1586,7 @@ nav {
 #masuk_atau_daftar .input_grup input:valid~label {
   top: 0;
   font-size: 12px;
-  background: var(--white);
+  background: var(--white-asli);
 }
 
 #masuk_atau_daftar .bagi_bagi {
@@ -1623,7 +1624,7 @@ nav {
 #masuk_atau_daftar .bagi_bagi .input_grup input:valid~label {
   top: 0;
   font-size: 12px;
-  background: var(--white);
+  background: var(--white-asli);
 }
 
 .tambahan_bantuan {
@@ -1636,6 +1637,135 @@ nav {
 }
 
 .tombol_lanjutkan {
+  margin-top: 30px;
+  text-align: end;
+}
+
+/*=============================================================================================================================*\
+  #HALAMAN PASSWORD MASUK
+\*=============================================================================================================================*/
+
+.masuk_password_container {
+  max-width: 600px;
+  margin-top: 5vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.logo_masuk_password_container {
+
+}
+
+.logo_masuk_password_container img {
+  width: 180px;
+}
+
+.perintah_masuk_password {
+  
+}
+
+.perintah_masuk_password .email_password {
+  display: flex;
+  gap: 10px;
+}
+
+.perintah_masuk_password .email_password a {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: var(--text-light);
+}
+
+.perintah_masuk_password h3 {
+  font-size: 1.7rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.perintah_masuk_password p {
+  font-size: 1rem;
+}
+
+#masuk_password .input_grup {
+  position: relative;
+  margin: 0;
+}
+
+#masuk_password .input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#masuk_password .input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+#masuk_password .input_grup input:focus~label,
+#masuk_password .input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white-asli);
+}
+
+#masuk_password .bagi_bagi {
+  display: flex;
+  gap: .8rem;
+  margin: 0;
+}
+
+#masuk_password .bagi_bagi .input_grup {
+  position: relative;
+  flex: 1;
+  margin: 10px 0;
+}
+
+#masuk_password .bagi_bagi .input_grup label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  padding: 0 5px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+#masuk_password .bagi_bagi .input_grup input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: var(--border-radius);
+}
+
+#masuk_password .bagi_bagi .input_grup input:focus~label,
+#masuk_password .bagi_bagi .input_grup input:valid~label {
+  top: 0;
+  font-size: 12px;
+  background: var(--white-asli);
+}
+
+.tambahan_bantuan_password {
+  margin-top: 10px;
+}
+
+.tambahan_bantuan_password p {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.tombol_lanjutkan_password {
   margin-top: 30px;
   text-align: end;
 }
@@ -1707,7 +1837,7 @@ nav {
 #daftar .input_grup input:valid~label {
   top: 0;
   font-size: 12px;
-  background: var(--white);
+  background: var(--white-asli);
 }
 
 #daftar .bagi_bagi {
@@ -1745,7 +1875,7 @@ nav {
 #daftar .bagi_bagi .input_grup input:valid~label {
   top: 0;
   font-size: 12px;
-  background: var(--white);
+  background: var(--white-asli);
 }
 
 /* Input check */
