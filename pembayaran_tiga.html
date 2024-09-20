@@ -13,10 +13,12 @@
 
   <!--============= CSS - CSS GLOBAL ===========-->
   <link rel="stylesheet" href="styles.css" />
-  <title>Produk</title>
+  <title>E-Commerce | oleholehNTT</title>
 </head>
 
 <body>
+
+  <span id="redirectLogin" data-when="signout" data-to="/masuk_atau_daftar.html"></span>
 
   <!--======================================================= NAVBAR =======================================================-->
   <nav>
@@ -64,6 +66,7 @@
             <i class="ri-search-line"></i>
             <input type="text" placeholder="Cari produk...">
           </div>
+
           <a href="sukai.html" class="icon-sukai authorize">
             <i class="ri-heart-line"></i>
             <span class="badge" id="wishlist-badge">3</span>
@@ -72,140 +75,59 @@
             <i class="ri-shopping-cart-line"></i>
             <span class="badge" id="keranjang-badge">2</span>
           </a>
+
         </div>
       </div>
     </div>
   </nav>
   <!--======================================================= AKHIR NAVBAR =======================================================-->
 
-
-
-  <!--======================================================= JUDUL - PRODUK =======================================================-->
-  <section class="section__container judul-halaman-produk-container" id="judul-halaman-produk">
-    <div class="nama_kategori_judul">
-      <h3>
-        Semua
-      </h3>
-      <p>
-        (200)
-      </p>
-    </div>
-    <div class="">
-      <h4>
-        Filter Berdasarkan Preferensi Anda
-      </h4>
-    </div>
-  </section>
-  <!--======================================================= AKHIR JUDUL - PRODUK =======================================================-->
-
-
-  <!--======================================================= FILTER - PRODUK =======================================================-->
-  <section id="filter" class="sticky">
-    <div class="section__container filter_produk_container">
-      <div class="filter-border">
-        <!-- Kategori Filter (Sebelah Kiri) -->
-        <div class="filter-left">
-
-
-          <!-- Buat Sini -->
-          <div class="filter_container">
-            <div class="nama_filter">
-              <h6>Kategori</h6>
-            </div>
-            <div class="arrow-filter">
-              <i class="ri-arrow-drop-down-line"></i>
-            </div>
-          </div>
-          <!-- AKhir Buat Sini -->
-          <!-- Buat Sini -->
-          <div class="filter_container">
-            <div class="nama_filter">
-              <h6>Harga</h6>
-            </div>
-            <div class="arrow-filter">
-              <i class="ri-arrow-drop-down-line"></i>
-            </div>
-          </div>
-          <!-- AKhir Buat Sini -->
-          <!-- Buat Sini -->
-          <div class="filter_container">
-            <div class="nama_filter">
-              <h6>Ukuran</h6>
-            </div>
-            <div class="arrow-filter">
-              <i class="ri-arrow-drop-down-line"></i>
-            </div>
-          </div>
-          <!-- AKhir Buat Sini -->
-          <!-- Buat Sini -->
-          <div class="filter_container">
-            <div class="nama_filter">
-              <h6>Gender</h6>
-            </div>
-            <div class="arrow-filter">
-              <i class="ri-arrow-drop-down-line"></i>
-            </div>
-          </div>
-          <!-- AKhir Buat Sini -->
-          <!-- Buat Sini -->
-          <div class="filter_container">
-            <div class="nama_filter">
-              <h6>Diskon</h6>
-            </div>
-            <div class="arrow-filter">
-              <i class="ri-arrow-drop-down-line"></i>
-            </div>
-          </div>
-          <!-- AKhir Buat Sini -->
-
-          <!-- <select id="kategori">
-            <option value="Semua">Semua</option>
-            <option value="Makanan">Makanan</option>
-            <option value="Minuman">Minuman</option>
-            <option value="Pakaian">Pakaian</option>
-          </select>
-          
-          <select id="harga">
-            <option value="Semua">Semua</option>
-            <option value="Murah">Murah</option>
-            <option value="Mahal">Mahal</option>
-          </select> --> 
-        </div>
-
-        <!-- Filter Waktu (Sebelah Kanan) -->
-        <div class="filter-right">
-
-          <!-- Buat Sini -->
-          <div class="filter_container">
-            <div class="nama_filter">
-              <h6>Terlaris</h6>
-            </div>
-            <div class="arrow-filter">
-              <i class="ri-arrow-drop-down-line"></i>
-            </div>
-          </div>
-          <!-- AKhir Buat Sini -->
-
-
-          <!-- <select id="filter">
-                  <option value="terbaru">Terbaru</option>
-                  <option value="terlama">Terlama</option>
-                  <option value="populer">Populer</option>
-              </select> -->
-        </div>
+  <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
+  <section class="section__container pembayaran_tiga_container">
+    <div class="col-7 content_pembayaran_tiga_container" id="pembayaran_tiga">
+      <div class="judul_pembayaran_tiga">
+        <h3>
+          Review Produk
+        </h3>
+        <p>
+          Review Produk anda dan lanjutkan pembayaran!!
+        </p>
+      </div>
+      <div class="input_review_pembayaran_container">
+        
+      </div>      
+      <div class="button_pembayaran_tiga">
+        <a href="pembayaran_dua.html" class="kembali_pembayaran_tiga">Kembali</a>
+        <a class="btn">Bayar</a>
       </div>
     </div>
-  </section>
-  <!--======================================================= AKHIR FILTER - PRODUK =======================================================-->
 
-  <!--======================================================= DAFTAR PRODUK - PRODUK =======================================================-->
-  <section class="" id="daftar-produk">
-    <div class="section__container laris__container">
-      <div class="laris__grid">
+
+    <div class="col-5 tahap_pembayaran_container">
+      <div class="progress-container">
+        <div class="line"></div>
+        <div class="line active3"></div>
+
+        <div class="progress-step active">
+          <div class="circle">1</div>
+          <h4>Mengisi Kontak dan Alamat</h4>
+        </div>
+
+        <div class="progress-step active">
+          <div class="circle">2</div>
+          <h4>Metode Pembayaran</h4>
+        </div>
+
+        <div class="progress-step active">
+          <div class="circle">3</div>
+          <h4>Review Produk dan Pembayaran</h4>
+        </div>
 
       </div>
+    </div>
+    </div>
   </section>
-  <!--======================================================= AKHIR DAFTAR PRODUK - PRODUK =======================================================-->
+  <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
 
   <!--======================================================= NEWSLETTER =======================================================-->
   <section class="newsletter">
@@ -221,7 +143,6 @@
     </div>
   </section>
   <!--======================================================= AKHIR NEWSLETTER =======================================================-->
-
 
   <!--======================================================= FOOTER =======================================================-->
   <footer>
@@ -281,7 +202,6 @@
   </footer>
   <!--======================================================= AKHIR FOOTER =======================================================-->
 
-
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
@@ -290,18 +210,7 @@
   <script src="./js/keranjang.js"></script>
   <script src="./js/wishlist.js"></script>
   <script type="text/javascript">
-    const larisGrid = document.querySelector(".laris__grid"); 
-    const numberFormatter = new Intl.NumberFormat('id-ID', {
-      style : "currency",
-      currency : "IDR"
-    });
-    const namaKategoriJudul = document.querySelector('.nama_kategori_judul p');
 
-    document.addEventListener("DOMContentLoaded", function() {
-      namaKategoriJudul.innerText = `(${daftarProduk.length})`;
-
-      templateDaftarProduk(larisGrid, daftarProduk);
-    });
   </script>
 </body>
 
