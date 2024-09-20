@@ -1,51 +1,51 @@
-const scrollRevealOption = {
-  origin: "bottom",
-  distance: "50px",
-  duration: 1000,
-};
-
-ScrollReveal().reveal(".header__image img", {
-  ...scrollRevealOption,
-  origin: "right",
-});
-ScrollReveal().reveal(".header__content .section__subheader", {
-  ...scrollRevealOption,
-  delay: 500,
-});
-ScrollReveal().reveal(".header__content h1", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-ScrollReveal().reveal(".header__content .section__description", {
-  ...scrollRevealOption,
-  delay: 1500,
-});
-ScrollReveal().reveal(".header__btns", {
-  ...scrollRevealOption,
-  delay: 2000,
-});
-
-ScrollReveal().reveal(".service__content .section__subheader", {
-  ...scrollRevealOption,
-});
-ScrollReveal().reveal(".service__content .section__header", {
-  ...scrollRevealOption,
-  delay: 500,
-});
-ScrollReveal().reveal(".service__content .section__description", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-ScrollReveal().reveal(".service__btn", {
-  ...scrollRevealOption,
-  delay: 1500,
-});
-
-ScrollReveal().reveal(".service__card", {
-  duration: 1000,
-  interval: 500,
-  delay: 2000,
-});
+// const scrollRevealOption = {
+  // origin: "bottom",
+  // distance: "50px",
+  // duration: 1000,
+// };
+// 
+// ScrollReveal().reveal(".header__image img", {
+  // ...scrollRevealOption,
+  // origin: "right",
+// });
+// ScrollReveal().reveal(".header__content .section__subheader", {
+  // ...scrollRevealOption,
+  // delay: 500,
+// });
+// ScrollReveal().reveal(".header__content h1", {
+  // ...scrollRevealOption,
+  // delay: 1000,
+// });
+// ScrollReveal().reveal(".header__content .section__description", {
+  // ...scrollRevealOption,
+  // delay: 1500,
+// });
+// ScrollReveal().reveal(".header__btns", {
+  // ...scrollRevealOption,
+  // delay: 2000,
+// });
+// 
+// ScrollReveal().reveal(".service__content .section__subheader", {
+  // ...scrollRevealOption,
+// });
+// ScrollReveal().reveal(".service__content .section__header", {
+  // ...scrollRevealOption,
+  // delay: 500,
+// });
+// ScrollReveal().reveal(".service__content .section__description", {
+  // ...scrollRevealOption,
+  // delay: 1000,
+// });
+// ScrollReveal().reveal(".service__btn", {
+  // ...scrollRevealOption,
+  // delay: 1500,
+// });
+// 
+// ScrollReveal().reveal(".service__card", {
+  // duration: 1000,
+  // interval: 500,
+  // delay: 2000,
+// });
 
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
