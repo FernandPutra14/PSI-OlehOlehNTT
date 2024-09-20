@@ -1178,7 +1178,7 @@ nav {
 \*-----------------------------------*/
 
 #daftar-produk {
-  background-color: var(--white);
+  background-color: #fff;
   padding-top: 5px;
 }
 
@@ -2381,6 +2381,7 @@ nav {
 
 .daftar_produk_sukai .judul_daftar_produk_sukai .judul_daftar_produk_sukai_dua p {
   font-size: .9rem;
+  cursor: pointer;
   text-decoration: underline;
   font-weight: 500;
 }
