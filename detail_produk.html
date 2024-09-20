@@ -83,66 +83,7 @@
 
   <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
   <section class="section__container detail_produk_container">
-    <div class="col-6 gambar_detail_produk_container">
-      <img src="assets/sei_makanan.png" />
-    </div>
-    <div class="col-6 isi_detail_produk_container">
-      <div class="detail_nama_produk">
-        <h1>Tenun Ikat Sumba</h1>
-      </div>
-      <div class="detail_kategori_produk">
-        <h5>Kain Tenun</h5>
-      </div>
-      <div class="detail_harga_produk">
-        <div class="harga_diskon">
-          <h3>Rp. 650.000,00</h3>
-        </div>
-        <div class="harga_asli">
-          <h3>Rp. 750.000,00</h3>
-        </div>
-        <div class="pengurangan_diskon">
-          <h3>30% off</h3>
-        </div>
-      </div>
-      <div class="detail_sukai">
-        <button class="wish-btn">Masukan Wishlist<i class="ri-heart-line"></i></button>
-      </div>
-      <div class="detail_stok">
-        <h5>Tersisa 15</h5>
-      </div>
-      <div class="detail_belanja">
-        <div class="tambah_kurang_produk">
-          <div class="kurang">
-            <h3>-</h3>
-          </div>
-          <div class="jumlah">
-            <h3>5</h3>
-          </div>
-          <div class="tambah">
-            <h3>+</h3>
-          </div>
-        </div>
-        <button class="belanja-btn">Masukkan ke keranjang</button>
-      </div>
-      <div class="detail_deskripsi">
-        <h6>Tenun ikat khas Sumba adalah salah satu warisan budaya Indonesia yang dibuat dengan menggunakan
-          teknik tradisional yang diwariskan secara turun-temurun. Setiap helai kain tenun ini diciptakan melalui
-          proses yang teliti dan memakan waktu, menjadikannya tidak hanya sebagai produk tekstil, tetapi juga sebagai
-          karya seni yang memancarkan nilai sejarah dan budaya lokal.</h6>
-      </div>
-      <div class="detail_spesifikasi">
-        <h6>Spesifikasi Tenun Ikat Sumba adalah sebagai berikut : </h6>
-        <ul class="spesifikasi_list">
-          <li>Bahan: Katun alami</li>
-          <li>Warna: Kombinasi merah, hitam, dan kuning</li>
-          <li>Ukuran: 200 x 60 cm</li>
-          <li>Cara perawatan: Cuci tangan dengan air dingin</li>
-          <li>Teknik pembuatan: Tenun ikat tradisional</li>
-          <li>Motif: Etnik khas Sumba dengan simbol adat</li>
-        </ul>
-
-      </div>
-    </div>
+    
   </section>
   <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
 
@@ -230,7 +171,96 @@
   <script src="./js/keranjang.js"></script>
   <script src="./js/wishlist.js"></script>
   <script type="text/javascript">
+    const buttonWishListClick = (id) => {
+      const authState = getAuthState();
 
+      if(authState.signin) {
+        if(isInWishList(id)) {
+          removeItemToWishList(getProdukById(id));
+        } else {
+          addItemToWishList(getProdukById(id), "");
+        }
+      } else {
+        window.location.href = `masuk_atau_daftar.html?returnUrl=${window.location.href}`;
+      }
+    }
+
+    const buttonKeranjangClick = (id) => {
+      const authState = getAuthState();
+
+      if(authState.signin) {
+        addItem(getProdukById(id), 1);
+        window.location.reload();
+      } else {
+        window.location.href = `masuk_atau_daftar.html?returnUrl=${window.location.href}`;
+      }
+    }
+
+    const queryParams = new URLSearchParams(window.location.search);
+    const id = queryParams.get('id') ? queryParams.get('id') : 1;
+    const detailProdukContainer = document.querySelector('.detail_produk_container');
+    const produk = getProdukById(id);
+    const numberFormatter = new Intl.NumberFormat("id-ID", {
+      style:"currency",
+      currency:"IDR"
+    });
+
+    detailProdukContainer.innerHTML = `
+      <div class="col-6 gambar_detail_produk_container">
+        <img src="${produk.gambar}" />
+      </div>
+      <div class="col-6 isi_detail_produk_container">
+        <div class="detail_nama_produk">
+          <h1>${produk.nama}</h1>
+        </div>
+        <div class="detail_kategori_produk">
+          <h5>${produk.kategori}</h5>
+        </div>
+        <div class="detail_harga_produk">
+          <div class="harga_diskon">
+            <h3>${numberFormatter.format(produk.hargaDiskon)}</h3>
+          </div>
+          <div class="harga_asli">
+            <h3>${numberFormatter.format(produk.harga)}</h3>
+          </div>
+          <div class="pengurangan_diskon">
+            <h3>${(produk.harga - produk.hargaDiskon)/produk.harga * 100}% off</h3>
+          </div>
+        </div>
+        <div class="detail_sukai">
+          <button class="wish-btn" onclick="buttonWishListClick(${produk.id})">
+            ${isInWishList(produk.id) ? `Hapus Wishlist` : `Masukan Wishlist`}
+            ${isInWishList(produk.id) ? `<i class="ri-heart-fill"></i>` : `<i class="ri-heart-line"></i>`}
+          </button>
+        </div>
+        <div class="detail_stok">
+          <h5>Tersisa ${produk.stok}</h5>
+        </div>
+        <div class="detail_belanja">
+          <div class="tambah_kurang_produk">
+            <div class="kurang">
+              <h3>-</h3>
+            </div>
+            <div class="jumlah">
+              <h3>5</h3>
+            </div>
+            <div class="tambah">
+              <h3>+</h3>
+            </div>
+          </div>
+          <button class="belanja-btn" onclick="buttonKeranjangClick(${produk.id})">Masukkan ke keranjang</button>
+        </div>
+        <div class="detail_deskripsi">
+          <h6>${produk.keterangan}</h6>
+        </div>
+        ${produk.spesifikasi ? `<div class="detail_spesifikasi">
+          <h6>Spesifikasi ${produk.nama} adalah sebagai berikut : </h6>
+          <ul class="spesifikasi_list">
+            ${produk.spesifikasiHTMLLi()}
+          </ul>
+        </div>` : ``}
+      </div>
+      `;
   </script>
 </body>
 

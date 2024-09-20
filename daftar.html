@@ -168,6 +168,7 @@
     const inputNoHP = document.getElementById('noHP');
     const form = document.querySelector('form#daftar');
     const queryParam = new URLSearchParams(window.location.search);
+    const returnUrl = queryParam.get('returnUrl');
     const newEmail = queryParam.get('email') ? queryParam.get('email') : "Vernandputra14@gmail.com";
     const newEmailPlaceholder = document.querySelector('span#new-email-placeholder');
     newEmailPlaceholder.outerHTML = newEmail;
@@ -183,7 +184,7 @@
           newEmail,
           inputNoHP.value,
           new Date(inputTanggalLahir.value),
-          alamat));
+          alamat), returnUrl);
       }
     });
   </script>

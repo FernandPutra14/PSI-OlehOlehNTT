@@ -51,14 +51,14 @@ function getAuthState() {
     }
 };
 
-function signin(account) {
+function signin(account, returnUrl) {
     if(!account) {
         window.sessionStorage.setItem(authSessionKey, JSON.stringify(defaultAccount));
     } else {
         window.sessionStorage.setItem(authSessionKey, JSON.stringify(account));
     }
 
-    window.location.replace('/index.html');
+    window.location.replace(returnUrl ? returnUrl : '/index.html');
 }
 
 function signout() {

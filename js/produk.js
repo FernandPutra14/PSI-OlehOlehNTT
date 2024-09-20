@@ -10,6 +10,16 @@ class Produk {
         this.keterangan = keterangan;
         this.spesifikasi = spesifikasi;
     }
+
+    spesifikasiHTMLLi() {
+       let li = '';
+       
+       for (const key in this.spesifikasi) {
+        li += `<li>${key} : ${this.spesifikasi[key]}</i>`;
+       }
+
+       return li;
+    }
 }
 
 const daftarProduk = [
@@ -34,16 +44,16 @@ const daftarProduk = [
         15,
         "Tenun ikat khas Sumba yang dibuat dengan teknik tradisional dan motif etnik yang unik, cocok sebagai pakaian adat koleksi pribadi",
         {
-            bahan : "Katun Alami",
-            warna : "Kombinasi merah, hitam, kuning",
-            ukuran : "200 x 60 cm",
-            caraPerawatan : "Cuci dengan air dingin"
+            "Bahan" : "Katun Alami",
+            "Warna" : "Kombinasi merah, hitam, kuning",
+            "Ukuran" : "200 x 60 cm",
+            "Cara Perawatan" : "Cuci dengan air dingin"
         },
     ))
 ]
 
 function getProdukById(id) {
-    return daftarProduk.find((value) => value.id === id);
+    return daftarProduk.find((value) => value.id == id);
 }
 
 function templateDaftarProduk(containerGrid, products) {
@@ -54,7 +64,7 @@ function templateDaftarProduk(containerGrid, products) {
 
     products.forEach((element, index) => {
         containerGrid.insertAdjacentHTML('beforeend', `
-        <a href="detail_produk.html" class="laris__card-link">
+        <a href="detail_produk.html?id=${element.id}" class="laris__card-link">
           <div class="laris__card">
             <img class="gambar_terlaris" src="${element.gambar}" alt="trip" />
             <div class="laris__details">

@@ -58,14 +58,16 @@
     <script type="text/javascript">
       const inputEmail = document.querySelector('input#email');
       const form = document.querySelector('form#masuk_atau_daftar');
+      const queryParams = new URLSearchParams(window.location.search);
+      const returnUrl = queryParams.get('returnUrl');
 
       form.addEventListener('submit', function(e) {
         e.preventDefault();
 
         if(inputEmail.value == defaultAccount.email) {
-          signin(null);
+          signin(null, returnUrl);
         } else {
-          window.location.href = `daftar.html?email=${inputEmail.value}`;
+          window.location.href = `daftar.html?email=${inputEmail.value}&returnUrl=${returnUrl}`;
         }
       })
 
