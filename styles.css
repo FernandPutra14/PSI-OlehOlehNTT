@@ -877,7 +877,7 @@ nav {
   color: var(--text-light);
 }
 
-.sukai, .keranjangi {
+.sukai, .keranjangi, .tidak-sukai {
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;

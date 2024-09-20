@@ -63,8 +63,8 @@ function templateDaftarProduk(containerGrid, products) {
               <div class="bagian__price">
                 <div class="price"><span>${numberFormatter.format(element.harga)}</span></div>
                 <div class="action-produk-card authorize">
-                  <button class="btn-produk-none btn-sukai" onclick="addItemToWishList(getProdukById(${element.id}), 'Catatan')">
-                    <i class="ri-heart-line sukai"></i>
+                  <button class="btn-produk-none btn-sukai" onclick="${isInWishList(element.id) ? `removeItemToWishList(getProdukById(${element.id}))` : `addItemToWishList(getProdukById(${element.id}), 'Catatan')`}">
+                    ${isInWishList(element.id) ? `<i class="ri-heart-fill tidak-sukai"></i>` : `<i class="ri-heart-line sukai"></i>`}
                   </button>
                   <button class="btn-produk-none btn-keranjangi" onclick="addItem(getProdukById(${element.id}), 1);window.location.reload()">
                     <i class="ri-shopping-cart-2-line keranjangi"></i>

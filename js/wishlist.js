@@ -59,6 +59,17 @@ function addItemToWishList(produk, catatan) {
     saveWishList(wishlist);
 }
 
+function changeWishListItemCatatan(idProduk, newCatatan) {
+    if(typeof newCatatan !== "string") {
+        throw new Error("newCatatan must be string");
+    }
+    const wishList = getWishList();
+    const index = wishList.findIndex((value) => value.produk.id === idProduk);
+    if(index === -1) return;
+    wishList[index].catatan = newCatatan;
+    saveWishList(wishList);
+}
+
 function removeItemToWishList(produk) {
     const wishList = getWishList();
     const newWishList = wishList.filter((e) => e.produk.nama !== produk.nama);
