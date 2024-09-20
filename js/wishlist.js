@@ -73,7 +73,7 @@ function changeWishListItemCatatan(idProduk, newCatatan) {
 
 function removeItemToWishList(produk) {
     const wishList = getWishList();
-    const newWishList = wishList.filter((e) => e.produk.nama !== produk.nama);
+    const newWishList = wishList.filter((e) => e.produk.id !== produk.id);
 
     saveWishList(newWishList);
 }

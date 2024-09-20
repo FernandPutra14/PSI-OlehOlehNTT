@@ -89,13 +89,13 @@
           <h6>2 Barang</h6>
         </div>
         <div class="judul_daftar_produk_sukai_dua">
-          <p>Hapus Semua</p>
+          <p onclick="clearWishList()">Hapus Semua</p>
         </div>
         
       </div>
       <div class="daftar_produk">
         <!-- Produk Keranjang -->
-        
+         <p>Tidak Ada Barang di Wishlist</p>
         <!-- Produk Keranjang -->
       </div>
     </div>
@@ -185,11 +185,13 @@
   <script type="text/javascript">
     const wishlist = getWishList()
     const containerDaftarProduk = document.querySelector('.daftar_produk');
+    const jumlahProdukContainer = document.querySelector('.judul_daftar_produk_sukai_satu h6');
     const numberFormatter = new Intl.NumberFormat('id-ID', {
       style : 'currency',
       currency : 'IDR'
     })
 
+    jumlahProdukContainer.innerText = `${wishlist.length} Barang`;
     wishlist.forEach(element => {
       containerDaftarProduk.insertAdjacentHTML('beforeend', `
         <div class="perproduk_sukai">
@@ -222,17 +224,15 @@
             </div>
             <div class="deskripsi_bawah_sukai">
               <div class="action_produk_sukai">
-                <div>
+                <button style="border:none;background:none" onclick="removeItemToWishList(getProdukById(${element.produk.id}))">
                   <i class="ri-delete-bin-line"></i>
-                </div>
+                </button>
               </div>
             </div>
           </div>
           <div class="col-4 catatan_sukai_container">
             <div class="form_catatan_sukai">
-              <textarea spellcheck="false" placeholder="Tambahkan catatan Produk...">
-                ${element.catatan}
-              </textarea>
+              <textarea spellcheck="false" placeholder="Tambahkan catatan Produk...">${element.catatan ? element.catatan : ``}</textarea>
             </div>
             <div class="simpan_catatan">
               <button class="btn">Simpan Catatan</button>
@@ -240,7 +240,10 @@
           </div>
           <div class="col-3 tambahkeranjang_sukai_container">          
             <div class="tambahkeranjang">
-                <button class="btn">Tambahkan ke Keranjang<i class="ri-arrow-right-line"></i></button>
+                <button class="btn" onclick="addItem(getProdukById(${element.produk.id}));window.location.reload()">
+                  Tambahkan ke Keranjang
+                  <i class="ri-arrow-right-line"></i>
+                </button>
             </div>
           </div>
         </div>`);

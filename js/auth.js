@@ -111,7 +111,7 @@ function redirect(authState) {
 
         if(dataWhen == "signout") {
             if(!authState.signin) {
-                window.location.href = dataTo;
+                window.location.href = `masuk_atau_daftar.html?returnUrl=${window.location.href}`;
                 return;
             }
         }
