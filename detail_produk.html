@@ -171,30 +171,6 @@
   <script src="./js/keranjang.js"></script>
   <script src="./js/wishlist.js"></script>
   <script type="text/javascript">
-    const buttonWishListClick = (id) => {
-      const authState = getAuthState();
-
-      if(authState.signin) {
-        if(isInWishList(id)) {
-          removeItemToWishList(getProdukById(id));
-        } else {
-          addItemToWishList(getProdukById(id), "");
-        }
-      } else {
-        window.location.href = `masuk_atau_daftar.html?returnUrl=${window.location.href}`;
-      }
-    }
-
-    const buttonKeranjangClick = (id) => {
-      const authState = getAuthState();
-
-      if(authState.signin) {
-        addItem(getProdukById(id), 1);
-        window.location.reload();
-      } else {
-        window.location.href = `masuk_atau_daftar.html?returnUrl=${window.location.href}`;
-      }
-    }
 
     const queryParams = new URLSearchParams(window.location.search);
     const id = queryParams.get('id') ? queryParams.get('id') : 1;
