@@ -167,7 +167,6 @@ function redirect(authState) {
 const authState = getAuthState();
 
 document.addEventListener('DOMContentLoaded', function () {
-
   authorizeContent(authState);
   accountPlaceholders(authState);
   redirect(authState);
@@ -225,7 +224,7 @@ function templateDaftarProduk(containerGrid, products) {
         </a>`);
   });
 
-  authorizeContent(getAuthState());
+  authorizeContent(authState);
 
   document.querySelectorAll('.sukai').forEach(function (icon) {
     icon.addEventListener('mouseover', function () {
