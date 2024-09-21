@@ -65,7 +65,7 @@
         e.preventDefault();
 
         if(inputEmail.value == defaultAccount.email) {
-          signin(null, returnUrl);
+          window.location.href = `password_masuk.html?returnUrl=${returnUrl}`;
         } else {
           window.location.href = `daftar.html?email=${inputEmail.value}&returnUrl=${returnUrl}`;
         }
