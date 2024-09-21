@@ -164,9 +164,9 @@ function redirect(authState) {
     }
   }
 }
+const authState = getAuthState();
 
 document.addEventListener('DOMContentLoaded', function () {
-  const authState = getAuthState();
 
   authorizeContent(authState);
   accountPlaceholders(authState);
@@ -174,7 +174,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const authState = getAuthState();
   const keranjangBadge = document.getElementById("keranjang-badge");
   const keranjang = getKeranjang();
 
@@ -186,7 +185,6 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const authState = getAuthState();
   const wishListBadge = document.getElementById("wishlist-badge");
   const wishList = getWishList();
 
