@@ -22,6 +22,7 @@ function getKeranjang() {
                     i.produk.id,
                     i.produk.nama,
                     i.produk.gambar,
+                    i.produk.kategori,
                     i.produk.harga,
                     i.produk.hargaDiskon,
                     i.produk.stok,
@@ -64,7 +65,7 @@ function addItem(produk, jumlah) {
 
 function removeItem(id) {
     const keranjang = getKeranjang();
-    const newKeranjang = keranjang.filter((e) => e.produk.id !== produk.id);
+    const newKeranjang = keranjang.filter((e) => e.produk.id !== id);
 
     saveKeranjang(newKeranjang);
 }
