@@ -174,11 +174,26 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const authState = getAuthState();
   const keranjangBadge = document.getElementById("keranjang-badge");
   const keranjang = getKeranjang();
 
-  if (keranjangBadge) {
+  if (keranjangBadge && authState.signin) {
     keranjangBadge.innerText = keranjang.length;
+  } else {
+    keranjangBadge.innerText = "0";
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const authState = getAuthState();
+  const wishListBadge = document.getElementById("wishlist-badge");
+  const wishList = getWishList();
+
+  if (wishListBadge && authState.signin) {
+    wishListBadge.innerText = wishList.length;
+  } else {
+    wishListBadge.innerText = "0";
   }
 });
 
@@ -239,12 +254,3 @@ function templateDaftarProduk(containerGrid, products) {
     });
   });
 }
-
-document.addEventListener("DOMContentLoaded", function () {
-  const wishListBadge = document.getElementById("wishlist-badge");
-  const wishList = getWishList();
-
-  if (wishListBadge) {
-    wishListBadge.innerText = wishList.length;
-  }
-});
