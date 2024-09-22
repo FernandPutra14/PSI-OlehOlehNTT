@@ -2741,7 +2741,7 @@ nav {
 #profil .input_grup input:valid~label {
   top: 0;
   font-size: 12px;
-  background: var(--white);
+  background: var(--white-asli);
 }
 
 #profil .bagi_bagi {
@@ -2778,7 +2778,7 @@ nav {
 #profil .bagi_bagi .input_grup input:valid~label {
   top: 0;
   font-size: 12px;
-  background: var(--white);
+  background: var(--white-asli);
 }
 
 
