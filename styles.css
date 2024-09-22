@@ -1110,6 +1110,7 @@ nav {
   position: sticky;
   top: 0;
   margin-bottom: 10px;
+  z-index: 100;
 }
 
 .filter_produk_container {
@@ -1242,6 +1243,7 @@ nav {
 }
 
 #daftar-produk .laris__card {
+  position: relative;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -1257,6 +1259,25 @@ nav {
   max-height: 230px;
   object-fit: cover;
 }
+
+.diskon_produk {
+  position: absolute;
+  border-radius: 3px;
+  background-color: orange;
+  padding: 3px 20px;
+  top: 0;
+  left: -5%;
+  margin: 20px 0;
+  transform: rotate(90deg);
+}
+
+.diskon_produk p {
+  color: white;
+  font-size: .9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
 
 #daftar-produk .laris__details {
   padding: 1rem;
