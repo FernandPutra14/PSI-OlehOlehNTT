@@ -1291,13 +1291,14 @@ nav {
 
 #daftar-produk .laris__details p {
   font-weight: 400;
+  font-size: .9rem;
   color: var(--text-light);
 }
 
 #daftar-produk .laris__details h6 {
   color: var(--text-dark);
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 #daftar-produk .bagian__price {
@@ -1306,10 +1307,20 @@ nav {
   justify-content: space-between;
 }
 
+.price_dua {
+}
+
 #daftar-produk .price span {
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: var(--text-light);
+  font-weight: 600;
+  font-size: .87rem;
+  color: red;
+  text-decoration:line-through;
+}
+
+#daftar-produk .price_diskon span {
+  font-weight: bold;
+  font-size: 1rem;
+  color: var(--text-dark);
 }
 
 #daftar-produk .sukai, .keranjangi {
@@ -1328,6 +1339,15 @@ nav {
   font-family: "remixicon";
 }
 
+
+.jumlah_terjual {
+  
+}
+
+.jumlah_terjual h5 {
+  font-size: .7rem;
+  font-weight: 400;
+}
 
 /*=============================================================================================================================*\
   #HALAMAN BLOG
