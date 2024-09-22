@@ -1216,12 +1216,54 @@ nav {
 }
 
 /*-----------------------------------*\
+  #PILIHAN FILTER
+\*-----------------------------------*/
+
+.pilihan_filter_container {
+  margin: auto;
+  padding: 0rem 1rem 0rem;
+  display: flex;
+  gap: 8px;
+}
+
+
+.pilihan_filter_container .pilihan_container {
+  gap: 5px;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--container-color);
+  padding: 5px;
+  cursor: pointer;
+}
+
+.pilihan_filter_container .pilihan_container p {
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.pilihan_filter_container .pilihan_container_hapus {
+  gap: 5px;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.pilihan_filter_container .pilihan_container_hapus h5 {
+  font-size: .9rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+
+
+/*-----------------------------------*\
   #DAFTAR PRODUK
 \*-----------------------------------*/
 
 #daftar-produk {
   background-color: #fff;
-  padding-top: 5px;
+  padding-top: 8px;
 }
 
 #daftar-produk .laris__container {
