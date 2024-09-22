@@ -3273,11 +3273,209 @@ nav {
 }
 
 
+#final_pembayaran .daftar_produk {
 
-.button_pembayaran_tiga {
-  margin-top: 10px;
+}
+
+#final_pembayaran .daftar_produk .perproduk_keranjang {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px dotted #999;
+}
+
+#final_pembayaran .perproduk_keranjang .gambar_produk_keranjang {
+  padding-left: 0;
+}
+
+#final_pembayaran .perproduk_keranjang .gambar_produk_keranjang img {
+  border-radius: 10px;
+}
+
+#final_pembayaran .deskripsi_produk_keranjang {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+#final_pembayaran .deskripsi_atas {
+
+}
+
+#final_pembayaran .deskripsi_atas .nama_produk_keranjang h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#final_pembayaran .kategori_produk_keranjang {
+  margin-bottom: 5px;
+}
+
+#final_pembayaran .kategori_produk_keranjang h5 {
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+#final_pembayaran .stok_produk_keranjang {
+  margin-bottom: 10px;
+}
+
+#final_pembayaran .stok_produk_keranjang p {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+
+#final_pembayaran .atur_stok_harga {
   display: flex;
   justify-content: space-between;
+}
+
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang {
+  display: inline-flex;
+  padding: 0 20px;
+  align-items: center;
+  border-radius: 18px;
+  gap: 30px;
+  background-color: var(--container-color);
+}
+
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .kurang h3,
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .tambah h3{
+  font-weight: 500;
+}
+
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .kurang,
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .tambah{
+  cursor: pointer;
+}
+
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .jumlah h3 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#final_pembayaran .atur_stok_harga .harga_produk_keranjang h5 {
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+#final_pembayaran .harga_diskon_keranjang {
+  display: flex;
+  justify-content: end;
+}
+
+#final_pembayaran .harga_diskon_keranjang h5 {
+  font-size: 1rem;
+  color: red;
+}
+
+#final_pembayaran .deskripsi_bawah {
+
+}
+
+#final_pembayaran .deskripsi_bawah .action_produk_keranjang {
+  display: flex;
+  gap: 7px;
+}
+
+#final_pembayaran .action_produk_keranjang i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+
+.judul_total_keranjang h3 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.final_harga {
+  margin-top: 20px;
+}
+
+.final_harga .total_ringkasan_keranjang_container {
+}
+
+.final_harga .total_ringkasan_keranjang_container .jumlah_produk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.final_harga .total_ringkasan_keranjang_container .jumlah_produk h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.final_harga .total_ringkasan_keranjang_container .harga_total_produk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.final_harga .total_ringkasan_keranjang_container .harga_total_produk h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.final_harga .total_ringkasan_keranjang_container .biaya_pengiriman {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.final_harga .total_ringkasan_keranjang_container .biaya_pengiriman h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.final_harga .total_ringkasan_keranjang_container .total_semua {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.final_harga .total_ringkasan_keranjang_container .total_semua h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+
+.final_harga .total_checkout {
+  margin-top: 10px;
+}
+
+.final_harga .total_checkout a {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+
+.button_pembayaran_tiga {
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
   align-content: center;
   align-items: center;
 }
