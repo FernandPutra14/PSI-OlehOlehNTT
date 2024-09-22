@@ -61,23 +61,32 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-document.querySelectorAll('.sukai').forEach(function (icon) {
-  icon.addEventListener('mouseover', function () {
-    this.classList.replace('ri-heart-line', 'ri-heart-fill');
+function cardProdukButton() {
+  document.querySelectorAll('.sukai').forEach(function (icon) {
+    icon.addEventListener('mouseover', function () {
+      this.classList.replace('ri-heart-line', 'ri-heart-fill');
+    });
+    icon.addEventListener('mouseout', function () {
+      this.classList.replace('ri-heart-fill', 'ri-heart-line');
+    });
   });
-  icon.addEventListener('mouseout', function () {
-    this.classList.replace('ri-heart-fill', 'ri-heart-line');
-  });
-});
 
-document.querySelectorAll('.keranjangi').forEach(function (icon) {
-  icon.addEventListener('mouseover', function () {
-    this.classList.replace('ri-shopping-cart-2-line', 'ri-shopping-cart-fill');
+  document.querySelectorAll('.keranjangi').forEach(function (icon) {
+    icon.addEventListener('mouseover', function () {
+      this.classList.replace('ri-shopping-cart-2-line', 'ri-shopping-cart-fill');
+    });
+    icon.addEventListener('mouseout', function () {
+      this.classList.replace('ri-shopping-cart-fill', 'ri-shopping-cart-2-line');
+    });
   });
-  icon.addEventListener('mouseout', function () {
-    this.classList.replace('ri-shopping-cart-fill', 'ri-shopping-cart-2-line');
+
+  document.querySelectorAll('.btn-produk-none').forEach((item) => {
+    item.addEventListener('click', function (event) {
+      event.preventDefault();
+      event.stopPropagation();
+    });
   });
-});
+}
 
 function showContent(contentId) {
   //Sembunyikan semua content
@@ -225,29 +234,6 @@ function templateDaftarProduk(containerGrid, products) {
   });
 
   authorizeContent(authState);
-
-  document.querySelectorAll('.sukai').forEach(function (icon) {
-    icon.addEventListener('mouseover', function () {
-      this.classList.replace('ri-heart-line', 'ri-heart-fill');
-    });
-    icon.addEventListener('mouseout', function () {
-      this.classList.replace('ri-heart-fill', 'ri-heart-line');
-    });
-  });
-
-  document.querySelectorAll('.keranjangi').forEach(function (icon) {
-    icon.addEventListener('mouseover', function () {
-      this.classList.replace('ri-shopping-cart-2-line', 'ri-shopping-cart-fill');
-    });
-    icon.addEventListener('mouseout', function () {
-      this.classList.replace('ri-shopping-cart-fill', 'ri-shopping-cart-2-line');
-    });
-  });
-
-  document.querySelectorAll('.btn-produk-none').forEach((item) => {
-    item.addEventListener('click', function (event) {
-      event.preventDefault();
-      event.stopPropagation();
-    });
-  });
 }
+
+cardProdukButton();

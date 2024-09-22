@@ -65,9 +65,9 @@
         e.preventDefault();
 
         if(inputEmail.value == defaultAccount.email) {
-          window.location.href = `password_masuk.html?returnUrl=${returnUrl}`;
+          window.location.href = `password_masuk.html${returnUrl ? `?returnUrl=${returnUrl}` : ``}`;
         } else {
-          window.location.href = `daftar.html?email=${inputEmail.value}&returnUrl=${returnUrl}`;
+          window.location.href = `daftar.html?email=${inputEmail.value}${returnUrl ? `&returnUrl=${returnUrl}` : ``}`;
         }
       })
 
