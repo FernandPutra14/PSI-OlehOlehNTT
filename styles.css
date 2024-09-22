@@ -3145,6 +3145,30 @@ nav {
   margin-top: 20px;
 }
 
+.metode_pembayaran {
+  margin-top: 10px;
+  background-color: #F5F5F5;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  padding: 0px 10px;
+  border: 2px solid transparent;
+  transition: all .3s ease;
+}
+
+.metode_pembayaran:hover {
+  border: 2px solid var(--primary-color);
+}
+
+.pembayaran_active {
+  border: 2px solid var(--primary-color);
+}
+
+.metode_pembayaran img {
+  max-width: 150px;
+}
+
 
 
 .button_pembayaran_dua {
