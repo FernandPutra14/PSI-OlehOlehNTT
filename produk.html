@@ -100,15 +100,16 @@
 
 
   <!--======================================================= FILTER - PRODUK =======================================================-->
-  <section id="filter" class="sticky">
-    <div class="section__container filter_produk_container">
-      <div class="filter-border">
-        <!-- Kategori Filter (Sebelah Kiri) -->
-        <div class="filter-left">
+<section id="filter" class="sticky">
+  <div class="section__container filter_produk_container">
+    <div class="filter-border">
+      <!-- Kategori Filter (Sebelah Kiri) -->
+      <div class="filter-left">
 
 
-          <!-- Buat Sini -->
-          <div class="filter_container">
+        <!-- Filter Kategori -->
+        <div class="area_filter">
+          <div class="filter_container" onclick="toggleDropdown(this)">
             <div class="nama_filter">
               <h6>Kategori</h6>
             </div>
@@ -116,9 +117,19 @@
               <i class="ri-arrow-drop-down-line"></i>
             </div>
           </div>
-          <!-- AKhir Buat Sini -->
-          <!-- Buat Sini -->
-          <div class="filter_container">
+          <div class="filter-dropdown">
+            <label><input type="checkbox" value="snacks"> Kain Tenun</label>
+            <label><input type="checkbox" value="clothes"> Makanan</label>
+            <label><input type="checkbox" value="souvenirs"> Minuman</label>
+            <label><input type="checkbox" value="souvenirs"> Aksesoris</label>
+            <label><input type="checkbox" value="souvenirs"> Pakaian</label>
+            <label><input type="checkbox" value="souvenirs"> Lain-lain</label>
+          </div>
+        </div>
+
+        <!-- Filter Harga -->
+        <div class="area_filter">
+          <div class="filter_container" onclick="toggleDropdown(this)">
             <div class="nama_filter">
               <h6>Harga</h6>
             </div>
@@ -126,9 +137,15 @@
               <i class="ri-arrow-drop-down-line"></i>
             </div>
           </div>
-          <!-- AKhir Buat Sini -->
-          <!-- Buat Sini -->
-          <div class="filter_container">
+          <div class="filter-dropdown">
+            <label><input type="checkbox" value="low"> Termurah</label>
+            <label><input type="checkbox" value="high"> Termahal</label>
+          </div>
+        </div>
+
+        <!-- Filter Ukuran -->
+        <div class="area_filter">
+          <div class="filter_container" onclick="toggleDropdown(this)">
             <div class="nama_filter">
               <h6>Ukuran</h6>
             </div>
@@ -136,9 +153,18 @@
               <i class="ri-arrow-drop-down-line"></i>
             </div>
           </div>
-          <!-- AKhir Buat Sini -->
-          <!-- Buat Sini -->
-          <div class="filter_container">
+          <div class="filter-dropdown">
+            <label><input type="checkbox" value="small"> Kecil</label>
+            <label><input type="checkbox" value="medium"> Sedang</label>
+            <label><input type="checkbox" value="large"> Besar</label>
+          </div>
+        </div>
+
+        
+
+        <!-- Filter Gender -->
+        <div class="area_filter">
+          <div class="filter_container" onclick="toggleDropdown(this)">
             <div class="nama_filter">
               <h6>Gender</h6>
             </div>
@@ -146,9 +172,15 @@
               <i class="ri-arrow-drop-down-line"></i>
             </div>
           </div>
-          <!-- AKhir Buat Sini -->
-          <!-- Buat Sini -->
-          <div class="filter_container">
+          <div class="filter-dropdown">
+            <label><input type="checkbox" value="male"> Pria</label>
+            <label><input type="checkbox" value="female"> Wanita</label>
+          </div>
+        </div>
+
+        <!-- Filter Diskon -->
+        <div class="area_filter">
+          <div class="filter_container" onclick="toggleDropdown(this)">
             <div class="nama_filter">
               <h6>Diskon</h6>
             </div>
@@ -156,27 +188,18 @@
               <i class="ri-arrow-drop-down-line"></i>
             </div>
           </div>
-          <!-- AKhir Buat Sini -->
-
-          <!-- <select id="kategori">
-            <option value="Semua">Semua</option>
-            <option value="Makanan">Makanan</option>
-            <option value="Minuman">Minuman</option>
-            <option value="Pakaian">Pakaian</option>
-          </select>
-          
-          <select id="harga">
-            <option value="Semua">Semua</option>
-            <option value="Murah">Murah</option>
-            <option value="Mahal">Mahal</option>
-          </select> --> 
+          <div class="filter-dropdown">
+            <label><input type="checkbox" value="no-discount"> Tanpa Diskon</label>
+            <label><input type="checkbox" value="with-discount"> Dengan Diskon</label>
+          </div>
         </div>
 
-        <!-- Filter Waktu (Sebelah Kanan) -->
-        <div class="filter-right">
+      </div>
 
-          <!-- Buat Sini -->
-          <div class="filter_container">
+      <!-- Filter Terlaris (Sebelah Kanan) -->
+      <div class="filter-right">
+        <div class="area_filter">
+          <div class="filter_container" onclick="toggleDropdown(this)">
             <div class="nama_filter">
               <h6>Terlaris</h6>
             </div>
@@ -184,18 +207,17 @@
               <i class="ri-arrow-drop-down-line"></i>
             </div>
           </div>
-          <!-- AKhir Buat Sini -->
-
-
-          <!-- <select id="filter">
-                  <option value="terbaru">Terbaru</option>
-                  <option value="terlama">Terlama</option>
-                  <option value="populer">Populer</option>
-              </select> -->
+          <div class="filter-dropdown">
+            <label><input type="checkbox" value="best-sellers">Terlaris</label>
+            <label><input type="checkbox" value="trending">Terbaru</label>
+            <label><input type="checkbox" value="trending">Terlama</label>
+          </div>
         </div>
       </div>
+
     </div>
-  </section>
+  </div>
+</section>
   <!--======================================================= AKHIR FILTER - PRODUK =======================================================-->
 
   <!--======================================================= DAFTAR PRODUK - PRODUK =======================================================-->

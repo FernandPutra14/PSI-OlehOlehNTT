@@ -1151,8 +1151,8 @@ nav {
   cursor: pointer;
 }
 
-/* Filter */
 
+/* Filter */
 .filter_container {
   display: flex;
   border-radius: 5px;
@@ -1173,9 +1173,45 @@ nav {
 }
 
 .filter_container .nama_filter h6 {
+  user-select: none; /* Tidak dapat memilih teks */
+  -webkit-user-select: none; /* Untuk Safari */
+  -moz-user-select: none; /* Untuk Firefox */
   font-weight: 500;
   font-size: .95rem;
   text-transform: uppercase;
+}
+
+.filter-dropdown {
+  display: none;
+  padding: 8px 20px;
+  background-color: white;
+  border: 1px solid var(--primary-color-dark);
+  border-radius: 5px;
+  width: 200px;
+  margin-top: 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-dropdown label {
+  display: block;
+  padding: 5px 0;
+  font-size: 1rem;
+  color: #000;
+}
+
+.filter-dropdown input[type="checkbox"] {
+  color: #000 !important;
+  margin-right: 8px;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.area_filter {
+  position: relative;
 }
 
 /*-----------------------------------*\

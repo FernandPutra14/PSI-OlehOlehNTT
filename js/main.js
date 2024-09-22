@@ -237,3 +237,30 @@ function templateDaftarProduk(containerGrid, products) {
 }
 
 cardProdukButton();
+
+function toggleDropdown(element) {
+  const allDropdowns = document.querySelectorAll('.filter-dropdown');
+  allDropdowns.forEach(dropdown => {
+    if (dropdown !== element.nextElementSibling) {
+      dropdown.style.display = 'none';
+    }
+  });
+
+  const dropdown = element.nextElementSibling;
+  if (dropdown.style.display === "none" || !dropdown.style.display) {
+    dropdown.style.display = "block";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
+
+document.addEventListener('click', function(event) {
+  const isClickInsideFilter = event.target.closest('.area_filter');
+
+  if (!isClickInsideFilter) {
+    const allDropdowns = document.querySelectorAll('.filter-dropdown');
+    allDropdowns.forEach(dropdown => {
+      dropdown.style.display = 'none';
+    });
+  }
+});
