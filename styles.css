@@ -1232,6 +1232,7 @@ nav {
   display: inline-flex;
   align-items: center;
   background-color: var(--container-color);
+  border-radius: 5px;
   padding: 5px;
   cursor: pointer;
 }
