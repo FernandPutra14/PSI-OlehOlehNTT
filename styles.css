@@ -1419,7 +1419,7 @@ nav {
 
 #daftar-produk .price_diskon span {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: .9rem;
   color: var(--text-dark);
 }
 
@@ -1454,9 +1454,6 @@ nav {
 \*=============================================================================================================================*/
 
 
-
-
-
 /*-----------------------------------*\
   #BLOG POPULER
 \*-----------------------------------*/
@@ -1481,9 +1478,9 @@ nav {
 
 .blog_details_populer p {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 15px;
-  color: var(--text-light);
+  color: var(--primary-color);
   text-transform: uppercase;
 }
 
@@ -1654,9 +1651,9 @@ nav {
 
 #blog_halaman .blog__details p {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
-  color: var(--text-light);
+  color: var(--primary-color);
 }
 
 #blog_halaman .blog__details h5 {
@@ -3001,9 +2998,10 @@ nav {
 \*=============================================================================================================================*/
 
 .detail_blog_container {
-  max-width: 700px;
+  max-width: 750px;
   display: flex;
   justify-content: center;
+  padding: 2rem 1rem 2rem;
 }
 
 .content_detail_blog {
@@ -3015,9 +3013,12 @@ nav {
 }
 
 .kembali_detail_blog {
-  display: flex;
-  gap: 10px;
-  
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .kembali_detail_blog .icon_kembali_detail_blog i {
@@ -3026,20 +3027,21 @@ nav {
 
 .kembali_detail_blog .text_kembali_detail_blog p {
   cursor: pointer;
-  font-size: 1rem;
-  text-decoration: underline;
+  font-size: .9rem;
+  font-weight: 600;
 }
 
 .kategori_tanggal_detail_blog {
-  margin-top: 20px;
+  margin-top: 25px;
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
 .kategori_detail_blog {
-  padding: 3px 10px;
+  /* padding: 3px 10px; */
   border-radius: 20px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
 }
 
 .kategori_detail_blog p {
@@ -3054,12 +3056,12 @@ nav {
 }
 
 .judul_detail_blog {
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .judul_detail_blog h3 {
-  font-size: 2.1rem;
-  line-height: 2.7rem;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
 }
 
 .gambar_detail_blog {
@@ -3073,21 +3075,110 @@ nav {
 
 .isi_detail_blog {
   margin-top: 20px;
-  padding-right: 30px;
 }
 
 .isi_detail_blog p {
   text-align: justify;
+  font-size: .99rem;
 }
 
-.isi_detail_blog span {
+.isi_detail_blog p span {
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
 
 .lain_content_detail_blog {
-  background-color: rebeccapurple;
-  height: 400px;
+  padding: 2rem 1rem 1rem;
+}
+
+.judul_blog_lainnya {
+  display: flex;
+  justify-content: center;
+}
+
+.judul_blog_lainnya h3 {
+  font-size: 1.7rem;
+}
+
+#blog_lain .blog__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 4rem 0;
+}
+
+#blog_lain .blog__card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: .2s ease;
+}
+
+#blog_lain .blog__card .gambar_blog {
+  max-height: 230px;
+  object-fit: cover;
+}
+
+#blog_lain .blog__details {
+  padding: 1rem 1rem 1rem 0rem;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+#blog_lain .blog__details p {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+#blog_lain .blog__details h5 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+#blog_lain .blog__details h6 {
+  font-weight: 400;
+  color: var(--text-light);
+  font-size: .9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+#blog_lain .blog__details a {
+  font-size: 14px ;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+
+#blog_lain .blog_now {
+  padding: 0.5rem 1.5rem;
+  color: var(--primary-color);
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#blog_lain .blog_now:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
 }
 
 
@@ -3792,6 +3883,13 @@ nav {
     margin: 4rem 0;
   }
 
+  #blog_lain .blog__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3861,6 +3959,13 @@ nav {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin: 3rem 0;
+  }
+
+  #blog_lain .blog__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
   }
 
   .newsletter__grid input[type="email"], 
