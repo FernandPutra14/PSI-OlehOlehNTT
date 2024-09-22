@@ -1364,20 +1364,18 @@ nav {
 
 .diskon_produk {
   position: absolute;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: orange;
-  padding: 3px 20px;
+  padding: 3px 10px;
   top: 0;
-  left: -5%;
-  margin: 20px 0;
-  transform: rotate(90deg);
+  left: 0;
+  margin: 10px;
 }
 
 .diskon_produk p {
   color: white;
   font-size: .9rem;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-weight: 400;
 }
 
 
