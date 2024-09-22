@@ -238,6 +238,9 @@ function templateDaftarProduk(containerGrid, products) {
 
 cardProdukButton();
 
+
+
+//Fungsi aktifkan filter-dropdown
 function toggleDropdown(element) {
   const allDropdowns = document.querySelectorAll('.filter-dropdown');
   allDropdowns.forEach(dropdown => {
@@ -258,9 +261,25 @@ document.addEventListener('click', function(event) {
   const isClickInsideFilter = event.target.closest('.area_filter');
 
   if (!isClickInsideFilter) {
-    const allDropdowns = document.querySelectorAll('.filter-dropdown');
+    const allDropdowns = document.querySelectorAll('.filter-dropdown, .filter-dropdown-kategori');
     allDropdowns.forEach(dropdown => {
       dropdown.style.display = 'none';
     });
   }
 });
+
+
+
+//Update Filter Harga
+function updatePriceRange() {
+  const minPrice = document.getElementById('minPrice').value;
+  const maxPrice = document.getElementById('maxPrice').value;
+  const hargaLabel = document.getElementById('harga-range-label');
+
+  if (parseInt(minPrice) > parseInt(maxPrice)) {
+    document.getElementById('minPrice').value = maxPrice;
+    document.getElementById('maxPrice').value = minPrice;
+  }
+
+  hargaLabel.textContent = `Rp ${parseInt(minPrice).toLocaleString()} - Rp ${parseInt(maxPrice).toLocaleString()}`;
+}

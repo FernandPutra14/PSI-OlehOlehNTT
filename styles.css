@@ -207,6 +207,14 @@ body {
   margin-bottom: 10px !important;
 }
 
+.pl-1 {
+  padding-left: 10px;
+}
+
+.pr-1 {
+  padding-right: 10px;
+}
+
 [class*="col-"] {
   padding-right: 15px;
   padding-left: 15px;
@@ -1197,6 +1205,11 @@ nav {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+.filter-dropdown-kategori {
+  width: 300px !important;
+}
+
 .filter-dropdown label {
   display: block;
   padding: 5px 0;
@@ -1214,6 +1227,52 @@ nav {
 .area_filter {
   position: relative;
 }
+
+/* Input Range */
+.range-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.range-slider input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.range-slider input[type="range"]::-webkit-slider-runnable-track {
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: var(--primary-color-dark);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.range-slider input[type="range"]::-moz-range-track {
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+.range-slider input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: var(--primary-color-dark);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
 
 /*-----------------------------------*\
   #PILIHAN FILTER

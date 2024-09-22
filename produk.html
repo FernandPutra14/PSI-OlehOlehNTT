@@ -134,14 +134,19 @@
               <h6>Harga</h6>
             </div>
             <div class="arrow-filter">
-              <i class="ri-arrow-drop-down-line"></i>
+            <i class="ri-arrow-drop-down-line"></i>
             </div>
           </div>
-          <div class="filter-dropdown">
-            <label><input type="checkbox" value="low"> Termurah</label>
-            <label><input type="checkbox" value="high"> Termahal</label>
+          <div class="filter-dropdown filter-dropdown-kategori">
+            <label id="harga-range-label">Rp 10.000 - Rp 10.000.000</label>
+            <div class="range-slider">
+              <input type="range" id="minPrice" min="10000" max="10000000" value="10000" step="1000" oninput="updatePriceRange()">
+              <input type="range" id="maxPrice" min="10000" max="10000000" value="10000000" step="1000" oninput="updatePriceRange()">
+           </div>
           </div>
         </div>
+
+
 
         <!-- Filter Ukuran -->
         <div class="area_filter">
