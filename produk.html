@@ -22,8 +22,8 @@
     <div class="toast-content">
       <i class="ri-check-line check"></i>
       <div class="message">
-        <span class="text text-1">Sukses</span>
-        <span class="text text-2">Produk berhasil masuk dalam daftar favorit</span>
+        <span class="toast-title"></span>
+        <span class="toast-message"></span>
       </div>
     </div>
     <i class="ri-close-line close"></i>
@@ -293,7 +293,7 @@
             <div class="laris__details">
               <div class="judul_sukai">
                 <p>Makanan</p>
-                <button class="btn-produk-none btn-sukai toast-sukai">
+                <button class="btn-produk-none btn-sukai" onclick="toast.success('Sukses','Produk sukses ditambah ke daftar favorit')">
                   <i class="ri-heart-line sukai"></i>
                 </button>
               </div>
