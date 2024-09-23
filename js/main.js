@@ -52,7 +52,6 @@ const swiperElement = document.querySelector('.swiper');
 const isClass2 = swiperElement.classList.contains('class-2');
 const spaceBetweenValue = isClass2 ? 50 : 0;
 
-
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
   spaceBetween: spaceBetweenValue,
@@ -72,8 +71,8 @@ const swiper = new Swiper(".swiper", {
     disableOnInteraction: false,
   } : false, 
 
-  loop: true,
-  loopedSlides: 3,
+  loop: isClass2, // Loop hanya diaktifkan jika elemen memiliki class-2
+  loopedSlides: isClass2 ? 3 : 0, // Hanya atur loopedSlides jika isClass2 true
 });
 
 
@@ -256,37 +255,6 @@ function templateDaftarProduk(containerGrid, products) {
 cardProdukButton();
 
 
-
-//Fungsi aktifkan filter-dropdown
-function toggleDropdown(element) {
-  const allDropdowns = document.querySelectorAll('.filter-dropdown');
-  allDropdowns.forEach(dropdown => {
-    if (dropdown !== element.nextElementSibling) {
-      dropdown.style.display = 'none';
-    }
-  });
-
-  const dropdown = element.nextElementSibling;
-  if (dropdown.style.display === "none" || !dropdown.style.display) {
-    dropdown.style.display = "block";
-  } else {
-    dropdown.style.display = "none";
-  }
-}
-
-document.addEventListener('click', function(event) {
-  const isClickInsideFilter = event.target.closest('.area_filter');
-
-  if (!isClickInsideFilter) {
-    const allDropdowns = document.querySelectorAll('.filter-dropdown, .filter-dropdown-kategori');
-    allDropdowns.forEach(dropdown => {
-      dropdown.style.display = 'none';
-    });
-  }
-});
-
-
-
 //Update Filter Harga
 function updatePriceRange() {
   const minPrice = document.getElementById('minPrice').value;
@@ -317,3 +285,32 @@ function togglePasswordVisibility() {
     toggleIcon.classList.add('ri-eye-line');
   }
 }
+
+
+//Fungsi aktifkan filter-dropdown
+function toggleDropdown(element) {
+  const allDropdowns = document.querySelectorAll('.filter-dropdown');
+  allDropdowns.forEach(dropdown => {
+    if (dropdown !== element.nextElementSibling) {
+      dropdown.style.display = 'none';
+    }
+  });
+
+  const dropdown = element.nextElementSibling;
+  if (dropdown.style.display === "none" || !dropdown.style.display) {
+    dropdown.style.display = "block";
+  } else {
+    dropdown.style.display = "none";
+  }
+}
+
+document.addEventListener('click', function(event) {
+  const isClickInsideFilter = event.target.closest('.area_filter');
+
+  if (!isClickInsideFilter) {
+    const allDropdowns = document.querySelectorAll('.filter-dropdown, .filter-dropdown-kategori');
+    allDropdowns.forEach(dropdown => {
+      dropdown.style.display = 'none';
+    });
+  }
+});

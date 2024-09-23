@@ -830,6 +830,14 @@ nav {
   background-color: transparent;
 }
 
+.swiper-button-prev {
+  left: 2%;
+}
+
+.swiper-button-next {
+  right: 2%;
+}
+
 /*-----------------------------------*\
   #PRODUK TERLARIS
 \*-----------------------------------*/
@@ -1585,11 +1593,12 @@ nav {
   max-width: 100%;
 }
 
-#blog_populer .swiper-button-next:after, .swiper-button-prev:after {
+#blog_populer .swiper-button-next:after, #blog_populer .swiper-button-prev:after {
   font-size: 15px !important;
 }
 
-#blog_populer .swiper-button-prev, .swiper-button-next {
+#blog_populer .swiper-button-prev, 
+#blog_populer .swiper-button-next {
   color: var(--primary-color);
   background-color: white;
   width: 35px;
