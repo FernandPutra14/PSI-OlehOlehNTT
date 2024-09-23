@@ -841,6 +841,7 @@ nav {
 }
 
 .laris__card {
+  position: relative;
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
@@ -857,6 +858,22 @@ nav {
   object-fit: cover;
 }
 
+.diskon_produk {
+  position: absolute;
+  border-radius: 5px;
+  background-color: orange;
+  padding: 3px 10px;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+
+.diskon_produk p {
+  color: white;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
 .laris__details {
   padding: 1rem;
   display: grid;
@@ -869,13 +886,14 @@ nav {
 
 .laris__details p {
   font-weight: 400;
+  font-size: .9rem;
   color: var(--text-light);
 }
 
 .laris__details h6 {
   color: var(--text-dark);
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 
 .bagian__price {
@@ -885,9 +903,16 @@ nav {
 }
 
 .price span {
-  font-weight: 400;
-  font-size: 0.9rem;
-  color: var(--text-light);
+  font-weight: 600;
+  font-size: .9rem;
+  color: red;
+  text-decoration:line-through;
+}
+
+.price_diskon span {
+  font-weight: 600;
+  font-size: .9rem;
+  color: var(--text-dark);
 }
 
 .sukai, .keranjangi, .tidak-sukai {
@@ -906,6 +931,15 @@ nav {
 .action-produk-card .keranjangi:hover {
   content: "\e651";
   font-family: "remixicon";
+}
+
+.jumlah_terjual {
+  
+}
+
+.jumlah_terjual h5 {
+  font-size: .7rem;
+  font-weight: 400;
 }
 
 .btn_produk {
@@ -1362,7 +1396,7 @@ nav {
   object-fit: cover;
 }
 
-.diskon_produk {
+#daftar-produk .diskon_produk {
   position: absolute;
   border-radius: 5px;
   background-color: orange;
@@ -1372,7 +1406,7 @@ nav {
   margin: 10px;
 }
 
-.diskon_produk p {
+#daftar-produk .diskon_produk p {
   color: white;
   font-size: .9rem;
   font-weight: 400;
@@ -1397,7 +1431,7 @@ nav {
 
 #daftar-produk .laris__details h6 {
   color: var(--text-dark);
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
@@ -1407,7 +1441,7 @@ nav {
   justify-content: space-between;
 }
 
-.price_dua {
+#daftar-produk .price_dua {
 }
 
 #daftar-produk .price span {
@@ -1440,11 +1474,11 @@ nav {
 }
 
 
-.jumlah_terjual {
+#daftar-produk .jumlah_terjual {
   
 }
 
-.jumlah_terjual h5 {
+#daftar-produk .jumlah_terjual h5 {
   font-size: .7rem;
   font-weight: 400;
 }
@@ -3081,7 +3115,7 @@ nav {
   text-align: justify;
   font-size: .99rem;
   line-height: 1.6rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .isi_detail_blog p span {
