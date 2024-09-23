@@ -1352,6 +1352,10 @@ nav {
   border: .8px solid #030712;
 }
 
+.filter_container.active{
+  border: .8px solid #030712;
+}
+
 .filter_container .nama_filter {
   text-align: center;
   justify-content: center;

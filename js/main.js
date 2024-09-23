@@ -269,13 +269,16 @@ function toggleDropdown(element) {
       dropdown.style.display = 'none';
     }
   });
-
+  
   const dropdown = element.nextElementSibling;
   if (dropdown.style.display === "none" || !dropdown.style.display) {
+    const filterContainer = document.querySelectorAll('.filter_container');
+    filterContainer.forEach(e => e.classList.remove('active'));
     dropdown.style.display = "block";
   } else {
     dropdown.style.display = "none";
   }
+  element.classList.toggle('active')
 }
 
 document.addEventListener('click', function(event) {
@@ -286,5 +289,7 @@ document.addEventListener('click', function(event) {
     allDropdowns.forEach(dropdown => {
       dropdown.style.display = 'none';
     });
+    const filterContainer = document.querySelectorAll('.filter_container');
+    filterContainer.forEach(e => e.classList.remove('active'));
   }
 });
