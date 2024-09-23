@@ -910,6 +910,13 @@ nav {
   cursor: pointer;
 }
 
+.judul_sukai {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
 .laris__details p {
   font-weight: 400;
   font-size: .9rem;
@@ -928,16 +935,21 @@ nav {
   justify-content: space-between;
 }
 
+.price_dua {
+  display: flex;
+  gap: 10px;
+}
+
 .price span {
-  font-weight: 600;
-  font-size: .9rem;
-  color: red;
+  font-weight: 500;
+  font-size: .85rem;
+  color: var(--text-light);
   text-decoration:line-through;
 }
 
 .price_diskon span {
   font-weight: 600;
-  font-size: .9rem;
+  font-size: 1rem;
   color: var(--text-dark);
 }
 
@@ -1145,7 +1157,7 @@ nav {
   border-radius: 10px;
   padding: 20px 35px 20px 25px;
   z-index: 150;
-  border-left: 6px solid #4070f4;
+  border-left: 6px solid #14f040;
   overflow: hidden;
   transform: translateX(calc(100% + 30px));
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
@@ -1169,7 +1181,7 @@ nav {
   color: #fff;
   font-size: 20px;
   border-radius: 50%;
-  background-color: #4070f4 ;
+  background-color: #14f040 ;
 }
 
 .toast-content .message {
@@ -1218,7 +1230,7 @@ nav {
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: #4070f4;
+  background-color: #14f040;
 }
 
 .progress.active::before {
@@ -1542,7 +1554,6 @@ nav {
   font-weight: 400;
 }
 
-
 #daftar-produk .laris__details {
   padding: 1rem;
   display: grid;
@@ -1551,6 +1562,12 @@ nav {
   font-weight: 600;
   color: var(--text-dark);
   cursor: pointer;
+}
+
+#daftar-produk .judul_sukai {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #daftar-produk .laris__details p {
@@ -1572,18 +1589,20 @@ nav {
 }
 
 #daftar-produk .price_dua {
+  display: flex;
+  gap: 10px;
 }
 
 #daftar-produk .price span {
-  font-weight: 600;
-  font-size: .9rem;
-  color: red;
+  font-weight: 500;
+  font-size: .85rem;
+  color: var(--text-light);
   text-decoration:line-through;
 }
 
 #daftar-produk .price_diskon span {
   font-weight: 600;
-  font-size: .9rem;
+  font-size: 1rem;
   color: var(--text-dark);
 }
 
