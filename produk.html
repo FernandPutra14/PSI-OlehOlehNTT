@@ -18,6 +18,21 @@
 
 <body>
 
+  <div class="toast">
+    <div class="toast-content">
+      <i class="ri-check-line check"></i>
+      <div class="message">
+        <span class="text text-1">Sukses</span>
+        <span class="text text-2">Produk berhasil masuk dalam daftar favorit</span>
+      </div>
+    </div>
+    <i class="ri-close-line close"></i>
+    <div class="progress">
+
+    </div>
+  </div>
+
+
   <!--======================================================= NAVBAR =======================================================-->
   <nav>
     <!-- Navbar Atas -->
@@ -284,12 +299,9 @@
                   <div class="price_diskon">
                     <span>Rp&nbsp;25.000,00</span>
                   </div>
-                  
-                  
-                </div>
-                
+                </div>            
                 <div class="action-produk-card">
-                  <button class="btn-produk-none btn-sukai" onclick="buttonWishListClick(1)">
+                  <button class="btn-produk-none btn-sukai toast-sukai">
                     <i class="ri-heart-line sukai"></i>
                   </button>
                   <button class="btn-produk-none btn-keranjangi" onclick="buttonKeranjangClick(1)">
@@ -1280,7 +1292,9 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/auth.js"></script>
   <script src="./js/produk.js"></script>
-  <script src="./js/keranjang.js"></script><script src="./js/main.js"></script>
+  <script src="./js/keranjang.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/toast.js"></script>
   <script src="./js/wishlist.js"></script>
   <!-- <script type="text/javascript">
     const larisGrid = document.querySelector(".laris__grid"); 
