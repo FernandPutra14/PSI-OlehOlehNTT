@@ -1292,7 +1292,7 @@ nav {
   align-items: center;
   background-color: var(--container-color);
   border-radius: 5px;
-  padding: 5px;
+  padding: 5px 8px;
   cursor: pointer;
 }
 
@@ -3080,6 +3080,8 @@ nav {
 .isi_detail_blog p {
   text-align: justify;
   font-size: .99rem;
+  line-height: 1.6rem;
+  font-weight: 300;
 }
 
 .isi_detail_blog p span {
