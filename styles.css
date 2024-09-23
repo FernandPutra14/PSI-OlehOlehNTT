@@ -1572,6 +1572,50 @@ nav {
   border-radius: 10px ;
 }
 
+#blog_populer .swiper_blog {
+  padding: 2rem 0rem 2rem;
+  width: 100%;
+}
+
+#blog_populer .swiper-wrapper {
+  cursor: pointer;
+}
+
+#blog_populer .swiper-slide {
+  max-width: 100%;
+}
+
+#blog_populer .swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 15px !important;
+}
+
+#blog_populer .swiper-button-prev, .swiper-button-next {
+  color: var(--primary-color);
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  opacity: 0;
+  transition: opacity 0.3s ease; 
+  pointer-events: none; 
+}
+
+#blog_populer .swiper:hover .swiper-button-next, 
+#blog_populer .swiper:hover .swiper-button-prev {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#blog_populer .swiper-scrollbar {
+  width: 20%;
+  margin: 0 auto;
+}
+
+#blog_populer .swiper-scrollbar-drag {
+  border-radius: 2px;
+}
+
 /*-----------------------------------*\
   #FILTER KATEGORI BLOG
 \*-----------------------------------*/

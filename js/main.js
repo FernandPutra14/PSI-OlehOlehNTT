@@ -47,9 +47,15 @@
 // delay: 2000,
 // });
 
+
+const swiperElement = document.querySelector('.swiper');
+const isClass2 = swiperElement.classList.contains('class-2');
+const spaceBetweenValue = isClass2 ? 50 : 0;
+
+
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",
-  spaceBetween: 0,
+  spaceBetween: spaceBetweenValue,
 
   navigation: {
     nextEl: '.swiper-button-next',
@@ -58,8 +64,19 @@ const swiper = new Swiper(".swiper", {
 
   scrollbar: {
     el: '.swiper-scrollbar',
+    draggable: true, 
   },
+
+  autoplay: isClass2 ? {
+    delay: 3000,
+    disableOnInteraction: false,
+  } : false, 
+
+  loop: true,
+  loopedSlides: 3,
 });
+
+
 
 function cardProdukButton() {
   document.querySelectorAll('.sukai').forEach(function (icon) {
