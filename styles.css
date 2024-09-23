@@ -1904,6 +1904,18 @@ nav {
   margin: 0;
 }
 
+
+#masuk_password .input_grup .lihat-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #888;
+}
+
+
 #masuk_password .input_grup label {
   position: absolute;
   top: 50%;
@@ -2155,6 +2167,18 @@ nav {
   position: relative;
   margin-bottom: 20px;
 }
+
+
+#daftar .input_grup .lihat-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #888;
+}
+
 
 #daftar .input_grup label {
   position: absolute;
@@ -2784,6 +2808,16 @@ nav {
 #profil .bagi_bagi .input_grup {
   position: relative;
   flex: 1;
+}
+
+#profil .bagi_bagi .input_grup .lihat-password {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #888;
 }
 
 #profil .bagi_bagi .input_grup label {
