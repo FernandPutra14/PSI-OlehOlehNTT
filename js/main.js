@@ -48,9 +48,6 @@
 // });
 
 
-
-
-
 function cardProdukButton() {
   document.querySelectorAll('.sukai').forEach(function (icon) {
     icon.addEventListener('mouseover', function () {
