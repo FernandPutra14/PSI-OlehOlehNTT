@@ -2,7 +2,6 @@ const toast = {
   success: (title, message) => {
     const toastElement = document.createElement("div");
     toastElement.classList.add('toast');
-    toastElement.classList.add('active')
     document.body.appendChild(toastElement);
     
     const toastContent = document.createElement("div");
@@ -29,7 +28,7 @@ const toast = {
     toastMessage.classList.add('text');
     toastMessage.innerText = message;
     divMessage.appendChild(toastMessage);
-
+    
     const closeButton = document.createElement('i');
     closeButton.classList.add('ri-close-line');
     closeButton.classList.add('close');
@@ -39,7 +38,7 @@ const toast = {
       setTimeout(() => {
         progress.classList.remove("active");
       }, 300);
-
+      
       setTimeout(() => {
         toastElement.parentNode.removeChild(toastElement);
       }, 400);
@@ -48,19 +47,23 @@ const toast = {
 
     const progress = document.createElement('div');
     progress.classList.add('progress');
-    progress.classList.add('active');
     toastElement.appendChild(progress);
     
     setTimeout(() => {
-      toastElement.classList.remove("active");
-    }, 3000);
+      progress.classList.add('active');
+      toastElement.classList.add('active')
 
-    setTimeout(() => {
-      progress.classList.remove("active");
-    }, 3300);
+      setTimeout(() => {
+        toastElement.classList.remove("active");
+      }, 3000);
 
-    setTimeout(() => {
-      toastElement.parentNode.removeChild(toastElement);
-    }, 3400);
+      setTimeout(() => {
+        progress.classList.remove("active");
+      }, 3300);
+
+      setTimeout(() => {
+        toastElement.parentNode.removeChild(toastElement);
+      }, 3400);
+    }, 200);
   }
 }
