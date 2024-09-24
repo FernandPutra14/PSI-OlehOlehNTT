@@ -20,11 +20,13 @@ const toast = {
 
     const toastTitle = document.createElement('span');
     toastTitle.classList.add('toast-title');
+    toastTitle.classList.add('text');
     toastTitle.innerText = title;
     divMessage.appendChild(toastTitle);
     
     const toastMessage = document.createElement('span');
     toastMessage.classList.add('toast-message');
+    toastMessage.classList.add('text');
     toastMessage.innerText = message;
     divMessage.appendChild(toastMessage);
 
