@@ -1247,8 +1247,33 @@ nav {
 
 
 
+.breadcumbs_produk_container {
+  display: flex; 
+  align-items: center;
+  padding: 1rem 1rem 0rem;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.breadcumbs_produk_container .breadcumbs_awal {
+  
+}
 
 
+.breadcumbs_produk_container .breadcumbs_awal a {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.breadcumbs_produk_container .breadcumbs_akhir {
+  
+}
+
+
+.breadcumbs_produk_container .breadcumbs_akhir a {
+  color: #19222AB3;
+}
 
 
 
@@ -1257,7 +1282,7 @@ nav {
 \*-----------------------------------*/
 .judul-halaman-produk-container {
   margin: auto;
-  padding: 1rem 1rem 0rem;
+  padding: .5rem 1rem 0rem;
 }
 
 .judul-halaman-produk-container h4 {
@@ -1640,6 +1665,33 @@ nav {
   #HALAMAN BLOG
 \*=============================================================================================================================*/
 
+.breadcumbs_blog_container {
+  display: flex; 
+  align-items: center;
+  padding: 1rem 1rem 1rem;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.breadcumbs_blog_container .breadcumbs_awal {
+  
+}
+
+
+.breadcumbs_blog_container .breadcumbs_awal a {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.breadcumbs_blog_container .breadcumbs_akhir {
+  
+}
+
+
+.breadcumbs_blog_container .breadcumbs_akhir a {
+  color: #19222AB3;
+}
 
 /*-----------------------------------*\
   #BLOG POPULER
@@ -1725,8 +1777,8 @@ nav {
   border-radius: 10px ;
 }
 
-#blog_populer .swiper_blog {
-  padding: 2rem 0rem 2rem;
+#blog_populer .swiper {
+  padding: 0rem 0rem 2rem;
   width: 100%;
 }
 
@@ -3408,7 +3460,7 @@ nav {
 }
 
 .kategori_tanggal_detail_blog {
-  margin-top: 25px;
+  margin-top: 5px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -3432,7 +3484,7 @@ nav {
 }
 
 .judul_detail_blog {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .judul_detail_blog h3 {
@@ -4191,9 +4243,69 @@ nav {
   #HALAMAN KONTAK
 \*=============================================================================================================================*/
 
+.breadcumbs_kontak_container {
+  display: flex; 
+  align-items: center;
+  padding: 1rem 1rem 0rem;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.breadcumbs_kontak_container .breadcumbs_awal {
+  
+}
+
+
+.breadcumbs_kontak_container .breadcumbs_awal a {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.breadcumbs_kontak_container .breadcumbs_akhir {
+  
+}
+
+
+.breadcumbs_kontak_container .breadcumbs_akhir a {
+  color: #19222AB3;
+}
+
+
+
+.breadcumbs_detail_blog_container {
+  display: flex; 
+  align-items: center;
+  padding: 1rem 0rem 0rem;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.breadcumbs_kontak_container .breadcumbs_awal {
+  
+}
+
+
+.breadcumbs_kontak_container .breadcumbs_awal a {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.breadcumbs_kontak_container .breadcumbs_akhir {
+  
+}
+
+
+.breadcumbs_kontak_container .breadcumbs_akhir a {
+  color: #19222AB3;
+}
+
+
+
 .judul_kontak {
   display: flex;
-  padding: 1rem 1rem 0rem;
+  padding: .5rem 1rem 0rem;
 }
 
 .judul_kontak .judul {
