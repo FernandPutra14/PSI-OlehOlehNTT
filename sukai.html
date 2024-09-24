@@ -98,7 +98,6 @@
         
       </div>
       <div class="daftar_produk">
-        <!-- Produk Keranjang -->    
         <!-- Produk Keranjang -->
       
         <div class="perproduk_sukai">
@@ -131,7 +130,7 @@
             </div>
             <div class="deskripsi_bawah_sukai">
               <div class="action_produk_sukai">
-                <button style="border:none;background:none" onclick="removeItemToWishList(getProdukById(11))">
+                <button style="border:none;background:none" onclick="removeItemToWishList(getProdukById(11));toast.success('Berhasil', 'Produk berhasil dihapus dari Daftar Favorit')">
                   <i class="ri-delete-bin-line"></i>
                 </button>
               </div>
@@ -147,7 +146,7 @@
           </div>
           <div class="col-3 tambahkeranjang_sukai_container">          
             <div class="tambahkeranjang">
-                <button class="btn" onclick="addItem(getProdukById(11));window.location.reload()">
+                <button class="btn" onclick="addItem(getProdukById(11));toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
                   Tambahkan ke Keranjang
                   <i class="ri-shopping-cart-line"></i>
                 </button>
@@ -184,7 +183,7 @@
             </div>
             <div class="deskripsi_bawah_sukai">
               <div class="action_produk_sukai">
-                <button style="border:none;background:none" onclick="removeItemToWishList(getProdukById(12))">
+                <button style="border:none;background:none" onclick="removeItemToWishList(getProdukById(12));toast.success('Berhasil', 'Produk berhasil dihapus dari Daftar Favorit')">
                   <i class="ri-delete-bin-line"></i>
                 </button>
               </div>
@@ -200,7 +199,7 @@
           </div>
           <div class="col-3 tambahkeranjang_sukai_container">          
             <div class="tambahkeranjang">
-                <button class="btn" onclick="addItem(getProdukById(12));window.location.reload()">
+                <button class="btn" onclick="addItem(getProdukById(12));toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
                   Tambahkan ke Keranjang
                   <i class="ri-shopping-cart-line"></i>
                 </button>
@@ -237,7 +236,7 @@
             </div>
             <div class="deskripsi_bawah_sukai">
               <div class="action_produk_sukai">
-                <button style="border:none;background:none" onclick="removeItemToWishList(getProdukById(13))">
+                <button style="border:none;background:none" onclick="removeItemToWishList(getProdukById(13));toast.success('Berhasil', 'Produk berhasil dihapus dari Daftar Favorit')">
                   <i class="ri-delete-bin-line"></i>
                 </button>
               </div>
@@ -253,7 +252,7 @@
           </div>
           <div class="col-3 tambahkeranjang_sukai_container">          
             <div class="tambahkeranjang">
-                <button class="btn" onclick="addItem(getProdukById(13));window.location.reload()">
+                <button class="btn" onclick="addItem(getProdukById(13));toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
                   Tambahkan ke Keranjang
                   <i class="ri-shopping-cart-line"></i>
                 </button>
@@ -344,6 +343,7 @@
   <script src="./js/produk.js"></script>
   <script src="./js/keranjang.js"></script>
   <script src="./js/wishlist.js"></script>
+  <script src="./js/toast.js"></script>
   <script src="./js/main.js"></script>
   <!-- <script type="text/javascript">
     const wishlist = getWishList()
