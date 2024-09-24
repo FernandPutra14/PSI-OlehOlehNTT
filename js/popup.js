@@ -1,6 +1,7 @@
 const showPopup = document.querySelector('.show-popup');
 const popupContainer = document.querySelector('.popup-container');
 const closeBtn = document.querySelector('.close-btn');
+const okBtn = document.querySelector('.ok-btn')
 
 showPopup.onclick = () => {
     popupContainer.classList.add('active');
@@ -21,3 +22,16 @@ closeBtn.onclick = () => {
         document.body.style.paddingRight = '0';
     }, 400); // Sesuaikan 400ms sesuai dengan durasi transisi CSS
 }
+
+okBtn.addEventListener('click', function () {
+    toast.success('Sukses', 'Hapus Berhasil Dilakukan');
+    
+    // Hapus kelas active, tapi tambahkan penundaan sebelum mengembalikan scroll
+    popupContainer.classList.remove('active');
+
+    // Tambahkan sedikit jeda waktu untuk menghilangkan efek "miring" atau transisi yang tidak mulus
+    setTimeout(() => {
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '0';
+    }, 400); // Sesuaikan 400ms sesuai dengan durasi transisi CSS
+});

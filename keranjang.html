@@ -128,13 +128,13 @@
               </div>
               <div class="atur_stok_harga">
                 <div class="tambah_kurang_produk_keranjang">
-                  <button class="kurang" onclick="addItem(getProdukById(1), -1);window.location.reload()" style="border:none;background:none">
+                  <button class="kurang" onclick="addItem(getProdukById(1), -1)" style="border:none;background:none">
                     <h3>-</h3>
                   </button>
                   <div class="jumlah">
                     <h3>2</h3>
                   </div>
-                  <button class="tambah" onclick="addItem(getProdukById(1), 1);window.location.reload()" style="border:none;background:none">
+                  <button class="tambah" onclick="addItem(getProdukById(1), 1)" style="border:none;background:none">
                     <h3>+</h3>
                   </button>
                 </div>
@@ -153,7 +153,7 @@
                 <button style="background:none;border:none" onclick="buttonWishListClick(1)">
                   <i class="ri-heart-line sukai"></i>
                 </button>
-                <button class="show-popup" style="background:none;border:none" onclick="removeItem(1);window.location.reload()">
+                <button class="show-popup" style="background:none;border:none" onclick="removeItem(1)">
                   <i class="ri-delete-bin-line"></i>
                 </button>
               </div>
@@ -181,13 +181,13 @@
               </div>
               <div class="atur_stok_harga">
                 <div class="tambah_kurang_produk_keranjang">
-                  <button class="kurang" onclick="addItem(getProdukById(2), -1);window.location.reload()" style="border:none;background:none">
+                  <button class="kurang" onclick="addItem(getProdukById(2), -1)" style="border:none;background:none">
                     <h3>-</h3>
                   </button>
                   <div class="jumlah">
                     <h3>2</h3>
                   </div>
-                  <button class="tambah" onclick="addItem(getProdukById(2), 1);window.location.reload()" style="border:none;background:none">
+                  <button class="tambah" onclick="addItem(getProdukById(2), 1)" style="border:none;background:none">
                     <h3>+</h3>
                   </button>
                 </div>
@@ -206,7 +206,7 @@
                 <button style="background:none;border:none" onclick="buttonWishListClick(2)">
                   <i class="ri-heart-line sukai"></i>
                 </button>
-                <button style="background:none;border:none" onclick="removeItem(2);window.location.reload()">
+                <button class="show-popup" style="background:none;border:none" onclick="removeItem(2)">
                   <i class="ri-delete-bin-line"></i>
                 </button>
               </div>
@@ -234,13 +234,13 @@
               </div>
               <div class="atur_stok_harga">
                 <div class="tambah_kurang_produk_keranjang">
-                  <button class="kurang" onclick="addItem(getProdukById(31), 0);window.location.reload()" style="border:none;background:none">
+                  <button class="kurang" onclick="addItem(getProdukById(31), 0)" style="border:none;background:none">
                     <h3>-</h3>
                   </button>
                   <div class="jumlah">
                     <h3>1</h3>
                   </div>
-                  <button class="tambah" onclick="addItem(getProdukById(31), 1);window.location.reload()" style="border:none;background:none">
+                  <button class="tambah" onclick="addItem(getProdukById(31), 1)" style="border:none;background:none">
                     <h3>+</h3>
                   </button>
                 </div>
@@ -259,7 +259,7 @@
                 <button style="background:none;border:none" onclick="buttonWishListClick(31)">
                   <i class="ri-heart-line sukai"></i>
                 </button>
-                <button style="background:none;border:none" onclick="removeItem(31);window.location.reload()">
+                <button class="show-popup" style="background:none;border:none" onclick="removeItem(31)">
                   <i class="ri-delete-bin-line"></i>
                 </button>
               </div>
@@ -381,6 +381,7 @@
   <script src="./js/keranjang.js"></script>
   <script src="./js/popup.js"></script>
   <script src="./js/wishlist.js"></script>
+  <script src="./js/toast.js"></script>
   <script src="./js/main.js"></script>
   <!-- <script type="text/javascript">
     const keranjang = getKeranjang();
@@ -426,7 +427,7 @@
                   <div class="jumlah">
                     <h3>${element.jumlah}</h3>
                   </div>
-                  <button class="tambah" onclick="addItem(getProdukById(${element.produk.id}), 1);window.location.reload()" style="border:none;background:none">
+                  <button class="tambah" onclick="addItem(getProdukById(${element.produk.id}), 1)" style="border:none;background:none">
                     <h3>+</h3>
                   </button>
                 </div>
@@ -445,7 +446,7 @@
                 <button style="background:none;border:none" onclick="buttonWishListClick(${element.produk.id})">
                   ${isInWishList(element.produk.id) ? `<i class="ri-heart-fill tidak-sukai"></i>` : `<i class="ri-heart-line sukai"></i>`}
                 </button>
-                <button style="background:none;border:none" onclick="removeItem(${element.produk.id});window.location.reload()">
+                <button style="background:none;border:none" onclick="removeItem(${element.produk.id})">
                   <i class="ri-delete-bin-line"></i>
                 </button>
               </div>
