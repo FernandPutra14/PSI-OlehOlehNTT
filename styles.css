@@ -2651,6 +2651,100 @@ nav {
   #HALAMAN KERANJANG
 \*=============================================================================================================================*/
 
+
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 100;
+  transition: opacity 0.4s ease;
+}
+
+.popup-container.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.popup-container .popup-box {
+  width: 400px;
+  background: #f2f2f2;
+  border-radius: 6px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px 25px;
+  transform: scale(0.8);
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1); /* Hanya satu properti transform */
+  will-change: transform; /* Optimalisasi performa */
+}
+
+.popup-container.active .popup-box {
+  transform: scale(1);
+}
+
+.popup-box h1 {
+  color: #333;
+  line-height: 1;
+}
+
+.popup-box p {
+  color: #333;
+  margin: 16px 0 20px;
+}
+
+.popup-box .kompleks-button {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.popup-box .close-btn,
+.popup-box .ok-btn {
+  flex: 1;
+  height: 35px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: #f2f2f2;
+  transition: background 0.3s ease;
+}
+
+.popup-box .close-btn {
+  background: red;
+}
+
+.popup-box .close-btn:hover {
+  background: darkred;
+}
+
+.popup-box .ok-btn {
+  background: #28a745;
+}
+
+.popup-box .ok-btn:hover {
+  background: #218838;
+}
+
+
+
+
+
+
+
+
+
+
+
 .keranjang_container {
   display: flex;
   gap: 5px;

@@ -20,6 +20,18 @@
 
   <span id="redirectLogin" data-when="signout" data-to="/masuk_atau_daftar.html"></span>
 
+
+  <div class="popup-container">
+    <div class="popup-box">
+        <h1>Konfirmasi Hapus</h1>
+        <p>Apakah anda yakin ingin menghapus produk ini dari keranjang ?</p>
+        <div class="kompleks-button">
+          <button class="close-btn">Batal</button>
+          <button class="ok-btn">Yakin</button>
+        </div>
+    </div> 
+  </div>
+
   <!--======================================================= NAVBAR =======================================================-->
   <nav>
     <!-- Navbar Atas -->
@@ -84,6 +96,7 @@
   </nav>
   <!--======================================================= AKHIR NAVBAR =======================================================-->
 
+
   <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
   <section class="section__container keranjang_container">
     
@@ -140,7 +153,7 @@
                 <button style="background:none;border:none" onclick="buttonWishListClick(1)">
                   <i class="ri-heart-line sukai"></i>
                 </button>
-                <button style="background:none;border:none" onclick="removeItem(1);window.location.reload()">
+                <button class="show-popup" style="background:none;border:none" onclick="removeItem(1);window.location.reload()">
                   <i class="ri-delete-bin-line"></i>
                 </button>
               </div>
@@ -365,7 +378,9 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./js/auth.js"></script>
   <script src="./js/produk.js"></script>
-  <script src="./js/keranjang.js"></script><script src="./js/main.js"></script>
+  <script src="./js/keranjang.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/popup.js"></script>
   <script src="./js/wishlist.js"></script>
   <!-- <script type="text/javascript">
     const keranjang = getKeranjang();
