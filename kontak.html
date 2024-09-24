@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--============= ICON - REMIXICON ===========-->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!--============= SLIDER - SWIPER.JS ===========-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+  <!--============= CSS - CSS GLOBAL ===========-->
+  <link rel="stylesheet" href="styles.css" />
+  <title>E-Commerce | oleholehNTT</title>
+</head>
+
+<body>
+
+  <span id="redirectLogin" data-when="signout" data-to="/masuk_atau_daftar.html"></span>
+
+  <!--======================================================= NAVBAR =======================================================-->
+  <nav>
+    <!-- Navbar Atas -->
+    <div class="nav__top">
+      <div class="container_nav_satu">
+        <div class="nav_tambahan">
+          <a href=""><i class="ri-smartphone-line"></i>Download Aplikasi</a>
+          <span class="">|</span>
+          <a href="" class="">Mitra OlehOlehNTT</a>
+        </div>
+        <!-- <div class="nav__search">
+        <input type="text" placeholder="Cari produk...">
+      </div> -->
+        <div class="nav__auth">
+          <a href="">Bantuan</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
+          <span class="not-authorize">|</span>
+          <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
+          <span class="authorize">|</span>
+          <a href="profil.html" class="authorize">
+            Hai, <span class="name-placeholder"></span>
+          </a>
+          <span class="authorize">|</span>
+          <button class="authorize" onclick="signout()">
+            Keluar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navbar Bawah -->
+    <div class="nav__bottom">
+      <div class="container_nav_dua">
+        <div class="nav__logo">
+          <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
+        </div>
+        <ul class="nav__links">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
+          <li><a href="">Tentang Kami</a></li>
+          <li><a href="">Kontak</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+        <div class="nav__icons">
+          <div class="nav__search">
+            <i class="ri-search-line"></i>
+            <input type="text" placeholder="Cari produk...">
+          </div>
+          <a href="sukai.html" class="icon-sukai">
+            <i class="ri-heart-line"></i>
+            <span class="badge" id="wishlist-badge">0</span>
+          </a>
+          <a href="keranjang.html" class="icon-keranjang">
+            <i class="ri-shopping-cart-line"></i>
+            <span class="badge" id="keranjang-badge">0</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!--======================================================= AKHIR NAVBAR =======================================================-->
+
+
+  <section class="section__container judul_kontak">
+    <div class="judul">
+        <h3>Kontak Kami</h3>
+    </div>
+  </section>
+
+
+
+  <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
+  <!-- Section Contact -->
+<section class="section__container" id="contact">
+    <div class="getin">
+        <p>
+            Ada pertanyaan? Isi formulir ini, kami siap membantu Anda.
+        </p>
+
+        <div class="getin-details">
+            <h3>Alamat</h3>
+            <div>
+                <i class="ri-home-8-line dpt"></i>
+                <p>Jln. Antonov, Penfui, Kupang, Nusa tenggara Timur, Indonesia</p>
+            </div>
+            <h3>Telepon</h3>
+            <div>
+                <i class="ri-phone-line dpt"></i>
+                <p>
+                    +62 2123 4567 89 <br /> +62 2123 4567 89
+                </p>
+            </div>
+            <h3>Email Bantuan</h3>
+            <div>
+                <i class="ri-mail-send-line dpt"></i>
+                <p>example@gmail.com <br />example@gmail.com</p>
+            </div>
+            <h3>Profile</h3>
+            <div class="pro-links">
+                <i class="ri-facebook-fill"></i>
+                <i class="ri-instagram-fill"></i>
+                <i class="ri-tiktok-fill"></i>
+                <i class="ri-youtube-fill"></i>
+                <i class="ri-twitter-x-fill"></i>
+            </div>
+        </div>
+    </div>
+    <div class="formko">
+        <h4>Hubungi kami</h4>
+        <p>Bagaimana kami bisa membantu Anda?</p>
+        <div class="form-row">
+            <input type="text" placeholder="Nama Kamu" />
+            <input type="text" placeholder="Email Kamu" />
+        </div>
+        <div class="form-col">
+            <input type="text" placeholder="Subjek" />
+        </div>
+        <div class="form-col">
+            <textarea name="" id="" cols="30" rows="8" placeholder="Apa yang ingin anda tanyakan ?"></textarea>
+        </div>
+        <div class="form-col">
+            <button>Kirim Pesan</button>
+        </div>
+    </div>
+</section>
+<!-- Akhir Section Contact -->
+
+
+<!-- Peta Section -->
+<section class="" id="peta">
+    <iframe class="" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1963.6344805664785!2d123.58869978846019!3d-10.158779147488692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c569ceb4e668f27%3A0x59169bcbf349bb9f!2sGMIT%20JEO%20KUPANG%20NTT!5e0!3m2!1sid!2sid!4v1719284911537!5m2!1sid!2sid" 
+    style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<!-- AKhir Peta Section -->
+  <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
+
+  <!--======================================================= NEWSLETTER =======================================================-->
+  <section class="newsletter">
+    <div class=" newsletter__container">
+      <p class="section__subheader">Newsletter Kami</p>
+      <h2 class="section__header">Subscribe Newsletter</h2>
+      <h6 class="">SUbscribe Newsletter Kami Untuk Mendapatkan Informasi Produk Terbaru Kami. <br>
+        Dapatkan 20% Diskon Untuk Order Pertama Setelah Subscribe</h6>
+      <div class="newsletter__grid">
+        <input type="email" placeholder="Masukkan email Anda" />
+        <button type="button">Subscribe</button>
+      </div>
+    </div>
+  </section>
+  <!--======================================================= AKHIR NEWSLETTER =======================================================-->
+
+  <!--======================================================= FOOTER =======================================================-->
+  <footer>
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <div class="footer__logo">
+          <a href="#" class="logo">
+            <img src="assets/logo_oleh_oleh_ntt3_2.png" />
+          </a>
+        </div>
+        <p class="section__description">
+          Pekerjaan Kami adalah Menyediakan Pengalaman Belanja Yang Nyaman
+        </p>
+        <ul class="footer__socials">
+          <li>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-facebook-fill"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Tentang Kami</h4>
+        <ul class="footer__links">
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">Fitur</a></li>
+          <li><a href="#">Berita</a></li>
+          <li><a href="#">Menu</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Toko</h4>
+        <ul class="footer__links">
+          <li><a href="#">Mengapa Kami?</a></li>
+          <li><a href="#">Partner Kami</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Bantuan</h4>
+        <ul class="footer__links">
+          <li><a href="#">Pusat bantuan</a></li>
+          <li><a href="#">Umpan Balik</a></li>
+          <li><a href="#">Kontak Kami</a></li>
+          <li><a href="#">Kebijakan Pengguna</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bar">
+      Copyright © 2024 Tim Site22. All rights reserved.
+    </div>
+  </footer>
+  <!--======================================================= AKHIR FOOTER =======================================================-->
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./js/auth.js"></script>
+  <script src="./js/produk.js"></script>
+  <script src="./js/keranjang.js"></script><script src="./js/main.js"></script>
+  <script src="./js/wishlist.js"></script>
+</body>
+
+</html>

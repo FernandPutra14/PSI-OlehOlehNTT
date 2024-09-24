@@ -1192,7 +1192,7 @@ nav {
 
 .message .text {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   color: #666666;
 }
 
@@ -2679,17 +2679,17 @@ nav {
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   padding: 30px 25px;
-  transform: scale(1); /* Ubah transformasi awal */
-  opacity: 0; /* Mulai dengan opacity 0 */
-  transition: opacity 0.4s ease, transform 0s; /* Hanya opacity yang diubah */
+  transform: scale(1);
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0s;
 }
 
 .popup-container.active .popup-box {
-  opacity: 1; /* Hanya animasikan opacity */
+  opacity: 1;
 }
 
 .popup-box h1, .popup-box p {
-  transition: none; /* Pastikan teks tidak memiliki transisi */
+  transition: none;
 }
 
 .popup-box h1 {
@@ -2738,14 +2738,6 @@ nav {
 .popup-box .ok-btn:hover {
   background: #218838;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -4177,7 +4169,194 @@ nav {
 }
 
 
+/*=============================================================================================================================*\
+  #HALAMAN KONTAK
+\*=============================================================================================================================*/
 
+.judul_kontak {
+  display: flex;
+  padding: 2rem 1rem 0rem;
+}
+
+.judul_kontak .judul {
+
+}
+
+.judul_kontak .judul h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  font-style: italic;
+}
+
+
+
+/* CSS Section Contact */
+#contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: .5rem 1rem 3rem;
+}
+
+#contact .getin {
+  width: 350px;
+}
+
+  #contact .getin h2 {
+      /* color: #2c234d; */
+      font-size: 30px;
+      font-weight: 800;
+      line-height: .8;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+  }
+
+  #contact .getin p {
+      color: var(--text-dark);
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 20px;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #e5e4ed;
+  }
+
+  #contact .getin h3 {
+      color: var(--primary-color);
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+      margin-bottom: 15px;
+  }
+
+  #contact .getin .getin-details div {
+      display: flex;
+  }
+
+      #contact .getin .getin-details div .dpt {
+          font-size: 16px;
+          line-height: 22px;
+          color: var(--primary-clr);
+          margin-right: 20px;
+      }
+
+  #contact .getin .getin-details div p {
+      font-size: 14px;
+      border-bottom: none;
+      line-height: 22px;
+      margin-bottom: 15px;
+  }
+
+  #contact .getin .getin-details .pro-links {
+      margin-top: 10px;
+  }
+
+      #contact .getin .getin-details .pro-links i {
+          padding: 10px 13px;
+          font-size: 15px;
+          border: 1px solid var(--primary-color);
+          cursor: pointer;
+          margin-right: 8px;
+          transition: 0.3s ease;
+      }
+
+      #contact .getin .getin-details .pro-links i:hover {
+          background: var(--primary-color);
+          color: #fff;
+          
+          border: 1px solid var(--primary-color);
+          cursor: pointer;
+          margin-right: 8px;
+      }
+
+#contact .formko {
+  width: 60%;
+  background: var(--container-color);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+  #contact .formko h4 {
+      font-size: 24px;
+      color: var(--text-dark);
+      line-height: 30px;
+      margin-bottom: 8px;
+  }
+
+  #contact .formko p {
+      color: var(--text-dark);
+      font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 25px;
+  }
+
+  #contact .formko .form-row {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+  #contact .formko .form-row input {
+    font-family: 'poppins';
+    border-radius: 5px;
+      font-size: 14px;
+      font-weight: 400;
+      width: 48%;
+      border: none;
+      background: #fff;
+      color: var(--text-dark);
+      outline: none;
+      padding: 20px 30px;
+      margin-bottom: 20px;
+  }
+
+  #contact .formko .form-col input,
+  #contact .formko .form-col textarea {
+      font-family: 'poppins';
+      font-size: 14px;
+      font-weight: 400;
+      width: 100%;
+      border-radius: 5px;
+      border: none;
+      background: #fff;
+      color: var(--text-dark);
+      outline: none;
+      padding: 20px 30px;
+      margin-bottom: 20px;
+  }
+
+  #contact .formko button {
+      font-size: 12px;
+      padding: 13px 25px;
+      background: var(--primary-color);
+      border-radius: 5px;
+      outline: none;
+      border: 1px solid var(--primary-color);
+      font-weight: 600;
+      cursor: pointer;
+      color: #fff;
+      transition: 0.3s ease;
+  }
+
+      #contact .formko button:hover {
+          background: #fff;
+          color: var(--primary-color);
+          border: 1px solid var(--primary-color);
+      }
+/* Akhir CSS Section Contact */
+
+
+/* CSS Section Peta */
+#peta {
+  width: 100%;
+  height: 60vh;
+  margin-bottom: 60px;
+}
+
+#peta iframe {
+  width: 100%;
+  height: 100%;
+}
+/* Akhir CSS Section Peta */
 
 /*=============================================================================================================================*\
   #RESPONSIVE
