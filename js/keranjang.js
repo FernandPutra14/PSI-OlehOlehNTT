@@ -1,5 +1,5 @@
 const keranjangSessionKey = "keranjang-session-key";
-const eventListener = [];
+const keranjangEventListeners = [];
 
 class KeranjangItem {
     constructor(produk, jumlah) {
@@ -75,14 +75,14 @@ function clearKeranjang() {
     onKeranjangChange();
 }
 
-function addEventListener(func) {
-    eventListener.push(func)
+function addKeranjangEventListener(func) {
+    keranjangEventListeners.push(func)
 }
 
 function onKeranjangChange() {
     const keranjang = getKeranjang();
 
-    eventListener.forEach((e) => {
+    keranjangEventListeners.forEach((e) => {
         if(typeof e === "function")
             e(keranjang);
     });

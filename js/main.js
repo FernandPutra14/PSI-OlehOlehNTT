@@ -95,8 +95,10 @@ const buttonWishListClick = (id) => {
   if (authState.signin) {
     if (isInWishList(id)) {
       removeItemToWishList(getProdukById(id));
+      toast.success('Sukses', 'Produk berhasil dihapus dari Daftar Favorit');
     } else {
       addItemToWishList(getProdukById(id), "");
+      toast.success('Sukses', 'Produk berhasil ditambah ke Daftar Favorit');
     }
   } else {
     window.location.href = `masuk_atau_daftar.html?returnUrl=${window.location.href}`;
@@ -108,7 +110,7 @@ const buttonKeranjangClick = (id) => {
 
   if (authState.signin) {
     addItem(getProdukById(id), 1);
-    window.location.reload();
+      toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang');
   } else {
     window.location.href = `masuk_atau_daftar.html?returnUrl=${window.location.href}`;
   }
@@ -171,7 +173,7 @@ document.addEventListener('DOMContentLoaded', function () {
   redirect(authState);
 });
 
-document.addEventListener("DOMContentLoaded", function () {
+function updateKeranjangBadge() {
   const keranjangBadge = document.getElementById("keranjang-badge");
   const keranjang = getKeranjang();
 
@@ -180,9 +182,12 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     keranjangBadge.innerText = "0";
   }
-});
+}
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", updateKeranjangBadge);
+addKeranjangEventListener(updateKeranjangBadge);
+
+function updateWishListBadge() {
   const wishListBadge = document.getElementById("wishlist-badge");
   const wishList = getWishList();
 
@@ -191,7 +196,10 @@ document.addEventListener("DOMContentLoaded", function () {
   } else {
     wishListBadge.innerText = "0";
   }
-});
+}
+
+document.addEventListener("DOMContentLoaded", updateWishListBadge);
+addWishListEventListener(updateWishListBadge);
 
 function templateDaftarProduk(containerGrid, products) {
   const numberFormatter = new Intl.NumberFormat('id-ID', {
@@ -228,7 +236,6 @@ function templateDaftarProduk(containerGrid, products) {
 
 cardProdukButton();
 
-
 //Update Filter Harga
 function updatePriceRange() {
   const minPrice = document.getElementById('minPrice').value;
@@ -242,7 +249,6 @@ function updatePriceRange() {
 
   hargaLabel.textContent = `Rp ${parseInt(minPrice).toLocaleString()} - Rp ${parseInt(maxPrice).toLocaleString()}`;
 }
-
 
 //Lihat Password
 function togglePasswordVisibility() {

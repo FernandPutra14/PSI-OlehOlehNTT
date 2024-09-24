@@ -6,6 +6,7 @@ class WishListItem {
 }
 
 const wishListSessionKey = "wish-list";
+const wishListEventListeners = [];
 
 function getWishList() {
     let wishList;
@@ -78,12 +79,25 @@ function removeItemToWishList(produk) {
     saveWishList(newWishList);
 }
 
+function addWishListEventListener(func) {
+    if(typeof func === "function")
+        wishListEventListeners.push(func);
+}
+
+function onWishListChange() {
+    const wishList = getWishList();
+    wishListEventListeners.forEach(fn => {
+        if(typeof fn === "function")
+            fn(wishList);
+    })
+}
+
 function clearWishList() {
     window.sessionStorage.removeItem(wishListSessionKey);
-    window.location.reload();
+    onWishListChange();
 }
 
 function saveWishList(wishList) {
     window.sessionStorage.setItem(wishListSessionKey, JSON.stringify(wishList));
-    window.location.reload();
+    onWishListChange();
 }
