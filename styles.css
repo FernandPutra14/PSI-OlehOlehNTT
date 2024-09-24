@@ -1664,6 +1664,9 @@ nav {
 }
 
 .blog_details_populer p {
+  user-select: none; /* Tidak dapat memilih teks */
+  -webkit-user-select: none; /* Untuk Safari */
+  -moz-user-select: none; /* Untuk Firefox */
   font-size: 15px;
   font-weight: 500;
   margin-bottom: 15px;
@@ -1672,6 +1675,9 @@ nav {
 }
 
 .blog_details_populer h5 {
+  user-select: none; /* Tidak dapat memilih teks */
+  -webkit-user-select: none; /* Untuk Safari */
+  -moz-user-select: none; /* Untuk Firefox */
   color: var(--text-dark);
   font-size: 1.8rem;
   line-height: 2rem;
@@ -1681,6 +1687,9 @@ nav {
 }
 
 .blog_details_populer h6 {
+  user-select: none; /* Tidak dapat memilih teks */
+  -webkit-user-select: none; /* Untuk Safari */
+  -moz-user-select: none; /* Untuk Firefox */
   font-weight: 400;
   color: var(--text-light);
   font-size: 1rem;
@@ -1694,6 +1703,12 @@ nav {
   margin-bottom: 25px;
 }
 
+.blog_details_populer .btn_small {
+  user-select: none; /* Tidak dapat memilih teks */
+  -webkit-user-select: none; /* Untuk Safari */
+  -moz-user-select: none; /* Untuk Firefox */
+}
+
 .blog_card_populer .gambar_blog_populer {
   width: 50%;
   max-height: 300px;
@@ -1701,6 +1716,9 @@ nav {
 }
 
 .blog_card_populer .gambar_blog_populer img {
+  user-select: none; /* Tidak dapat memilih teks */
+  -webkit-user-select: none; /* Untuk Safari */
+  -moz-user-select: none; /* Untuk Firefox */
   max-height: 300px;
   object-fit: cover;
   width: 100%; /* Tambahkan agar gambar sesuai dengan kontainer */
@@ -4175,7 +4193,7 @@ nav {
 
 .judul_kontak {
   display: flex;
-  padding: 2rem 1rem 0rem;
+  padding: 1rem 1rem 0rem;
 }
 
 .judul_kontak .judul {
