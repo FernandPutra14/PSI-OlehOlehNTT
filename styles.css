@@ -71,6 +71,7 @@
 }
 
 .btn {
+  font-family: 'poppins';
   padding: calc(0.75rem + 2px) 1.5rem;
   outline: none;
   border: none;
@@ -87,6 +88,7 @@
 }
 
 .btn_langsing {
+  font-family: 'poppins';
   padding: 12px 20px;
   width: 30%;
   outline: none;
@@ -104,6 +106,7 @@
 }
 
 a.btn {
+  font-family: 'poppins';
   color: var(--white) !important;
   padding: calc(0.75rem + 2px) 1.5rem;
   outline: none;
@@ -121,6 +124,7 @@ a.btn:hover {
 }
 
 a.btn_small {
+  font-family: 'poppins';
   color: var(--white);
   padding: .7rem 1rem;
   outline: none;
@@ -138,6 +142,7 @@ a.btn_small:hover {
 }
 
 button.btn {
+  font-family: 'poppins';
   color: var(--white) !important;
   padding: calc(0.75rem + 2px) 1.5rem;
   outline: none;
@@ -155,6 +160,7 @@ button.btn:hover {
 }
 
 button.btn_small {
+  font-family: 'poppins';
   color: var(--white);
   padding: .7rem 1rem;
   outline: none;
@@ -3582,7 +3588,7 @@ nav {
 
 #content3 .tambahkeranjang button {
   padding: 14px 15px;
-  font-size: .95rem;
+  font-size: .89rem;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 
@@ -4924,6 +4930,7 @@ nav {
   }
 
   #contact .formko button {
+      font-family: 'poppins';
       font-size: 12px;
       padding: 13px 25px;
       background: var(--primary-color);
