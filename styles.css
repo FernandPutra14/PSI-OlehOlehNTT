@@ -2791,14 +2791,70 @@ nav {
 /*=============================================================================================================================*\
   #HALAMAN DETAIL PRODUK
 \*=============================================================================================================================*/
+.breadback_detail_produk {
+  padding: 2rem 1rem 0rem;
+}
+
+
+
+.kembali_detail_produk {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.kembali_detail_produk .icon_kembali_detail_produk i {
+  font-size: 1rem;
+}
+
+.kembali_detail_produk .text_kembali_detail_produk p {
+  color: var(--text-dark);
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.breadcumbs_detail_produk_container {
+  display: flex; 
+  align-items: center;
+  gap: 5px;
+  padding: 1rem 0rem 0rem;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.breadcumbs_detail_produk_container .breadcumbs_awal {
+  
+}
+
+
+.breadcumbs_detail_produk_container .breadcumbs_awal a {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.breadcumbs_detail_produk_container .breadcumbs_akhir {
+  
+}
+
+
+.breadcumbs_detail_produk_container .breadcumbs_akhir a {
+  color: #19222AB3;
+}
+
+
 
 .detail_produk_container {
+  padding: 1rem 1rem 5rem;
   display: flex;
   gap: 5px;
 }
 
 .gambar_detail_produk_container {
-  
+  padding-left: 0;
 }
 
 .gambar_detail_produk_container img {
@@ -3887,7 +3943,7 @@ nav {
 
 .tambahkeranjang button {
   padding: 14px 15px;
-  font-size: .95rem;
+  font-size: .89rem;
   box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
 }
 
@@ -3911,8 +3967,32 @@ nav {
 
 }
 
-.detail_blog_container a {
-  color: var(--text-dark);
+.breadcumbs_detail_blog_container {
+  display: flex; 
+  align-items: center;
+  padding: 1rem 0rem 0rem;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.breadcumbs_detail_blog_container .breadcumbs_awal {
+  
+}
+
+
+.breadcumbs_detail_blog_container .breadcumbs_awal a {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.breadcumbs_detail_blog_container .breadcumbs_akhir {
+  
+}
+
+
+.breadcumbs_detail_blog_container .breadcumbs_akhir a {
+  color: #19222AB3;
 }
 
 .kembali_detail_blog {
@@ -3929,6 +4009,7 @@ nav {
 }
 
 .kembali_detail_blog .text_kembali_detail_blog p {
+  color: var(--text-dark);
   cursor: pointer;
   font-size: .9rem;
   font-weight: 600;
@@ -4745,38 +4826,6 @@ nav {
 .breadcumbs_kontak_container .breadcumbs_akhir a {
   color: #19222AB3;
 }
-
-
-
-.breadcumbs_detail_blog_container {
-  display: flex; 
-  align-items: center;
-  padding: 1rem 0rem 0rem;
-  gap: 5px;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.breadcumbs_kontak_container .breadcumbs_awal {
-  
-}
-
-
-.breadcumbs_kontak_container .breadcumbs_awal a {
-  cursor: pointer;
-  color: var(--primary-color);
-}
-
-.breadcumbs_kontak_container .breadcumbs_akhir {
-  
-}
-
-
-.breadcumbs_kontak_container .breadcumbs_akhir a {
-  color: #19222AB3;
-}
-
-
 
 .judul_kontak {
   display: flex;
