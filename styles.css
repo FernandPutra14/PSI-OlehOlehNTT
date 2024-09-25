@@ -602,7 +602,7 @@ nav {
 
 .nav__search i {
   position: absolute;
-  top: 50%;
+  top: 44%;
   left: 10px;
   transform: translateY(-50%);
   font-size: 18px;
