@@ -87,27 +87,18 @@
 
   <!--======================================================= PROFIL - HOMEPAGE =======================================================-->
   <section class="section__container profil_container" id="profil">
-    <div class="col-3 list_judul_container">
+    <div class="col-2 list_judul_container">
       <ul>
-        <li><a href="#" onclick="showContent('content1')">Akun Saya</a></li>
-        <li><a href="#" onclick="showContent('content2')">Informasi Pribadi</a></li>
-        <li><a href="#" onclick="showContent('content3')">Daftar Alamat</a></li>
-        <li><a href="#" onclick="showContent('content4')">Riwayat Pesanan</a></li>
+        <li><a href="#" onclick="showContent('content1')">Informasi Pribadi</a></li>
+        <li><a href="#" onclick="showContent('content2')">Daftar Alamat</a></li>
+        <li><a href="#" onclick="showContent('content3')">Riwayat Pesanan</a></li>
       </ul>
     </div>
-    <div class="col-9 content_berdasarkan_list">
+    <div class="col-10 content_berdasarkan_list">
 
 
-
-
+      <!-- Konten 1 -->
       <div id="content1" class="content">
-        <p>Tidak Ada Riwayat Pesanan.</p>
-      </div>
-
-
-
-
-      <div id="content2" class="content" style="display: none;">
         <div class="judul_informasi_pribadi">
           <h3>Informasi Pribadi Pengguna</h3>
         </div>
@@ -165,12 +156,12 @@
           </div>
         </div>
       </div>
+      <!-- Konten 1 -->
 
 
 
-
-
-      <div id="content3" class="content" style="display: none;">
+      <!-- Konten 2 -->
+      <div id="content2" class="content" style="display: none;">
         <div class="judul_daftar_alamat">
           <h3>Alamat Pengiriman</h3>
           <p>Tambah Alamat ?</p>
@@ -262,14 +253,221 @@
           </div>               
         </div>
       </div>
+      <!-- Konten 2 -->
 
 
 
+      <!-- Konten 3 -->
+      <div id="content3" class="content" style="display: none;">
+        <div class="judul_riwayat_pesanan">
+          <h3>Riwayat Pesanan</h3>
+        </div>
 
+          <!-- Riwayat Per-ID -->
+          <div class="daftar_produk">
+            <div class="judul_invoice_riwayat">
+              <div class="id_invoice_container">
+                <div class="id_invoice">
+                  <h5>Id Pesanan</h5>
+                  <p>22080</p>
+                </div>
+              </div>
+              <div class="alamat_tanggal_total_invoice_container">
+                <div class="alamat_invoice">
+                  <h5>Alamat Tujuan</h5>
+                  <button>Lihat alamat</button>
+                </div>
+                <div class="tanggal_invoice">
+                  <h5>Tanggal Pesanan</h5>
+                  <p>Rabu, 25 September 2024</p>
+                </div>
+                <div class="total_invoice">
+                  <h5>Total Pesanan</h5>
+                  <p>Rp. 75.000,00</p>
+                </div>
+              </div>
+            </div>
+            <!-- Produk Keranjang -->
+            <div class="perproduk_sukai">
+              <div class="col-2 gambar_produk_sukai">
+                <img src="assets/sei_makanan.png">
+              </div>
+              <div class="col-4 deskripsi_produk_sukai">
+                <div class="deskripsi_atas_sukai">
+                  <a href="detail_produk.html">
+                    <div class="nama_produk_sukai">
+                      <h3>Tuak Ende Sabu Manggarai</h3>
+                    </div>
+                  </a>
+                  <div class="kategori_produk_sukai">
+                    <h5>Minuman</h5>
+                  </div>
+                  <div class="stok_produk_sukai">
+                    <p>Jumlah : 3</p>
+                  </div>
+                  <div class="atur_stok_harga_sukai">
+                    <div class="harga_produk_sukai">
+                      <h5>Rp&nbsp;20.000,00</h5>
+                    </div>
+                  </div>
+                  <div class="harga_diskon_sukai">
+                    <h5>Rp&nbsp;18.000,00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 tambahkeranjang_sukai_container">          
+                <div class="tambahkeranjang">
+                    <button class="btn" onclick="addItem(getProdukById(11));toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
+                      Beli lagi                     
+                    </button>
+                </div>
+              </div>
+            </div>
+            <!-- Produk Keranjang -->
+             <!-- Produk Keranjang -->
+            <div class="perproduk_sukai">
+              <div class="col-2 gambar_produk_sukai">
+                <img src="assets/sei_makanan.png">
+              </div>
+              <div class="col-4 deskripsi_produk_sukai">
+                <div class="deskripsi_atas_sukai">
+                  <a href="detail_produk.html">
+                    <div class="nama_produk_sukai">
+                      <h3>Tuak Ende Sabu Manggarai</h3>
+                    </div>
+                  </a>
+                  <div class="kategori_produk_sukai">
+                    <h5>Minuman</h5>
+                  </div>
+                  <div class="stok_produk_sukai">
+                    <p>Jumlah : 3</p>
+                  </div>
+                  <div class="atur_stok_harga_sukai">
+                    <div class="harga_produk_sukai">
+                      <h5>Rp&nbsp;20.000,00</h5>
+                    </div>
+                  </div>
+                  <div class="harga_diskon_sukai">
+                    <h5>Rp&nbsp;18.000,00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 tambahkeranjang_sukai_container">          
+                <div class="tambahkeranjang">
+                  <button class="btn" onclick="addItem(getProdukById(11));toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
+                    Beli lagi                     
+                  </button>
+              </div>
+              </div>
+            </div>
+            <!-- Produk Keranjang -->
+          </div>
+          <!-- Riwayat Per-ID -->
 
-      <div id="content4" class="content" style="display: none;">
-        <p>Tidak Ada Riwayat Pesanan.</p>
+          <!-- Riwayat Per-ID -->
+          <div class="daftar_produk">
+            <div class="judul_invoice_riwayat">
+              <div class="id_invoice_container">
+                <div class="id_invoice">
+                  <h5>Id Pesanan</h5>
+                  <p>22080</p>
+                </div>
+              </div>
+              <div class="alamat_tanggal_total_invoice_container">
+                <div class="alamat_invoice">
+                  <h5>Alamat Tujuan</h5>
+                  <button>Lihat alamat</button>
+                </div>
+                <div class="tanggal_invoice">
+                  <h5>Tanggal Pesanan</h5>
+                  <p>Rabu, 25 September 2024</p>
+                </div>
+                <div class="total_invoice">
+                  <h5>Total Pesanan</h5>
+                  <p>Rp. 75.000,00</p>
+                </div>
+              </div>
+            </div>
+            <!-- Produk Keranjang -->
+            <div class="perproduk_sukai">
+              <div class="col-2 gambar_produk_sukai">
+                <img src="assets/sei_makanan.png">
+              </div>
+              <div class="col-4 deskripsi_produk_sukai">
+                <div class="deskripsi_atas_sukai">
+                  <a href="detail_produk.html">
+                    <div class="nama_produk_sukai">
+                      <h3>Tuak Ende Sabu Manggarai</h3>
+                    </div>
+                  </a>
+                  <div class="kategori_produk_sukai">
+                    <h5>Minuman</h5>
+                  </div>
+                  <div class="stok_produk_sukai">
+                    <p>Jumlah : 3</p>
+                  </div>
+                  <div class="atur_stok_harga_sukai">
+                    <div class="harga_produk_sukai">
+                      <h5>Rp&nbsp;20.000,00</h5>
+                    </div>
+                  </div>
+                  <div class="harga_diskon_sukai">
+                    <h5>Rp&nbsp;18.000,00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 tambahkeranjang_sukai_container">          
+                <div class="tambahkeranjang">
+                    <button class="btn" onclick="addItem(getProdukById(11));toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
+                      Beli lagi                     
+                    </button>
+                </div>
+              </div>
+            </div>
+            <!-- Produk Keranjang -->
+             <!-- Produk Keranjang -->
+            <div class="perproduk_sukai">
+              <div class="col-2 gambar_produk_sukai">
+                <img src="assets/sei_makanan.png">
+              </div>
+              <div class="col-4 deskripsi_produk_sukai">
+                <div class="deskripsi_atas_sukai">
+                  <a href="detail_produk.html">
+                    <div class="nama_produk_sukai">
+                      <h3>Tuak Ende Sabu Manggarai</h3>
+                    </div>
+                  </a>
+                  <div class="kategori_produk_sukai">
+                    <h5>Minuman</h5>
+                  </div>
+                  <div class="stok_produk_sukai">
+                    <p>Jumlah : 3</p>
+                  </div>
+                  <div class="atur_stok_harga_sukai">
+                    <div class="harga_produk_sukai">
+                      <h5>Rp&nbsp;20.000,00</h5>
+                    </div>
+                  </div>
+                  <div class="harga_diskon_sukai">
+                    <h5>Rp&nbsp;18.000,00</h5>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 tambahkeranjang_sukai_container">          
+                <div class="tambahkeranjang">
+                  <button class="btn" onclick="addItem(getProdukById(11));toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
+                    Beli lagi                     
+                  </button>
+              </div>
+              </div>
+            </div>
+            <!-- Produk Keranjang -->
+          </div>
+          <!-- Riwayat Per-ID -->
+  
+
       </div>
+      <!-- Konten 3 -->
     </div>
   </section>
 
