@@ -86,8 +86,64 @@
 
   <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
   <section class="section__container detail_produk_container">
-    
-    
+    <div class="col-6 gambar_detail_produk_container">
+      <img src="assets/sei_makanan.png">
+    </div>
+    <div class="col-6 isi_detail_produk_container">
+      <div class="detail_nama_produk">
+        <h1>Tenun Ikat Sumba</h1>
+      </div>
+      <div class="detail_kategori_produk">
+        <h5>Kain Tenun</h5>
+      </div>
+      <div class="detail_harga_produk">
+        <div class="harga_diskon">
+          <h3>Rp&nbsp;650.000,00</h3>
+        </div>
+        <div class="harga_asli">
+          <h3>Rp&nbsp;750.000,00</h3>
+        </div>
+        <div class="pengurangan_diskon">
+          <h3>13.333333333333334% off</h3>
+        </div>
+      </div>
+      <div class="detail_sukai">
+        <button class="wish-btn" onclick="buttonWishListClick(2)">
+          Masukan Wishlist
+          <i class="ri-heart-line"></i>
+        </button>
+      </div>
+      <div class="detail_stok">
+        <h5>Tersisa 15</h5>
+      </div>
+      <div class="detail_belanja">
+        <div class="tambah_kurang_produk">
+          <div class="kurang">
+            <h3>-</h3>
+          </div>
+          <div class="jumlah">
+            <h3>5</h3>
+          </div>
+          <div class="tambah">
+            <h3>+</h3>
+          </div>
+        </div>
+        <button class="belanja-btn" onclick="buttonKeranjangClick(2)">Masukkan ke keranjang</button>
+      </div>
+      <div class="detail_deskripsi">
+        <h6>Tenun ikat khas Sumba yang dibuat dengan teknik tradisional dan motif etnik yang unik, cocok sebagai pakaian adat koleksi pribadi</h6>
+      </div>
+      <div class="detail_spesifikasi">
+        <h6>Spesifikasi Tenun Ikat Sumba adalah sebagai berikut : </h6>
+        <ul class="spesifikasi_list">
+          <li>Bahan : Katun Alami</li>
+          <li>Warna : Kombinasi merah, hitam, kuning</li>
+          <li>Ukuran : 200 x 60 cm</li>
+          <li>Cara Perawatan : Cuci dengan air dingin
+          </li>
+        </ul>
+      </div>
+    </div>
   </section>
   <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
 
@@ -175,7 +231,7 @@
   <script src="./js/wishlist.js"></script>
   <script src="./js/toast.js"></script>
   <script src="./js/main.js"></script>
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     const queryParams = new URLSearchParams(window.location.search);
     const id = queryParams.get('id') ? queryParams.get('id') : 1;
     const detailProdukContainer = document.querySelector('.detail_produk_container');
@@ -247,6 +303,6 @@
     addWishListEventListener(updateDetailProduk);
 
     updateDetailProduk();
-  </script>
+  </script> -->
 </body>
 </html>
