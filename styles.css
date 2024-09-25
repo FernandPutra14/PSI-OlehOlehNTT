@@ -1500,7 +1500,7 @@ nav {
   padding: 1rem 1rem 0rem;
   gap: 5px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .breadcumbs_produk_container .breadcumbs_awal {
@@ -1918,7 +1918,7 @@ nav {
   padding: 1rem 1rem 1rem;
   gap: 5px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .breadcumbs_blog_container .breadcumbs_awal {
@@ -2819,7 +2819,7 @@ nav {
   gap: 5px;
   padding: 1rem 0rem 0rem;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .breadcumbs_detail_produk_container .breadcumbs_awal {
@@ -3969,7 +3969,7 @@ nav {
   padding: 1rem 0rem 0rem;
   gap: 5px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .breadcumbs_detail_blog_container .breadcumbs_awal {
@@ -4045,7 +4045,7 @@ nav {
 }
 
 .gambar_detail_blog {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .gambar_detail_blog img {
@@ -4801,7 +4801,7 @@ nav {
   padding: 1rem 1rem 0rem;
   gap: 5px;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .breadcumbs_kontak_container .breadcumbs_awal {
