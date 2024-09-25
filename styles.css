@@ -2781,21 +2781,17 @@ nav {
   cursor: pointer;
 }
 
-
 .tombol_daftar {
   margin-top: 30px;
   justify-content: end;
 }
 
-
 /*=============================================================================================================================*\
   #HALAMAN DETAIL PRODUK
 \*=============================================================================================================================*/
 .breadback_detail_produk {
-  padding: 2rem 1rem 0rem;
+  padding: 1rem 1rem 0rem;
 }
-
-
 
 .kembali_detail_produk {
   display: inline-flex;
