@@ -2832,7 +2832,7 @@ nav {
   gap: 5px;
   padding: 1rem 0rem 0rem;
   font-size: .95rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .breadcumbs_detail_produk_container .breadcumbs_awal {
@@ -3273,7 +3273,7 @@ nav {
 }
 
 .sticky_total_keranjang {
-  top: 10px;
+  top: 130px;
   position: sticky;
 }
 
