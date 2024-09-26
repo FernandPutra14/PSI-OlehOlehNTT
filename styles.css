@@ -1559,7 +1559,7 @@ nav {
 }
 
 .nama_kategori_judul h3 {
-  font-weight: 600;
+  font-weight: bold;
   font-style: italic;
   font-size: 2rem;
 }
@@ -2850,9 +2850,14 @@ nav {
   align-items: center;
   gap: 5px;
   padding: 1rem 0rem 0rem;
-  font-size: .95rem;
+  font-size: 14px;
   font-weight: 500;
 }
+
+.breadcumbs_detail_produk_container i{
+  font-weight: 600;
+}
+
 
 .breadcumbs_detail_produk_container .breadcumbs_awal {
   
@@ -2882,23 +2887,31 @@ nav {
 }
 
 .gambar_detail_produk_container {
-  padding-left: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: 10px;
+  cursor: crosshair;
 }
 
 .gambar_detail_produk_container img {
-  /* position: sticky;
-  top: 20px; */
-  max-height: 500px;
   border-radius: 10px;
-  transition: .5s;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
+
 
 .isi_detail_produk_container {
   padding-right: 70px ;
 }
 
 .detail_nama_produk {
-  margin-top: 10px;
+  margin-top: 0px;
 }
 
 .detail_nama_produk h1 {
@@ -3463,6 +3476,31 @@ nav {
 
 
 /* Profil Riwayat Pesanan */
+.judul_riwayat_selesai {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-top: 1px solid var(--text-dark);
+  border-bottom: 1px solid var(--text-dark);
+  padding: 10px 0px;
+  margin-bottom: 20px;
+}
+
+
+.judul_riwayat_selesai .status_selesai {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+}
+
+.judul_riwayat_selesai h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+
+
 #content3 .daftar_produk {
   margin-bottom: 40px;
 }
@@ -3471,6 +3509,8 @@ nav {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+  padding-top: 10px;
+  border-top: 1px dotted #999;
 }
 
 #content3 .daftar_produk .judul_invoice_riwayat h5 {
@@ -3513,7 +3553,7 @@ nav {
 
 .judul_invoice_riwayat .alamat_tanggal_total_invoice_container {
   display: flex;
-  gap: 25px;
+  gap: 30px;
 }
 
 #content3 .daftar_produk .perproduk_sukai {
@@ -3681,6 +3721,59 @@ nav {
 #content3 .tambahkeranjang button i {
   margin-left: 3px;
 
+}
+
+
+/*-----------------------------------*\
+  #FILTER KATEGORI BLOG
+\*-----------------------------------*/
+
+.filter_kategori_riwayat {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter_pill_container_riwayat {
+  display: flex;
+  gap:8px;
+}
+
+.filter_pill_riwayat {
+  padding: 13px 15px;
+  border-radius: 10px;
+  background-color: var(--container-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter_pill_riwayat:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.filter_pill_riwayat.active_pill_riwayat {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.filter_pill_riwayat h6 {
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.filter_sort_container_riwayat {
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 5px;
+}
+
+.filter_sort_container_riwayat h6 {
+  font-size: .85rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 

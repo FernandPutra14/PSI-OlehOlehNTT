@@ -296,5 +296,3 @@ document.addEventListener('click', function(event) {
     filterContainer.forEach(e => e.classList.remove('active'));
   }
 });
-
-
