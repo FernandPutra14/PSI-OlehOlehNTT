@@ -1197,7 +1197,7 @@ nav {
 .price_diskon span {
   font-weight: 600;
   font-size: 1rem;
-  color: var(--text-dark);
+  color: rgb(234, 31, 31);
 }
 
 .sukai, .keranjangi, .tidak-sukai {
@@ -1548,7 +1548,7 @@ nav {
 .nama_kategori_judul h3 {
   font-weight: 600;
   font-style: italic;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .nama_kategori_judul p {
@@ -1879,7 +1879,7 @@ nav {
 #daftar-produk .price_diskon span {
   font-weight: 600;
   font-size: 1rem;
-  color: var(--text-dark);
+  color: rgb(234, 31, 31);
 }
 
 #daftar-produk .sukai, .keranjangi {
@@ -4834,7 +4834,7 @@ nav {
 
 .judul_kontak .judul h3 {
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-style: italic;
 }
 
