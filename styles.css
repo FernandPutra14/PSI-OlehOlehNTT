@@ -196,6 +196,10 @@ body {
   scroll-behavior: smooth;
 }
 
+.content_seluruh {
+  padding-top: 110px; /* Sesuaikan dengan tinggi navbar Anda */
+}
+
 body {
   font-family: "poppins", sans-serif;
 }
@@ -563,8 +567,17 @@ span.messages__dot {
 \*-----------------------------------*/
 
 nav {
-  
+  position: fixed;
+  width: 100%;
+  /* border-bottom: 1px solid #F0F3F7; */
+  z-index: 102;
+  transition: box-shadow 0.3s ease; /* Menambahkan transisi */
 }
+
+.nav--scrolled {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 
 .nav__top {
   background-color: var(--container-color);
@@ -580,7 +593,7 @@ nav {
 }
 
 .nav__logo {
-  padding-right: 20px;
+  padding-right: 120px;
 }
 
 .nav__logo img {
@@ -682,7 +695,7 @@ nav {
 }
 
 .nav__bottom {
-  
+  background-color: var(--white-asli);
 }
 
 .nav__bottom .container_nav_dua {
@@ -1564,7 +1577,7 @@ nav {
 
 #filter {
   position: sticky;
-  top: 0;
+  top: 110px;
   margin-bottom: 10px;
   z-index: 100;
 }
@@ -2818,8 +2831,8 @@ nav {
   align-items: center;
   gap: 5px;
   padding: 1rem 0rem 0rem;
-  font-size: 14px;
-  font-weight: 500;
+  font-size: .95rem;
+  font-weight: 600;
 }
 
 .breadcumbs_detail_produk_container .breadcumbs_awal {
@@ -2913,6 +2926,7 @@ nav {
 }
 
 .detail_sukai .wish-btn {
+  font-family: 'poppins';
   padding: 10px 13px;
   border: 1px solid var(--primary-color-dark);
   font-size: 1rem;
@@ -2969,6 +2983,7 @@ nav {
 
 
 .detail_belanja .belanja-btn {
+  font-family: 'poppins';
   padding: 13px;
   outline: none;
   border: none;
