@@ -2051,27 +2051,46 @@ nav {
 }
 
 #blog_populer .swiper-button-next:after, #blog_populer .swiper-button-prev:after {
-  font-size: 15px !important;
+  font-size: 14px !important;
+  font-weight: bold;
 }
 
 #blog_populer .swiper-button-prev, 
 #blog_populer .swiper-button-next {
   color: var(--primary-color);
   background-color: white;
-  width: 35px;
-  height: 35px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
-  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 15px, rgba(0, 0, 0, 0.1) 0px 3px 6px;
   opacity: 0;
-  transition: opacity 0.3s ease; 
+  transition: opacity 0.4s cubic-bezier(0.25, 1, 0.5, 1), 
+              transform 0.4s cubic-bezier(0.25, 1, 0.5, 1); 
   pointer-events: none; 
+  position: absolute;
 }
 
-#blog_populer .swiper:hover .swiper-button-next, 
+#blog_populer .swiper-button-prev {
+  transform: translateX(-20px); /* Memulai dari kiri */
+}
+
+#blog_populer .swiper-button-next {
+  transform: translateX(20px); /* Memulai dari kanan */
+}
+
 #blog_populer .swiper:hover .swiper-button-prev {
   opacity: 1;
   pointer-events: auto;
+  transform: translateX(0); /* Bergerak ke posisi semula */
 }
+
+#blog_populer .swiper:hover .swiper-button-next {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0); /* Bergerak ke posisi semula */
+}
+
+
 
 #blog_populer .swiper-scrollbar {
   width: 20%;
