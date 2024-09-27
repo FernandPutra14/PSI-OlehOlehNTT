@@ -5190,6 +5190,7 @@ nav {
   #RESPONSIVE
 \*=============================================================================================================================*/
 
+
 /*---------------------------------------------------------------------------------------------------*\
   #RESPONSIVE LEBAR DI ATAS 540 PX
 \*---------------------------------------------------------------------------------------------------*/
@@ -5215,7 +5216,7 @@ nav {
 
   .laris__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 4rem 0;
   }
@@ -5305,7 +5306,7 @@ nav {
 
   .laris__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 4rem 0;
   }
@@ -5356,15 +5357,53 @@ nav {
     grid-column: 1/3;
   }
 }
+/*---------------------------------------------------------------------------------------------------*\
+  #RESPONSIVE LEBAR DI ATAS 850 PX
+\*---------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 993px) {
+  .laris__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
+  }
+}
+
+
 
 /*---------------------------------------------------------------------------------------------------*\
-  #RESPONSIVE LEBAR DI ATAS 1400 PX
+  #RESPONSIVE LEBAR DI ATAS 993 PX (NAVBAR)
+\*---------------------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 993px) {
+  /* Tampilkan Navbar versi Laptop */
+  .nav__top, .nav__bottom {
+    display: block;
+  }
+
+  /* Sembunyikan Navbar Mobile */
+  .nav__mobile {
+    display: none;
+  }
+
+}
+
+/*---------------------------------------------------------------------------------------------------*\
+  #RESPONSIVE LEBAR DI ATAS 1250 PX
 \*---------------------------------------------------------------------------------------------------*/
 
 @media (min-width:1250px) {
   .header__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+  }
+
+  .laris__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 4rem 0;
   }
 }
 
@@ -5378,6 +5417,88 @@ nav {
     gap: 10px;
 }
 }
+
+
+
+/* Responsive Navbar untuk Tablet dan HP */
+@media screen and (max-width: 992px) {
+  /* Sembunyikan Navbar versi Laptop */
+  .nav__top, .nav__bottom {
+    display: none;
+  }
+
+  /* Navbar versi Mobile */
+  .nav__mobile {
+    background-color: var(--white-asli);
+    position: fixed;
+    width: 100%;
+    z-index: 102;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .container_nav_mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: .85rem 1rem;
+  }
+
+  /* Menu Button */
+  .nav__mobile-menu {
+    font-size: 1.8rem;
+  }
+
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--text-dark);
+  }
+
+  .menu-button i {
+    font-size: 1.8rem;
+  }
+
+  /* Logo */
+  .nav__mobile-logo img {
+    width: 150px;
+  }
+
+  /* Icons */
+  .nav__mobile-icons {
+    display: flex;
+    gap: .85rem;
+  }
+
+  .nav__mobile-icons a {
+    font-size: 1.6rem;
+    color: var(--text-dark);
+  }
+
+  .nav__mobile-icons a:hover {
+    color: var(--primary-color);
+  }
+
+  /* Badge */
+  .badge {
+    position: absolute;
+    top: -7px;       
+    right: -7px;    
+    background-color: var(--badge);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .icon-sukai, .icon-keranjang {
+    position: relative;
+  }
+}
+
 
 
 /*---------------------------------------------------------------------------------------------------*\
@@ -5403,6 +5524,55 @@ nav {
   border-radius: 10px;
 }
 }
+
+
+/*---------------------------------------------------------------------------------------------------*\
+  #RESPONSIVE LEBAR DI BAWAH 500 PX - HALAMAN MASUK ATAU DAFTAR
+\*---------------------------------------------------------------------------------------------------*/
+
+@media (max-width:500px) {
+
+  /*-----------------------*\
+  HALAMAN MASUK ATAU DAFTAR
+  \*-----------------------*/
+  .masuk_daftar_container {
+    max-width: 600px;
+    margin-top: 5vh;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+  }
+  
+  .logo_masuk_daftar_container {
+  
+  }
+  
+  .logo_masuk_daftar_container img {
+    width: 180px;
+  }
+  
+  .perintah_masuk_daftar {
+  
+  }
+  
+  .perintah_masuk_daftar h3 {
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .perintah_masuk_daftar p {
+    font-size: .85rem;
+  }
+
+  .tambahan_bantuan p {
+    font-size: .9rem;
+  }
+}
+
+
+
 
 /*---------------------------------------------------------------------------------------------------*\
   #RESPONSIVE LEBAR DI BAWAH 400 PX
