@@ -47,7 +47,6 @@
 // delay: 2000,
 // });
 
-
 function cardProdukButton() {
   document.querySelectorAll('.sukai').forEach(function (icon) {
     icon.addEventListener('mouseover', function () {
@@ -263,7 +262,6 @@ function togglePasswordVisibility() {
   }
 }
 
-
 //Fungsi aktifkan filter-dropdown
 function toggleDropdown(element) {
   const allDropdowns = document.querySelectorAll('.filter-dropdown');
@@ -296,3 +294,12 @@ document.addEventListener('click', function(event) {
     filterContainer.forEach(e => e.classList.remove('active'));
   }
 });
+
+function toggleFilter(element) {
+  const filters = document.querySelectorAll('.filter_pill_riwayat');
+  filters.forEach((e) => {
+    e.classList.remove('active_pill_riwayat');
+  });
+
+  element.classList.add('active_pill_riwayat');
+}
