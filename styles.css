@@ -5410,7 +5410,13 @@ nav {
 
   /* Menu Button */
   .nav__mobile-menu {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    padding-right: 30px;
+  }
+
+  .nav__mobile-menu a {
+    font-size: 1.3rem;
+    color: var(--text-dark);
   }
 
   .menu-button {
@@ -5432,11 +5438,11 @@ nav {
   /* Icons */
   .nav__mobile-icons {
     display: flex;
-    gap: .85rem;
+    gap: .7rem;
   }
 
   .nav__mobile-icons a {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     color: var(--text-dark);
   }
 
@@ -5447,15 +5453,15 @@ nav {
   /* Badge */
   .badge {
     position: absolute;
-    top: -7px;       
-    right: -7px;    
+    top: -2px;
+    right: -7px;
     background-color: var(--badge);
     color: white;
     border-radius: 50%;
-    padding: 2px 6px;
-    font-size: 11px;
+    padding: 0px 4px;
+    font-size: 10px;
     font-weight: bold;
-  }
+}
 
   .icon-sukai, .icon-keranjang {
     position: relative;
@@ -5500,7 +5506,7 @@ nav {
 }
 
 .index_seluruh {
-  padding-top: 70px !important;
+  padding-top: 60px !important;
 }
 
   /*-----------------------*\
@@ -7061,6 +7067,7 @@ nav {
   display: grid;
   gap: 4rem 2rem;
   overflow: hidden;
+  padding: 1.3rem 1rem 5rem;
 }
 
 .header__image {
@@ -7651,6 +7658,434 @@ nav {
   background-color: var(--primary-color);
 }
 
+/*=============================================================================================================================*\
+  #HALAMAN HOMEPAGE
+\*=============================================================================================================================*/
+
+.section__header {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 3.25rem;
+  color: var(--text-dark);
+}
+
+.section__description {
+  color: var(--text-light);
+  line-height: 1.5rem;
+  font-size: .9rem;
+}
+
+
+/*-----------------------------------*\
+  #STATS
+\*-----------------------------------*/
+
+.stats__container {
+  margin-top: 3vh;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  padding: 2rem 1rem 3rem;
+}
+
+.stats__card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.stats__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.stats__card p {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+}
+
+
+/*-----------------------------------*\
+  #KATEGORI
+\*-----------------------------------*/
+
+.kategori__container {
+  padding-top: 0rem;
+  padding-bottom: 0;
+}
+
+.kategori__container .section__header {
+  max-width: 450px;
+  
+}
+
+.swiper {
+  padding: 2rem 0rem 2rem;
+  width: 100%;
+}
+
+.swiper-wrapper {
+  cursor: pointer;
+}
+
+.swiper-slide {
+  max-width: 250px;
+}
+
+.kategori__card {
+  padding: .75rem;
+  max-width: 250px; 
+}
+
+.gambar_kategori img {
+  max-height: 200px;
+  max-width: 250px;
+  border-radius: var(--border-radius) ;
+}
+
+.nama_kategori {
+  text-align: center;
+}
+
+.nama_kategori h4 {
+  padding-top: 5px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  font-size: 30px !important;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  color: var(--white);
+  background-color: transparent;
+}
+
+.swiper-button-prev {
+  left: 2%;
+}
+
+.swiper-button-next {
+  right: 1%;
+}
+
+
+/*-----------------------------------*\
+  #PRODUK TERLARIS
+\*-----------------------------------*/
+
+.laris {
+  background-color: var(--container-color);
+  margin-top: 15vh ;
+}
+
+.laris__container :is(.section__header, .section__subheader, .section__description, .view__all) {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.laris__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.laris__card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.laris__card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: .2s ease;
+}
+
+.laris__card:hover {
+  border: 2px solid var(--primary-color);
+}
+
+.laris__card .gambar_terlaris {
+  max-height: 230px;
+  object-fit: cover;
+}
+
+.diskon_produk {
+  position: absolute;
+  border-radius: 5px;
+  background-color: orange;
+  padding: 3px 10px;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+
+.diskon_produk p {
+  color: white;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.laris__details {
+  padding: 1rem;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.judul_sukai {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.laris__details p {
+  font-weight: 400;
+  font-size: .9rem;
+  color: var(--text-light);
+}
+
+.laris__details h6 {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.bagian__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price_dua {
+  display: flex;
+  gap: 10px;
+}
+
+.price span {
+  font-weight: 500;
+  font-size: .85rem;
+  color: var(--text-light);
+  text-decoration:line-through;
+}
+
+.price_diskon span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(234, 31, 31);
+}
+
+.sukai, .keranjangi, .tidak-sukai {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.sukai {
+  color: var(--text-dark);
+  transition: .3s !important;
+}
+
+.sukai:hover {
+  color: rgb(234, 31, 31);
+}
+
+.action-produk-card .sukai:hover {
+  pointer-events: auto;
+  content: "\e600";
+  font-family: "remixicon";
+}
+
+.action-produk-card .keranjangi:hover {
+  content: "\e651";
+  font-family: "remixicon";
+}
+
+.jumlah_terjual h5 {
+  font-size: .7rem;
+  font-weight: 400;
+}
+
+.btn_produk {
+  background: none;
+  border: none;
+}
+
+.lihat__now {
+  padding: 0.5rem 1.5rem;
+  color: var(--primary-color);
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.lihat__now:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+}
+
+
+/*-----------------------------------*\
+  #SKILL
+\*-----------------------------------*/
+
+.service__container {
+  display: grid;
+  margin-top: 2vh ;
+  gap: 2rem;
+  padding: 2rem 1rem 2rem;
+}
+
+.service__content .section__header {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  line-height: 1.3;
+}
+
+.service__content .section__description {
+  margin-bottom: 2rem;
+}
+
+.service__grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.service__card {
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.service__card span {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.service__card h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.service__card p {
+  font-size: .9rem;
+  color: var(--text-light);
+  line-height: 1.5rem;
+}
+
+
+/*-----------------------------------*\
+  #BLOG
+\*-----------------------------------*/
+
+.blog {
+  margin-top: 1vh ;
+}
+
+.blog__container :is(.section__header, .section__subheader, .section__description, .view__all) {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.blog__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.blog__card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: .2s ease;
+}
+
+.blog__card .gambar_blog {
+  max-height: 230px;
+  object-fit: cover;
+}
+
+.blog__details {
+  padding: 1rem 1rem 1rem 0rem;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+.blog__details p {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--text-light);
+}
+
+.blog__details h5 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.blog__details h6 {
+  font-weight: 400;
+  color: var(--text-light);
+  font-size: .9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.blog__details a {
+  font-size: 14px ;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.blog_now {
+  padding: 0.5rem 1.5rem;
+  color: var(--primary-color);
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.blog_now:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+}
+
 
 
 /*=============================================================================================================================*\
@@ -7693,6 +8128,7 @@ nav {
 
 .input_alamat_pembayaran_container .judul_alamat_pembayaran {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -7755,6 +8191,7 @@ nav {
 #pembayaran .bagi_bagi .input_grup {
   position: relative;
   flex: 1;
+  margin: 10px 0px 0px;
 }
 
 #pembayaran .bagi_bagi .input_grup label {
