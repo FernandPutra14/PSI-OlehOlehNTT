@@ -1397,7 +1397,7 @@ nav {
   border-radius: 10px;
   padding: 20px 35px 20px 25px;
   z-index: 150;
-  border-left: 6px solid #14f040;
+  border-left: 6px solid #5CB85C ;
   overflow: hidden;
   transform: translateX(calc(100% + 30px));
   transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
@@ -1421,7 +1421,7 @@ nav {
   color: #fff;
   font-size: 20px;
   border-radius: 50%;
-  background-color: #14f040 ;
+  background-color: #5CB85C ;
 }
 
 .toast-content .message {
@@ -1470,7 +1470,7 @@ nav {
   right: 0;
   height: 100%;
   width: 100%;
-  background-color: #14f040;
+  background-color: #5CB85C ;
 }
 
 .progress.active::before {
@@ -3405,6 +3405,7 @@ nav {
 .list_judul_container ul li a {
   font-size: 1rem;
   color: var(--text-dark);
+  text-decoration: underline;
 } 
 
 .content_berdasarkan_list {
@@ -6046,6 +6047,7 @@ nav {
   .list_judul_container ul li a {
     font-size: 1rem;
     color: var(--text-dark);
+    text-decoration: underline;
   } 
   
   .content_berdasarkan_list {
@@ -7296,9 +7298,9 @@ nav {
 
 .detail_sukai .wish-btn:hover {
   font-family: 'poppins';
-  padding: 10px;
+  padding: 10px 13px;
   border: 1px solid var(--primary-color-dark);
-  font-size: 1rem;
+  font-size: .8rem;
   color: var(--white);
   background-color: rgb(208, 40, 40);
   border-radius: 18px;
