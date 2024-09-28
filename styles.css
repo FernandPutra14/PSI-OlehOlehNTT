@@ -5415,8 +5415,13 @@ nav {
     position: fixed;
     width: 100%;
     z-index: 102;
+  }
+
+  /* Box-shadow yang muncul ketika discroll */
+  .shadow-on-scroll {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
+
 
   .container_nav_mobile {
     display: flex;
@@ -5434,7 +5439,7 @@ nav {
   }
 
   .nav__mobile-menu a {
-    font-size: 1.3rem;
+    font-size: 19px;
     color: var(--text-dark);
   }
 
@@ -5446,7 +5451,7 @@ nav {
   }
 
   .menu-button i {
-    font-size: 1.2rem;
+    font-size: 19px;
   }
 
   /* Logo */
@@ -5457,11 +5462,11 @@ nav {
   /* Icons */
   .nav__mobile-icons {
     display: flex;
-    gap: .7rem;
+    gap: .6rem;
   }
 
   .nav__mobile-icons a {
-    font-size: 1.3rem;
+    font-size: 19px;
     color: var(--text-dark);
   }
 
@@ -5522,6 +5527,12 @@ nav {
 
   .content_seluruh {
     padding-top: 90px;
+}
+
+.footer__container {
+  display: grid;
+  gap: 1.5rem;
+  padding: 2rem 1rem 2rem;
 }
 
 .index_seluruh {
