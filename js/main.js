@@ -74,12 +74,19 @@ function cardProdukButton() {
   });
 }
 
-function showContent(contentId) {
+function showContent(contentId, event) {
   //Sembunyikan semua content
-  var contents = document.getElementsByClassName('content');
+  const contents = document.getElementsByClassName('content');
   for (var i = 0; i < contents.length; i++) {
     contents[i].style.display = 'none';
   }
+
+  //Hapus active
+  const links = document.querySelectorAll('.list_judul_container a');
+  links.forEach(e => e.classList.remove('active'));
+
+  //Beri active pada link yang tepat
+  event.target.classList.add('active');
 
   //Tunjukan Content yang terpilih
   document.getElementById(contentId).style.display = 'block';
