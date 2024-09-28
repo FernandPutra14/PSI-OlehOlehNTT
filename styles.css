@@ -3557,6 +3557,10 @@ nav {
   border-top: 1px dotted #999;
 }
 
+#content3 .produk_riwayat_saya {
+  display: flex;
+}
+
 #content3 .perproduk_sukai .gambar_produk_sukai {
   padding-left: 0;
 }
@@ -3773,7 +3777,9 @@ nav {
 
 
 
-
+#profil .input_grup input[type="date"] {
+  font-family: 'Poppins', sans-serif !important;
+}
 
 #profil .input_grup {
   position: relative;
@@ -5482,7 +5488,7 @@ nav {
 @media (max-width:500px) {
 
   .content_seluruh {
-    padding-top: 100px;
+    padding-top: 90px;
 }
 
 .index_seluruh {
@@ -5535,7 +5541,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 5px;
-    padding: 0rem 1rem 5rem;
+    padding: 0rem 1rem 3rem;
   }
 
   .sukai_aku {
@@ -5548,8 +5554,7 @@ nav {
   
   .daftar_produk_sukai .judul_daftar_produk_sukai {
     display: flex;
-    flex-direction: column;
-    justify-content: start;
+    justify-content: space-between;
     align-items: normal;
     gap: 5px;
     padding-bottom: 20px;
@@ -5558,6 +5563,7 @@ nav {
   
   .daftar_produk_sukai .judul_daftar_produk_sukai .judul_daftar_produk_sukai_satu {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     gap: 0px;
   }
@@ -5569,8 +5575,15 @@ nav {
   
   .daftar_produk_sukai .judul_daftar_produk_sukai .judul_daftar_produk_sukai_satu h6 {
     font-size: .9rem;
+    padding-left: 2.2rem;
     font-weight: 500;
     align-content: center;
+  }
+
+  .daftar_produk_sukai .judul_daftar_produk_sukai .judul_daftar_produk_sukai_dua {
+    display: flex;
+    justify-content: start;
+    padding-top: 6px;
   }
   
   .daftar_produk_sukai .judul_daftar_produk_sukai .judul_daftar_produk_sukai_dua p {
@@ -5611,7 +5624,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     padding-left: 0;
-    padding-right: 20px;
+    padding-right: 0px;
   }
   
   .deskripsi_produk_sukai .deskripsi_atas_sukai {
@@ -5635,7 +5648,7 @@ nav {
   }
   
   .kategori_produk_sukai h5 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 400;
   }
   
@@ -5655,7 +5668,7 @@ nav {
   }
   
   .atur_stok_harga_sukai .harga_produk_sukai h5 {
-    font-size: .85rem;
+    font-size: .9rem;
     text-decoration: line-through;
   }
   
@@ -5665,7 +5678,7 @@ nav {
   }
   
   .harga_diskon_sukai h5 {
-    font-size: 1rem;
+    font-size: .9rem;
     color: red;
   }
   
@@ -5690,7 +5703,7 @@ nav {
   }
   
   .form_catatan_sukai {
-    height: 140px;
+    height: 100px;
     margin-bottom: 10px;
   }
   
@@ -5713,9 +5726,9 @@ nav {
   }
   
   .simpan_catatan button {
-    padding: 8px 15px;
+    padding: 10px 15px;
     width: 100%;
-    font-size: .9rem;
+    font-size: .85rem;
   }
   
   .tambahkeranjang_sukai_container {
@@ -5753,8 +5766,8 @@ nav {
   }
   
   .tambahkeranjang button {
-    padding: 14px 15px;
-    font-size: .89rem;
+    padding: 10px 15px;
+    font-size: .85rem;
     box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
     width: 100%;
   }
@@ -5822,6 +5835,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     padding-left: 0;
+    padding-right: 0;
   }
   
   .deskripsi_atas {
@@ -5840,7 +5854,7 @@ nav {
   }
   
   .kategori_produk_keranjang h5 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 400;
   }
   
@@ -5849,14 +5863,14 @@ nav {
   }
   
   .stok_produk_keranjang p {
-    font-size: .9rem;
+    font-size: .85rem;
     font-weight: 500;
   }
   
   
   .atur_stok_harga {
     display: flex;
-    gap: 5px;
+    gap: 8px;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 3px;
@@ -5865,7 +5879,7 @@ nav {
   .deskripsi_atas .tambah_kurang_produk_keranjang {
     display: inline-flex;
     justify-content: center;
-    padding: 0 20px;
+    padding: 3px 20px;
     align-items: center;
     border-radius: 18px;
     gap: 30px;
@@ -5898,12 +5912,12 @@ nav {
   }
   
   .harga_diskon_keranjang h5 {
-    font-size: 1rem;
+    font-size: .9rem;
     color: red;
   }
   
   .deskripsi_bawah {
-    margin-top: 5px;
+    margin-top: 8px;
   }
   
   .deskripsi_bawah .action_produk_keranjang {
@@ -6015,13 +6029,13 @@ nav {
   .profil_container {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
     padding: 0rem 1rem 5rem;
   }
   
   
   .list_judul_container {
-    
+    padding: 0;
   }
   
   
@@ -6035,6 +6049,7 @@ nav {
   } 
   
   .content_berdasarkan_list {
+    padding: 0;
   }
   
   #content1 {
@@ -6086,6 +6101,15 @@ nav {
   
   .input_alamat {
     margin-top: 10px;
+    margin-bottom: 30px
+  }
+
+  .input_alamat p {
+    font-weight: 600;
+  }
+
+  .update_alamat_button {
+    margin-top: 10px;
   }
   
   
@@ -6104,6 +6128,10 @@ nav {
 
   .update_alamat_button button {
     width: 100%;
+  }
+
+  .button_ganti_email {
+    padding-top: 10px;
   }
   
   
@@ -6139,6 +6167,7 @@ nav {
   
   #content3 .daftar_produk .judul_invoice_riwayat {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -6179,21 +6208,36 @@ nav {
   
   .id_invoice {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .tanggal_invoice,
+  .alamat_invoice,
+  .total_invoice {
+    display: flex;
+    justify-content: space-between;
   }
   
   
   .judul_invoice_riwayat .alamat_tanggal_total_invoice_container {
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 0px;
   }
   
   #content3 .daftar_produk .perproduk_sukai {
     display: flex;
+    flex-direction: column;
     padding: 20px 0;
     border-top: 1px dotted #999;
   }
   
+
+  #content3 .produk_riwayat_saya {
+    display: flex;
+  }
+
   #content3 .perproduk_sukai .gambar_produk_sukai {
     padding-left: 0;
   }
@@ -6207,7 +6251,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     padding-left: 0;
-    padding-right: 20px;
+    padding-right: 0px;
   }
   
   #content3 .deskripsi_produk_sukai .deskripsi_atas_sukai {
@@ -6231,7 +6275,7 @@ nav {
   }
   
   #content3 .kategori_produk_sukai h5 {
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 400;
   }
   
@@ -6285,7 +6329,7 @@ nav {
   }
   
   #content3 .form_catatan_sukai {
-    height: 140px;
+    height: 80px;
     margin-bottom: 10px;
   }
   
@@ -6313,6 +6357,7 @@ nav {
   
   #content3 .tambahkeranjang_sukai_container {
     text-align: center;
+    margin-top: 10px;
     align-content: center;
   }
   
@@ -6362,17 +6407,20 @@ nav {
   
   .filter_kategori_riwayat {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin-bottom: 20px;
+    gap: 15px;
   }
   
   .filter_pill_container_riwayat {
     display: flex;
+    justify-content: space-between;
     gap:8px;
   }
   
   .filter_pill_riwayat {
-    padding: 13px 15px;
+    padding: 10px 15px;
     border-radius: 10px;
     background-color: var(--container-color);
     cursor: pointer;
@@ -6409,10 +6457,12 @@ nav {
   }
   
   
-  
-  
+  #profil .input_grup input[type="date"] {
+    font-family: 'Poppins', sans-serif !important;
+  }
   
   #profil .input_grup {
+    font-family: 'poppins';
     position: relative;
     margin: 10px 0px 5px;
   }
@@ -6760,7 +6810,7 @@ nav {
   }
 
   .blog__container {
-    padding: 1.3rem 1rem 5rem;
+    padding: 1.3rem 1rem 3rem;
   }
 
 
@@ -6821,7 +6871,7 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
-    padding: .5rem 1rem 3rem;
+    padding: 0rem 1rem 3rem;
   }
   
   #contact .getin {
@@ -6839,7 +6889,7 @@ nav {
   
     #contact .getin p {
         color: var(--text-dark);
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
         margin-bottom: 10px;
         padding-bottom: 15px;
@@ -6870,7 +6920,7 @@ nav {
         font-size: 14px;
         border-bottom: none;
         line-height: 22px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
   
     #contact .getin .getin-details .pro-links {
@@ -6882,7 +6932,7 @@ nav {
             font-size: 15px;
             border: 1px solid var(--primary-color);
             cursor: pointer;
-            margin-right: 8px;
+            margin-right: 0px;
             transition: 0.3s ease;
         }
   
@@ -6934,7 +6984,7 @@ nav {
         background: #fff;
         color: var(--text-dark);
         outline: none;
-        padding: 20px 15px;
+        padding: 20px;
         margin-bottom: 20px;
     }
   
@@ -6979,7 +7029,7 @@ nav {
   #peta {
     width: 100%;
     height: 60vh;
-    margin-bottom: 60px;
+    margin-bottom: 1rem;
   }
   
   #peta iframe {
@@ -7376,6 +7426,221 @@ nav {
   font-size: 1.7rem;
 }
 
+
+/*=============================================================================================================================*\
+  #HALAMAN DETAIL BLOG
+\*=============================================================================================================================*/
+
+.detail_blog_container {
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  padding: 0rem 1rem 2rem;
+}
+
+.content_detail_blog {
+
+}
+
+.breadcumbs_detail_blog_container {
+  display: flex; 
+  align-items: center;
+  padding: 1rem 0rem 0rem;
+  gap: 5px;
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.breadcumbs_detail_blog_container .breadcumbs_awal {
+  
+}
+
+
+.breadcumbs_detail_blog_container .breadcumbs_awal a {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.breadcumbs_detail_blog_container .breadcumbs_akhir {
+  
+}
+
+
+.breadcumbs_detail_blog_container .breadcumbs_akhir a {
+  color: #19222AB3;
+}
+
+.kembali_detail_blog {
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+  padding: 3px 10px;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.kembali_detail_blog .icon_kembali_detail_blog i {
+  font-size: 1rem;
+}
+
+.kembali_detail_blog .text_kembali_detail_blog p {
+  color: var(--text-dark);
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.kategori_tanggal_detail_blog {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.kategori_detail_blog {
+  /* padding: 3px 10px; */
+  border-radius: 20px;
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+}
+
+.kategori_detail_blog p {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.tanggal_detail_blog p {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.judul_detail_blog {
+  margin-top: 15px;
+}
+
+.judul_detail_blog h3 {
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+
+.gambar_detail_blog {
+  margin-top: 15px;
+}
+
+.gambar_detail_blog img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+.isi_detail_blog {
+  margin-top: 20px;
+}
+
+.isi_detail_blog p {
+  text-align: justify;
+  font-size: .9rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+.isi_detail_blog p span {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+
+.lain_content_detail_blog {
+  padding: 1rem 1rem 1rem;
+}
+
+.judul_blog_lainnya {
+  display: flex;
+  justify-content: start;
+}
+
+.judul_blog_lainnya h3 {
+  font-size: 1.7rem;
+}
+
+#blog_lain .blog__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 1.1rem 0;
+}
+
+#blog_lain .blog__card {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 2px solid transparent;
+  transition: .2s ease;
+}
+
+#blog_lain .blog__card .gambar_blog {
+  max-height: 230px;
+  object-fit: cover;
+}
+
+#blog_lain .blog__details {
+  padding: 1rem 1rem 1rem 0rem;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+#blog_lain .blog__details p {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+#blog_lain .blog__details h5 {
+  color: var(--text-dark);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+#blog_lain .blog__details h6 {
+  font-weight: 400;
+  color: var(--text-light);
+  font-size: .9rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+#blog_lain .blog__details a {
+  font-size: 14px ;
+  font-weight: 500;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+
+#blog_lain .blog_now {
+  padding: 0.5rem 1.5rem;
+  color: var(--primary-color);
+  outline: none;
+  border: 1px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#blog_lain .blog_now:hover {
+  color: var(--extra-light);
+  background-color: var(--primary-color);
+}
 
 }
 
