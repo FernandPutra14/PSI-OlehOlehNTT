@@ -1567,6 +1567,11 @@ nav {
   align-items: center;
 }
 
+.filter2-left,
+.filter2-right {
+  display: none;
+}
+
 .filter-left,
 .filter-right {
   display: flex;
@@ -5186,9 +5191,9 @@ nav {
 
   #daftar-produk .laris__grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
-    margin: 4rem 0;
+    margin: 1rem 0;
   }
 
   .service__grid {
@@ -5276,7 +5281,7 @@ nav {
 
   #daftar-produk .laris__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin: 1rem 0;
   }
@@ -5331,6 +5336,13 @@ nav {
     gap: 2rem;
     margin: 4rem 0;
   }
+
+  #daftar-produk .laris__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 1rem 0;
+  }
 }
 
 
@@ -5367,6 +5379,13 @@ nav {
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin: 4rem 0;
+  }
+
+  #daftar-produk .laris__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 1rem 0;
   }
 }
 
@@ -5432,7 +5451,7 @@ nav {
 
   /* Logo */
   .nav__mobile-logo img {
-    width: 130px;
+    width: 150px;
   }
 
   /* Icons */
@@ -5601,7 +5620,7 @@ nav {
   }
   
   .daftar_produk_sukai .judul_daftar_produk_sukai .judul_daftar_produk_sukai_dua p {
-    font-size: .9rem;
+    font-size: .8rem;
     cursor: pointer;
     text-decoration: underline;
     font-weight: 500;
@@ -5804,7 +5823,7 @@ nav {
   }
   
   .daftar_produk_keranjang {
-    
+    padding: 0;
   }
   
   .daftar_produk_keranjang .judul_daftar_produk_keranjang {
@@ -6044,7 +6063,7 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    padding: 0rem 1rem 5rem;
+    padding: 0rem 1rem 3rem;
   }
   
   
@@ -8087,6 +8106,74 @@ nav {
 }
 
 
+/*-----------------------------------*\
+  #NEWSLETTER
+\*-----------------------------------*/
+
+.newsletter {
+  background-color: var(--container-color);
+  padding: 2rem 1rem 1rem;
+  margin-top: 1vh;
+}
+
+.judul_newsletter {
+  font-size: 1.6rem !important;
+}
+
+.newsletter__container :is(.section__header, .section__subheader, .view__all) {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.newsletter h6 {
+  font-size: .9rem;
+  font-weight: 400;
+  text-align: center;
+  margin-inline: auto; 
+  margin-top: .5rem;
+}
+
+.newsletter__grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  margin: 1rem 0 1rem;
+  flex-wrap: wrap;
+}
+
+.newsletter__grid input[type="email"] {
+  padding: 1rem;
+  width: 100%;
+  max-width: 400px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px; 
+  outline: none;
+}
+
+.newsletter__grid input[type="email"], 
+  .newsletter__grid button {
+    width: auto;
+  }
+
+.newsletter__grid button {
+  padding: 1rem 2rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.newsletter__grid button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+
 
 /*=============================================================================================================================*\
   #HALAMAN PEMBAYARAN
@@ -8285,6 +8372,937 @@ nav {
 }
 
 
+/*=============================================================================================================================*\
+  #HALAMAN METODE PEMBAYARAN
+\*=============================================================================================================================*/
+
+.pembayaran_dua_container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+  padding: 0rem 1rem 5rem;
+}
+
+.content_pembayaran_dua_container {
+  padding: 0;
+}
+
+.tahap_pembayaran_dua_container {
+  
+}
+
+.content_pembayaran_dua_container .judul_pembayaran_dua h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.content_pembayaran_dua_container .judul_pembayaran_dua p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.content_pembayaran_dua_container .input_metode_pembayaran_container {
+
+}
+
+.input_metode_pembayaran_container {
+  margin-top: 20px;
+}
+
+.grup_metode_pembayaran {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.metode_pembayaran {
+  margin-top: 10px;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border: 2px solid transparent;
+  transition: all .3s ease;
+}
+
+.metode_pembayaran:hover {
+  border: 2px solid var(--primary-color);
+}
+
+.pembayaran_active {
+  border: 2px solid var(--primary-color);
+}
+
+.metode_pembayaran img {
+  
+}
+
+
+
+.button_pembayaran_dua {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+.kembali_pembayaran_dua {
+  color: var(--text-dark);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+.circle {
+  height: 30px;
+  width: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #ddd;
+  z-index: 2;
+}
+
+.line {
+  width: 4px;
+  background-color: #ddd;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+}
+
+.line.active2 {
+  background-color: #3E1801;
+  height: 70px; /* Active line length up to "Metode Pembayaran" */
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+.progress-step.active .circle {
+  background-color: #3E1801;
+}
+
+/*=============================================================================================================================*\
+  #HALAMAN PEMBAYARAN TIGA
+\*=============================================================================================================================*/
+
+.pembayaran_tiga_container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+  padding: 0rem 1rem 5rem;
+}
+
+.content_pembayaran_tiga_container {
+  padding: 0;
+  
+}
+
+.tahap_pembayaran_tiga_container {
+  
+}
+
+.content_pembayaran_tiga_container .judul_pembayaran_tiga h3 {
+  text-transform: uppercase;
+  font-size: 1.6rem;
+}
+
+.content_pembayaran_tiga_container .judul_pembayaran_tiga p {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.content_pembayaran_tiga_container .input_review_pembayaran_container {
+
+}
+
+.input_review_pembayaran_container {
+  margin-top: 20px;
+}
+
+
+#final_pembayaran .daftar_produk {
+
+}
+
+#final_pembayaran .daftar_produk .perproduk_keranjang {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px dotted #999;
+}
+
+#final_pembayaran .perproduk_keranjang .gambar_produk_keranjang {
+  padding-left: 0;
+}
+
+#final_pembayaran .perproduk_keranjang .gambar_produk_keranjang img {
+  border-radius: 10px;
+}
+
+#final_pembayaran .deskripsi_produk_keranjang {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0;
+}
+
+#final_pembayaran .deskripsi_atas {
+
+}
+
+#final_pembayaran .deskripsi_atas .nama_produk_keranjang h3 {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#final_pembayaran .kategori_produk_keranjang {
+  margin-bottom: 5px;
+}
+
+#final_pembayaran .kategori_produk_keranjang h5 {
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+
+#final_pembayaran .stok_produk_keranjang {
+  margin-bottom: 10px;
+}
+
+#final_pembayaran .stok_produk_keranjang p {
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+
+#final_pembayaran .atur_stok_harga {
+  display: flex;
+  justify-content: space-between;
+}
+
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang {
+  display: inline-flex;
+  padding: 0 20px;
+  align-items: center;
+  border-radius: 18px;
+  gap: 30px;
+  background-color: var(--container-color);
+}
+
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .kurang h3,
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .tambah h3{
+  font-weight: 500;
+}
+
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .kurang,
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .tambah{
+  cursor: pointer;
+}
+
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .jumlah h3 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#final_pembayaran .atur_stok_harga .harga_produk_keranjang h5 {
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+
+#final_pembayaran .harga_diskon_keranjang {
+  display: flex;
+  justify-content: start;
+}
+
+#final_pembayaran .harga_diskon_keranjang h5 {
+  font-size: 1rem;
+  color: red;
+}
+
+#final_pembayaran .deskripsi_bawah {
+
+}
+
+#final_pembayaran .deskripsi_bawah .action_produk_keranjang {
+  display: flex;
+  gap: 7px;
+}
+
+#final_pembayaran .action_produk_keranjang i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+
+
+.judul_total_keranjang h3 {
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.final_harga {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.final_harga .total_ringkasan_keranjang_container {
+}
+
+.final_harga .total_ringkasan_keranjang_container .jumlah_produk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.final_harga .total_ringkasan_keranjang_container .jumlah_produk h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.final_harga .total_ringkasan_keranjang_container .harga_total_produk {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.final_harga .total_ringkasan_keranjang_container .harga_total_produk h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.final_harga .total_ringkasan_keranjang_container .biaya_pengiriman {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.final_harga .total_ringkasan_keranjang_container .biaya_pengiriman h4 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.final_harga .total_ringkasan_keranjang_container .total_semua {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed #999;
+}
+
+.final_harga .total_ringkasan_keranjang_container .total_semua h4 {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+
+.final_harga .total_checkout {
+  margin-top: 10px;
+}
+
+.final_harga .total_checkout a {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+
+
+
+.button_pembayaran_tiga {
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+  align-content: center;
+  align-items: center;
+}
+
+.kembali_pembayaran_tiga {
+  color: var(--text-dark);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  background-color: #ddd;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  background-color: #ddd;
+  z-index: 2;
+}
+
+.line {
+  width: 4px;
+  background-color: #ddd;
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+}
+
+.line.active3 {
+  background-color: #3E1801;
+  height: 120px; /* Active line length up to "Metode Pembayaran" */
+  position: absolute;
+  left: 15px;
+  top: 0;
+}
+
+.progress-step.active .circle {
+  background-color: #3E1801;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*=============================================================================================================================*\
+  #HALAMAN PRODUK
+\*=============================================================================================================================*/
+
+/* Toast */
+.toast {
+  position: fixed;
+  top: 15px;
+  right: 30px;
+  background: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px 35px 20px 25px;
+  z-index: 150;
+  border-left: 6px solid #5CB85C ;
+  overflow: hidden;
+  transform: translateX(calc(100% + 30px));
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.35);
+}
+
+.toast.active {
+  transform: translateX(0%);
+}
+
+.toast .toast-content {
+  display: flex;
+  align-items: center;
+}
+
+.toast-content .check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  background-color: #5CB85C ;
+}
+
+.toast-content .message {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.message .text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #666666;
+}
+
+.message .text .text-1 {
+  font-weight: 600;
+  color: #333;
+}
+
+.toast .close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.toast .close:hover {
+  opacity: 1;
+}
+
+.toast .progress {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  background: #ddd;
+}
+
+.toast .progress::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #5CB85C ;
+}
+
+.progress.active::before {
+  animation: progress 3s linear forwards;
+}
+
+
+@keyframes progress {
+  100% {
+    right: 100%;
+  }
+}
+
+
+.breadcumbs_produk_container {
+  display: flex; 
+  align-items: center;
+  padding: 0rem 1rem 0rem;
+  gap: 5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.breadcumbs_produk_container .breadcumbs_awal a {
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+.breadcumbs_produk_container .breadcumbs_akhir a {
+  color: #19222AB3;
+}
+
+
+/*-----------------------------------*\
+  #JUDUL
+\*-----------------------------------*/
+
+.judul-halaman-produk-container {
+  margin: auto;
+  padding: .5rem 1rem 0rem;
+}
+
+.judul-halaman-produk-container h4 {
+  font-size: .9rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.nama_kategori_judul {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.nama_kategori_judul h3 {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 2rem;
+}
+
+.nama_kategori_judul p {
+  font-weight: 400;
+  color: var(--text-light);
+  align-content: end;
+  font-size: .8rem;
+}
+
+
+/*-----------------------------------*\
+  #FILTER PRODUK 
+\*-----------------------------------*/
+
+#filter {
+  position: relative;
+  top: 0px;
+  margin-bottom: 10px;
+  z-index: 100;
+}
+
+.filter_produk_container {
+
+  padding: .9rem 1rem 0rem;
+  margin: auto;
+}
+
+.filter-border {
+  background-color: white;
+  border: 1.3px solid var(--primary-color-dark);
+  border-radius: 8px;
+  padding: 8px 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-left,
+.filter-right {
+  display: none;
+  gap: 0.1rem;
+  align-items: center;
+}
+
+.filter2-left {
+  display: block;
+}
+
+.filter2-right {
+  display: block;
+}
+
+.filter-left select, 
+.filter-right select {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--primary-color-dark);
+  border-radius: 3px;
+  background-color: var(--white);
+  color: var(--primary-color-dark);
+  outline: none;
+}
+
+.filter-left select:hover, 
+.filter-right select:hover {
+  cursor: pointer;
+}
+
+/* Filter */
+.filter_container {
+  display: flex;
+  border-radius: 5px;
+  border: .8px solid transparent;
+  align-items: center;
+  padding: 10px;
+  transition: .1s ease;
+}
+
+.filter_container:hover {
+  cursor: pointer;
+  border: .8px solid #030712;
+}
+
+.filter_container.active{
+  border: .8px solid #030712;
+}
+
+.filter_container .nama_filter {
+  text-align: center;
+  justify-content: center;
+}
+
+.filter_container .nama_filter h6 {
+  /* Tidak dapat memilih teks */
+  user-select: none; 
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  font-weight: 500;
+  font-size: .95rem;
+  text-transform: uppercase;
+}
+
+.filter-dropdown {
+  display: none;
+  padding: 8px 20px;
+  background-color: white;
+  border: 1px solid var(--primary-color-dark);
+  border-radius: 5px;
+  width: 200px;
+  margin-top: 5px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-dropdown-kategori {
+  width: 300px !important;
+}
+
+.filter-dropdown label {
+  display: block;
+  padding: 5px 0;
+  font-size: 1rem;
+  color: #000;
+}
+
+.filter-dropdown input[type="checkbox"] {
+  color: #000 !important;
+  margin-right: 8px;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.area_filter {
+  position: relative;
+}
+
+/* Input Range */
+.range-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.range-slider input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 5px 0;
+}
+
+.range-slider input[type="range"]::-webkit-slider-runnable-track {
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+.range-slider input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background: var(--primary-color-dark);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.range-slider input[type="range"]::-moz-range-track {
+  height: 5px;
+  background: #ddd;
+  border: none;
+  border-radius: 3px;
+}
+
+.range-slider input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: var(--primary-color-dark);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/*-----------------------------------*\
+  #PILIHAN FILTER
+\*-----------------------------------*/
+
+.pilihan_filter_container {
+  margin: auto;
+  padding: 0rem 1rem 0rem;
+  display: block;
+  gap: 8px;
+}
+
+.pilihan_filter_container .pilihan_container {
+  gap: 5px;
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--container-color);
+  border-radius: 5px;
+  padding: 5px 8px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.pilihan_filter_container .pilihan_container p {
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.pilihan_filter_container .pilihan_container_hapus {
+  gap: 5px;
+  display: inline-flex;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.pilihan_filter_container .pilihan_container_hapus h5 {
+  font-size: .9rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+
+/*-----------------------------------*\
+  #DAFTAR PRODUK
+\*-----------------------------------*/
+
+#daftar-produk {
+  background-color: #fff;
+  padding-top: 8px;
+}
+
+#daftar-produk .laris__container {
+  padding: 0rem 1rem 0rem;
+  margin: auto;
+}
+
+#daftar-produk .laris__container :is(.section__header, .section__subheader, .view__all) {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#daftar-produk .laris__grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2rem;
+  margin: 1rem 0;
+}
+
+#daftar-produk .laris__card {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: .2s ease;
+}
+
+#daftar-produk .laris__card:hover {
+  border: 2px solid var(--primary-color);
+}
+
+#daftar-produk .laris__card .gambar_terlaris {
+  max-height: 230px;
+  object-fit: cover;
+}
+
+#daftar-produk .diskon_produk {
+  position: absolute;
+  border-radius: 5px;
+  background-color: orange;
+  padding: 3px 10px;
+  top: 0;
+  left: 0;
+  margin: 10px;
+}
+
+#daftar-produk .diskon_produk p {
+  color: white;
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+#daftar-produk .laris__details {
+  padding: 1rem;
+  display: grid;
+  gap: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+#daftar-produk .judul_sukai {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#daftar-produk .laris__details p {
+  font-weight: 400;
+  font-size: .9rem;
+  color: var(--text-light);
+}
+
+#daftar-produk .laris__details h6 {
+  color: var(--text-dark);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#daftar-produk .bagian__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#daftar-produk .price_dua {
+  display: flex;
+  gap: 10px;
+}
+
+#daftar-produk .price span {
+  font-weight: 500;
+  font-size: .85rem;
+  color: var(--text-light);
+  text-decoration:line-through;
+}
+
+#daftar-produk .price_diskon span {
+  font-weight: 600;
+  font-size: 1rem;
+  color: rgb(234, 31, 31);
+}
+
+#daftar-produk .sukai, .keranjangi {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+#daftar-produk .action-produk-card .sukai:hover {
+  content: "\e600";
+  font-family: "remixicon";
+}
+
+#daftar-produk .action-produk-card .keranjangi:hover {
+  content: "\e651";
+  font-family: "remixicon";
+}
+
+#daftar-produk .jumlah_terjual {
+  
+}
+
+#daftar-produk .jumlah_terjual h5 {
+  font-size: .7rem;
+  font-weight: 400;
+}
+
+
+
+
+
 }
 
 
@@ -8293,20 +9311,10 @@ nav {
 /*---------------------------------------------------------------------------------------------------*\
   #RESPONSIVE LEBAR DI BAWAH 400 PX
 \*---------------------------------------------------------------------------------------------------*/
-
 @media (max-width:400px) {
-  .newsletter__grid button {
-    padding: 1rem 2rem;
-    margin-top: 10px;
-    background-color: var(--primary-color);
-    color: var(--white);
-    font-size: 1rem;
-    border: none;
-    border-radius: 0 0px 0px 0; 
-    cursor: pointer;
-    white-space: nowrap;
-  }
-
+.newsletter__grid button {
+  margin-top: 10px;
+}
 
 
   /*-----------------------*\
