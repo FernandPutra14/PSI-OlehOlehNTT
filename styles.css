@@ -578,7 +578,7 @@ nav {
 }
 
 .nav__top {
-  background-color: var(--container-color);
+  background-color: var(--primary-color);
 }
 
 .nav__top .container_nav_satu {
@@ -588,6 +588,7 @@ nav {
   max-width: 1200px; 
   margin: 0 auto; 
   padding: .4rem 1rem;
+  color: var(--white);
 }
 
 .nav__logo {
@@ -633,7 +634,7 @@ nav {
 .nav_tambahan a {
   font-size: .8rem;
   font-weight: 500;
-  color: var(--text-dark);
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -651,7 +652,7 @@ nav {
 .nav__auth a {
   font-size: .8rem;
   font-weight: 500;
-  color: var(--text-dark);
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -669,7 +670,7 @@ nav {
   background: none;
   border: none;
   font-size: .8rem;
-  color: var(--text-dark);
+  color: var(--white);
   text-decoration: none;
   cursor: pointer;
 }
