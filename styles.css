@@ -5162,6 +5162,12 @@ nav {
 /*---------------------------------------------------------------------------------------------------*\
   #RESPONSIVE LEBAR DI ATAS 540 PX
 \*---------------------------------------------------------------------------------------------------*/
+@media (min-width:540px) {
+  .filter-modal {
+    display: none; /* Sembunyikan modal untuk layar yang lebih besar */
+  }
+}
+
 
 @media (min-width:540px) {
   .stats__container {
@@ -5493,6 +5499,127 @@ nav {
 }
 
 
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--white-asli);
+  z-index: 103;
+  transition: left 0.3s ease; /* Smooth transition */
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+/* Sidebar Header */
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-logo img {
+  width: 130px;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: color 0.2s ease; /* Smooth hover effect */
+}
+
+.close-button:hover {
+  color: var(--primary-color); /* Change color on hover */
+}
+
+/* Sidebar Links */
+.sidebar-links {
+  margin-top: 2rem;
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Increase spacing between links */
+}
+
+.sidebar-links li {
+  font-size: 1.2rem;
+}
+
+.sidebar-links a {
+  text-decoration: none;
+  color: var(--text-dark);
+  position: relative;
+  padding: 0.5rem 0;
+  transition: color 0.2s ease;
+}
+
+.sidebar-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-color); /* Underline effect */
+  transition: width 0.2s ease;
+}
+
+.sidebar-links a:hover::after {
+  width: 100%; /* Full underline on hover */
+}
+
+.sidebar-links a:focus::after, .sidebar-links a:active::after {
+  width: 100%; /* Full underline on click or focus */
+}
+
+/* No scroll when sidebar is open */
+.no-scroll {
+  overflow: hidden;
+}
+
+/* Responsive for small devices */
+@media screen and (max-width: 768px) {
+  .sidebar-header {
+    padding-bottom: 1.2rem;
+  }
+  
+  .sidebar-logo img {
+    width: 130px;
+  }
+
+  .close-button {
+    font-size: 1.5rem;
+  }
+  
+  .sidebar-links {
+    margin-top: 1.5rem;
+    gap: 1rem;
+  }
+  
+  .sidebar-links a {
+    font-size: 1.05rem;
+  }
+
+}
+
+
+
+
+
 
 /*---------------------------------------------------------------------------------------------------*\
   #RESPONSIVE LEBAR DI DIBAWAH 900 PX -- Demi Navbar Super Responsive
@@ -5516,6 +5643,245 @@ nav {
   border: 2px solid var(--primary-color);
   border-radius: 10px;
 }
+
+.content_seluruh {
+  padding-top: 60px;
+}
+
+.footer__container {
+display: grid;
+gap: 1.5rem;
+padding: 2rem 1rem 2rem;
+}
+
+.content_berdasarkan_list {
+}
+
+.profil_container {
+  display: flex;
+  gap: 10px;
+}
+
+.button_ganti_email button {
+  font-size: .83rem !important;
+}
+
+.sticky_total_keranjang {
+  top: 90px;
+  position: sticky;
+}
+
+.total_ringkasan_keranjang_container .jumlah_produk h4 {
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.total_ringkasan_keranjang_container .harga_total_produk h4 {
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.total_ringkasan_keranjang_container .biaya_pengiriman h4 {
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.total_ringkasan_keranjang_container .total_semua h4 {
+  font-size: .9rem;
+  font-weight: bold;
+}
+
+#filter {
+  position: sticky;
+  top: 65px;
+  margin-bottom: 10px;
+  z-index: 100;
+}
+
+.isi_detail_produk_container {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.gambar_detail_produk_container img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.detail_belanja .belanja-btn {
+  font-family: 'poppins';
+  padding: 13px;
+  outline: none;
+  border: none;
+  font-size: .8rem;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.detail_sukai .wish-btn {
+  font-family: 'poppins';
+  padding: 10px 13px;
+  border: 1px solid var(--primary-color-dark);
+  font-size: .83rem;
+  color: var(--text-dark);
+  background-color: transparent;
+  border-radius: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.detail_belanja .tambah_kurang_produk .jumlah h3 {
+  font-size: .85rem;
+  font-weight: 500;
+}
+
+#blog_halaman .blog__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+#blog_lain .blog__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.progress-container {
+  position: relative;
+  margin: 0px;
+}
+
+.input_alamat_pembayaran_container .judul_alamat_pembayaran {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lanjutkan_pembayaran {
+  font-size: .83rem !important;
+}
+
+.kembali_pembayaran {
+  font-size: .9rem;
+  color: var(--text-dark);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.lanjutkan_pembayaran2 {
+  font-size: .83rem !important;
+}
+
+.kembali_pembayaran_dua {
+  font-size: .9rem;
+  color: var(--text-dark);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#final_pembayaran .atur_stok_harga {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#final_pembayaran .harga_diskon_keranjang {
+  display: flex;
+  justify-content: start;
+  margin-bottom: 5px;
+}
+
+#final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang {
+  display: inline-flex;
+  padding: 0 20px;
+  align-items: center;
+  border-radius: 18px;
+  gap: 30px;
+  background-color: var(--container-color);
+  margin-bottom: 5px;
+}
+
+.filter-dropdown-terlaris {
+  left: -90px !important;
+}
+
+
+/*-----------------------------------*\
+  #HERO / HEADER
+\*-----------------------------------*/
+
+
+.header__image img {
+  max-width: 300px;
+  margin-inline: auto;
+}
+
+.header__image::after {
+  bottom: -3rem;
+  left: 50%;
+  transform: translateX(calc(-50% - .5rem));
+  border: 5px solid var(--text-dark);
+  opacity: 0.75;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+.header__content h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+  color: var(--text-dark);
+  text-align: center;
+}
+
+
+.header__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+.deskripsi_produk_sukai {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 0;
+  padding-right: 10px;
+}
+
+.tambahkeranjang button {
+  padding: 10px 10px;
+  font-size: .8rem;
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+.simpan_catatan button {
+  padding: 8px 15px;
+  font-size: .8rem;
+}
+
+
+
+
+
+
+
 }
 
 
@@ -5525,7 +5891,101 @@ nav {
 
 @media (max-width:500px) {
 
-  .content_seluruh {
+
+  /* Container untuk Filter yang Muncul dari Bawah */
+.filter-modal {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+  transition: bottom 0.4s ease-in-out;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Agar bisa discroll jika konten panjang */
+  padding: 1.5rem;
+}
+
+.filter-modal.active {
+  padding-top: 90px;
+  bottom: 0; /* Muncul dari bawah */
+}
+
+.filter-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-modal-header h6 {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.filter-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.filter-modal-content {
+  margin-top: 1rem;
+}
+
+/* Filter Item Styling */
+.filter-modal-content .filter-group {
+  margin-bottom: 1rem;
+}
+
+.filter-modal-content label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: .9rem;
+}
+
+.filter-modal-content label input {
+  margin-right: 0.5rem;
+}
+
+.filter-modal-content .range-slider {
+  margin-top: 0.5rem;
+}
+
+.range-slider input[type="range"] {
+  width: 100%;
+}
+
+/* Tombol Apply Filter */
+.filter-modal-footer {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-modal-footer button {
+  padding: 10px 12px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: .83rem;
+  border-radius: 0.5rem;
+}
+
+.filter-modal-footer button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.filter-group h6 {
+  font-size: .98rem;
+}
+
+
+.content_seluruh {
     padding-top: 90px;
 }
 
@@ -6605,13 +7065,13 @@ nav {
 
 
   .breadcumbs_blog_container {
-    display: flex; 
+    display: flex;
     align-items: center;
-    padding: 0rem 1rem 1rem;
+    padding: 0rem 1rem .5rem;
     gap: 5px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-  }
+}
   
   .breadcumbs_blog_container .breadcumbs_awal {
     
@@ -6890,7 +7350,7 @@ nav {
     align-items: center;
     padding: 0rem 1rem 0rem;
     gap: 5px;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
   }
   
@@ -6915,7 +7375,7 @@ nav {
   
   .judul_kontak {
     display: flex;
-    padding: 0rem 1rem 0rem;
+    padding: .5rem 1rem 0rem;
   }
   
   .judul_kontak .judul {
@@ -6924,7 +7384,7 @@ nav {
   
   .judul_kontak .judul h3 {
     text-transform: uppercase;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: italic;
   }
   
@@ -6953,13 +7413,13 @@ nav {
     }
   
     #contact .getin p {
-        color: var(--text-dark);
-        font-size: .85rem;
-        line-height: 24px;
-        margin-bottom: 10px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid #e5e4ed;
-    }
+      color: var(--text-dark);
+      font-size: .85rem;
+      line-height: 24px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #e5e4ed;
+  }
   
     #contact .getin h3 {
         color: var(--primary-color);
@@ -7117,7 +7577,7 @@ nav {
   display: grid;
   gap: 4rem 2rem;
   overflow: hidden;
-  padding: 1.3rem 1rem 3rem;
+  padding: 1.8rem 1rem 3rem;
 }
 
 .header__image {
@@ -7240,7 +7700,7 @@ nav {
   align-items: center;
   gap: 5px;
   padding: 1rem 0rem 0rem;
-  font-size: .85rem;
+  font-size: 13px;
   font-weight: 500;
 }
 
@@ -7268,7 +7728,7 @@ nav {
 }
 
 .detail_produk_container {
-  padding: 1rem 1rem 3rem;
+  padding: 1rem 1rem 1rem;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -7846,9 +8306,9 @@ nav {
 
 .laris__grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 1rem;
-  margin: 2rem 0;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .5rem;
+  margin: 1rem 0 2rem;
 }
 
 .laris__card-link {
@@ -7892,9 +8352,9 @@ nav {
 }
 
 .laris__details {
-  padding: 1rem;
+  padding: .5rem .3rem .2rem;
   display: grid;
-  gap: 0.3rem;
+  gap: 0.25rem;
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-dark);
@@ -7909,13 +8369,13 @@ nav {
 
 .laris__details p {
   font-weight: 400;
-  font-size: .9rem;
+  font-size: .8rem;
   color: var(--text-light);
 }
 
 .laris__details h6 {
   color: var(--text-dark);
-  font-size: 1.1rem;
+  font-size: .95rem;
   font-weight: 600;
 }
 
@@ -7927,7 +8387,8 @@ nav {
 
 .price_dua {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 3px;
 }
 
 .price span {
@@ -7939,12 +8400,12 @@ nav {
 
 .price_diskon span {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: .85rem;
   color: rgb(234, 31, 31);
 }
 
 .sukai, .keranjangi, .tidak-sukai {
-  font-size: 20px;
+  font-size: 17px;
   font-weight: bold;
   cursor: pointer;
   transition: 0.2s ease-in-out;
@@ -8235,12 +8696,12 @@ nav {
 
 .content_pembayaran_container .judul_pembayaran h3 {
   text-transform: uppercase;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .content_pembayaran_container .judul_pembayaran p {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .content_pembayaran_container .input_kontak_pembayaran_container {
@@ -8260,14 +8721,14 @@ nav {
 
 .input_alamat_pembayaran_container .judul_alamat_pembayaran .judul_alamat h5 {
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: .9rem;
 }
 
 .input_alamat_pembayaran_container .judul_alamat_pembayaran .judul_alamat h5 span {
   margin-left: 10px;
   text-transform: none !important;
   font-weight: 400;
-  font-size: .8rem;
+  font-size: .75rem;
 }
 
 .input_alamat_pembayaran_container .judul_alamat_pembayaran .ubah_alamat p {
@@ -8355,11 +8816,15 @@ nav {
 }
 
 .kembali_pembayaran {
+  font-size: .9rem;
   color: var(--text-dark);
   text-decoration: underline;
   cursor: pointer;
 }
 
+.lanjutkan_pembayaran {
+  font-size: .83rem !important;
+}
 
 .progress-container {
   position: relative;
@@ -8369,7 +8834,9 @@ nav {
 .progress-step {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: .9rem;
+  margin-bottom: 10px;
 }
 
 .progress-step h4 {
@@ -8432,12 +8899,12 @@ nav {
 
 .content_pembayaran_dua_container .judul_pembayaran_dua h3 {
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .content_pembayaran_dua_container .judul_pembayaran_dua p {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .content_pembayaran_dua_container .input_metode_pembayaran_container {
@@ -8445,7 +8912,7 @@ nav {
 }
 
 .input_metode_pembayaran_container {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .grup_metode_pembayaran {
@@ -8453,6 +8920,8 @@ nav {
   width: 100%;
   gap: 10px;
 }
+
+
 
 .metode_pembayaran {
   margin-top: 10px;
@@ -8487,9 +8956,14 @@ nav {
 }
 
 .kembali_pembayaran_dua {
+  font-size: .9rem;
   color: var(--text-dark);
   text-decoration: underline;
   cursor: pointer;
+}
+
+.lanjutkan_pembayaran2 {
+  font-size: .83rem !important;
 }
 
 
@@ -8549,12 +9023,12 @@ nav {
 
 .content_pembayaran_tiga_container .judul_pembayaran_tiga h3 {
   text-transform: uppercase;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 
 .content_pembayaran_tiga_container .judul_pembayaran_tiga p {
   font-weight: 400;
-  font-size: 1rem;
+  font-size: .8rem;
 }
 
 .content_pembayaran_tiga_container .input_review_pembayaran_container {
@@ -8562,7 +9036,7 @@ nav {
 }
 
 .input_review_pembayaran_container {
-  margin-top: 20px;
+  margin-top: 0px;
 }
 
 
@@ -8596,7 +9070,7 @@ nav {
 }
 
 #final_pembayaran .deskripsi_atas .nama_produk_keranjang h3 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: bold;
   font-style: italic;
@@ -8607,7 +9081,7 @@ nav {
 }
 
 #final_pembayaran .kategori_produk_keranjang h5 {
-  font-size: 1.05rem;
+  font-size: .9rem;
   font-weight: 400;
 }
 
@@ -8616,7 +9090,7 @@ nav {
 }
 
 #final_pembayaran .stok_produk_keranjang p {
-  font-size: .9rem;
+  font-size: .8rem;
   font-weight: 500;
 }
 
@@ -8647,11 +9121,11 @@ nav {
 
 #final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .jumlah h3 {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: .85rem;
 }
 
 #final_pembayaran .atur_stok_harga .harga_produk_keranjang h5 {
-  font-size: 1rem;
+  font-size: .9rem;
   text-decoration: line-through;
 }
 
@@ -8661,7 +9135,7 @@ nav {
 }
 
 #final_pembayaran .harga_diskon_keranjang h5 {
-  font-size: 1rem;
+  font-size: .9rem;
   color: red;
 }
 
@@ -8675,7 +9149,7 @@ nav {
 }
 
 #final_pembayaran .action_produk_keranjang i {
-  font-size: 22px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -8683,7 +9157,7 @@ nav {
 
 #final_pembayaran .judul_total_keranjang h3 {
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 .final_harga {
@@ -8704,7 +9178,7 @@ nav {
 }
 
 .final_harga .total_ringkasan_keranjang_container .jumlah_produk h4 {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 400;
 }
 
@@ -8718,7 +9192,7 @@ nav {
 }
 
 .final_harga .total_ringkasan_keranjang_container .harga_total_produk h4 {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 400;
 }
 
@@ -8732,7 +9206,7 @@ nav {
 }
 
 .final_harga .total_ringkasan_keranjang_container .biaya_pengiriman h4 {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: 400;
 }
 
@@ -8746,7 +9220,7 @@ nav {
 }
 
 .final_harga .total_ringkasan_keranjang_container .total_semua h4 {
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: bold;
 }
 
@@ -8775,6 +9249,7 @@ nav {
 }
 
 .kembali_pembayaran_tiga {
+  font-size: .9rem;
   color: var(--text-dark);
   text-decoration: underline;
   cursor: pointer;
@@ -8804,7 +9279,7 @@ nav {
 
 .line.active3 {
   background-color: #3E1801;
-  height: 120px; /* Active line length up to "Metode Pembayaran" */
+  height: 100px;
   position: absolute;
   left: 15px;
   top: 0;
@@ -8835,11 +9310,11 @@ nav {
 .toast {
   position: fixed;
   top: 15px;
-  right: 30px;
+  right: 10px;
   background: #fff;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  padding: 20px 35px 20px 25px;
+  padding: 10px 25px 10px 15px;
   z-index: 150;
   border-left: 6px solid #5CB85C ;
   overflow: hidden;
@@ -8875,7 +9350,7 @@ nav {
 }
 
 .message .text {
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: #666666;
 }
@@ -8934,7 +9409,7 @@ nav {
   align-items: center;
   padding: 0rem 1rem 0rem;
   gap: 5px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 500;
 }
 
@@ -8958,7 +9433,7 @@ nav {
 }
 
 .judul-halaman-produk-container h4 {
-  font-size: .9rem;
+  font-size: .8rem;
   text-transform: uppercase;
   font-weight: 400;
 }
@@ -8973,7 +9448,7 @@ nav {
 .nama_kategori_judul h3 {
   font-weight: bold;
   font-style: italic;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .nama_kategori_judul p {
@@ -8997,15 +9472,18 @@ nav {
 
 .filter_produk_container {
 
-  padding: .9rem 1rem 0rem;
+  padding: .9rem 0rem 0rem;
   margin: auto;
 }
 
 .filter-border {
   background-color: white;
-  border: 1.3px solid var(--primary-color-dark);
-  border-radius: 8px;
-  padding: 8px 8px;
+  border-top: 1.3px solid var(--primary-color-dark);
+  border-bottom: 1.3px solid var(--primary-color-dark);
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  padding: 5px 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9048,7 +9526,7 @@ nav {
   border-radius: 5px;
   border: .8px solid transparent;
   align-items: center;
-  padding: 10px;
+  padding: 3px;
   transition: .1s ease;
 }
 
@@ -9072,7 +9550,7 @@ nav {
   -webkit-user-select: none;
   -moz-user-select: none;
   font-weight: 500;
-  font-size: .95rem;
+  font-size: .78rem;
   text-transform: uppercase;
 }
 
@@ -9181,7 +9659,7 @@ nav {
 }
 
 .pilihan_filter_container .pilihan_container p {
-  font-size: .9rem;
+  font-size: .8rem;
   font-weight: 400;
 }
 
@@ -9194,7 +9672,7 @@ nav {
 }
 
 .pilihan_filter_container .pilihan_container_hapus h5 {
-  font-size: .9rem;
+  font-size: .8rem;
   font-weight: 400;
   text-decoration: underline;
 }
@@ -9222,8 +9700,8 @@ nav {
 
 #daftar-produk .laris__grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  gap: .5rem;
   margin: 1rem 0;
 }
 
@@ -9262,9 +9740,9 @@ nav {
 }
 
 #daftar-produk .laris__details {
-  padding: 1rem;
+  padding: .5rem .3rem .2rem;
   display: grid;
-  gap: 0.3rem;
+  gap: 0.25rem;
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-dark);
@@ -9279,13 +9757,13 @@ nav {
 
 #daftar-produk .laris__details p {
   font-weight: 400;
-  font-size: .9rem;
+  font-size: .8rem;
   color: var(--text-light);
 }
 
 #daftar-produk .laris__details h6 {
   color: var(--text-dark);
-  font-size: 1.1rem;
+  font-size: .95rem;
   font-weight: 600;
 }
 
@@ -9297,7 +9775,8 @@ nav {
 
 #daftar-produk .price_dua {
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 0px;
 }
 
 #daftar-produk .price span {
@@ -9309,12 +9788,12 @@ nav {
 
 #daftar-produk .price_diskon span {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: .85rem;
   color: rgb(234, 31, 31);
 }
 
 #daftar-produk .sukai, .keranjangi {
-  font-size: 20px;
+  font-size: 17px;
   cursor: pointer;
   transition: 0.2s ease-in-out;
 }
@@ -9487,7 +9966,7 @@ nav {
 
 .lupa_password_container {
   max-width: 600px;
-  margin-top: 5vh;
+  margin-top: 2vh;
   display: flex;
   gap: 1rem;
   flex-direction: column;
@@ -9511,9 +9990,10 @@ nav {
 }
 
 .perintah_lupa_password .email_password a {
+  font-size: .9rem;
   cursor: pointer;
   text-decoration: underline;
-  font-size: var(--text-light);
+  color: var(--text-light);
 }
 
 .perintah_lupa_password h3 {
@@ -9524,7 +10004,7 @@ nav {
 }
 
 .perintah_lupa_password p {
-  font-size: 1rem;
+  font-size: .9rem;
 }
 
 #lupa_password .input_grup {
@@ -9631,7 +10111,7 @@ nav {
 
   .daftar_container {
     max-width: 600px;
-    margin-top: 5vh;
+    margin-top: 2vh;
     display: flex;
     gap: 1rem;
     flex-direction: column;
@@ -9646,27 +10126,27 @@ nav {
   }
   
   .perintah_daftar h3 {
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     line-height: 2.1rem;
     font-weight: 600;
     margin-bottom: 10px;
   }
   
   .perintah_daftar p {
-    font-size: 1rem;
+    font-size: .9rem;
   }
   
   .perintah_daftar a {
     cursor: pointer;
-    color: blue;
+    color: var(--text-light);
     font-weight: 400;
-    font-size: .95rem;
+    font-size: .9rem;
     text-decoration: underline;
   }
   
   #daftar .input_grup {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   
@@ -9709,6 +10189,7 @@ nav {
   
   #daftar .bagi_bagi {
     display: flex;
+    gap: 0px;
     flex-direction: column;
     margin: 0;
   }
@@ -9716,7 +10197,7 @@ nav {
   #daftar .bagi_bagi .input_grup {
     position: relative;
     flex: 1;
-    margin: 10px 0;
+    margin: 0px 0 10px;
   }
   
   #daftar .bagi_bagi .input_grup label {

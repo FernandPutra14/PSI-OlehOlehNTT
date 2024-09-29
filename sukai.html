@@ -110,6 +110,25 @@
   </div>
 </nav>
 
+
+<!-- Sidebar -->
+<div id="sidebar" class="sidebar">
+  <div class="sidebar-header">
+    <a href="index.html" class="sidebar-logo">
+      <img src="assets/logo_oleh_oleh_ntt3_2.png" alt="Logo">
+    </a>
+    <button class="close-button"><i class="ri-close-line"></i></button>
+  </div>
+  <ul class="sidebar-links">
+    <li><a href="index.html">Beranda</a></li>
+    <li><a href="produk.html">Produk</a></li>
+    <li><a href="blog.html">Blog</a></li>
+    <li><a href="kontak.html">Kontak</a></li>
+    <li><a href="profil.html">Profile Saya</a></li>
+    <li><a href="">Logout</a></li>
+  </ul>
+</div>
+
   <!--======================================================= AKHIR NAVBAR =======================================================-->
 
   <div class="content_seluruh">
@@ -172,15 +191,15 @@
             </div>
           </div>
         </div>
-          <div class="col-12 col-md-4 catatan_sukai_container">
+          <div class="col-12 col-md-3 col-lg-4 catatan_sukai_container">
             <div class="form_catatan_sukai">
-              <textarea spellcheck="false" placeholder="Tambahkan catatan Produk..."></textarea>
+              <textarea spellcheck="false" placeholder="Catatan Produk..."></textarea>
             </div>
             <div class="simpan_catatan">
               <button class="btn">Simpan Catatan</button>
             </div>
           </div>
-          <div class="col-12 col-md-3 tambahkeranjang_sukai_container">          
+          <div class="col-12 col-md-3 col-lg-3 tambahkeranjang_sukai_container">          
             <div class="tambahkeranjang">
                 <button class="btn" onclick="addItem(getProdukById(11));toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
                   Tambahkan ke Keranjang
@@ -233,15 +252,15 @@
             </div>
           </div>
         </div>
-          <div class="col-12 col-md-4 catatan_sukai_container">
+          <div class="col-12 col-md-3 col-lg-4 catatan_sukai_container">
             <div class="form_catatan_sukai">
-              <textarea spellcheck="false" placeholder="Tambahkan catatan Produk..."></textarea>
+              <textarea spellcheck="false" placeholder="Catatan Produk..."></textarea>
             </div>
             <div class="simpan_catatan">
               <button class="btn">Simpan Catatan</button>
             </div>
           </div>
-          <div class="col-12 col-md-3 tambahkeranjang_sukai_container">          
+          <div class="col-12 col-md-3 col-lg-3 tambahkeranjang_sukai_container">          
             <div class="tambahkeranjang">
                 <button class="btn" onclick="addItem(getProdukById(11));toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
                   Tambahkan ke Keranjang
@@ -294,15 +313,15 @@
             </div>
           </div>
         </div>
-          <div class="col-12 col-md-4 catatan_sukai_container">
+          <div class="col-12 col-md-3 col-lg-4 catatan_sukai_container">
             <div class="form_catatan_sukai">
-              <textarea spellcheck="false" placeholder="Tambahkan catatan Produk..."></textarea>
+              <textarea spellcheck="false" placeholder="Catatan Produk..."></textarea>
             </div>
             <div class="simpan_catatan">
               <button class="btn">Simpan Catatan</button>
             </div>
           </div>
-          <div class="col-12 col-md-3 tambahkeranjang_sukai_container">          
+          <div class="col-12 col-md-3 col-lg-3 tambahkeranjang_sukai_container">          
             <div class="tambahkeranjang">
                 <button class="btn" onclick="addItem(getProdukById(11));toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
                   Tambahkan ke Keranjang
@@ -405,6 +424,7 @@
   <script src="./js/toast.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/nav.js"></script>
+  <script src="./js/sidebar.js"></script>
   <!-- <script type="text/javascript">
     const wishlist = getWishList()
     const containerDaftarProduk = document.querySelector('.daftar_produk');

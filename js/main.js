@@ -310,3 +310,37 @@ function toggleFilter(element) {
 
   element.classList.add('active_pill_riwayat');
 }
+
+
+// Fungsi untuk membuka modal filter
+function openFilterModal(type) {
+  const filterModal = document.getElementById('filterModal');
+  const filterModal2 = document.getElementById('filterModal2');
+  const modalTitle = filterModal.querySelector('.filter-modal-header h6');
+
+  // Ubah judul berdasarkan tombol yang diklik (Filter Berdasarkan atau Urutkan Berdasarkan)
+  if (type === 'filter') {
+    modalTitle.textContent = 'Filter Berdasarkan';
+    filterModal.classList.add('active'); // Tampilkan modal dengan animasi
+  } else if (type === 'urutkan') {
+    modalTitle.textContent = 'Urutkan Berdasarkan';
+    filterModal2.classList.add('active'); // Tampilkan modal dengan animasi
+  }
+
+  
+}
+
+// Fungsi untuk menutup modal filter
+function closeFilterModal() {
+  const filterModal = document.getElementById('filterModal');
+  filterModal.classList.remove('active'); // Sembunyikan modal
+  filterModal2.classList.remove('active'); // Sembunyikan modal
+}
+
+// Tutup modal ketika klik di luar
+document.addEventListener('click', function(event) {
+  const filterModal = document.getElementById('filterModal');
+  if (!filterModal.contains(event.target) && !event.target.closest('.filter_container')) {
+    filterModal.classList.remove('active');
+  }
+});
