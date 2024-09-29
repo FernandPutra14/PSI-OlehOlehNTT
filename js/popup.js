@@ -1,37 +1,58 @@
 const showPopup = document.querySelector('.show-popup');
 const popupContainer = document.querySelector('.popup-container');
 const closeBtn = document.querySelector('.close-btn');
-const okBtn = document.querySelector('.ok-btn')
+const okBtn = document.querySelector('.ok-btn');
+const navTop = document.querySelector('.nav__top'); 
+const navBottom = document.querySelector('.nav__bottom'); 
 
 showPopup.onclick = () => {
     popupContainer.classList.add('active');
 
-    // Mencegah scroll pada body
     const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
     document.body.style.overflow = 'hidden';
     document.body.style.paddingRight = `${scrollbarWidth}px`;
+
+
+    if (navTop) {
+        navTop.style.paddingRight = `${scrollbarWidth}px`;
+    }
+
+    if (navBottom) {
+        navBottom.style.paddingRight = `${scrollbarWidth}px`;
+    }
 }
 
 closeBtn.onclick = () => {
-    // Hapus kelas active, tapi tambahkan penundaan sebelum mengembalikan scroll
     popupContainer.classList.remove('active');
 
-    // Tambahkan sedikit jeda waktu untuk menghilangkan efek "miring" atau transisi yang tidak mulus
     setTimeout(() => {
         document.body.style.overflow = '';
         document.body.style.paddingRight = '0';
-    }, 400); // Sesuaikan 400ms sesuai dengan durasi transisi CSS
+
+        if (navTop) {
+            navTop.style.paddingRight = '0';
+        }
+
+        if (navBottom) {
+            navBottom.style.paddingRight = '0';
+        }
+    }, 400); 
 }
 
 okBtn.addEventListener('click', function () {
     toast.success('Sukses', 'Hapus Berhasil Dilakukan');
-    
-    // Hapus kelas active, tapi tambahkan penundaan sebelum mengembalikan scroll
+
     popupContainer.classList.remove('active');
 
-    // Tambahkan sedikit jeda waktu untuk menghilangkan efek "miring" atau transisi yang tidak mulus
     setTimeout(() => {
         document.body.style.overflow = '';
         document.body.style.paddingRight = '0';
-    }, 400); // Sesuaikan 400ms sesuai dengan durasi transisi CSS
+
+        if (navTop) {
+            navTop.style.paddingRight = '0';
+        }
+        if (navBottom) {
+            navBottom.style.paddingRight = '0';
+        }
+    }, 400); 
 });
