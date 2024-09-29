@@ -17,7 +17,7 @@ const swiper = new Swiper(".swiper", {
   },
 
   autoplay: isClass2 ? {
-    delay: 200000,
+    delay: 2000,
     disableOnInteraction: false,
   } : false, 
 
