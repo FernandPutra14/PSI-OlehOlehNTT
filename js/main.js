@@ -308,12 +308,12 @@ document.addEventListener('click', function(event) {
 });
 
 function toggleFilter(element) {
-  const filters = document.querySelectorAll('.filter_pill_riwayat');
+  const filters = document.querySelectorAll('.filter_pill');
   filters.forEach((e) => {
-    e.classList.remove('active_pill_riwayat');
+    e.classList.remove('active_pill');
   });
 
-  element.classList.add('active_pill_riwayat');
+  element.classList.add('active_pill');
 }
 
 // Fungsi untuk membuka modal filter
@@ -342,7 +342,7 @@ function closeFilterModal() {
 // Tutup modal ketika klik di luar
 document.addEventListener('click', function(event) {
   const filterModal = document.getElementById('filterModal');
-  if (!filterModal.contains(event.target) && !event.target.closest('.filter_container')) {
+  if (filterModal && !filterModal.contains(event.target) && !event.target.closest('.filter_container')) {
     filterModal.classList.remove('active');
   }
 });
