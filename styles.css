@@ -9588,6 +9588,13 @@ padding: 2rem 1rem 2rem;
   cursor: pointer;
 }
 
+.filter-dropdown input[type="radio"] {
+  color: #000 !important;
+  margin-right: 8px;
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
 .area_filter {
   position: relative;
 }

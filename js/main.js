@@ -118,6 +118,7 @@ const buttonKeranjangClick = (id) => {
     window.location.href = `masuk_atau_daftar.html?returnUrl=${window.location.href}`;
   }
 }
+
 function authorizeContent(authState) {
   const authorizeElements = document.querySelectorAll('.authorize');
   const notAuthorizeElements = document.querySelectorAll('.not-authorize');
@@ -311,7 +312,6 @@ function toggleFilter(element) {
   element.classList.add('active_pill_riwayat');
 }
 
-
 // Fungsi untuk membuka modal filter
 function openFilterModal(type) {
   const filterModal = document.getElementById('filterModal');
@@ -326,8 +326,6 @@ function openFilterModal(type) {
     modalTitle.textContent = 'Urutkan Berdasarkan';
     filterModal2.classList.add('active'); // Tampilkan modal dengan animasi
   }
-
-  
 }
 
 // Fungsi untuk menutup modal filter
