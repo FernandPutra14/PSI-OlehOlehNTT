@@ -8361,7 +8361,7 @@ padding: 2rem 1rem 2rem;
 }
 
 .laris__card .gambar_terlaris {
-  max-height: 230px;
+  max-height: 150px;
   object-fit: cover;
 }
 
@@ -9756,7 +9756,7 @@ padding: 2rem 1rem 2rem;
 }
 
 #daftar-produk .laris__card .gambar_terlaris {
-  max-height: 230px;
+  max-height: 150px;
   object-fit: cover;
 }
 
