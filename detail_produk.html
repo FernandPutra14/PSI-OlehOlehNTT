@@ -183,7 +183,7 @@
         </div>
       </div>
       <div class="detail_sukai">
-        <button class="wish-btn" onclick="buttonWishListClick(2)">
+        <button class="wish-btn">
           Masukan Wishlist
           <i class="ri-heart-line"></i>
         </button>
@@ -239,7 +239,7 @@
             <div class="laris__details">
               <div class="judul_sukai">
                 <p>Makanan</p>
-                <button class="btn-produk-none btn-sukai" onclick="toast.success('Sukses','Produk sukses ditambah ke daftar favorit')">
+                <button class="btn-produk-none btn-sukai" onclick="buttonWishListClick(event, 1)">
                   <i class="ri-heart-line sukai"></i>
                 </button>
               </div>            
@@ -270,7 +270,7 @@
               <div class="laris__details">
                   <div class="judul_sukai">
                       <p>Minuman</p>
-                      <button class="btn-produk-none btn-sukai" onclick="toast.success('Sukses','Produk sukses ditambah ke daftar favorit')">
+                      <button class="btn-produk-none btn-sukai" onclick="buttonWishListClick(event, 1)">
                           <i class="ri-heart-line sukai"></i>
                       </button>
                   </div>
@@ -301,7 +301,7 @@
               <div class="laris__details">
                   <div class="judul_sukai">
                       <p>Kain</p>
-                      <button class="btn-produk-none btn-sukai" onclick="toast.success('Sukses','Produk sukses ditambah ke daftar favorit')">
+                      <button class="btn-produk-none btn-sukai" onclick="buttonWishListClick(event, 1)">
                           <i class="ri-heart-line sukai"></i>
                       </button>
                   </div>
@@ -332,7 +332,7 @@
               <div class="laris__details">
                   <div class="judul_sukai">
                       <p>Kerajinan</p>
-                      <button class="btn-produk-none btn-sukai" onclick="toast.success('Sukses','Produk sukses ditambah ke daftar favorit')">
+                      <button class="btn-produk-none btn-sukai" onclick="buttonWishListClick(event, 1)">
                           <i class="ri-heart-line sukai"></i>
                       </button>
                   </div>
@@ -448,6 +448,29 @@
   <script src="./js/main.js"></script>
   <script src="./js/sidebar.js"></script>
   <script src="./js/nav.js"></script>
+  <script type="text/javascript">
+    const wishBtn = document.querySelector('.wish-btn');
+
+    wishBtn.addEventListener('click', function() {
+      const authState = getAuthState();
+
+      if (authState.signin) {
+        if (isInWishList(1)) {
+          removeItemToWishList(getProdukById(1));
+          toast.success('Sukses', 'Produk berhasil dihapus dari Daftar Favorit');
+          wishBtn.classList.remove('active');
+          wishBtn.querySelector('i').classList.replace('ri-heart-fill', 'ri-heart-line');
+        } else {
+          addItemToWishList(getProdukById(1), "");
+          toast.success('Sukses', 'Produk berhasil ditambah ke Daftar Favorit');
+          wishBtn.classList.add('active');
+          wishBtn.querySelector('i').classList.replace('ri-heart-line', 'ri-heart-fill');
+        }
+      } else {
+        window.location.href = `masuk_atau_daftar.html?returnUrl=${window.location.href}`;
+      }
+    });
+  </script>
   <!-- <script type="text/javascript">
     const queryParams = new URLSearchParams(window.location.search);
     const id = queryParams.get('id') ? queryParams.get('id') : 1;

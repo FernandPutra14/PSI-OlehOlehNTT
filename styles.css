@@ -1202,8 +1202,8 @@ nav {
   transition: .3s !important;
 }
 
-.sukai:hover {
-  color: rgb(234, 31, 31);
+.tidak-sukai {
+  color: red;
 }
 
 .action-produk-card .sukai:hover {
@@ -2933,13 +2933,31 @@ nav {
   width: 100%;
 }
 
-.detail_sukai .wish-btn:hover {
+.detail_sukai .wish-btn.active {
+  color: var(--white);
+  background-color: rgb(208, 40, 40);
+}
+
+.detail_sukai .wish-btn:not(.active):hover {
   font-family: 'poppins';
   padding: 10px 13px;
   border: 1px solid var(--primary-color-dark);
   font-size: 1rem;
   color: var(--white);
   background-color: rgb(208, 40, 40);
+  border-radius: 18px;
+  transition: 0.3s;
+  cursor: pointer;
+  width: 100%;
+}
+
+.detail_sukai .wish-btn.active:hover {
+  font-family: 'poppins';
+  padding: 10px 13px;
+  border: 1px solid var(--primary-color-dark);
+  font-size: 1rem;
+  color: var(--text-dark);
+  background-color: transparent;
   border-radius: 18px;
   transition: 0.3s;
   cursor: pointer;
@@ -2953,10 +2971,21 @@ nav {
   transition: 0.3s;
 }
 
-.detail_sukai .wish-btn:hover i {
+.detail_sukai .wish-btn.active i {
+  color: var(--white);
+}
+
+.detail_sukai .wish-btn:not(.active):hover i {
   color: var(--white);
   margin-left: 10px;
   font-size: 18px;
+}
+
+.detail_sukai .wish-btn.active:hover i {
+  color: var(--text-dark);
+  margin-left: 10px;
+  font-size: 18px;
+  transition: 0.3s;
 }
 
 .detail_stok {

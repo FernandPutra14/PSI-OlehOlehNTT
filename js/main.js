@@ -48,23 +48,23 @@
 // });
 
 function cardProdukButton() {
-  document.querySelectorAll('.sukai').forEach(function (icon) {
-    icon.addEventListener('mouseover', function () {
-      this.classList.replace('ri-heart-line', 'ri-heart-fill');
-    });
-    icon.addEventListener('mouseout', function () {
-      this.classList.replace('ri-heart-fill', 'ri-heart-line');
-    });
-  });
+  // document.querySelectorAll('.sukai').forEach(function (icon) {
+  //   icon.addEventListener('mouseover', function () {
+  //     this.classList.replace('ri-heart-line', 'ri-heart-fill');
+  //   });
+  //   icon.addEventListener('mouseout', function () {
+  //     this.classList.replace('ri-heart-fill', 'ri-heart-line');
+  //   });
+  // });
 
-  document.querySelectorAll('.keranjangi').forEach(function (icon) {
-    icon.addEventListener('mouseover', function () {
-      this.classList.replace('ri-shopping-cart-2-line', 'ri-shopping-cart-fill');
-    });
-    icon.addEventListener('mouseout', function () {
-      this.classList.replace('ri-shopping-cart-fill', 'ri-shopping-cart-2-line');
-    });
-  });
+  // document.querySelectorAll('.keranjangi').forEach(function (icon) {
+  //   icon.addEventListener('mouseover', function () {
+  //     this.classList.replace('ri-shopping-cart-2-line', 'ri-shopping-cart-fill');
+  //   });
+  //   icon.addEventListener('mouseout', function () {
+  //     this.classList.replace('ri-shopping-cart-fill', 'ri-shopping-cart-2-line');
+  //   });
+  // });
 
   document.querySelectorAll('.btn-produk-none').forEach((item) => {
     item.addEventListener('click', function (event) {
@@ -92,16 +92,20 @@ function showContent(contentId, event) {
   document.getElementById(contentId).style.display = 'block';
 }
 
-const buttonWishListClick = (id) => {
+const buttonWishListClick = (event, id) => {
   const authState = getAuthState();
 
   if (authState.signin) {
     if (isInWishList(id)) {
       removeItemToWishList(getProdukById(id));
       toast.success('Sukses', 'Produk berhasil dihapus dari Daftar Favorit');
+      event.target.classList.replace('tidak-sukai', 'sukai');
+      event.target.classList.replace('ri-heart-fill', 'ri-heart-line');
     } else {
       addItemToWishList(getProdukById(id), "");
       toast.success('Sukses', 'Produk berhasil ditambah ke Daftar Favorit');
+      event.target.classList.replace('sukai', 'tidak-sukai');
+      event.target.classList.replace('ri-heart-line', 'ri-heart-fill');
     }
   } else {
     window.location.href = `masuk_atau_daftar.html?returnUrl=${window.location.href}`;
