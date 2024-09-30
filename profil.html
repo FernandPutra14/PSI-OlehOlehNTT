@@ -646,7 +646,13 @@
   <script src="./js/sidebar.js"></script>
   <script type="text/javascript">
     const filtersRiwayat = document.querySelectorAll('.filter_pill_riwayat')
-    filtersRiwayat.forEach(e => e.addEventListener('click', () => toggleFilter(e)));
+    filtersRiwayat.forEach(e => e.addEventListener('click', () => {
+      filtersRiwayat.forEach((e) => {
+        e.classList.remove('active_pill_riwayat');
+      });
+
+      e.classList.add('active_pill_riwayat');
+    }));
   </script>
 </body>
 
