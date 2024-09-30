@@ -184,7 +184,7 @@
       </div>
       <div class="detail_sukai">
         <button class="wish-btn">
-          Masukan Wishlist
+          <span>Masukan Wishlist</span>
           <i class="ri-heart-line"></i>
         </button>
       </div>
@@ -458,11 +458,13 @@
         if (isInWishList(1)) {
           removeItemToWishList(getProdukById(1));
           toast.success('Sukses', 'Produk berhasil dihapus dari Daftar Favorit');
+          wishBtn.querySelector('span').innerText = "Masukan Wishlist";
           wishBtn.classList.remove('active');
           wishBtn.querySelector('i').classList.replace('ri-heart-fill', 'ri-heart-line');
         } else {
           addItemToWishList(getProdukById(1), "");
           toast.success('Sukses', 'Produk berhasil ditambah ke Daftar Favorit');
+          wishBtn.querySelector('span').innerText = "Hapus Dari Wishlist";
           wishBtn.classList.add('active');
           wishBtn.querySelector('i').classList.replace('ri-heart-line', 'ri-heart-fill');
         }
