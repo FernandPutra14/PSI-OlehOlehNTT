@@ -3230,6 +3230,8 @@ nav {
 
 .perproduk_keranjang .gambar_produk_keranjang img {
   border-radius: 10px;
+  object-fit: cover;
+  max-height: 200px;
 }
 
 .deskripsi_produk_keranjang {
