@@ -773,6 +773,7 @@ nav {
 }
 
 .newsletter__grid input[type="email"] {
+  font-family: 'poppins';
   padding: 1rem;
   width: 100%;
   max-width: 400px;
@@ -5352,6 +5353,7 @@ nav {
 
   .newsletter__grid input[type="email"], 
   .newsletter__grid button {
+    font-family: 'poppins';
     width: auto; 
   }
 
@@ -8676,6 +8678,7 @@ padding: 2rem 1rem 2rem;
 }
 
 .newsletter__grid input[type="email"] {
+  font-family: 'poppins';
   padding: 1rem;
   width: 100%;
   max-width: 400px;
