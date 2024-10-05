@@ -23,3 +23,11 @@ Proyek ini dibangun sepenuhnya menggunakan teknologi frontend, sehingga pengguna
 - HTML5: Untuk struktur dasar halaman web.
 - CSS3 (dengan framework CSS): Untuk styling dan layout yang responsif.
 - JavaScript: Untuk interaktivitas dan pengelolaan logika di sisi frontend.
+
+## Preview Page
+Page Beranda 
+![Page Beranda](assets/preview_page_beranda.png)
+
+Page Produk
+![Page Produk](assets/preview_page_produk.png)
+
