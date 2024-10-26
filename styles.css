@@ -702,13 +702,13 @@ nav {
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-  transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+  transition: color 0.2s ease;
 }
 
 .nav__links a:hover {
-  font-weight: 600;
-  color: var(--primary-color);
+  color: var(--badge);
 }
+
 
 .nav__icons {
   display: flex;
@@ -938,7 +938,7 @@ nav {
 }
 
 .header__content h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 600;
   line-height: 4.25rem;
@@ -2262,30 +2262,6 @@ nav {
   gap: 1rem;
   flex-direction: column;
 }
-
-.tombol_kembali_container {
-
-}
-
-.tombol_kembali {
-  display: inline-flex;
-  gap: 5px;
-  align-items: center;
-  padding: 3px 10px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.tombol_kembali .icon_tombol_kembali i {
-  font-size: 1rem;
-}
-
-.tombol_kembali .tulisan_tombol_kembali p {
-  color: var(--text-dark);
-  font-size: .9rem;
-  font-weight: 600;
-}
-
 
 .logo_masuk_daftar_container {
 
