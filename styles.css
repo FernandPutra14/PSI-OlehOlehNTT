@@ -2263,8 +2263,8 @@ nav {
   flex-direction: column;
 }
 
-.tombol_kembali_container {
-
+.tombol_kembali_container a {
+  color: var(--text-dark);
 }
 
 .tombol_kembali {
@@ -2285,7 +2285,6 @@ nav {
   font-size: .9rem;
   font-weight: 600;
 }
-
 
 .logo_masuk_daftar_container {
 

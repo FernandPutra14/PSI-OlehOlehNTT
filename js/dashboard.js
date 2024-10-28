@@ -19,3 +19,15 @@ toggle.onclick = function () {
   navigation.classList.toggle("active");
   main.classList.toggle("active");
 };
+
+// PROFILE DROPDOWN
+const profile = document.querySelector('.user');
+const imgProfile = profile.querySelector('img');
+const dropdownProfile = profile.querySelector('.profile-link');
+
+// Toggle 'show' class when profile image is clicked
+imgProfile.addEventListener('click', function () {
+    dropdownProfile.classList.toggle('show');
+});
+
+

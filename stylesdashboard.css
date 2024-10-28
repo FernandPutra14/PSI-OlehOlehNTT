@@ -219,22 +219,75 @@
   
   .user {
     position: relative;
+    margin-right: 15px;
+    z-index: 999;
+  }
+
+    .user li {
+        list-style: none;
+    }
+
+    .user img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .user .profile-link {
+        position: absolute;
+        top: calc(100% + 10px);
+        right: 0;
+        background: #fff;
+        padding: 10px 0;
+        box-shadow: 4px 4px 16px rgba(0, 0, 0, .1);
+        border-radius: 10px;
+        width: 180px;
+        opacity: 0;
+        pointer-events: none;
+        transition: all .3s ease;
+    }
+
+        .user .profile-link.show {
+            opacity: 1;
+            pointer-events: visible;
+            top: 100%;
+        }
+
+        .user .profile-link a {
+            padding: 10px 16px;
+            display: flex;
+            grid-gap: 10px;
+            font-size: 14px;
+            color: #000;
+            align-items: center;
+            transition: all .3s ease;
+            text-decoration: none;
+        }
+
+            .user .profile-link a:hover {
+                background: #F1F0F6;
+            }
+
+  /* .user {
+    position: relative;
     width: 30px;
     height: 30px;
     border-radius: 50%;
     overflow: hidden;
     cursor: pointer;
     margin-right: 15px;
-  }
+  } */
   
-  .user img {
+  /* .user img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
+  } */
 
   /* ======================= Cards ====================== */
 .cardBox {
