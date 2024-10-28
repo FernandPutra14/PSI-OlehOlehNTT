@@ -702,13 +702,13 @@ nav {
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
-  transition: color 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+  transition: color 0.2s ease;
 }
 
 .nav__links a:hover {
-  font-weight: 600;
-  color: var(--primary-color);
+  color: var(--badge);
 }
+
 
 .nav__icons {
   display: flex;
@@ -938,7 +938,7 @@ nav {
 }
 
 .header__content h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 600;
   line-height: 4.25rem;
@@ -2307,7 +2307,7 @@ nav {
 
 .perintah_masuk_daftar p {
   font-size: 1rem;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 
 #masuk_atau_daftar .input_grup {
