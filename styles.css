@@ -1646,10 +1646,16 @@ nav {
   left: 0;
   z-index: 10;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-height: 315px;
+  overflow-y: auto;
 }
 
 .filter-dropdown-kategori {
   width: 300px !important;
+}
+
+.filter-dropdown-daerah {
+  width: 260px !important;
 }
 
 .filter-dropdown label {
