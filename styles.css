@@ -1336,7 +1336,6 @@ nav {
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-dark);
-  cursor: pointer;
 }
 
 .blog__details p {
@@ -1955,6 +1954,7 @@ nav {
 .blog_card_populer {
   display: flex;
   gap: 70px;
+  cursor: default !important;
 }
 
 .blog_card_populer .blog_details_populer {
@@ -2210,7 +2210,7 @@ nav {
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-dark);
-  cursor: pointer;
+  cursor: default;
 }
 
 #blog_halaman .blog__details p {
@@ -7180,6 +7180,7 @@ padding: 2rem 1rem 2rem;
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
+    cursor: default !important;
   }
   
   .blog_card_populer .blog_details_populer {
@@ -7255,7 +7256,6 @@ padding: 2rem 1rem 2rem;
   }
   
   #blog_populer .swiper-wrapper {
-    cursor: pointer;
   }
   
   #blog_populer .swiper-slide {
