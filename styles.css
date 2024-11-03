@@ -1774,6 +1774,11 @@ nav {
   text-decoration: underline;
 }
 
+.pilihan_filter_container .pilihan_container_hapus h5:hover {
+  color: var(--white);
+  background-color: var(--primary-color);
+}
+
 
 /*-----------------------------------*\
   #DAFTAR PRODUK
