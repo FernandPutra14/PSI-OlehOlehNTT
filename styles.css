@@ -3184,7 +3184,7 @@ nav {
 }
 
 .popup-container .popup-box {
-  width: 400px;
+  width: 450px;
   background: #f2f2f2;
   border-radius: 6px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -3198,6 +3198,28 @@ nav {
   opacity: 1;
 }
 
+.popup-box .logo_tengah {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 15px;
+}
+
+.popup-box .ri-check-line {  
+  background-color: #90EE90;
+  color: #006400; 
+  border-radius: 50%; 
+  padding: 10px; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.popup-box .ri-check-line::before {  
+  font-size: 30px;
+}
+
 .popup-box h1, .popup-box p {
   transition: none;
 }
@@ -3209,7 +3231,7 @@ nav {
 
 .popup-box p {
   color: #333;
-  margin: 16px 0 20px;
+  margin: 10px 0 15px;
 }
 
 .popup-box .kompleks-button {
@@ -4744,6 +4766,7 @@ nav {
 .pembayaran_tiga_container {
   display: flex;
   gap: 5px;
+  padding: 1rem 1rem 5rem;
 }
 
 .content_pembayaran_tiga_container {
@@ -4774,7 +4797,7 @@ nav {
 
 
 #final_pembayaran .daftar_produk {
-
+  margin-bottom: 10px;
 }
 
 #final_pembayaran .daftar_produk .perproduk_keranjang {
@@ -9143,7 +9166,7 @@ padding: 2rem 1rem 2rem;
 
 
 #final_pembayaran .daftar_produk {
-
+  margin-bottom: 10px;
 }
 
 #final_pembayaran .daftar_produk .perproduk_keranjang {

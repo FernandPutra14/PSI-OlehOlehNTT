@@ -22,7 +22,7 @@ showPopup.onclick = () => {
     }
 }
 
-closeBtn.onclick = () => {
+okBtn.onclick = () => {
     popupContainer.classList.remove('active');
 
     setTimeout(() => {

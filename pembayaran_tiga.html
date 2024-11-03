@@ -22,10 +22,13 @@
 
   <div class="popup-container">
     <div class="popup-box">
+        <div class="logo_tengah">
+          <i class="ri-check-line"></i>
+        </div>  
         <h1>Pembayaran Berhasil</h1>
         <p>Cek Profil Untuk Melihat Status Pesanan</p>
         <div class="kompleks-button">
-          <button class="close-btn">Ok</button>
+          <button class="ok-btn">Ok</button>
         </div>
     </div> 
   </div>
@@ -86,16 +89,13 @@
             <span class="badge" id="wishlist-badge">0</span>
           </a>
           <a href="keranjang.html" class="icon-keranjang">
-            <i class="ri-shopping-cart-line"></i>
+            <i class="ri-shopping-basket-line"></i>
             <span class="badge" id="keranjang-badge">0</span>
           </a>
         </div>
       </div>
     </div>
   </nav>
-
-
-
 
   <!-- Navbar Versi Tablet dan HP -->
 <nav class="nav__mobile">
@@ -114,7 +114,7 @@
       <a href="profil.html" class="icon-search"><i class="ri-user-line"></i></a>
       <a href="" class="icon-search"><i class="ri-search-2-line"></i></a>
       <a href="keranjang.html" class="icon-keranjang">
-        <i class="ri-shopping-cart-2-line"></i>
+        <i class="ri-shopping-basket-line"></i>
         <span class="badge" id="keranjang-badge">5</span>
       </a>
     </div>
@@ -134,10 +134,14 @@
     <li><a href="produk.html">Produk</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="kontak.html">Kontak</a></li>
-    <li><a href="profil.html">Profile Saya</a></li>
-    <li><a href="">Logout</a></li>
+    <li class="authorize"><a href="profil.html">Profile Saya</a></li>    
+    <li class="not-authorize" ><a href="masuk_atau_daftar.html">Daftar</a></li>
+    <li class="not-authorize" ><a href="masuk_atau_daftar.html">Masuk</a></li>
+    <li class="authorize"><a href="#" onclick="signout()">Logout</a></li>
+    <li class="authorize"><a href="dashboard.html">Dashboard</a></li>
   </ul>
 </div>
+
 
   <!--======================================================= AKHIR NAVBAR =======================================================-->
 
