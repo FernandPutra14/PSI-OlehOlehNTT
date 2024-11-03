@@ -140,6 +140,7 @@ a.btn_small {
 
 a.btn_small:hover {
   background-color: var(--primary-color-dark);
+  box-shadow: 2px 2px 10px hsla(30, 20%, 20%, 0.6);
 }
 
 button.btn {
@@ -2117,7 +2118,7 @@ nav {
   border-radius: 10px;
   background-color: var(--container-color);
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 
 .filter_pill:hover {
