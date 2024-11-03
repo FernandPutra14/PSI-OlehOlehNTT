@@ -23,8 +23,8 @@ class Account {
 }
 
 const defaultAccount = new Account(
-    "Tim Ziro",
-    "timziro@gmail.com",
+    "PSI 4",
+    "psi4@gmail.com",
     "081234567890",
     new Date(2004, 2, 29),
     new Alamat(
