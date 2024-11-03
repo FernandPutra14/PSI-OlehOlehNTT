@@ -121,6 +121,7 @@ a.btn {
 
 a.btn:hover {
   background-color: var(--primary-color-dark);
+  box-shadow: 2px 2px 10px hsla(30, 20%, 20%, 0.6);
 }
 
 a.btn_small {
@@ -202,6 +203,10 @@ body {
 }
 
 body {
+  font-family: "poppins", sans-serif;
+}
+
+input, textarea, select {
   font-family: "poppins", sans-serif;
 }
 
