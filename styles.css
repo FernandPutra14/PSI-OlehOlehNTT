@@ -1368,6 +1368,7 @@ nav {
 }
 
 .blog__details a {
+  justify-self: start;
   font-size: 14px ;
   font-weight: 500;
   color: var(--primary-color);
@@ -2246,6 +2247,7 @@ nav {
 }
 
 #blog_halaman .blog__details a {
+  justify-self: start;
   font-size: 14px ;
   font-weight: 500;
   color: var(--primary-color);
@@ -4331,7 +4333,7 @@ nav {
   font-size: 1rem;
   font-weight: 600;
   color: var(--text-dark);
-  cursor: pointer;
+  cursor: default;
 }
 
 #blog_lain .blog__details p {
@@ -4362,10 +4364,12 @@ nav {
 }
 
 #blog_lain .blog__details a {
+  justify-self: start;
   font-size: 14px ;
   font-weight: 500;
   color: var(--primary-color);
   text-decoration: underline;
+  cursor: pointer;
 }
 
 
