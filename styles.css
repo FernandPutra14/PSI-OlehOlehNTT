@@ -4065,8 +4065,9 @@ nav {
 }
 
 .kategori_produk_sukai h5 {
-  font-size: 1.05rem;
+  font-size: .95rem;
   font-weight: 400;
+  
 }
 
 .stok_produk_sukai {
@@ -4076,6 +4077,7 @@ nav {
 .stok_produk_sukai p {
   font-size: .8rem;
   font-weight: 500;
+  color: var(--text-light);
 }
 
 
@@ -4085,7 +4087,7 @@ nav {
 }
 
 .atur_stok_harga_sukai .harga_produk_sukai h5 {
-  font-size: .85rem;
+  font-size: .9rem;
   text-decoration: line-through;
 }
 
@@ -6255,7 +6257,6 @@ padding: 2rem 1rem 2rem;
   
   .kategori_produk_sukai h5 {
     font-size: .9rem;
-    font-weight: 400;
   }
   
   .stok_produk_sukai {
@@ -6284,7 +6285,7 @@ padding: 2rem 1rem 2rem;
   }
   
   .harga_diskon_sukai h5 {
-    font-size: .9rem;
+    font-size: 1rem;
     color: red;
   }
   

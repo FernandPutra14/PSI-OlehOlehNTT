@@ -40,7 +40,7 @@ closeBtn.onclick = () => {
 }
 
 okBtn.addEventListener('click', function () {
-    toast.success('Sukses', 'Hapus Berhasil Dilakukan');
+    toast.success('Sukses', 'Hapus Produk Berhasil Dilakukan');
 
     popupContainer.classList.remove('active');
 

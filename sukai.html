@@ -20,6 +20,17 @@
 
   <span id="redirectLogin" data-when="signout" data-to="/masuk_atau_daftar.html"></span>
 
+  <div class="popup-container">
+    <div class="popup-box">
+        <h1>Konfirmasi Hapus</h1>
+        <p>Apakah anda yakin ingin menghapus produk ini dari Daftar Sukai ?</p>
+        <div class="kompleks-button">
+          <button class="close-btn">Batal</button>
+          <button class="ok-btn">Yakin</button>
+        </div>
+    </div> 
+  </div>
+
   <!--======================================================= NAVBAR =======================================================-->
   <nav>
     <!-- Navbar Atas -->
@@ -175,7 +186,7 @@
             </div>
             <div class="deskripsi_bawah_sukai">
               <div class="action_produk_sukai">
-                <button style="border:none;background:none" onclick="removeItemToWishList(getProdukById(11));toast.success('Berhasil', 'Produk berhasil dihapus dari Daftar Favorit')">
+                <button class="show-popup" style="border:none;background:none" onclick="removeItemToWishList(getProdukById(11)); toast.success('Berhasil', 'Produk berhasil dihapus dari Daftar Favorit')">
                   <i class="ri-delete-bin-line"></i>
                 </button>
               </div>
@@ -187,12 +198,12 @@
               <textarea spellcheck="false" placeholder="Catatan Produk..."></textarea>
             </div>
             <div class="simpan_catatan">
-              <button class="btn">Simpan Catatan</button>
+              <button class="btn" onclick="toast.success('Sukses', 'Catatan berhasil diupdate')">Simpan Catatan</button>
             </div>
           </div>
           <div class="col-12 col-md-3 col-lg-3 tambahkeranjang_sukai_container">          
             <div class="tambahkeranjang">
-                <button class="btn" onclick="addItem(getProdukById(11));toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
+                <button class="btn" onclick="addItem(getProdukById(11)); toast.success('Sukses', 'Produk berhasil ditambah ke Keranjang')">
                   Tambahkan ke Keranjang
                   <i class="ri-shopping-cart-line"></i>
                 </button>
@@ -236,7 +247,7 @@
             </div>
             <div class="deskripsi_bawah_sukai">
               <div class="action_produk_sukai">
-                <button style="border:none;background:none" onclick="removeItemToWishList(getProdukById(11));toast.success('Berhasil', 'Produk berhasil dihapus dari Daftar Favorit')">
+                <button class="show-popup" style="border:none;background:none" onclick="removeItemToWishList(getProdukById(11)); toast.success('Berhasil', 'Produk berhasil dihapus dari Daftar Favorit')">
                   <i class="ri-delete-bin-line"></i>
                 </button>
               </div>
@@ -248,7 +259,7 @@
               <textarea spellcheck="false" placeholder="Catatan Produk..."></textarea>
             </div>
             <div class="simpan_catatan">
-              <button class="btn">Simpan Catatan</button>
+              <button class="btn" onclick="toast.success('Sukses', 'Catatan berhasil diupdate')">Simpan Catatan</button>
             </div>
           </div>
           <div class="col-12 col-md-3 col-lg-3 tambahkeranjang_sukai_container">          
@@ -297,7 +308,7 @@
             </div>
             <div class="deskripsi_bawah_sukai">
               <div class="action_produk_sukai">
-                <button style="border:none;background:none" onclick="removeItemToWishList(getProdukById(11));toast.success('Berhasil', 'Produk berhasil dihapus dari Daftar Favorit')">
+                <button class="show-popup" style="border:none;background:none" onclick="removeItemToWishList(getProdukById(11)); toast.success('Berhasil', 'Produk berhasil dihapus dari Daftar Favorit')">
                   <i class="ri-delete-bin-line"></i>
                 </button>
               </div>
@@ -309,7 +320,7 @@
               <textarea spellcheck="false" placeholder="Catatan Produk..."></textarea>
             </div>
             <div class="simpan_catatan">
-              <button class="btn">Simpan Catatan</button>
+              <button class="btn" onclick="toast.success('Sukses', 'Catatan berhasil diupdate')">Simpan Catatan</button>
             </div>
           </div>
           <div class="col-12 col-md-3 col-lg-3 tambahkeranjang_sukai_container">          
@@ -413,6 +424,7 @@
   <script src="./js/keranjang.js"></script>
   <script src="./js/wishlist.js"></script>
   <script src="./js/toast.js"></script>
+  <script src="./js/popup.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/nav.js"></script>
   <script src="./js/sidebar.js"></script>
