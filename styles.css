@@ -3220,6 +3220,25 @@ nav {
   font-size: 30px;
 }
 
+
+/* Sampah */
+.popup-box .ri-delete-bin-2-fill {  
+  background-color: #FFCCCB;
+  color: #8B0000;
+  border-radius: 50%; 
+  padding: 10px; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+}
+
+.popup-box .ri-delete-bin-2-fill::before {  
+  font-size: 30px;
+}
+/* Akhir Sampah */
+
 .popup-box h1, .popup-box p {
   transition: none;
 }
@@ -3256,11 +3275,14 @@ nav {
 }
 
 .popup-box .close-btn {
-  background: red;
+  border: 1px solid red;
+  color: red;
+  background: transparent;
 }
 
 .popup-box .close-btn:hover {
-  background: darkred;
+  color: var(--white);
+  background: red;
 }
 
 .popup-box .ok-btn {
@@ -3998,6 +4020,7 @@ nav {
 .sukai_container {
   display: flex;
   gap: 5px;
+  padding: 2rem 1rem 2rem;
 }
 
 .sukai_aku {

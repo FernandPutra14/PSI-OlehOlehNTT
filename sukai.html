@@ -22,6 +22,9 @@
 
   <div class="popup-container">
     <div class="popup-box">
+      <div class="logo_tengah">
+          <i class="ri-delete-bin-2-fill"></i>
+      </div> 
         <h1>Konfirmasi Hapus</h1>
         <p>Apakah anda yakin ingin menghapus produk ini dari Daftar Sukai ?</p>
         <div class="kompleks-button">
@@ -195,7 +198,8 @@
         </div>
           <div class="col-12 col-md-3 col-lg-4 catatan_sukai_container">
             <div class="form_catatan_sukai">
-              <textarea spellcheck="false" placeholder="Catatan Produk..."></textarea>
+              <textarea spellcheck="false" placeholder="Catatan Produk...">Wow..Tenun ikatnya sangat indah. Cocok digunakan sebagai hadiah nikah dan ulang tahun keluarga besar.
+              </textarea>
             </div>
             <div class="simpan_catatan">
               <button class="btn" onclick="toast.success('Sukses', 'Catatan berhasil diupdate')">Simpan Catatan</button>
@@ -338,6 +342,141 @@
   
   </section>
   <!--======================================================= DETAIL PRODUK - HOMEPAGE =======================================================-->
+
+
+  <section class="" id="daftar-produk">
+    <div class="section__container laris__container">
+      <div class="judul_produk_terkait">
+        <h3>Rekomendasi Untukmu</h3>
+      </div>
+      <div class="laris__grid">
+        <!-- Card Produk -->
+        <a href="detail_produk.html?id=1" class="laris__card-link">
+          <div class="laris__card">
+            <img class="gambar_terlaris" src="assets/produk/produk_sei.png" alt="trip">
+            <div class="diskon_produk">
+                <p>Diskon 10%</p>
+            </div>
+            <div class="laris__details">
+              <div class="judul_sukai">
+                <p>Makanan</p>
+                <button class="btn-produk-none btn-sukai" onclick="buttonWishListClick(event, 1)">
+                  <i class="ri-heart-line sukai"></i>
+                </button>
+              </div>            
+              <h6>Se'i Babi Asap</h6>
+              <div class="bagian__price">
+                <div class="price_dua">
+                  <div class="price_diskon"><span>Rp&nbsp;112.500,00</span></div>
+                  <div class="price"><span>Rp&nbsp;125.000,00</span></div>                 
+                </div>            
+                <div class="action-produk-card">               
+                </div>
+              </div>
+              <div class="jumlah_terjual">
+                <h5>1000+ terjual</h5>
+              </div>
+            </div>
+          </div>
+        </a>
+        <!-- Card Produk -->
+
+        <!-- Card Produk 2 -->
+        <a href="detail_produk.html?id=2" class="laris__card-link">
+          <div class="laris__card">
+              <img class="gambar_terlaris" src="assets/produk/produk_kopi_bajawa.png" alt="Kopi Flores">
+              <div class="diskon_produk">
+                  <p>Diskon 5%</p>
+              </div>
+              <div class="laris__details">
+                  <div class="judul_sukai">
+                      <p>Minuman</p>
+                      <button class="btn-produk-none btn-sukai" onclick="buttonWishListClick(event, 1)">
+                          <i class="ri-heart-line sukai"></i>
+                      </button>
+                  </div>
+                  <h6>Kopi Flores Bajawa</h6>
+                  <div class="bagian__price">
+                      <div class="price_dua">
+                          <div class="price_diskon"><span>Rp&nbsp;71.250,00</span></div>
+                          <div class="price"><span>Rp&nbsp;75.000,00</span></div>                 
+                      </div>
+                      <div class="action-produk-card">               
+                      </div>
+                  </div>
+                  <div class="jumlah_terjual">
+                      <h5>90+ terjual</h5>
+                  </div>
+              </div>
+          </div>
+        </a>
+        <!-- Card Produk 2 -->
+
+        <!-- Card Produk 3 -->
+        <a href="detail_produk.html?id=3" class="laris__card-link">
+          <div class="laris__card">
+              <img class="gambar_terlaris" src="assets/produk/produk_tenun_ikat_sumba.png" alt="Tenun Ikat">
+              <div class="diskon_produk">
+                  <p>Diskon 20%</p>
+              </div>
+              <div class="laris__details">
+                  <div class="judul_sukai">
+                      <p>Kain Tenun</p>
+                      <button class="btn-produk-none btn-sukai" onclick="buttonWishListClick(event, 1)">
+                          <i class="ri-heart-line sukai"></i>
+                      </button>
+                  </div>
+                  <h6>Tenun Ikat Sumba</h6>
+                  <div class="bagian__price">
+                      <div class="price_dua">
+                          <div class="price_diskon"><span>Rp&nbsp;112.000,00</span></div>
+                          <div class="price"><span>Rp&nbsp;140.000,00</span></div>                 
+                      </div>
+                      <div class="action-produk-card">               
+                      </div>
+                  </div>
+                  <div class="jumlah_terjual">
+                      <h5>20+ terjual</h5>
+                  </div>
+              </div>
+          </div>
+        </a>
+        <!-- Produk ke-3 -->
+
+        <!-- Produk ke-4 -->
+        <a href="detail_produk.html?id=4" class="laris__card-link">
+          <div class="laris__card">
+              <img class="gambar_terlaris" src="assets/produk/produk_anyaman_soe.png" alt="Kerajinan Anyaman">
+              <div class="diskon_produk">
+                  <p>Diskon 10%</p>
+              </div>
+              <div class="laris__details">
+                  <div class="judul_sukai">
+                      <p>Kerajinan</p>
+                      <button class="btn-produk-none btn-sukai" onclick="buttonWishListClick(event, 1)">
+                          <i class="ri-heart-line sukai"></i>
+                      </button>
+                  </div>
+                  <h6>Anyaman Lontar So'e</h6>
+                  <div class="bagian__price">
+                      <div class="price_dua">
+                          <div class="price_diskon"><span>Rp&nbsp;90.000,00</span></div>
+                          <div class="price"><span>Rp&nbsp;100.000,00</span></div>                 
+                      </div>
+                      <div class="action-produk-card">               
+                      </div>
+                  </div>
+                  <div class="jumlah_terjual">
+                      <h5>30+ terjual</h5>
+                  </div>
+              </div>
+          </div>
+        </a>
+        <!-- Produk ke-4 -->       
+        
+      </div>
+  </section>
+
 
   <!--======================================================= NEWSLETTER =======================================================-->
   <section class="newsletter">
