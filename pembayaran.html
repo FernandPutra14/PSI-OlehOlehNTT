@@ -20,6 +20,19 @@
 
   <span id="redirectLogin" data-when="signout" data-to="/masuk_atau_daftar.html"></span>
 
+  <div class="popup_ganti_alamat" id="popup_ganti_alamat_1">
+    <div class="overlay_ganti_alamat">
+        <div class="content_ganti_alamat">
+            <div class="close_btn_ganti_alamat" onclick="togglePopupGantiAlamat()"><i class="ri-close-fill"></i></div>
+            <h2>Ubah Alamat</h2>
+            <div class="container_alamat">
+                
+            </div>
+        </div>
+    </div>
+  </div>
+
+
   <!--======================================================= NAVBAR =======================================================-->
   <nav>
     <!-- Navbar Atas -->
@@ -167,7 +180,7 @@
             <h5>Alamat Pengiriman<span>(alamat default)</span></h5>
           </div>
           <div class="ubah_alamat">
-            <p>Ubah alamat</p>
+            <button onclick="togglePopupGantiAlamat()">Ubah Alamat</button>
           </div>
 
         </div>
@@ -330,6 +343,7 @@
   <script src="./js/wishlist.js"></script>
   <script src="./js/nav.js"></script>
   <script src="./js/sidebar.js"></script>
+  <script src="./js/popup_ganti_alamat.js"></script>
   <script type="text/javascript">
 
   </script>

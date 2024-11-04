@@ -4486,9 +4486,20 @@ nav {
   font-size: .8rem;
 }
 
-.input_alamat_pembayaran_container .judul_alamat_pembayaran .ubah_alamat p {
+.input_alamat_pembayaran_container .judul_alamat_pembayaran .ubah_alamat button {
+  cursor: pointer;
+  font-family: 'poppins';
+  outline: none;
+  border: none;
+  background-color: #fff;
   font-size: .9rem;
   text-decoration: underline;
+  transition: 0.3s ease;
+}
+
+.input_alamat_pembayaran_container .judul_alamat_pembayaran .ubah_alamat button:hover {
+  background-color: var(--primary-color-dark);
+  color: var(--white);
 }
 
 
@@ -4762,6 +4773,61 @@ nav {
 /*=============================================================================================================================*\
   #HALAMAN PEMBAYARAN TIGA
 \*=============================================================================================================================*/
+
+.popup_ganti_alamat {
+  position: fixed;
+  z-index: 200;
+}
+
+.popup_ganti_alamat .overlay_ganti_alamat {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+  display: none;
+}
+
+.popup_ganti_alamat .content_ganti_alamat {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background: #fff;
+  width: 600px;
+  text-align: start;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 200;
+}
+
+.popup_ganti_alamat .close_btn_ganti_alamat {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.popup_ganti_alamat.active .overlay_ganti_alamat {
+  display: block;
+}
+
+.popup_ganti_alamat.active .content_ganti_alamat {
+  transition: all .3s ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+}
+
 
 .pembayaran_tiga_container {
   display: flex;
@@ -8855,12 +8921,6 @@ padding: 2rem 1rem 2rem;
   font-weight: 400;
   font-size: .75rem;
 }
-
-.input_alamat_pembayaran_container .judul_alamat_pembayaran .ubah_alamat p {
-  font-size: .9rem;
-  text-decoration: underline;
-}
-
 
 #pembayaran .input_grup {
   position: relative;
