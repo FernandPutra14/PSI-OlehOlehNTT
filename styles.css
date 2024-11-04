@@ -4611,7 +4611,7 @@ nav {
 
 .progress-container {
   position: relative;
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
 }
 
 .progress-step {
@@ -4744,7 +4744,7 @@ nav {
 
 .progress-container {
   position: relative;
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
 }
 
 .progress-step {
@@ -4855,7 +4855,6 @@ nav {
 .pembayaran_tiga_container {
   display: flex;
   gap: 5px;
-  padding: 1rem 1rem 5rem;
 }
 
 .content_pembayaran_tiga_container {
@@ -4881,7 +4880,6 @@ nav {
 }
 
 .input_review_pembayaran_container {
-  margin-top: 20px;
 }
 
 
@@ -5085,9 +5083,9 @@ nav {
 
 
 .button_pembayaran_tiga {
-  margin-top: 20px;
+  margin-top: 10px;
   display: flex;
-  justify-content: start;
+  justify-content: space-between;
   align-content: center;
   align-items: center;
 }
@@ -5098,10 +5096,14 @@ nav {
   cursor: pointer;
 }
 
+.lanjutkan_pembayaran3 i {
+  margin-left: 15px;
+}
+
 
 .progress-container {
   position: relative;
-  margin: 20px;
+  margin: 0px 20px 20px 20px;
 }
 
 .progress-step {
