@@ -3404,6 +3404,8 @@ nav {
 }
 
 .deskripsi_atas .tambah_kurang_produk_keranjang .jumlah h3 {
+  width: 25px;
+  text-align: center;
   font-weight: 500;
   font-size: 1rem;
 }
@@ -4963,6 +4965,8 @@ nav {
 }
 
 #final_pembayaran .deskripsi_atas .tambah_kurang_produk_keranjang .jumlah h3 {
+  width: 25px;
+  text-align: center;
   font-weight: 500;
   font-size: 1rem;
 }

@@ -182,13 +182,13 @@
               </div>
               <div class="atur_stok_harga">
                 <div class="tambah_kurang_produk_keranjang">
-                  <button class="kurang" onclick="addItem(getProdukById(1), -1)" style="border:none;background:none">
+                  <button class="kurang" onclick="kurangiJumlah()" style="border:none;background:none">
                     <h3>-</h3>
                   </button>
                   <div class="jumlah">
-                    <h3>2</h3>
+                    <h3 id="jumlahProduk">2</h3>
                   </div>
-                  <button class="tambah" onclick="addItem(getProdukById(1), 1)" style="border:none;background:none">
+                  <button class="tambah" onclick="tambahJumlah()" style="border:none;background:none">
                     <h3>+</h3>
                   </button>
                 </div>
@@ -235,13 +235,13 @@
               </div>
               <div class="atur_stok_harga">
                 <div class="tambah_kurang_produk_keranjang">
-                  <button class="kurang" onclick="addItem(getProdukById(1), -1)" style="border:none;background:none">
+                  <button class="kurang" onclick="kurangiJumlah()" style="border:none;background:none">
                     <h3>-</h3>
                   </button>
                   <div class="jumlah">
-                    <h3>2</h3>
+                    <h3 id="jumlahProduk">2</h3>
                   </div>
-                  <button class="tambah" onclick="addItem(getProdukById(1), 1)" style="border:none;background:none">
+                  <button class="tambah" onclick="tambahJumlah()" style="border:none;background:none">
                     <h3>+</h3>
                   </button>
                 </div>
@@ -288,13 +288,13 @@
               </div>
               <div class="atur_stok_harga">
                 <div class="tambah_kurang_produk_keranjang">
-                  <button class="kurang" onclick="addItem(getProdukById(1), -1)" style="border:none;background:none">
+                  <button class="kurang" onclick="kurangiJumlah()" style="border:none;background:none">
                     <h3>-</h3>
                   </button>
                   <div class="jumlah">
-                    <h3>1</h3>
+                    <h3 id="jumlahProduk">1</h3>
                   </div>
-                  <button class="tambah" onclick="addItem(getProdukById(1), 1)" style="border:none;background:none">
+                  <button class="tambah" onclick="tambahJumlah()" style="border:none;background:none">
                     <h3>+</h3>
                   </button>
                 </div>
@@ -445,6 +445,7 @@
   <script src="./js/keranjang.js"></script>
   <script src="./js/popup.js"></script>
   <script src="./js/wishlist.js"></script>
+  <script src="./js/counter_kuantitas"></script>
   <script src="./js/toast.js"></script>
   <script src="./js/main.js"></script>
   <script src="./js/nav.js"></script>

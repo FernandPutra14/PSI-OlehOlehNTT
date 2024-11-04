@@ -1,0 +1,17 @@
+// Fungsi untuk menambah jumlah produk
+  function tambahJumlah() {
+    let jumlahElement = document.getElementById("jumlahProduk");
+    let jumlah = parseInt(jumlahElement.innerText);
+    jumlah++;
+    jumlahElement.innerText = jumlah;
+  }
+
+  // Fungsi untuk mengurangi jumlah produk
+  function kurangiJumlah() {
+    let jumlahElement = document.getElementById("jumlahProduk");
+    let jumlah = parseInt(jumlahElement.innerText);
+    if (jumlah > 1) { // mencegah jumlah menjadi kurang dari 1
+      jumlah--;
+      jumlahElement.innerText = jumlah;
+    }
+  }
