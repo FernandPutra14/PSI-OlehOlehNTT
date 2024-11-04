@@ -35,85 +35,95 @@
   </div>
 
   <!--======================================================= NAVBAR =======================================================-->
-  <nav>
-    <!-- Navbar Atas -->
-    <div class="nav__top">
-      <div class="container_nav_satu">
-        <div class="nav_tambahan">
-          <a href=""><i class="ri-smartphone-line"></i>Download Aplikasi</a>
-          <span class="">|</span>
-          <a href="" class="">Mitra OlehOlehNTT</a>
-        </div>
-        <div class="nav__auth">
-          <a href="">Bantuan</a>
-          <span class="not-authorize">|</span>
-          <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
-          <span class="not-authorize">|</span>
-          <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
-          <span class="authorize">|</span>
-          <a href="profil.html" class="authorize">
-            Hai, <span class="name-placeholder"></span>
-          </a>
-          <span class="authorize">|</span>
-          <button class="authorize" onclick="signout()">
-            Keluar
-          </button>
-        </div>
+<nav>
+  <!-- Navbar Atas -->
+  <div class="nav__top">
+    <div class="container_nav_satu">
+      <div class="nav_tambahan">
+        <a href=""><i class="ri-smartphone-line"></i>Download Aplikasi</a>
+        <span class="">|</span>
+        <a href="" class="">Mitra OlehOlehNTT</a>
       </div>
-    </div>
-
-    <!-- Navbar Bawah -->
-    <div class="nav__bottom">
-      <div class="container_nav_dua">
-        <div class="nav__logo">
-          <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
-        </div>
-        <ul class="nav__links">
-          <li><a href="index.html">Beranda</a></li>
-          <li><a href="produk.html">Produk</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
-        </ul>
-        <div class="nav__icons">
-          <div class="nav__search">
-            <i class="ri-search-line"></i>
-            <input type="text" placeholder="Cari produk...">
-          </div>
-          <a href="sukai.html" class="icon-sukai">
-            <i class="ri-heart-line"></i>
-            <span class="badge" id="wishlist-badge">0</span>
-          </a>
-          <a href="keranjang.html" class="icon-keranjang">
-            <i class="ri-shopping-basket-line"></i>
-            <span class="badge" id="keranjang-badge">0</span>
-          </a>
-        </div>
+      <!-- <div class="nav__search">
+      <input type="text" placeholder="Cari produk...">
+    </div> -->
+      <div class="nav__auth">
+        <a href="">Bantuan</a>
+        <span class="not-authorize">|</span>
+        <a href="masuk_atau_daftar.html" class="not-authorize">Daftar</a>
+        <span class="not-authorize">|</span>
+        <a href="masuk_atau_daftar.html" class="not-authorize">Masuk</a>
+        <span class="authorize">|</span>
+        <a href="profil.html" class="authorize">
+          Hai, <span class="name-placeholder"></span>
+        </a>
+        <span class="authorize">|</span>
+        <button class="authorize" onclick="signout()">
+          Keluar
+        </button>
+        <span class="authorize">|</span>
+          <a href="dashboard.html" class="authorize">Dashboard</a>
       </div>
-    </div>
-  </nav>
-
-  <!-- Navbar Versi Tablet dan HP -->
-<nav class="nav__mobile">
-  <div class="container_nav_mobile">
-    <div class="nav__mobile-menu">
-      <button class="menu-button"><i class="ri-menu-2-line"></i></button>
-      <a href="sukai.html" class="icon-sukai">
-        <i class="ri-heart-3-line"></i>
-        <span class="badge" id="wishlist-badge">5</span>
-      </a>
-    </div>
-    <div class="nav__mobile-logo">
-      <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" alt="Logo"></a>
-    </div>
-    <div class="nav__mobile-icons">
-      <a href="profil.html" class="icon-search"><i class="ri-user-line"></i></a>
-      <a href="" class="icon-search"><i class="ri-search-2-line"></i></a>
-      <a href="keranjang.html" class="icon-keranjang">
-        <i class="ri-shopping-basket-line"></i>
-        <span class="badge" id="keranjang-badge">5</span>
-      </a>
     </div>
   </div>
+
+  <!-- Navbar Bawah -->
+  <div class="nav__bottom">
+    <div class="container_nav_dua">
+      <div class="nav__logo">
+        <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" /></a>
+      </div>
+      <ul class="nav__links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="produk.html">Produk</a></li>
+        <!-- <li><a href="detail_produk.html">Detail Produk</a></li> -->
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+      </ul>
+      <div class="nav__icons">
+        <div class="nav__search">
+          <i class="ri-search-line"></i>
+          <input type="text" placeholder="Cari produk...">
+        </div>
+        <a href="sukai.html" class="icon-sukai">
+          <i class="ri-heart-line"></i>
+          <span class="badge" id="wishlist-badge">0</span>
+        </a>
+        <a href="keranjang.html" class="icon-keranjang">
+          <i class="ri-shopping-basket-line"></i>
+          <span class="badge" id="keranjang-badge">0</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+<!-- Navbar Versi Tablet dan HP -->
+<nav class="nav__mobile">
+<div class="container_nav_mobile">
+  <div class="nav__mobile-menu">
+    <button class="menu-button"><i class="ri-menu-2-line"></i></button>
+    <a href="sukai.html" class="icon-sukai">
+      <i class="ri-heart-3-line"></i>
+      <span class="badge" id="wishlist-badge">5</span>
+    </a>
+  </div>
+  <div class="nav__mobile-logo">
+    <a href="index.html"><img src="assets/logo_oleh_oleh_ntt3_2.png" alt="Logo"></a>
+  </div>
+  <div class="nav__mobile-icons">
+    <a href="profil.html" class="icon-search"><i class="ri-user-line"></i></a>
+    <a href="" class="icon-search"><i class="ri-search-2-line"></i></a>
+    <a href="keranjang.html" class="icon-keranjang">
+      <i class="ri-shopping-basket-line"></i>
+      <span class="badge" id="keranjang-badge">5</span>
+    </a>
+  </div>
+</div>
 </nav>
 
 <!-- Sidebar -->
@@ -129,10 +139,14 @@
     <li><a href="produk.html">Produk</a></li>
     <li><a href="blog.html">Blog</a></li>
     <li><a href="kontak.html">Kontak</a></li>
-    <li><a href="profil.html">Profile Saya</a></li>
-    <li><a href="">Logout</a></li>
+    <li class="authorize"><a href="profil.html">Profile Saya</a></li>    
+    <li class="not-authorize" ><a href="masuk_atau_daftar.html">Daftar</a></li>
+    <li class="not-authorize" ><a href="masuk_atau_daftar.html">Masuk</a></li>
+    <li class="authorize"><a href="#" onclick="signout()">Logout</a></li>
+    <li class="authorize"><a href="dashboard.html">Dashboard</a></li>
   </ul>
 </div>
+
 <!--======================================================= AKHIR NAVBAR =======================================================-->
 
   <div class="content_seluruh">
