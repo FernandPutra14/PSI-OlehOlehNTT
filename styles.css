@@ -4870,10 +4870,23 @@ nav {
 
 .container_per_alamat {
   position: relative;
-  background-color: #ECFEF4;
   border: 1px solid #848181;
   border-radius: 5px;
   padding: 10px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+
+.container_per_alamat:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #000;
+  background-color: #ECFEF4;
+}
+
+.container_per_alamat.active {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid #000;
+  background-color: #ECFEF4;
 }
 
 .container_per_alamat h4 {
@@ -4910,6 +4923,24 @@ nav {
 }
 
 .cek-pilih .ri-check-line {
+  background-color: transparent;
+  color: transparent; 
+  border-radius: 50%; 
+  padding: 10px; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  transition: all .3s ease;
+}
+
+.container_per_alamat:hover .ri-check-line {
+  background-color: #90EE90;
+  color: #006400; 
+}
+
+.cek-pilih .ri-check-line.activee {
   background-color: #90EE90;
   color: #006400; 
   border-radius: 50%; 
