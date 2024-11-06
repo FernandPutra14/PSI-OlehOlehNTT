@@ -3076,6 +3076,7 @@ nav {
 
 .detail_belanja .tambah_kurang_produk .kurang h3,
 .detail_belanja .tambah_kurang_produk .tambah h3{
+  user-select: none;
   font-weight: 500;
 }
 
@@ -3085,6 +3086,8 @@ nav {
 }
 
 .detail_belanja .tambah_kurang_produk .jumlah h3 {
+  width: 25px;
+  text-align: center;
   font-weight: 500;
   font-size: .9rem;
 }
@@ -4821,7 +4824,8 @@ nav {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   background: #fff;
-  width: 600px;
+  border-radius: 5px;
+  width: 800px;
   text-align: start;
   padding: 20px;
   box-sizing: border-box;
@@ -4836,7 +4840,7 @@ nav {
   height: 30px;
   background: #222;
   color: #fff;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 600;
   line-height: 30px;
   text-align: center;
@@ -4852,6 +4856,89 @@ nav {
   transition: all .3s ease-in-out;
   transform: translate(-50%, -50%) scale(1);
 }
+
+
+.popup_ganti_alamat.active .content_ganti_alamat h2 {
+  margin-bottom: 10px;
+}
+
+.container_alamat {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container_per_alamat {
+  position: relative;
+  background-color: #ECFEF4;
+  border: 1px solid #848181;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.container_per_alamat h4 {
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.container_per_alamat h6 {
+  font-size: .8rem;
+  font-weight: 500;
+}
+
+.container_per_alamat h5 {
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.fitur_container_per_alamat {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.fitur_container_per_alamat a {
+  cursor: pointer;
+  font-weight: 400;
+  font-size: .8rem;
+}
+
+.cek-pilih {
+  position: absolute;
+  top: 35%;
+  right: 30px;
+}
+
+.cek-pilih .ri-check-line {
+  background-color: #90EE90;
+  color: #006400; 
+  border-radius: 50%; 
+  padding: 10px; 
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+}
+
+.cek-pilih .ri-check-line::before {
+  font-size: 20px;
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .pembayaran_tiga_container {

@@ -193,13 +193,13 @@
       </div>
       <div class="detail_belanja">
         <div class="tambah_kurang_produk">
-          <div class="kurang">
+          <div class="kurang" onclick="kurangiJumlah()">
             <h3>-</h3>
           </div>
           <div class="jumlah">
-            <h3>1</h3>
+            <h3 id="jumlahProduk">1</h3>
           </div>
-          <div class="tambah">
+          <div class="tambah" onclick="tambahJumlah()">
             <h3>+</h3>
           </div>
         </div>
@@ -445,6 +445,7 @@
   <script src="./js/produk.js"></script>
   <script src="./js/keranjang.js"></script>
   <script src="./js/wishlist.js"></script>
+  <script src="./js/counter_kuantitas"></script>
   <script src="./js/toast.js"></script>
   <script src="./js/zoompro.js"></script>
   <script src="./js/main.js"></script>
