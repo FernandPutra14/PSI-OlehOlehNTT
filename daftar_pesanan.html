@@ -7,6 +7,7 @@
   <title>Dashboard - OlehOlehNTT</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="css/app.min.css">
+  <link rel="stylesheet" href="css/dataTables._bootstrap4min.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="css/layoutdashboard.css">
   <link rel="stylesheet" href="css/components.css">
@@ -248,7 +249,271 @@
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
-          
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Daftar Pesanan</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped table-hover" id="table-1">
+                      <thead>
+                        <tr>
+                          <th class="text-center">
+                            ID
+                          </th>
+                          <th>Nama</th>
+                          <th>Tanggal Pesanan</th>
+                          <th>Pembayaran</th>
+                          <th>Barang</th>
+                          <th>Jumlah</th>
+                          <th>Total Harga</th>
+                          <th>Alamat</th>
+                          <th>Tanggal Pengiriman</th>
+                          <th>Agen</th>
+                          <th>Status</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            1
+                          </td>
+                          <td>Albert</td>
+                          <td>10-10-2024</td>
+                          <td>
+                            <div class="badge badge-success">Success</div>
+                          </td>                        
+                          <td>Anyaman Lontar So'e</td>
+                          <td class="text-center">2</td>
+                          <td>Rp200,000</td>
+                          <td>Jl. Jalan, Oebobo, Kupang, NTT</td>
+                          <td>11-10-2024</td>
+                          <td>JNE</td>
+                          <td>
+                            <div class="badge badge-success">Delivered</div>
+                          </td>
+                          <td><a href="#" class="btn btn-primary">Lacak</a></td>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                            2
+                          </td>
+                          <td>Michelle</td>
+                          <td>12-10-2024</td>
+                          <td>
+                            <div class="badge badge-warning">Pending</div>
+                          </td>                        
+                          <td>Anyaman Lontar So'e</td>
+                          <td class="text-center">2</td>
+                          <td>Rp200,000</td>
+                          <td>Jl. Jalan, Oebobo, Kupang, NTT</td>
+                          <td class="text-center">-</td>
+                          <td>JNE</td>
+                          <td>
+                            <div class="badge badge-warning">Pending</div>
+                          </td>
+                          <td><a href="#" class="btn btn-primary">Lacak</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            3
+                          </td>
+                          <td>Albert</td>
+                          <td>10-10-2024</td>
+                          <td>
+                            <div class="badge badge-success">Success</div>
+                          </td>                        
+                          <td>Anyaman Lontar So'e</td>
+                          <td class="text-center">2</td>
+                          <td>Rp200,000</td>
+                          <td>Jl. Jalan, Oebobo, Kupang, NTT</td>
+                          <td>11-10-2024</td>
+                          <td>JNE</td>
+                          <td>
+                            <div class="badge badge-info">In Progress</div>
+                          </td>
+                          <td><a href="#" class="btn btn-primary">Lacak</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            4
+                          </td>
+                          <td>Fernand</td>
+                          <td>17-10-2024</td>
+                          <td>
+                            <div class="badge badge-danger">Cancel</div>
+                          </td>                        
+                          <td>Anyaman Lontar So'e</td>
+                          <td class="text-center">2</td>
+                          <td>Rp200,000</td>
+                          <td>Jl. Jalan, Oebobo, Kupang, NTT</td>
+                          <td class="text-center">-</td>
+                          <td>JNE</td>
+                          <td class="text-center">
+                            -
+                          </td>
+                          <td><a href="#" class="btn btn-primary">Lacak</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            5
+                          </td>
+                          <td>Albert</td>
+                          <td>10-10-2024</td>
+                          <td>
+                            <div class="badge badge-success">Success</div>
+                          </td>                        
+                          <td>Anyaman Lontar So'e</td>
+                          <td class="text-center">2</td>
+                          <td>Rp200,000</td>
+                          <td>Jl. Jalan, Oebobo, Kupang, NTT</td>
+                          <td>11-10-2024</td>
+                          <td>JNE</td>
+                          <td>
+                            <div class="badge badge-success">Delivered</div>
+                          </td>
+                          <td><a href="#" class="btn btn-primary">Lacak</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            6
+                          </td>
+                          <td>Albert</td>
+                          <td>10-10-2024</td>
+                          <td>
+                            <div class="badge badge-success">Success</div>
+                          </td>                        
+                          <td>Anyaman Lontar So'e</td>
+                          <td class="text-center">2</td>
+                          <td>Rp200,000</td>
+                          <td>Jl. Jalan, Oebobo, Kupang, NTT</td>
+                          <td>11-10-2024</td>
+                          <td>JNE</td>
+                          <td>
+                            <div class="badge badge-success">Delivered</div>
+                          </td>
+                          <td><a href="#" class="btn btn-primary">Lacak</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            7
+                          </td>
+                          <td>Albert</td>
+                          <td>10-10-2024</td>
+                          <td>
+                            <div class="badge badge-success">Success</div>
+                          </td>                        
+                          <td>Anyaman Lontar So'e</td>
+                          <td class="text-center">2</td>
+                          <td>Rp200,000</td>
+                          <td>Jl. Jalan, Oebobo, Kupang, NTT</td>
+                          <td>11-10-2024</td>
+                          <td>JNE</td>
+                          <td>
+                            <div class="badge badge-success">Delivered</div>
+                          </td>
+                          <td><a href="#" class="btn btn-primary">Lacak</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            8
+                          </td>
+                          <td>Albert</td>
+                          <td>10-10-2024</td>
+                          <td>
+                            <div class="badge badge-success">Success</div>
+                          </td>                        
+                          <td>Anyaman Lontar So'e</td>
+                          <td class="text-center">2</td>
+                          <td>Rp200,000</td>
+                          <td>Jl. Jalan, Oebobo, Kupang, NTT</td>
+                          <td>11-10-2024</td>
+                          <td>JNE</td>
+                          <td>
+                            <div class="badge badge-success">Delivered</div>
+                          </td>
+                          <td><a href="#" class="btn btn-primary">Lacak</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            9
+                          </td>
+                          <td>Albert</td>
+                          <td>10-10-2024</td>
+                          <td>
+                            <div class="badge badge-success">Success</div>
+                          </td>                        
+                          <td>Anyaman Lontar So'e</td>
+                          <td class="text-center">2</td>
+                          <td>Rp200,000</td>
+                          <td>Jl. Jalan, Oebobo, Kupang, NTT</td>
+                          <td>11-10-2024</td>
+                          <td>JNE</td>
+                          <td>
+                            <div class="badge badge-success">Delivered</div>
+                          </td>
+                          <td><a href="#" class="btn btn-primary">Lacak</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            10
+                          </td>
+                          <td>Albert</td>
+                          <td>10-10-2024</td>
+                          <td>
+                            <div class="badge badge-success">Success</div>
+                          </td>                        
+                          <td>Anyaman Lontar So'e</td>
+                          <td class="text-center">2</td>
+                          <td>Rp200,000</td>
+                          <td>Jl. Jalan, Oebobo, Kupang, NTT</td>
+                          <td>11-10-2024</td>
+                          <td>JNE</td>
+                          <td>
+                            <div class="badge badge-success">Delivered</div>
+                          </td>
+                          <td><a href="#" class="btn btn-primary">Lacak</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            11
+                          </td>
+                          <td>Albert</td>
+                          <td>10-10-2024</td>
+                          <td>
+                            <div class="badge badge-success">Success</div>
+                          </td>                        
+                          <td>Anyaman Lontar So'e</td>
+                          <td class="text-center">2</td>
+                          <td>Rp200,000</td>
+                          <td>Jl. Jalan, Oebobo, Kupang, NTT</td>
+                          <td>11-10-2024</td>
+                          <td>JNE</td>
+                          <td>
+                            <div class="badge badge-success">Delivered</div>
+                          </td>
+                          <td><a href="#" class="btn btn-primary">Lacak</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
         </section>
         <!-- SETTING THEME -->
         <div class="settingSidebar">
@@ -349,6 +614,10 @@
   </div>
   <!-- General JS Scripts -->
   <script src="js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <script src="js/datatables.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="js/datatables.js"></script>
   <!-- Template JS File -->
   <script src="js/scripts.js"></script>
 </body>

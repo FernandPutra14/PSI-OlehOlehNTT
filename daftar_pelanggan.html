@@ -7,6 +7,7 @@
   <title>Dashboard - OlehOlehNTT</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="css/app.min.css">
+  <link rel="stylesheet" href="css/dataTables._bootstrap4min.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="css/layoutdashboard.css">
   <link rel="stylesheet" href="css/components.css">
@@ -248,7 +249,89 @@
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
-          
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Daftar Pelanggan</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped table-hover" id="table-1">
+                      <thead>
+                        <tr>
+                          <th class="text-center">
+                            ID
+                          </th>
+                          <th>Email</th>
+                          <th>Nama</th>
+                          <th>No Telepon</th>
+                          <th>Tanggal Lahir</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            1
+                          </td>
+                          <td>albertberliano@gmail.com</td>
+                          <td class="align-middle">Albert Tapatab</td>
+                          <td>08214480529</td>
+                          <td>08-01-2005</td>
+                          <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        </tr>
+                        
+                        <tr>
+                          <td>
+                            2
+                          </td>
+                          <td>oswaldusfernand@gmail.com</td>
+                          <td class="align-middle">Fernand Putra</td>
+                          <td>082340678990</td>
+                          <td>14-04-2004</td>
+                          <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            3
+                          </td>
+                          <td>michelle@gmail.com</td>
+                          <td class="align-middle">Michelle</td>
+                          <td>082234567890</td>
+                          <td>22-03-2004</td>
+                          <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            4
+                          </td>
+                          <td>aditaklal@gmail.com</td>
+                          <td class="align-middle">Adi Taklal</td>
+                          <td>082098765432</td>
+                          <td>29-02-2004</td>
+                          <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        </tr>
+
+                        <tr>
+                          <td>
+                            5
+                          </td>
+                          <td>umbukondatana@gmail.com</td>
+                          <td class="align-middle">Umbu Kondatana</td>
+                          <td>087866899836</td>
+                          <td>01-10-2009</td>
+                          <td><a href="#" class="btn btn-primary">Detail</a></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>                
+              </div>
+            </div>
+          </div>
         </section>
         <!-- SETTING THEME -->
         <div class="settingSidebar">
@@ -349,6 +432,10 @@
   </div>
   <!-- General JS Scripts -->
   <script src="js/app.min.js"></script>
+  <!-- JS Libraies -->
+  <script src="js/datatables.min.js"></script>
+  <!-- Page Specific JS File -->
+  <script src="js/datatables.js"></script>
   <!-- Template JS File -->
   <script src="js/scripts.js"></script>
 </body>
