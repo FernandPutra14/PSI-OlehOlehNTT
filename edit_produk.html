@@ -186,7 +186,6 @@
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="shopping-bag"></i><span>Pesanan</span></a>
                 <ul class="dropdown-menu">
                     <li><a class="nav-link" href="daftar_pesanan.html">Daftar Pesanan</a></li>
-                    <li><a class="nav-link" href="#">Pengaturan Pengiriman</a></li>
                     <li><a class="nav-link" href="#">Retur & Pengembalian</a></li>
                 </ul>
                 </li>
@@ -201,7 +200,6 @@
                     <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="credit-card"></i><span>Transaksi</span></a>
                     <ul class="dropdown-menu">
                     <li><a class="nav-link" href="riwayat_transaksi.html">Riwayat Transaksi</a></li>
-                    <li><a class="nav-link" href="#">Pengaturan Pembayaran</a></li>
                     <li><a class="nav-link" href="#">Refund & Pembatalan</a></li>
                     </ul>
                 </li>
@@ -216,8 +214,8 @@
                 <li class="dropdown">
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="settings"></i><span>Pengaturan</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="#">Pengaturan Toko</a></li>
-                    <li><a class="nav-link" href="#">Pengaturan Pengguna/Admin</a></li>
+                    <li><a class="nav-link" href="#">Pengaturan Pengiriman</a></li>
+                    <li><a class="nav-link" href="#">Pengaturan Pembayaran</a></li>
                     <li><a class="nav-link" href="#">Pengaturan Situs Web</a></li>
                     <li><a class="nav-link" href="#">Notifikasi</a></li>
                 </ul>
@@ -318,8 +316,13 @@
                             <input type="number" class="form-control" value="50">
                         </div>
                         <div class="form-group">
-                            <label>Diskon (%)</label>
-                            <input type="number" class="form-control is-valid" required="" value="5">
+                            <label>Diskon</label>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control is-valid" required="" value="5">
+                                <div class="input-group-append">
+                                    <div class="input-group-text">%</div>
+                                </div>
+                            </div>
                         </div>
                         <div class="form-group">
                             <label>Upload Foto Produk<span class="text-danger">*</span></label>

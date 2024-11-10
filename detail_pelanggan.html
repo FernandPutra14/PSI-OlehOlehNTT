@@ -193,8 +193,8 @@
                 <li class="dropdown active">
                     <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="user-check"></i><span>Pelanggan</span></a>
                     <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="daftar_pelanggan.html">Daftar Pelanggan</a></li>
-                    <li class="active"><a class="nav-link" href="kelola_pelanggan.html">Kelola Pelanggan</a></li>
+                    <li class="active"><a class="nav-link" href="daftar_pelanggan.html">Daftar Pelanggan</a></li>
+                    <li><a class="nav-link" href="kelola_pelanggan.html">Kelola Pelanggan</a></li>
                     </ul>
                 </li>
                 <li class="dropdown">
@@ -254,7 +254,8 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="#">Pelanggan</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Kelola Pelanggan</li>
+                        <li class="breadcrumb-item"><a href="daftar_pelanggan.html">Daftar Pelanggan</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Detail Pelanggan</li>
                         </ol>
                     </nav>   
                 </div>
@@ -264,30 +265,29 @@
                         <div class="col-12 col-sm-6 col-lg-6">
                           <div class="card card-primary">
                             <div class="card-header">
-                              <h4>Tambah Pelanggan</h4>
+                              <h4>Informasi Pelanggan</h4>
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                   <div class="form-group col-6">
                                     <label for="frist_name">First Name<span class="text-danger">*</span></label>
-                                    <input id="frist_name" type="text" class="form-control" name="frist_name" autofocus>
+                                    <input id="frist_name" type="text" class="form-control" name="frist_name" value="Albert">
                                   </div>
                                   <div class="form-group col-6">
                                     <label for="last_name">Last Name<span class="text-danger">*</span></label>
-                                    <input id="last_name" type="text" class="form-control" name="last_name">
+                                    <input id="last_name" type="text" class="form-control" name="last_name" value="Tapatab">
                                   </div>
                                 </div>
                                 <div class="form-group">
                                   <label for="email">Email<span class="text-danger">*</span></label>
-                                  <input id="email" type="email" class="form-control" name="email">
+                                  <input id="email" type="email" class="form-control" name="email" value="albertberliano@gmail.com">
                                   <div class="invalid-feedback">
                                   </div>
                                 </div>
                                 <div class="row">
                                   <div class="form-group col-6">
                                     <label for="password" class="d-block">Password<span class="text-danger">*</span></label>
-                                    <input id="password" type="password" class="form-control pwstrength" data-indicator="pwindicator"
-                                      name="password">
+                                    <input id="password" type="password" class="form-control pwstrength" data-indicator="pwindicator" name="password" value="albert">
                                     <div id="pwindicator" class="pwindicator">
                                       <div class="bar"></div>
                                       <div class="label"></div>
@@ -295,22 +295,22 @@
                                   </div>
                                   <div class="form-group col-6">
                                     <label for="password2" class="d-block">Password Confirmation<span class="text-danger">*</span></label>
-                                    <input id="password2" type="password" class="form-control" name="password-confirm">
+                                    <input id="password2" type="password" class="form-control" name="password-confirm" value="albert">
                                   </div>
                                 </div>
                                 <div class="form-group">
                                     <label>Nomor Telepon<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control">
+                                    <input type="text" class="form-control" value="082144890529">
                                     <div class="invalid-feedback">
                                     </div>
                                 </div>   
                                 <div class="form-group">
                                     <label>Tanggal Lahir<span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control datepicker">
+                                    <input type="text" class="form-control datepicker" value="2005-01-08">
                                   </div>                          
                                 <div class="form-group">
                                   <button type="submit" class="btn btn-primary btn-lg btn-block">
-                                    Tambah Pelanggan
+                                    Simpan Perubahan
                                   </button>
                                 </div>
                                 
@@ -322,7 +322,7 @@
                         <div class="col-12 col-sm-6 col-lg-6">
                             <div class="card card-danger">
                                 <div class="card-header">
-                                    <h4>Tambah Alamat</h4>
+                                    <h4>Alamat Pelanggan</h4>
                                 </div>
                                 <div class="padding-20">
                                     <ul class="nav nav-tabs" id="myTab2" role="tablist">
@@ -340,45 +340,45 @@
                                         <div class="row">
                                             <div class="form-group col-6">
                                             <label>Provinsi<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" autofocus>
+                                            <input type="text" class="form-control" value="Nusa Tenggara Timur">
                                             </div>
                                             <div class="form-group col-6">
                                             <label>Kabupaten/Kota<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" value="Kupang">
                                             </div>
                                         </div>
     
                                         <div class="row">
                                             <div class="form-group col-6">
                                             <label>Kecamatan<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" autofocus>
+                                            <input type="text" class="form-control" value="Oebobo">
                                             </div>
                                             <div class="form-group col-6">
                                             <label>Kelurahan/Desa<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" value="Fatululi">
                                             </div>
                                         </div>
     
                                         <div class="row">
                                             <div class="form-group col-6">
                                             <label>RT<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" autofocus>
+                                            <input type="text" class="form-control" value="08">
                                             </div>
                                             <div class="form-group col-6">
                                             <label>RW<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" value="18">
                                             </div>
                                         </div>
     
                                         <div class="form-group">
                                             <label>Jalan<span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control">
+                                            <input type="text" class="form-control" value="Jl. Frans Seda, No. 40">
                                             <div class="invalid-feedback">
                                             </div>
                                         </div>
                                                               
                                         <div class="form-group text-right" style="margin-bottom: 10px;">
-                                            <button class="btn btn-lg btn-primary mr-1" type="submit">Simpan Alamat</button>
+                                            <button class="btn btn-lg btn-primary mr-1" type="submit">Simpan Perubahan</button>
                                             <button class="btn btn-lg btn-secondary" data-toggle="modal" data-target="#basicModal" type="reset">Reset</button>                                        
                                         </div>       
                                              
@@ -431,15 +431,144 @@
                                         </div>                                              
                                       </div>
                                     </div>
-                                  </div>
-
-                               
-                                
-                             
+                                  </div>                                                 
                             </div>
                           </div>
                         </div>
-                     </div>                      
+                    </div>  
+                    
+                    
+                    <div class="row mt-4">
+                        <div class="col-12">
+                          <div class="card">
+                            <div class="card-header">
+                              <h4>Riwayat Pelanggan</h4>
+                            </div>
+                            <div class="card-body">
+                              <div class="float-left">
+                                <ul class="nav nav-pills" style="cursor: pointer;">
+                                    <li class="nav-item">
+                                      <a class="nav-link active">Semua <span class="badge badge-white">10</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link">Diproses<span class="badge badge-primary">2</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link">Dikirim<span class="badge badge-primary">3</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link">Pengembalian<span class="badge badge-primary">0</span></a>
+                                      </li>
+                                    <li class="nav-item">
+                                      <a class="nav-link">Selesai<span class="badge badge-primary">4</span></a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link">Dibatalkan<span class="badge badge-primary">1</span></a>
+                                      </li>
+                                  </ul>
+                              </div>
+                              <div class="float-right">
+                                <form>
+                                  <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-append">
+                                      <button class="btn btn-primary"><i class="fas fa-search"></i></button>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="clearfix mb-3"></div>
+                              <div class="table-responsive">
+                                <table class="table table-striped">
+                                  <tr>
+                                    <th>ID</th>
+                                    <th>Tanggal</th>
+                                    <th>Barang</th>
+                                    <th>Jumlah</th>
+                                    <th>Total</th>
+                                    <th>Alamat</th>
+                                    <th>Status</th>
+                                  </tr>
+                                  <tr>
+                                    <td>1</td>                                    
+                                    <td>30-10-2024</td>                                    
+                                    <td>Anyaman Lontar So'e</td>
+                                    <td>2</td>
+                                    <td>Rp200,000</td>
+                                    <td>Default</td>
+                                    <td>
+                                      <div class="badge badge-success">Delivered</div>
+                                    </td>
+                                  </tr>
+                                  
+                                  <tr>
+                                    <td>2</td>                                    
+                                    <td>30-10-2024</td>                                    
+                                    <td>Kopi Flores Bajawa</td>
+                                    <td>1</td>
+                                    <td>Rp75,000</td>
+                                    <td>Default</td>
+                                    <td>
+                                      <div class="badge badge-info">In Progress</div>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>3</td>                                    
+                                    <td>01-11-2024</td>                                    
+                                    <td>Anyaman Lontar So'e</td>
+                                    <td>2</td>
+                                    <td>Rp200,000</td>
+                                    <td>Default</td>
+                                    <td>
+                                      <div class="badge badge-success">Delivered</div>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>4</td>                                    
+                                    <td>09-11-2024</td>                                    
+                                    <td>Kain Tenun Sumba</td>
+                                    <td>1</td>
+                                    <td>Rp300,000</td>
+                                    <td>Alternatif</td>
+                                    <td>
+                                      <div class="badge badge-danger">Cancel</div>
+                                    </td>
+                                  </tr>
+                                </table>
+                              </div>
+                              <div class="float-right">
+                                <nav>
+                                  <ul class="pagination">
+                                    <li class="page-item disabled">
+                                      <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&laquo;</span>
+                                        <span class="sr-only">Previous</span>
+                                      </a>
+                                    </li>
+                                    <li class="page-item active">
+                                      <a class="page-link" href="#">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                      <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item">
+                                      <a class="page-link" href="#">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                      <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&raquo;</span>
+                                        <span class="sr-only">Next</span>
+                                      </a>
+                                    </li>
+                                  </ul>
+                                </nav>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
                 </div>
             
             </section>
