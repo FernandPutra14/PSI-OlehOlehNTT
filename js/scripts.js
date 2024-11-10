@@ -389,10 +389,10 @@ $(function () {
     me.click(function () {
       $(target).collapse("toggle");
       $(target).on("shown.bs.collapse", function () {
-        me.html('<i class="fas fa-minus"></i>');
+        me.html('<i class="fas fa-chevron-up"></i>');
       });
       $(target).on("hidden.bs.collapse", function () {
-        me.html('<i class="fas fa-plus"></i>');
+        me.html('<i class="fas fa-chevron-down"></i>');
       });
       return false;
     });

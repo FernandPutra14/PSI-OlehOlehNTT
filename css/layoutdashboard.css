@@ -4774,6 +4774,21 @@ textarea.form-control {
     box-shadow: 0 4px 20px 0 rgba(0,0,0,0.14),0 7px 10px -5px rgba(76,175,80,0.4)
 }
 
+.card-circle {
+    display: inline-flex;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+}
+
+
 .card .card-type-3 .card-circle i {
     font-size: 15px
 }
