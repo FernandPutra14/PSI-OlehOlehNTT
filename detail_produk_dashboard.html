@@ -251,109 +251,93 @@
             <section class="section">
 
             <!-- Breadcrumb -->
-            <div class="row" style="justify-content: center;">
-                <div class="col-12 col-md-6 col-lg-6" style="padding: 0;">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Produk</a></li>
-                        <li class="breadcrumb-item"><a href="daftar_produk.html">Daftar Produk</a></li>
-                        <li class="breadcrumb-item" aria-current="page">Edit Produk</li>
-                        </ol>
-                    </nav>  
-                </div>  
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Produk</a></li>
+                    <li class="breadcrumb-item"><a href="daftar_produk.html">Daftar Produk</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Detail Produk</li>
+                    </ol>
+                </nav>  
             </div>
-
             <div class="section-body">
-                <div class="row" style="justify-content: center;">
-                <div class="col-12 col-md-6 col-lg-6">
-                    <div class="card card-primary">
-                    <div class="card-header" style="padding-top: 40px;">
-                        <h4>Edit Produk</h4>
+                <div class="row">
+                  <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card card-secondary author-box">
+                      <div class="card-body">
+                        <div class="author-box-center gambar_detail_produk_container" style="  overflow: hidden; position: relative; cursor: crosshair;">
+                          <img alt="image" src="assets/produk/produk_kopi_bajawa.png" class="author-box-picture" style="width: 320px; height: 300px;">
+                          <div class="clearfix"></div>                          
+                        </div>                        
+                      </div>
                     </div>
-                    <div class="card-body">
-                        <div class="form-group">
-                            <label>Nama Produk<span class="text-danger">*</span></label>
-                            <input type="text" class="form-control is-valid" value="Kopi Flores Bajawa" required="">
-                        </div>
-                        <div class="form-group">
-                            <label>Deskripsi Produk<span class="text-danger">*</span></label>
-                            <textarea class="form-control">Kopi Flores Bajawa yang memiliki cita rasa khas dengan aroma bunga dan sedikit rasa cokelat, dihasilkan dari biji kopi pilihan yang ditanam di dataran tinggi Flores.</textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>Spesifikasi Produk<span class="text-danger">*</span></label>
-                            <textarea class="form-control" style="min-height: 180px;">Spesifikasi Kopi Flores Bajawa adalah sebagai berikut :
-- Jenis: Arabika
-- Aroma: Bunga dengan sentuhan cokelat
-- Asal: Bajawa, Flores, Nusa Tenggara Timur
-- Berat: 250 gram
-- Cara Penyimpanan: Simpan di tempat sejuk dan kering
-- Cara Penyajian: Seduh dengan air panas 90-95°C untuk hasil terbaik</textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>Kategori<span class="text-danger">*</span></label>
-                            <select class="form-control selectric">
-                            <option></option>
-                            <option>Kain Tenun</option>
-                            <option>Makanan</option>
-                            <option selected>Minuman</option>
-                            <option>Aksesoris</option>
-                            <option>Pakaian</option>
-                            <option>Kesehatan</option>
-                            <option>Lain-lain</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                        <label>Harga<span class="text-danger">*</span></label>
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    Rp
-                                </div>
-                            </div>
-                            <input type="text" class="form-control currency" value="75,000">
-                        </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Stok<span class="text-danger">*</span></label>
-                            <input type="number" class="form-control" value="50">
-                        </div>
-                        <div class="form-group">
-                            <label>Diskon (%)</label>
-                            <input type="number" class="form-control is-valid" required="" value="5">
-                        </div>
-                        <div class="form-group">
-                            <label>Upload Foto Produk<span class="text-danger">*</span></label>
-                            <div class="custom-file">
-                                <input type="file" class="custom-file-input" id="customFile">
-                                <label class="custom-file-label" for="customFile">kopi_flores_bajawa.jpg</label>
-                            </div>
-                        </div>   
-                        <div class="form-group">
-                            <label class="form-label">Status</label>
-                            <div class="selectgroup w-100">
-                            <label class="selectgroup-item">
-                                <input type="radio" name="radio1" value="1" class="selectgroup-input-radio">
-                                <span class="selectgroup-button">Not Active</span>
-                            </label>
-                            <label class="selectgroup-item">
-                                <input type="radio" name="radio1" value="2" class="selectgroup-input-radio" checked>
-                                <span class="selectgroup-button">Active</span>
-                            </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-footer text-right">
-                        <button class="btn btn-primary mr-1" type="submit">Simpan Perubahan</button>
-                        <button class="btn btn-danger" data-toggle="modal" data-target="#basicModal" type="cancel">Batal</button>
-                    </div>
+                    <div class="card card-danger">
+                      <div class="card-body">
+                          <p class="clearfix">
+                            <span class="float-left">
+                              Kategori
+                            </span>
+                            <span class="float-right text-muted">
+                              Minuman
+                            </span>
+                          </p>
+                          <p class="clearfix">
+                            <span class="float-left">
+                              Harga
+                            </span>
+                            <span class="float-right text-muted">
+                              Rp75,000
+                            </span>
+                          </p>
+                          <p class="clearfix">
+                            <span class="float-left">
+                              Stok
+                            </span>
+                            <span class="float-right text-muted">
+                              50
+                            </span>
+                          </p>
+                          <p class="clearfix">
+                            <span class="float-left">
+                              Diskon
+                            </span>
+                            <span class="float-right text-muted">
+                              5%
+                            </span>
+                          </p>                          
+                      </div>
                     </div>
                     
+                  </div>
+                  <div class="col-12 col-md-12 col-lg-8">
+                    <div class="card card-primary">
+                      <div style="padding: 10px 20px;">
+                            <div class="card-header" style="padding: 10px 0;">
+                                <h4>Detail Produk</h4>                                
+                            </div>
+                            <div class="section-title font-14" style="margin: 10px 0 ;">Judul</div>
+                            <div class="row">
+                                <div class="col-12">                                
+                                  <h4>Kopi Flores Bajawa</h4>
+                                </div>
+                            </div>
+                            <div class="section-title font-14" style="margin: 10px 0 ;">Deskripsi</div>
+                            <p class="m-t-10">Kopi Flores Bajawa yang memiliki cita rasa khas dengan aroma bunga dan sedikit rasa cokelat, dihasilkan dari biji kopi pilihan yang ditanam di dataran tinggi Flores.</p>
+                            <div class="section-title font-14" style="margin: 10px 0 ;">Spesifikasi</div>
+                            <p>Spesifikasi Kopi Flores Bajawa adalah sebagai berikut :</p>
+                            <ul>
+                              <li>Jenis: Arabika</li>
+                              <li>Aroma: Bunga dengan sentuhan cokelat</li>
+                              <li>Asal: Bajawa, Flores, Nusa Tenggara Timur</li>
+                              <li>Berat: 250 gram</li>
+                              <li>Cara Penyimpanan: Simpan di tempat sejuk dan kering</li>
+                              <li>Cara Penyajian: Seduh dengan air panas 90-95°C untuk hasil terbaik</li>
+                            </ul>                            
+                      </div>
                     </div>
+                  </div>
                 </div>
-                
-                </div>
-                </div>
-            </div>
+            </div>            
             
             </section>
 
@@ -479,6 +463,7 @@
     <script src="js/app.min.js"></script>
     <!-- JS Libraies -->
     <script src="bundles/jquery-selectric/jquery.selectric.min.js"></script>
+    <script src="js/zoompro.js"></script>
     <!-- Template JS File -->
     <script src="js/scripts.js"></script>
 </body>
