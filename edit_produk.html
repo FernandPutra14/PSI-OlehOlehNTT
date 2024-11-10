@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Dashboard - OlehOlehNTT</title>
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="css/app.min.css">
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="css/layoutdashboard.css">
+  <link rel="stylesheet" href="bundles/jquery-selectric/selectric.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <!-- Custom style CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+  <!-- <div class="loader"></div> -->
+    <div id="app">
+        <div class="main-wrapper main-wrapper-1">
+        <div class="navbar-bg"></div>
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg main-navbar sticky">
+            <div class="form-inline mr-auto">
+            <ul class="navbar-nav mr-3">
+                <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg collapse-btn"> 
+                    <i data-feather="align-justify"></i>
+                </a></li>
+                <li><a href="#" class="nav-link nav-link-lg fullscreen-btn">
+                    <i data-feather="maximize"></i>
+                </a></li>
+                <li>
+                <form class="form-inline mr-auto">
+                    <div class="search-element">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search" data-width="200">
+                    <button class="btn" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    </div>
+                </form>
+                </li>
+            </ul>
+            </div>
+            <ul class="navbar-nav navbar-right">
+            <!-- MESSAGES -->
+            <li class="dropdown dropdown-list-toggle">
+                <a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle">
+                <i data-feather="mail"></i>
+                <span class="badge headerBadge1">3</span> 
+                </a>
+                <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+                <div class="dropdown-header">
+                    Messages
+                    <div class="float-right">
+                    <a href="#">Mark All As Read</a>
+                    </div>
+                </div>
+                <div class="dropdown-list-content dropdown-list-message">
+                    <a href="#" class="dropdown-item"> 
+                    <span class="dropdown-item-avatar text-white"> 
+                        <img alt="image" src="assets/img/users/user-1.png" class="rounded-circle">
+                    </span> 
+                    <span class="dropdown-item-desc"> 
+                        <span class="message-user">Umbu Kondatana</span>
+                        <span class="time messege-text">Telah menyelesaikan pembayaran.</span>
+                        <span class="time">5 Menit Lalu</span>
+                    </span>
+                    </a> 
+                    
+                    <a href="#" class="dropdown-item"> 
+                    <span class="dropdown-item-avatar text-white"> 
+                        <img alt="image" src="assets/img/users/user-3.png" class="rounded-circle">
+                    </span> 
+                    <span class="dropdown-item-desc"> 
+                        <span class="message-user">Beni Liufeto</span>
+                        <span class="time messege-text">Pesanan telah diterima.</span>
+                        <span class="time">2 Jam Lalu</span>
+                    </span>
+                    </a> 
+                    
+                    <a href="#" class="dropdown-item"> 
+                    <span class="dropdown-item-avatar text-white"> 
+                        <img alt="image" src="assets/img/users/user-5.png" class="rounded-circle">
+                    </span> 
+                    <span class="dropdown-item-desc"> 
+                        <span class="message-user">Bernard Pa</span>
+                        <span class="time messege-text">Mengajukan permintaan pengembalian dana.</span>
+                        <span class="time">Kemarin</span>
+                    </span>
+                    </a> 
+                    
+                </div>
+                <div class="dropdown-footer text-center">
+                    <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
+                </div>
+            </li>
+
+            <!-- NOTIFICATION -->
+            <li class="dropdown dropdown-list-toggle">
+                <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg">
+                <i data-feather="bell" class="bell"></i>
+                </a>
+                <div class="dropdown-menu dropdown-list dropdown-menu-right pullDown">
+                <div class="dropdown-header">
+                    Notifications
+                    <div class="float-right">
+                    <a href="#">Mark All As Read</a>
+                    </div>
+                </div>
+                <div class="dropdown-list-content dropdown-list-icons">
+                    <a href="#" class="dropdown-item dropdown-item-unread"> 
+                    <span class="dropdown-item-icon bg-warning text-white"><i class="fas fa-exclamation-circle"></i></span> 
+                    <span class="dropdown-item-desc"> Stok <b>Kopi Flores</b> hampir habis! Tersisa 5 item.
+                        <span class="time">10 Menit Lalu</span>
+                    </span>
+                    </a> 
+                    
+                    <a href="#" class="dropdown-item"> 
+                    <span class="dropdown-item-icon bg-success text-white"><i class="fas fa-check"></i></span> 
+                    <span class="dropdown-item-desc"> <b>Oswaldus</b> telah memesan <b>Kain Tenun Ikat</b>.
+                        <span class="time">2 Jam Lalu</span>
+                    </span>
+                    </a> 
+                    
+                    <a href="#" class="dropdown-item"> 
+                    <span class="dropdown-item-icon bg-danger text-white"><i class="fas fa-box"></i></span> 
+                    <span class="dropdown-item-desc"> Stok <b>Minyak Sopi</b> hanya tersisa 3 botol. Segera lakukan restock.
+                        <span class="time">Kemarin</span>
+                    </span>
+                    </a> 
+                </div>
+                <div class="dropdown-footer text-center">
+                    <a href="#">View All <i class="fas fa-chevron-right"></i></a>
+                </div>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user"> 
+                <img alt="image" src="assets/kategori_pakaian.png" class="user-img-radious-style"> 
+                <span class="d-sm-none d-lg-inline-block"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right pullDown">
+                <div class="dropdown-title">Hello Albert Tapatab</div>
+                    <a href="#" class="dropdown-item has-icon"> <i class="fas fa-bolt"></i>
+                        Activities
+                    </a> 
+                    <a href="#" class="dropdown-item has-icon"> <i class="fas fa-cog"></i>
+                        Settings
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <a href="index.html" class="dropdown-item has-icon text-danger"> <i class="fas fa-sign-out-alt"></i>
+                    Logout
+                    </a>
+                </div>
+            </li>
+            </ul>
+        </nav>
+
+        <!-- SIDEBAR -->
+        <div class="main-sidebar sidebar-style-2">
+            <aside id="sidebar-wrapper">
+            <div class="sidebar-brand">
+                <a href="dashboard.html"> <i data-feather="user" class="header-logo"></i> 
+                <span class="logo-name">Admin</span>
+                </a>
+            </div>
+            <ul class="sidebar-menu">
+                <li class="menu-header">Dashboard</li>
+                <li class="dropdown">
+                <a href="dashboard.html" class="nav-link"><i data-feather="monitor"></i><span>Dashboard</span></a>
+                </li>
+                <li class="menu-header">Main</li>
+                <li class="dropdown active">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="package"></i><span>Produk</span></a>
+                <ul class="dropdown-menu">
+                    <li class="active"><a class="nav-link" href="daftar_produk.html">Daftar Produk</a></li>
+                    <li><a class="nav-link" href="tambah_produk.html">Tambah Produk</a></li>
+                    <li><a class="nav-link" href="kelola_kategori.html">Kelola Kategori</a></li>
+                    <li><a class="nav-link" href="#">Kelola Diskon</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="shopping-bag"></i><span>Pesanan</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="daftar_pesanan.html">Daftar Pesanan</a></li>
+                    <li><a class="nav-link" href="#">Pengaturan Pengiriman</a></li>
+                    <li><a class="nav-link" href="#">Retur & Pengembalian</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="user-check"></i><span>Pelanggan</span></a>
+                    <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="daftar_pelanggan.html">Daftar Pelanggan</a></li>
+                    <li><a class="nav-link" href="#">Kelola Pelanggan</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="credit-card"></i><span>Transaksi</span></a>
+                    <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="riwayat_transaksi.html">Riwayat Transaksi</a></li>
+                    <li><a class="nav-link" href="#">Pengaturan Pembayaran</a></li>
+                    <li><a class="nav-link" href="#">Refund & Pembatalan</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layout"></i><span>Blog/Artikel</span></a>
+                    <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="daftar_blog.html">Daftar Blog</a></li>
+                    <li><a class="nav-link" href="kelola_blog.html">Kelola Blog</a></li>
+                    </ul>
+                </li>
+                <li class="menu-header">Pages</li>
+                <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="settings"></i><span>Pengaturan</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="#">Pengaturan Toko</a></li>
+                    <li><a class="nav-link" href="#">Pengaturan Pengguna/Admin</a></li>
+                    <li><a class="nav-link" href="#">Pengaturan Situs Web</a></li>
+                    <li><a class="nav-link" href="#">Notifikasi</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="bar-chart"></i><span>Laporan</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="#">Laporan Penjualan</a></li>
+                    <li><a class="nav-link" href="#">Laporan Produk</a></li>
+                    <li><a class="nav-link" href="#">Laporan Pelanggan</a></li>
+                    <li><a class="nav-link" href="#">Laporan Transaksi</a></li>
+                </ul>
+                </li>
+                <li class="dropdown">
+                <a href="#" class="menu-toggle nav-link has-dropdown"><i
+                    data-feather="help-circle"></i><span>Feedback & Support</span></a>
+                <ul class="dropdown-menu">
+                    <li><a class="nav-link" href="#">Ulasan Produk</a></li>
+                    <li><a class="nav-link" href="#">Layanan Pelanggan</a></li>
+                    <li><a class="nav-link" href="#">Dukungan Teknis</a></li>
+                </ul>
+                </li>
+                <li><a href="admin_calendar.html" class="nav-link"><i data-feather="calendar"></i><span>Calendar</span></a></li>
+                <li><a href="#" class="nav-link"><i data-feather="map"></i><span>Maps</span></a></li>
+            </ul>
+            </aside>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <section class="section">
+
+            <!-- Breadcrumb -->
+            <div class="row" style="justify-content: center;">
+                <div class="col-12 col-md-6 col-lg-6" style="padding: 0;">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Produk</a></li>
+                        <li class="breadcrumb-item"><a href="daftar_produk.html">Daftar Produk</a></li>
+                        <li class="breadcrumb-item" aria-current="page">Edit Produk</li>
+                        </ol>
+                    </nav>  
+                </div>  
+            </div>
+
+            <div class="section-body">
+                <div class="row" style="justify-content: center;">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <div class="card">
+                    <div class="card-header" style="padding-top: 40px;">
+                        <h4>Edit Produk</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Nama Produk<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control is-valid" value="Kopi Flores Bajawa" required="">
+                        </div>
+                        <div class="form-group">
+                            <label>Deskripsi Produk<span class="text-danger">*</span></label>
+                            <textarea class="form-control">Kopi Flores Bajawa yang memiliki cita rasa khas dengan aroma bunga dan sedikit rasa cokelat, dihasilkan dari biji kopi pilihan yang ditanam di dataran tinggi Flores.</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Spesifikasi Produk<span class="text-danger">*</span></label>
+                            <textarea class="form-control" style="min-height: 180px;">Spesifikasi Kopi Flores Bajawa adalah sebagai berikut :
+- Jenis: Arabika
+- Aroma: Bunga dengan sentuhan cokelat
+- Asal: Bajawa, Flores, Nusa Tenggara Timur
+- Berat: 250 gram
+- Cara Penyimpanan: Simpan di tempat sejuk dan kering
+- Cara Penyajian: Seduh dengan air panas 90-95°C untuk hasil terbaik</textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Kategori<span class="text-danger">*</span></label>
+                            <select class="form-control selectric">
+                            <option></option>
+                            <option>Kain Tenun</option>
+                            <option>Makanan</option>
+                            <option selected>Minuman</option>
+                            <option>Aksesoris</option>
+                            <option>Pakaian</option>
+                            <option>Kesehatan</option>
+                            <option>Lain-lain</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                        <label>Harga<span class="text-danger">*</span></label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    Rp
+                                </div>
+                            </div>
+                            <input type="text" class="form-control currency" value="75,000">
+                        </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Stok<span class="text-danger">*</span></label>
+                            <input type="number" class="form-control" value="50">
+                        </div>
+                        <div class="form-group">
+                            <label>Diskon (%)</label>
+                            <input type="number" class="form-control is-valid" required="" value="5">
+                        </div>
+                        <div class="form-group">
+                            <label>Upload Foto Produk<span class="text-danger">*</span></label>
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="customFile">
+                                <label class="custom-file-label" for="customFile">kopi_flores_bajawa.jpg</label>
+                            </div>
+                        </div>   
+                        <div class="form-group">
+                            <label class="form-label">Status</label>
+                            <div class="selectgroup w-100">
+                            <label class="selectgroup-item">
+                                <input type="radio" name="radio1" value="1" class="selectgroup-input-radio">
+                                <span class="selectgroup-button">Not Active</span>
+                            </label>
+                            <label class="selectgroup-item">
+                                <input type="radio" name="radio1" value="2" class="selectgroup-input-radio" checked>
+                                <span class="selectgroup-button">Active</span>
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-footer text-right">
+                        <button class="btn btn-primary mr-1" type="submit">Simpan Perubahan</button>
+                        <button class="btn btn-danger" data-toggle="modal" data-target="#basicModal" type="cancel">Batal</button>
+                    </div>
+                    </div>
+                    
+                    </div>
+                </div>
+                
+                </div>
+                </div>
+            </div>
+            
+            </section>
+
+            <!-- modal batal -->
+            <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Batalkan Perubahan?</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                        Apakah Anda yakin ingin membatalkan perubahan?
+                        </div>
+                        <div class="modal-footer bg-whitesmoke br">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Tidak</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Yakin</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SETTING THEME -->
+            <div class="settingSidebar">
+            <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
+            </a>
+            <div class="settingSidebar-body ps-container ps-theme-default">
+                <div class=" fade show active">
+                <div class="setting-panel-header">Setting Panel
+                </div>
+                <div class="p-15 border-bottom">
+                    <h6 class="font-medium m-b-10">Select Layout</h6>
+                    <div class="selectgroup layout-color w-50">
+                    <label class="selectgroup-item">
+                        <input type="radio" name="value" value="1" class="selectgroup-input-radio select-layout" checked>
+                        <span class="selectgroup-button">Light</span>
+                    </label>
+                    <label class="selectgroup-item">
+                        <input type="radio" name="value" value="2" class="selectgroup-input-radio select-layout">
+                        <span class="selectgroup-button">Dark</span>
+                    </label>
+                    </div>
+                </div>
+                <div class="p-15 border-bottom">
+                    <h6 class="font-medium m-b-10">Sidebar Color</h6>
+                    <div class="selectgroup selectgroup-pills sidebar-color">
+                    <label class="selectgroup-item">
+                        <input type="radio" name="icon-input" value="1" class="selectgroup-input select-sidebar">
+                        <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                        data-original-title="Light Sidebar"><i class="fas fa-sun"></i></span>
+                    </label>
+                    <label class="selectgroup-item">
+                        <input type="radio" name="icon-input" value="2" class="selectgroup-input select-sidebar" checked>
+                        <span class="selectgroup-button selectgroup-button-icon" data-toggle="tooltip"
+                        data-original-title="Dark Sidebar"><i class="fas fa-moon"></i></span>
+                    </label>
+                    </div>
+                </div>
+                <div class="p-15 border-bottom">
+                    <h6 class="font-medium m-b-10">Color Theme</h6>
+                    <div class="theme-setting-options">
+                    <ul class="choose-theme list-unstyled mb-0">
+                        <li title="white" class="active">
+                        <div class="white"></div>
+                        </li>
+                        <li title="cyan">
+                        <div class="cyan"></div>
+                        </li>
+                        <li title="black">
+                        <div class="black"></div>
+                        </li>
+                        <li title="purple">
+                        <div class="purple"></div>
+                        </li>
+                        <li title="orange">
+                        <div class="orange"></div>
+                        </li>
+                        <li title="green">
+                        <div class="green"></div>
+                        </li>
+                        <li title="red">
+                        <div class="red"></div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="p-15 border-bottom">
+                    <div class="theme-setting-options">
+                    <label class="m-b-0">
+                        <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
+                        id="mini_sidebar_setting">
+                        <span class="custom-switch-indicator"></span>
+                        <span class="control-label p-l-10">Mini Sidebar</span>
+                    </label>
+                    </div>
+                </div>
+                <div class="p-15 border-bottom">
+                    <div class="theme-setting-options">
+                    <label class="m-b-0">
+                        <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input"
+                        id="sticky_header_setting">
+                        <span class="custom-switch-indicator"></span>
+                        <span class="control-label p-l-10">Sticky Header</span>
+                    </label>
+                    </div>
+                </div>
+                <div class="mt-4 mb-4 p-3 align-center rt-sidebar-last-ele">
+                    <a href="#" class="btn btn-icon icon-left btn-primary btn-restore-theme">
+                    <i class="fas fa-undo"></i> Restore Default
+                    </a>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <footer class="main-footer">        
+        </footer>
+        </div>
+    </div>
+    <!-- General JS Scripts -->
+    <script src="js/app.min.js"></script>
+    <!-- JS Libraies -->
+    <script src="bundles/jquery-selectric/jquery.selectric.min.js"></script>
+    <!-- Template JS File -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

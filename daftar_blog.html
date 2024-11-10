@@ -177,9 +177,9 @@
               <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="package"></i><span>Produk</span></a>
               <ul class="dropdown-menu">
                 <li><a class="nav-link" href="daftar_produk.html">Daftar Produk</a></li>
-                <li><a class="nav-link" href="#">Tambah Produk</a></li>
-                <li><a class="nav-link" href="#">Manajemen Kategori</a></li>
-                <li><a class="nav-link" href="#">Manajemen Diskon</a></li>
+                <li><a class="nav-link" href="tambah_produk.html">Tambah Produk</a></li>
+                <li><a class="nav-link" href="kelola_kategori.html">Kelola Kategori</a></li>
+                <li><a class="nav-link" href="#">Kelola Diskon</a></li>
               </ul>
             </li>
             <li class="dropdown">
@@ -209,7 +209,7 @@
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layout"></i><span>Blog/Artikel</span></a>
                 <ul class="dropdown-menu">
                   <li class="active"><a class="nav-link" href="daftar_blog.html">Daftar Blog</a></li>
-                  <li><a class="nav-link" href="#">Kelola Blog</a></li>
+                  <li><a class="nav-link" href="kelola_blog.html">Kelola Blog</a></li>
                 </ul>
             </li>
             <li class="menu-header">Pages</li>
@@ -249,6 +249,17 @@
       <!-- Main Content -->
       <div class="main-content">
         <section class="section">
+
+          <!-- Breadcrumb -->
+          <div class="row">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Blog/Artikel</a></li>
+                <li class="breadcrumb-item" aria-current="page">Daftar Blog</li>
+              </ol>
+            </nav>  
+          </div>
+
           <div class="row">
             <div class="col-12">
               <div class="card">
@@ -288,10 +299,10 @@
                             <div class="badge badge-info">Published</div>
                           </td>
                           <td>                            
-                            <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit">
+                            <a href="edit_blog.html" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit">
                               <i class="fas fa-pencil-alt"></i>
                             </a>
-                            <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete">
+                            <a class="btn btn-danger btn-action" data-toggle="modal" data-target="#basicModal" title="Delete">
                               <i class="fas fa-trash"></i>
                             </a>
                           </td>
@@ -312,10 +323,10 @@
                             <div class="badge badge-secondary">Unpublished</div>
                           </td>
                           <td>                            
-                            <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit">
+                            <a href="edit_blog.html" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit">
                               <i class="fas fa-pencil-alt"></i>
                             </a>
-                            <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete">
+                            <a class="btn btn-danger btn-action" data-toggle="modal" data-target="#basicModal" title="Delete">
                               <i class="fas fa-trash"></i>
                             </a>
                           </td>
@@ -336,10 +347,10 @@
                             <div class="badge badge-info">Published</div>
                           </td>
                           <td>                            
-                            <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit">
+                            <a href="edit_blog.html" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit">
                               <i class="fas fa-pencil-alt"></i>
                             </a>
-                            <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete">
+                            <a class="btn btn-danger btn-action" data-toggle="modal" data-target="#basicModal" title="Delete">
                               <i class="fas fa-trash"></i>
                             </a>
                           </td>
@@ -360,10 +371,10 @@
                             <div class="badge badge-info">Published</div>
                           </td>
                           <td>                            
-                            <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit">
+                            <a href="edit_blog.html" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit">
                               <i class="fas fa-pencil-alt"></i>
                             </a>
-                            <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete">
+                            <a class="btn btn-danger btn-action" data-toggle="modal" data-target="#basicModal" title="Delete">
                               <i class="fas fa-trash"></i>
                             </a>
                           </td>
@@ -384,10 +395,10 @@
                             <div class="badge badge-secondary">Unpublished</div>
                           </td>
                           <td>                            
-                            <a class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit">
+                            <a href="edit_blog.html" class="btn btn-primary btn-action mr-1" data-toggle="tooltip" title="Edit">
                               <i class="fas fa-pencil-alt"></i>
                             </a>
-                            <a class="btn btn-danger btn-action" data-toggle="tooltip" title="Delete">
+                            <a class="btn btn-danger btn-action" data-toggle="modal" data-target="#basicModal" title="Delete">
                               <i class="fas fa-trash"></i>
                             </a>
                           </td>
@@ -400,6 +411,29 @@
             </div>
           </div>
         </section>
+
+        <!-- modal -->
+        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Hapus Blog?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                Apakah Anda yakin ingin menghapus?
+              </div>
+              <div class="modal-footer bg-whitesmoke br">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Batal</button>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Hapus</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <!-- SETTING THEME -->
         <div class="settingSidebar">
           <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
