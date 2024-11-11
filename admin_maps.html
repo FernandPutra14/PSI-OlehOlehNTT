@@ -7,8 +7,6 @@
   <title>Dashboard - OlehOlehNTT</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="css/app.min.css">
-  <link rel="stylesheet" href="bundles/summernote/summernote-bs4.css">
-  <link rel="stylesheet" href="css/selectric.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="css/layoutdashboard.css">
   <link rel="stylesheet" href="css/components.css">
@@ -203,10 +201,10 @@
                   <li><a class="nav-link" href="refund.html">Refund & Pembatalan</a></li>
                 </ul>
             </li>
-            <li class="dropdown active">
+            <li class="dropdown">
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layout"></i><span>Blog/Artikel</span></a>
                 <ul class="dropdown-menu">
-                  <li class="active"><a class="nav-link" href="daftar_blog.html">Daftar Blog</a></li>
+                  <li><a class="nav-link" href="daftar_blog.html">Daftar Blog</a></li>
                   <li><a class="nav-link" href="kelola_blog.html">Kelola Blog</a></li>
                 </ul>
             </li>
@@ -229,7 +227,7 @@
             </li>
             <li><a href="feedback_support.html" class="nav-link"><i data-feather="help-circle"></i><span>Feedback & Support</span></a></li>
             <li><a href="admin_calendar.html" class="nav-link"><i data-feather="calendar"></i><span>Calendar</span></a></li>
-            <li><a href="admin_maps.html" class="nav-link"><i data-feather="map"></i><span>Maps</span></a></li>
+            <li class="active"><a href="admin_maps.html" class="nav-link"><i data-feather="map"></i><span>Maps</span></a></li>
           </ul>
         </aside>
       </div>
@@ -242,136 +240,27 @@
           <div class="row">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Blog/Artikel</a></li>
-                <li class="breadcrumb-item"><a href="daftar_blog.html">Daftar Blog</a></li>
-                <li class="breadcrumb-item" aria-current="page">Edit Blog</li>
+                <li class="breadcrumb-item"><a href="#">Maps</a></li>
+                <li class="breadcrumb-item" aria-current="page">Maps</li>
               </ol>
-          </nav>  
+            </nav>  
           </div>
 
-          <div class="section-body">            
-            <div class="row">
-              <div class="col-12">
-                <div class="card card-primary">
-                  <div class="card-header">
-                    <h4>Edit Blog</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Judul<span class="text-danger">*</span></label>
-                      <div class="col-sm-12 col-md-7">
-                        <input type="text" class="form-control" value="Mengenal Makanan Khas NTT: Lezat dan Unik">
-                      </div>
+          <div class="row">
+            <div class="col-12">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Maps</h4>
+                </div>
+                <div class="card-body">
+                    <div id="simple-map" data-height="400">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3927.296399823969!2d123.66450862591901!3d-10.15654485959437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2c5683f7b63485a3%3A0x3121fac8fe875d86!2sProgram%20Studi%20Ilmu%20Komputer%20Undana!5e0!3m2!1sid!2sid!4v1731333171536!5m2!1sid!2sid" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Kategori<span class="text-danger">*</span></label>
-                      <div class="col-sm-12 col-md-7">
-                        <select class="form-control selectric">
-                          <option></option>
-                          <option selected>Berita</option>
-                          <option>Tips/Trik</option>
-                          <option>Sejarah</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Topik<span class="text-danger">*</span></label>
-                      <div class="col-sm-12 col-md-7">
-                        <select class="form-control selectric">
-                          <option></option>
-                          <option>Kain Tenun</option>
-                          <option selected>Makanan</option>
-                          <option>Minuman</option>
-                          <option>Aksesoris</option>
-                          <option>Pakaian</option>
-                          <option>Kesehatan</option>
-                          <option>Lain-lain</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Upload Foto<span class="text-danger">*</span></label>
-                      <div class="col-sm-12 col-md-7">
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="customFile">
-                          <label class="custom-file-label" for="customFile">makanan_khas_ntt.jpg</label>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Content<span class="text-danger">*</span></label>
-                      <div class="col-sm-12 col-md-7">
-                        <textarea class="summernote">
-                            Nusa Tenggara Timur (NTT) menyimpan segudang kejutan, salah satunya adalah kekayaan kulinernya yang menggugah selera. Di balik keindahan alamnya yang eksotis, tersembunyi beragam hidangan khas yang kaya akan cita rasa dan penuh keunikan. Melalui artikel ini, kita akan bertualang kuliner ke NTT, mencicipi hidangan-hidangan tradisional yang telah diwariskan turun-temurun. Masakan khas NTT adalah cerminan dari keberagaman budaya dan alamnya. Pengaruh lingkungan yang kaya akan rempah-rempah, serta bahan-bahan lokal seperti jagung, ubi, dan daging, menghasilkan perpaduan rasa yang unik dan khas. Setiap suapan hidangan khas NTT akan membawa kita pada petualangan sensori yang tak terlupakan.
-                            <br>
-                            Hidangan Andalan yang Wajib Dicoba
-                            <br>
-                            Salah satu hidangan yang paling terkenal adalah sei, daging sapi asap yang diiris tipis dan memiliki rasa yang khas. Selain sei, ada juga kolo, nasi bakar yang dimasak dalam bambu, serta rumpu rampe, tumisan sayuran yang kaya akan nutrisi. Bagi pencinta makanan manis, catemak jagung adalah pilihan yang tepat. Hidangan ini terbuat dari jagung manis yang dimasak dengan santan dan bumbu khas. Masakan khas NTT bukan hanya sekadar hidangan untuk mengisi perut, tetapi juga merupakan bagian penting dari budaya dan kehidupan masyarakat setempat. Setiap hidangan memiliki cerita dan makna tersendiri, yang mencerminkan sejarah dan tradisi masyarakat NTT. Dengan mencicipi makanan khas NTT, kita tidak hanya memuaskan selera, tetapi juga ikut melestarikan warisan budaya yang berharga.
-                            <br>
-                            Jelajahi Kuliner NTT
-                            <br>
-                            Bagi Anda yang ingin merasakan langsung kelezatan makanan khas NTT, banyak sekali pilihan tempat makan yang bisa Anda kunjungi. Mulai dari warung makan sederhana hingga restoran yang menyajikan hidangan dengan sentuhan modern, semuanya menawarkan pengalaman kuliner yang tak terlupakan. Nusa Tenggara Timur adalah surga bagi para pecinta kuliner. Dengan kekayaan rasa dan cita rasa yang unik, makanan khas NTT akan memanjakan lidah dan membawa Anda pada petualangan kuliner yang tak terlupakan. Jadi, tunggu apalagi? Yuk, kita eksplorasi lebih jauh kekayaan kuliner NTT!
-                        </textarea>
-                      </div>
-                    </div>
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
-                      <div class="col-sm-12 col-md-7 text-right">
-                        <button class="btn btn-secondary" data-toggle="modal" data-target="#basicModal">Unpublish</button>
-                        <button class="btn btn-success">Simpan Perubahan</button>
-                        <button class="btn btn-danger" data-toggle="modal" data-target="#basicModal2">Batal</button>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
-            </div>            
-          </div>
-          
-        </section>
-
-        <!-- modal publish -->
-        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Batalkan Publikasi?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                    Apakah Anda yakin ingin membatalkan publikasi blog?
-                    </div>
-                    <div class="modal-footer bg-whitesmoke br">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tidak</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Yakin</button>
-                    </div>
-                </div>
             </div>
           </div>
-
-        <!-- modal batal -->
-        <div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Batalkan Perubahan?</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-                  Apakah Anda yakin ingin membatalkan perubahan?
-                  </div>
-                  <div class="modal-footer bg-whitesmoke br">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Tidak</button>
-                      <button type="button" class="btn btn-primary" data-dismiss="modal">Yakin</button>
-                  </div>
-              </div>
-          </div>
-        </div>
-
+        </section>
         <!-- SETTING THEME -->
         <div class="settingSidebar">
           <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
@@ -471,8 +360,6 @@
   </div>
   <!-- General JS Scripts -->
   <script src="js/app.min.js"></script>
-  <!-- JS Libraies -->
-  <script src="bundles/summernote/summernote-bs4.js"></script>
   <!-- Template JS File -->
   <script src="js/scripts.js"></script>
 </body>

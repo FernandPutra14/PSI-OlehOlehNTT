@@ -7,8 +7,6 @@
   <title>Dashboard - OlehOlehNTT</title>
   <!-- General CSS Files -->
   <link rel="stylesheet" href="css/app.min.css">
-  <link rel="stylesheet" href="bundles/summernote/summernote-bs4.css">
-  <link rel="stylesheet" href="css/selectric.css">
   <!-- Template CSS -->
   <link rel="stylesheet" href="css/layoutdashboard.css">
   <link rel="stylesheet" href="css/components.css">
@@ -140,7 +138,7 @@
           </li>
           <li class="dropdown">
             <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user"> 
-              <img alt="image" src="assets/kategori_pakaian.png" class="user-img-radious-style"> 
+              <img alt="image" src="assets/Kirito.jpeg" class="user-img-radious-style"> 
               <span class="d-sm-none d-lg-inline-block"></span>
             </a>
             <div class="dropdown-menu dropdown-menu-right pullDown">
@@ -203,18 +201,18 @@
                   <li><a class="nav-link" href="refund.html">Refund & Pembatalan</a></li>
                 </ul>
             </li>
-            <li class="dropdown active">
+            <li class="dropdown">
                 <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="layout"></i><span>Blog/Artikel</span></a>
                 <ul class="dropdown-menu">
-                  <li class="active"><a class="nav-link" href="daftar_blog.html">Daftar Blog</a></li>
+                  <li><a class="nav-link" href="daftar_blog.html">Daftar Blog</a></li>
                   <li><a class="nav-link" href="kelola_blog.html">Kelola Blog</a></li>
                 </ul>
             </li>
             <li class="menu-header">Pages</li>
-            <li class="dropdown">
+            <li class="dropdown active">
               <a href="#" class="menu-toggle nav-link has-dropdown"><i data-feather="settings"></i><span>Pengaturan</span></a>
               <ul class="dropdown-menu">
-                <li><a class="nav-link" href="pengaturan_pengiriman.html">Pengaturan Pengiriman</a></li>
+                <li class="active"><a class="nav-link" href="pengaturan_pengiriman.html">Pengaturan Pengiriman</a></li>
                 <li><a class="nav-link" href="pengaturan_pembayaran.html">Pengaturan Pembayaran</a></li>
               </ul>
             </li>
@@ -242,136 +240,149 @@
           <div class="row">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Blog/Artikel</a></li>
-                <li class="breadcrumb-item"><a href="daftar_blog.html">Daftar Blog</a></li>
-                <li class="breadcrumb-item" aria-current="page">Edit Blog</li>
+                <li class="breadcrumb-item"><a href="#">Pengaturan</a></li>
+                <li class="breadcrumb-item" aria-current="page">Pengaturan Pengiriman</li>
               </ol>
-          </nav>  
+            </nav>  
           </div>
 
-          <div class="section-body">            
+          <div class="section-body">
+            <!-- <div class="row">
+                <div class="col-auto">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h4>Pengaturan Pengiriman</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>             -->
+
             <div class="row">
-              <div class="col-12">
-                <div class="card card-primary">
-                  <div class="card-header">
-                    <h4>Edit Blog</h4>
-                  </div>
-                  <div class="card-body">
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Judul<span class="text-danger">*</span></label>
-                      <div class="col-sm-12 col-md-7">
-                        <input type="text" class="form-control" value="Mengenal Makanan Khas NTT: Lezat dan Unik">
-                      </div>
+                <div class="col-12">
+                  <div class="card">
+                    <div class="card-header">
+                      <h4>Daftar Tarif Wilayah</h4>
                     </div>
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Kategori<span class="text-danger">*</span></label>
-                      <div class="col-sm-12 col-md-7">
-                        <select class="form-control selectric">
-                          <option></option>
-                          <option selected>Berita</option>
-                          <option>Tips/Trik</option>
-                          <option>Sejarah</option>
-                        </select>
+                    <div class="card-body">
+                      <div class="table-responsive">
+                        <table class="table table-striped table-hover" id="table-1">
+                          <thead>
+                            <tr>
+                              <th class="text-center">
+                                ID
+                              </th>
+                              <th>Wilayah</th>
+                              <th>Tarif Pengiriman</th>
+                              <th>Estimasi Waktu</th>
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="text-center">
+                                1
+                              </td>
+                              <td>Jakarta</td>
+                              <td>Rp40,000</td>
+                              <td>3-4 hari</td>
+                              <td><a href="#" class="btn btn-secondary">Edit</a></td>
+                            </tr>
+                            
+                            <tr>
+                                <td class="text-center">
+                                  2
+                                </td>
+                                <td>Ambon</td>
+                                <td>Rp10,000</td>
+                                <td>1 hari</td>
+                                <td><a href="#" class="btn btn-secondary">Edit</a></td>
+                              </tr>
+    
+                              <tr>
+                                <td class="text-center">
+                                  3
+                                </td>
+                                <td>Makasar</td>
+                                <td>Rp20,000</td>
+                                <td>1-2 hari</td>
+                                <td><a href="#" class="btn btn-secondary">Edit</a></td>
+                              </tr>
+                            
+                              <tr>
+                                <td class="text-center">
+                                  4
+                                </td>
+                                <td>Surabaya</td>
+                                <td>Rp50,000</td>
+                                <td>2-4 hari</td>
+                                <td><a href="#" class="btn btn-secondary">Edit</a></td>
+                              </tr>
+                          </tbody>
+                        </table>
                       </div>
-                    </div>
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Topik<span class="text-danger">*</span></label>
-                      <div class="col-sm-12 col-md-7">
-                        <select class="form-control selectric">
-                          <option></option>
-                          <option>Kain Tenun</option>
-                          <option selected>Makanan</option>
-                          <option>Minuman</option>
-                          <option>Aksesoris</option>
-                          <option>Pakaian</option>
-                          <option>Kesehatan</option>
-                          <option>Lain-lain</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Upload Foto<span class="text-danger">*</span></label>
-                      <div class="col-sm-12 col-md-7">
-                        <div class="custom-file">
-                          <input type="file" class="custom-file-input" id="customFile">
-                          <label class="custom-file-label" for="customFile">makanan_khas_ntt.jpg</label>
-                      </div>
-                      </div>
-                    </div>
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3">Content<span class="text-danger">*</span></label>
-                      <div class="col-sm-12 col-md-7">
-                        <textarea class="summernote">
-                            Nusa Tenggara Timur (NTT) menyimpan segudang kejutan, salah satunya adalah kekayaan kulinernya yang menggugah selera. Di balik keindahan alamnya yang eksotis, tersembunyi beragam hidangan khas yang kaya akan cita rasa dan penuh keunikan. Melalui artikel ini, kita akan bertualang kuliner ke NTT, mencicipi hidangan-hidangan tradisional yang telah diwariskan turun-temurun. Masakan khas NTT adalah cerminan dari keberagaman budaya dan alamnya. Pengaruh lingkungan yang kaya akan rempah-rempah, serta bahan-bahan lokal seperti jagung, ubi, dan daging, menghasilkan perpaduan rasa yang unik dan khas. Setiap suapan hidangan khas NTT akan membawa kita pada petualangan sensori yang tak terlupakan.
-                            <br>
-                            Hidangan Andalan yang Wajib Dicoba
-                            <br>
-                            Salah satu hidangan yang paling terkenal adalah sei, daging sapi asap yang diiris tipis dan memiliki rasa yang khas. Selain sei, ada juga kolo, nasi bakar yang dimasak dalam bambu, serta rumpu rampe, tumisan sayuran yang kaya akan nutrisi. Bagi pencinta makanan manis, catemak jagung adalah pilihan yang tepat. Hidangan ini terbuat dari jagung manis yang dimasak dengan santan dan bumbu khas. Masakan khas NTT bukan hanya sekadar hidangan untuk mengisi perut, tetapi juga merupakan bagian penting dari budaya dan kehidupan masyarakat setempat. Setiap hidangan memiliki cerita dan makna tersendiri, yang mencerminkan sejarah dan tradisi masyarakat NTT. Dengan mencicipi makanan khas NTT, kita tidak hanya memuaskan selera, tetapi juga ikut melestarikan warisan budaya yang berharga.
-                            <br>
-                            Jelajahi Kuliner NTT
-                            <br>
-                            Bagi Anda yang ingin merasakan langsung kelezatan makanan khas NTT, banyak sekali pilihan tempat makan yang bisa Anda kunjungi. Mulai dari warung makan sederhana hingga restoran yang menyajikan hidangan dengan sentuhan modern, semuanya menawarkan pengalaman kuliner yang tak terlupakan. Nusa Tenggara Timur adalah surga bagi para pecinta kuliner. Dengan kekayaan rasa dan cita rasa yang unik, makanan khas NTT akan memanjakan lidah dan membawa Anda pada petualangan kuliner yang tak terlupakan. Jadi, tunggu apalagi? Yuk, kita eksplorasi lebih jauh kekayaan kuliner NTT!
-                        </textarea>
-                      </div>
-                    </div>
-                    <div class="form-group row mb-4">
-                      <label class="col-form-label text-md-right col-12 col-md-3 col-lg-3"></label>
-                      <div class="col-sm-12 col-md-7 text-right">
-                        <button class="btn btn-secondary" data-toggle="modal" data-target="#basicModal">Unpublish</button>
-                        <button class="btn btn-success">Simpan Perubahan</button>
-                        <button class="btn btn-danger" data-toggle="modal" data-target="#basicModal2">Batal</button>
-                      </div>
-                    </div>
+                    </div>                
                   </div>
                 </div>
               </div>
-            </div>            
+
+            <div class="row">                
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h4>JNE</h4>
+                            <div class="card-header-action">
+                                <p class="text-right pt-2"><em>Active</em></p>
+                            </div>                           
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <label class="custom-switch">
+                                        <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input" checked>
+                                        <span class="custom-switch-indicator"></span>
+                                      </label>
+                                </div>
+                                <div class="col-8">
+                                    <div class="row" style="align-items: center; gap: 5px;">
+                                        <img src="assets/LOGO_JNE.png" style="width: 100px; padding-left: 10px;">                                       
+                                    </div>
+                                    <p class="mb-0"><b>Tarif Pengiriman</b> Rp10.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-6 col-lg-6">
+                    <div class="card card-primary">
+                        <div class="card-header">
+                            <h4>SiCepat</h4>
+                            <div class="card-header-action">
+                                <p class="text-right pt-2"><em>Not Active</em></p>
+                            </div>                           
+                        </div>
+                        <div class="card-body pt-0">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <label class="custom-switch">
+                                        <input type="checkbox" name="custom-switch-checkbox" class="custom-switch-input">
+                                        <span class="custom-switch-indicator"></span>
+                                      </label>
+                                </div>
+                                <div class="col-8">
+                                    <div class="row" style="align-items: center; gap: 5px;">
+                                        <img src="assets/SiCepat Ekspres Logo (PNG-1080p) - Vector69Com.png" style="width: 130px; padding-left: 10px;">                                       
+                                    </div>
+                                    <p class="mb-0"><b>Tarif Pengiriman</b> Rp10.000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
           </div>
           
         </section>
-
-        <!-- modal publish -->
-        <div class="modal fade" id="basicModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Batalkan Publikasi?</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                    Apakah Anda yakin ingin membatalkan publikasi blog?
-                    </div>
-                    <div class="modal-footer bg-whitesmoke br">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Tidak</button>
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Yakin</button>
-                    </div>
-                </div>
-            </div>
-          </div>
-
-        <!-- modal batal -->
-        <div class="modal fade" id="basicModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                  <div class="modal-header">
-                      <h5 class="modal-title" id="exampleModalLabel">Batalkan Perubahan?</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                      </button>
-                  </div>
-                  <div class="modal-body">
-                  Apakah Anda yakin ingin membatalkan perubahan?
-                  </div>
-                  <div class="modal-footer bg-whitesmoke br">
-                      <button type="button" class="btn btn-danger" data-dismiss="modal">Tidak</button>
-                      <button type="button" class="btn btn-primary" data-dismiss="modal">Yakin</button>
-                  </div>
-              </div>
-          </div>
-        </div>
-
         <!-- SETTING THEME -->
         <div class="settingSidebar">
           <a href="javascript:void(0)" class="settingPanelToggle"> <i class="fa fa-spin fa-cog"></i>
@@ -471,8 +482,6 @@
   </div>
   <!-- General JS Scripts -->
   <script src="js/app.min.js"></script>
-  <!-- JS Libraies -->
-  <script src="bundles/summernote/summernote-bs4.js"></script>
   <!-- Template JS File -->
   <script src="js/scripts.js"></script>
 </body>

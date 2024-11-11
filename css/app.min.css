@@ -3892,7 +3892,7 @@ input[type=button].btn-block,input[type=reset].btn-block,input[type=submit].btn-
 }
 
 .custom-switch {
-    padding-left: 2.25rem
+    padding-left: 0;
 }
 
 .custom-switch .custom-control-label::before {
